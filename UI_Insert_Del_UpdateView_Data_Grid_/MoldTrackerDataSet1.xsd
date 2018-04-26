@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MoldTrackerDataSet1" targetNamespace="http://tempuri.org/MoldTrackerDataSet1.xsd" xmlns:mstns="http://tempuri.org/MoldTrackerDataSet1.xsd" xmlns="http://tempuri.org/MoldTrackerDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MoldTrackerConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MoldTrackerConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.UI_Insert_Del_UpdateView_Data_Grid_.Properties.Settings.GlobalReference.Default.MoldTrackerConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProbyViewTableAdapter" GeneratorDataComponentClassName="ProbyViewTableAdapter" Name="ProbyView" UserDataComponentName="ProbyViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MoldTrackerConnectionString (Settings)" DbObjectName="MoldTracker.dbo.ProbyView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Forma, Detal, SapDetalu, Material, Projekt, SugerowanaMaszyna, Zlecajacy, TerminRealizacji, Cel, DataDodania FROM dbo.ProbyView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Forma" DataSetColumn="Forma" />
+              <Mapping SourceColumn="Detal" DataSetColumn="Detal" />
+              <Mapping SourceColumn="SapDetalu" DataSetColumn="SapDetalu" />
+              <Mapping SourceColumn="Material" DataSetColumn="Material" />
+              <Mapping SourceColumn="Projekt" DataSetColumn="Projekt" />
+              <Mapping SourceColumn="SugerowanaMaszyna" DataSetColumn="SugerowanaMaszyna" />
+              <Mapping SourceColumn="Zlecajacy" DataSetColumn="Zlecajacy" />
+              <Mapping SourceColumn="TerminRealizacji" DataSetColumn="TerminRealizacji" />
+              <Mapping SourceColumn="Cel" DataSetColumn="Cel" />
+              <Mapping SourceColumn="DataDodania" DataSetColumn="DataDodania" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MoldTrackerDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MoldTrackerDataSet1" msprop:Generator_UserDSName="MoldTrackerDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ProbyView" msprop:Generator_TableClassName="ProbyViewDataTable" msprop:Generator_TableVarName="tableProbyView" msprop:Generator_TablePropName="ProbyView" msprop:Generator_RowDeletingName="ProbyViewRowDeleting" msprop:Generator_RowChangingName="ProbyViewRowChanging" msprop:Generator_RowEvHandlerName="ProbyViewRowChangeEventHandler" msprop:Generator_RowDeletedName="ProbyViewRowDeleted" msprop:Generator_UserTableName="ProbyView" msprop:Generator_RowChangedName="ProbyViewRowChanged" msprop:Generator_RowEvArgName="ProbyViewRowChangeEvent" msprop:Generator_RowClassName="ProbyViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Forma" msprop:Generator_ColumnVarNameInTable="columnForma" msprop:Generator_ColumnPropNameInRow="Forma" msprop:Generator_ColumnPropNameInTable="FormaColumn" msprop:Generator_UserColumnName="Forma" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Detal" msprop:Generator_ColumnVarNameInTable="columnDetal" msprop:Generator_ColumnPropNameInRow="Detal" msprop:Generator_ColumnPropNameInTable="DetalColumn" msprop:Generator_UserColumnName="Detal" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SapDetalu" msprop:Generator_ColumnVarNameInTable="columnSapDetalu" msprop:Generator_ColumnPropNameInRow="SapDetalu" msprop:Generator_ColumnPropNameInTable="SapDetaluColumn" msprop:Generator_UserColumnName="SapDetalu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Material" msprop:Generator_ColumnVarNameInTable="columnMaterial" msprop:Generator_ColumnPropNameInRow="Material" msprop:Generator_ColumnPropNameInTable="MaterialColumn" msprop:Generator_UserColumnName="Material" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Projekt" msprop:Generator_ColumnVarNameInTable="columnProjekt" msprop:Generator_ColumnPropNameInRow="Projekt" msprop:Generator_ColumnPropNameInTable="ProjektColumn" msprop:Generator_UserColumnName="Projekt" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SugerowanaMaszyna" msprop:Generator_ColumnVarNameInTable="columnSugerowanaMaszyna" msprop:Generator_ColumnPropNameInRow="SugerowanaMaszyna" msprop:Generator_ColumnPropNameInTable="SugerowanaMaszynaColumn" msprop:Generator_UserColumnName="SugerowanaMaszyna" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Zlecajacy" msprop:Generator_ColumnVarNameInTable="columnZlecajacy" msprop:Generator_ColumnPropNameInRow="Zlecajacy" msprop:Generator_ColumnPropNameInTable="ZlecajacyColumn" msprop:Generator_UserColumnName="Zlecajacy" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TerminRealizacji" msprop:Generator_ColumnVarNameInTable="columnTerminRealizacji" msprop:Generator_ColumnPropNameInRow="TerminRealizacji" msprop:Generator_ColumnPropNameInTable="TerminRealizacjiColumn" msprop:Generator_UserColumnName="TerminRealizacji" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cel" msprop:Generator_ColumnVarNameInTable="columnCel" msprop:Generator_ColumnPropNameInRow="Cel" msprop:Generator_ColumnPropNameInTable="CelColumn" msprop:Generator_UserColumnName="Cel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DataDodania" msprop:Generator_ColumnVarNameInTable="columnDataDodania" msprop:Generator_ColumnPropNameInRow="DataDodania" msprop:Generator_ColumnPropNameInTable="DataDodaniaColumn" msprop:Generator_UserColumnName="DataDodania" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
