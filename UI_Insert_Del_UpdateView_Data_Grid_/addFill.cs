@@ -85,34 +85,60 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
             if (MessageBox.Show("Czy chcesz dodać próbę?", "Potwierdź próbę", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                System.Data.SqlClient.SqlConnection sqlConnection1 =
-                new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
+                //System.Data.SqlClient.SqlConnection sqlConnection1 =
+                //new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
 
-                System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
-                cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "INSERT Proby (projektId,formaId,maszynaId,detalId) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId from Projekt, Forma,Maszyna,Detal_komplet where" +
-                    " projektNazwa = '" + comboProjekt.SelectedValue.ToString() + "' and formaNazwa = '"
-                    + comboForma.SelectedValue.ToString() + "' and maszynaNazwa = '"
-                    + comboMaszyna.SelectedValue.ToString() + "' and detalNazwa = '"
-                    + comboDetal.SelectedValue.ToString() + "'";
-                //quotation mark after the character string ')'.”
+                //System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+                //cmd.CommandType = System.Data.CommandType.Text;
+                //cmd.CommandText = "INSERT Proby (projektId,formaId,maszynaId,detalId, celId) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId from Projekt, Forma,Maszyna,Detal_komplet,Cel where" +
+                //    " projektNazwa = '" + comboProjekt.SelectedValue.ToString() + "' and formaNazwa = '"
+                //    + comboForma.SelectedValue.ToString() + "' and maszynaNazwa = '"
+                //    + comboMaszyna.SelectedValue.ToString() + "' and detalNazwa = '"
+                //    + comboDetal.SelectedValue.ToString() + "' and celNazwa = '"
+                //    + comboCel.SelectedValue.ToString() + "'; Insert into Proby(czasTrw) values('4')";
 
-
-                //"UPDATE firstTB SET name='" + newName + "' WHERE name='" + id + "'";
-
-
-                //Insert into Proby(projektId, formaId, maszynaId)
-                //select Projekt.projektId, Forma.formaId, Maszyna.maszynaId
-                //from Projekt, Forma, Maszyna
+                //cmd.Connection = sqlConnection1;
+                //sqlConnection1.Open();
+                //cmd.ExecuteNonQuery();
+                //sqlConnection1.Close();
+                //this.Close();
 
 
-                //where projektNazwa = 'VOLVO' and formaNazwa = '750' and maszynaNazwa = '19';
+                using (SqlConnection con = new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
+                using (SqlCommand cmd = con.CreateCommand())
+                {
+                    con.Open();
+                    cmd.CommandText = @"INSERT Proby (projektId,formaId,maszynaId,detalId, celId) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId from Projekt, Forma,Maszyna,Detal_komplet,Cel where" +
+                        " projektNazwa = '" + comboProjekt.SelectedValue.ToString() + "' and formaNazwa = '"
+                        + comboForma.SelectedValue.ToString() + "' and maszynaNazwa = '"
+                        + comboMaszyna.SelectedValue.ToString() + "' and detalNazwa = '"
+                        + comboDetal.SelectedValue.ToString() + "' and celNazwa = '"
+                        + comboCel.SelectedValue.ToString() + "'Insert into Proby(czasTrw) values('4')";
+                    cmd.ExecuteNonQuery();
+                }
 
-                cmd.Connection = sqlConnection1;
-                sqlConnection1.Open();
-                cmd.ExecuteNonQuery();
-                sqlConnection1.Close();
                 this.Close();
+
+                /*
+                
+                SqlConnection cn = new SqlConnection("********");
+                string stmt = "insert projects(projectname) values('" + name + "' )";
+                string stmt1 = "update dept set deptid=" + id;
+
+
+
+                SqlCommand cmd = new SqlCommand(stmt, cn);
+                sqlcommand cmd1 = new sqlcommand(stmt1, cn);
+
+                cn.Open();
+                cmd.ExecuteNonQuery();
+
+                cmd1.ExecuteNonQuery();
+                cn.close()
+
+
+                    */
+
             }
             else
             {

@@ -22,7 +22,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 con.Open();
                 SqlDataAdapter adapter = new SqlDataAdapter(query, con);
                 adapter.Fill(ds);
-                con.Close();
+        
             }
             return ds;
         }
