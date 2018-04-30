@@ -83,7 +83,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         private void dodajProbeBtn_Click(object sender, EventArgs e)
         {
 
-            if (MessageBox.Show("Czy chcesz dodać próbę?", "Potwierdź próbę", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Czy chcesz dodać próbę?", "Potwierdź próbęe", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 //System.Data.SqlClient.SqlConnection sqlConnection1 =
                 //new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
