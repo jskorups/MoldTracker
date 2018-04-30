@@ -69,7 +69,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         public void sprawdzenieCombosow()
         {
-            if (!string.IsNullOrEmpty(comboProjekt.Text) && !string.IsNullOrEmpty(comboGodziny.Text) && !string.IsNullOrEmpty(comboForma.Text) && !string.IsNullOrEmpty(comboMaszyna.Text) && !string.IsNullOrEmpty(comboDetal.Text) && !string.IsNullOrEmpty(comboCel.Text))
+            if (!string.IsNullOrEmpty(comboProjekt.Text) && !string.IsNullOrEmpty(comboTrwanie.Text) && !string.IsNullOrEmpty(comboForma.Text) && !string.IsNullOrEmpty(comboMaszyna.Text) && !string.IsNullOrEmpty(comboDetal.Text) && !string.IsNullOrEmpty(comboCel.Text))
             {
                 dodajProbeBtn.BackColor = System.Drawing.Color.Lime;
                 dodajProbeBtn.Enabled = true;
@@ -94,10 +94,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     " projektNazwa = '" + comboProjekt.SelectedValue.ToString() + "' and formaNazwa = '"
                     + comboForma.SelectedValue.ToString() + "' and maszynaNazwa = '"
                     + comboMaszyna.SelectedValue.ToString() + "' and detalNazwa = '"
-                    + comboDetal.SelectedValue.ToString() + " & values(dzienStart) " +
-                    "( '" + dateTimeTerminRealizacjiDzien.Value.Date + "')'";
-
-
+                    + comboDetal.SelectedValue.ToString() + "'";
                 //quotation mark after the character string ')'.”
 
 
@@ -196,7 +193,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             comboForma.SelectedIndex = -1;
             comboCel.SelectedIndex = -1;
             comboMaszyna.SelectedIndex = -1;
-            comboGodziny.SelectedIndex = -1;
+            comboTrwanie.SelectedIndex = -1;
             txtKolor.Text = "";
             txtMaterial.Text = "";
             txtSapDetalu.Text = "";
@@ -258,7 +255,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         }
         private void limitText(object sender, EventArgs e)
         {
-            textLimit(50, richTexCel);
+            textLimit(100, richTexCel);
         }
 
         private void klawiszRich(object sender, KeyEventArgs e)
@@ -283,8 +280,8 @@ private void txtKolor_TextChanged(object sender, EventArgs e)
         {
             List<int> czasTrwanie = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
 
-            comboGodziny.DataSource = czasTrwanie;
-            comboGodziny.SelectedIndex = -1;
+            comboTrwanie.DataSource = czasTrwanie;
+            comboTrwanie.SelectedIndex = -1;
         }
     }
 }
