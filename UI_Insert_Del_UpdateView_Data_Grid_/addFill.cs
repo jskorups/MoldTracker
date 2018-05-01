@@ -90,7 +90,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
                 System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
                 cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "INSERT Proby (projektId,formaId,maszynaId,detalId, celId,czasTrw) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @Trwanie from Projekt, "
+                cmd.CommandText = "INSERT Proby (projektId,formaId,maszynaId,detalId, celId, godzStart, dzienStart, czasTrw, celRoz, statusProby) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @godzStart, @dzienStart, @Trwanie, @celRoz, 'Zaplanowana' from Projekt, "
                     + "Forma,Maszyna,Detal_komplet,Cel where "
                     + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNazwa = @maszynaNazwa "
                     + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa ";
@@ -100,6 +100,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 cmd.Parameters.AddWithValue("@maszynaNazwa", comboMaszyna.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@detalNazwa", comboDetal.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@celNazwa", comboCel.SelectedValue.ToString());
+                cmd.Parameters.AddWithValue("@godzStart", dateTimeTerminRealizacjiGodzina.Value.ToShortTimeString());
+                cmd.Parameters.AddWithValue("@dzienStart", dateTimeTerminRealizacjiGodzina.Value.ToShortTimeString());
+                cmd.Parameters.AddWithValue("@celRoz", richTexCel.Text.ToString());
                 cmd.Parameters.AddWithValue("@Trwanie", comboTrwanie.SelectedValue.ToString());
 
                 cmd.Connection = sqlConnection1;
@@ -112,7 +115,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             else
             {
                 MessageBox.Show("Próba nie dodana");
-                this.Close();
+                return;
             }
         }
         #endregion
@@ -214,9 +217,18 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         private void uzupelnianieTextboxow(object sender, EventArgs e)
         {
             DataSet dDet2 = sqlQuery.GetDataFromSql("select detalSap, detalMaterial, detalKolor from Detal_komplet where detalNazwa = '" + comboDetal.Text + "'");
-            txtSapDetalu.Text = dDet2.Tables[0].Rows[0].ItemArray[0].ToString();
-            txtMaterial.Text = dDet2.Tables[0].Rows[0].ItemArray[1].ToString();
-            txtKolor.Text = dDet2.Tables[0].Rows[0].ItemArray[2].ToString();
+
+            if (dDet2.Tables[0].Rows.Count > 0) {
+
+                txtSapDetalu.Text = dDet2.Tables[0].Rows[0].ItemArray[0].ToString(); //
+                txtMaterial.Text = dDet2.Tables[0].Rows[0].ItemArray[1].ToString();
+                txtKolor.Text = dDet2.Tables[0].Rows[0].ItemArray[2].ToString();
+            }
+            else
+            {
+                return;
+            }
+
         }
         #endregion
         private void zmianaWartosciFormy(object sender, EventArgs e)

@@ -535,9 +535,9 @@
             this.dateTimeTerminRealizacjiDzien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimeTerminRealizacjiDzien.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeTerminRealizacjiDzien.Location = new System.Drawing.Point(2, 2);
-            this.dateTimeTerminRealizacjiDzien.Margin = new System.Windows.Forms.Padding(2, 2, 38, 2);
+            this.dateTimeTerminRealizacjiDzien.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimeTerminRealizacjiDzien.Name = "dateTimeTerminRealizacjiDzien";
-            this.dateTimeTerminRealizacjiDzien.Size = new System.Drawing.Size(99, 27);
+            this.dateTimeTerminRealizacjiDzien.Size = new System.Drawing.Size(135, 27);
             this.dateTimeTerminRealizacjiDzien.TabIndex = 13;
             // 
             // tableLayoutPanel16
