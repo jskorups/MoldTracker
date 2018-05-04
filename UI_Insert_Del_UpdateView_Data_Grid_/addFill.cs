@@ -90,7 +90,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
                 System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
                 cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "INSERT Proby (projektId,formaId,maszynaId,detalId, celId, godzStart, dzienStart, czasTrw, celRoz, statusProby) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @godzStart, @dzienStart, @Trwanie, @celRoz, 'Zaplanowana' from Projekt, "
+                cmd.CommandText = "INSERT Proby (projektId,formaId,maszynaId,detalId, celId, godzStart, dzienStart, czasTrw, celRoz, statusProby) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @godzStart ,convert(date, @dzienStart, 103), @Trwanie, @celRoz, 'Zaplanowana' from Projekt, "
                     + "Forma,Maszyna,Detal_komplet,Cel where "
                     + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNazwa = @maszynaNazwa "
                     + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa ";
@@ -101,7 +101,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 cmd.Parameters.AddWithValue("@detalNazwa", comboDetal.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@celNazwa", comboCel.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@godzStart", dateTimeTerminRealizacjiGodzina.Value.ToShortTimeString());
-                cmd.Parameters.AddWithValue("@dzienStart", dateTimeTerminRealizacjiGodzina.Value.ToShortTimeString());
+                cmd.Parameters.AddWithValue("@dzienStart", SqlDbType.Date).Value = dateTimeTerminRealizacjiDzien.Value.Date;
                 cmd.Parameters.AddWithValue("@celRoz", richTexCel.Text.ToString());
                 cmd.Parameters.AddWithValue("@Trwanie", comboTrwanie.SelectedValue.ToString());
 
@@ -290,5 +290,6 @@ private void txtKolor_TextChanged(object sender, EventArgs e)
             comboTrwanie.DataSource = czasTrwanie;
             comboTrwanie.SelectedIndex = -1;
         }
+
     }
 }
