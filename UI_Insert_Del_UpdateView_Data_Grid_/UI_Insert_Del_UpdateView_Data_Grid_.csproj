@@ -100,6 +100,16 @@
     <Compile Include="Maintaining.Designer.cs">
       <DependentUpon>Maintaining.cs</DependentUpon>
     </Compile>
+    <Compile Include="MoldTrackerDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoldTrackerDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MoldTrackerDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoldTrackerDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="monthlyControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -242,6 +252,28 @@
     <None Include="MoldTrackerDataSet1.xss">
       <DependentUpon>MoldTrackerDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="MoldTrackerDataSet2.xsc">
+      <DependentUpon>MoldTrackerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MoldTrackerDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MoldTrackerDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MoldTrackerDataSet2.xss">
+      <DependentUpon>MoldTrackerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MoldTrackerDataSet3.xsc">
+      <DependentUpon>MoldTrackerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MoldTrackerDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MoldTrackerDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MoldTrackerDataSet3.xss">
+      <DependentUpon>MoldTrackerDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -272,6 +304,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="System\Web\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -19,7 +19,11 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         private void Search_Load(object sender, EventArgs e)
         {
+            DataSet ds = sqlQuery.GetDataFromSql("select * from Proby;");
+            searchGrid.DataSource = ds.Tables[0];
 
+
+            searchGrid.
         }
     }
 }
