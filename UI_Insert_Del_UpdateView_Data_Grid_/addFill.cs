@@ -45,7 +45,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
                 DataSet dMasz = sqlQuery.GetDataFromSql("select * from Maszyna");
                 comboMaszyna.DataSource = dMasz.Tables[0];
-                comboMaszyna.ValueMember = "maszynaNazwa";
+                comboMaszyna.ValueMember = "maszynaNumer";
                 comboMaszyna.SelectedIndex = -1;
 
 
@@ -86,18 +86,19 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             if (MessageBox.Show("Czy chcesz dodać próbę?", "Potwierdź próbęe", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 System.Data.SqlClient.SqlConnection sqlConnection1 =
-                new System.Data.SqlClient.SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
+                new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
+                // new System.Data.SqlClient.SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
 
                 System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.CommandText = "INSERT Proby (projektId,formaId,maszynaId,detalId, celId, godzStart, dzienStart, czasTrw, celRoz, statusProby) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @godzStart ,convert(date, @dzienStart, 103), @Trwanie, @celRoz, 'Zaplanowana' from Projekt, "
                     + "Forma,Maszyna,Detal_komplet,Cel where "
-                    + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNazwa = @maszynaNazwa "
+                    + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNumer = @maszynaNumer "
                     + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa ";
 
                 cmd.Parameters.AddWithValue("@projectNazwa", comboProjekt.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@formaNazwa", comboForma.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@maszynaNazwa", comboMaszyna.SelectedValue.ToString());
+                cmd.Parameters.AddWithValue("@maszynaNumer", comboMaszyna.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@detalNazwa", comboDetal.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@celNazwa", comboCel.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@godzStart", dateTimeTerminRealizacjiGodzina.Value.ToShortTimeString());

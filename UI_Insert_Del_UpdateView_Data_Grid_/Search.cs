@@ -23,7 +23,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             searchGrid.DataSource = ds.Tables[0];
 
 
-            searchGrid.
+           // searchGrid.
         }
     }
 }
