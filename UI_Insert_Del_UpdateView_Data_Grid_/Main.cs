@@ -57,15 +57,20 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNumer = @maszynaNumer "
                     + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa ";
 
-                cmd.Parameters.AddWithValue("@projectNazwa", comboProjekt.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@formaNazwa", comboForma.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@maszynaNumer", comboMaszyna.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@detalNazwa", comboDetal.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@celNazwa", comboCel.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@godzStart", dateTimeTerminRealizacjiGodzina.Value.ToShortTimeString());
-                cmd.Parameters.AddWithValue("@dzienStart", SqlDbType.Date).Value = dateTimeTerminRealizacjiDzien.Value.Date;
-                cmd.Parameters.AddWithValue("@celRoz", richTexCel.Text.ToString());
-                cmd.Parameters.AddWithValue("@Trwanie", comboTrwanie.SelectedValue.ToString());
+                //select proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal',dzienStart, godzStart
+                //from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det
+                //where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId;
+
+
+                //cmd.Parameters.AddWithValue("@projectNazwa", comboProjekt.SelectedValue.ToString());
+                //cmd.Parameters.AddWithValue("@formaNazwa", comboForma.SelectedValue.ToString());
+                //cmd.Parameters.AddWithValue("@maszynaNumer", comboMaszyna.SelectedValue.ToString());
+                //cmd.Parameters.AddWithValue("@detalNazwa", comboDetal.SelectedValue.ToString());
+                //cmd.Parameters.AddWithValue("@celNazwa", comboCel.SelectedValue.ToString());
+                //cmd.Parameters.AddWithValue("@godzStart", dateTimeTerminRealizacjiGodzina.Value.ToShortTimeString());
+                //cmd.Parameters.AddWithValue("@dzienStart", SqlDbType.Date).Value = dateTimeTerminRealizacjiDzien.Value.Date;
+                //cmd.Parameters.AddWithValue("@celRoz", richTexCel.Text.ToString());
+                //cmd.Parameters.AddWithValue("@Trwanie", comboTrwanie.SelectedValue.ToString());
 
                 cmd.Connection = sqlConnection1;
                 sqlConnection1.Open();

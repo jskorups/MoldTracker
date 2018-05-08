@@ -13,8 +13,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
     public partial class addFill : Form
     {
-        private Color green;
-
+        
         public addFill()
         {
             InitializeComponent();
