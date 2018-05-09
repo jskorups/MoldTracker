@@ -30,6 +30,12 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             try
             {
+                DataSet ds = sqlQuery.GetDataFromSql("select proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal',dzienStart, godzStart from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId; ");
+
+                ostatnioDodaneGrid.DataSource = ds.Tables[0];
+
+
+
                 //DataSet ds = sqlQuery.GetDataFromSql("select top 14 probaid,projektId,formaId,maszynaId,detalId from Proby;");
 
                 //ostatnioDodaneGrid.DataSource = ds.Tables[0];
@@ -46,20 +52,18 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 //right join provy
                 //on prob
 
-                 System.Data.SqlClient.SqlConnection sqlConnection1 =
-               // new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
-                 new System.Data.SqlClient.SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
+                // System.Data.SqlClient.SqlConnection sqlConnection1 =
+                //// new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
+                //  new System.Data.SqlClient.SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
 
-                System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
-                cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "INSERT Proby (projektId,formaId,maszynaId,detalId, celId, godzStart, dzienStart, czasTrw, celRoz, statusProby) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @godzStart ,convert(date, @dzienStart, 103), @Trwanie, @celRoz, 'Zaplanowana' from Projekt, "
-                    + "Forma,Maszyna,Detal_komplet,Cel where "
-                    + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNumer = @maszynaNumer "
-                    + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa ";
+                // System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+                // cmd.CommandType = System.Data.CommandType.Text;
+                // cmd.CommandText = "INSERT Proby (projektId,formaId,maszynaId,detalId, celId, godzStart, dzienStart, czasTrw, celRoz, statusProby) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @godzStart ,convert(date, @dzienStart, 103), @Trwanie, @celRoz, 'Zaplanowana' from Projekt, "
+                //     + "Forma,Maszyna,Detal_komplet,Cel where "
+                //     + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNumer = @maszynaNumer "
+                //     + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa ";
 
-                //select proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal',dzienStart, godzStart
-                //from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det
-                //where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId;
+
 
 
                 //cmd.Parameters.AddWithValue("@projectNazwa", comboProjekt.SelectedValue.ToString());
@@ -72,11 +76,11 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 //cmd.Parameters.AddWithValue("@celRoz", richTexCel.Text.ToString());
                 //cmd.Parameters.AddWithValue("@Trwanie", comboTrwanie.SelectedValue.ToString());
 
-                cmd.Connection = sqlConnection1;
-                sqlConnection1.Open();
-                cmd.ExecuteNonQuery();
-                sqlConnection1.Close();
-                this.Close();
+                //cmd.Connection = sqlConnection1;
+                //sqlConnection1.Open();
+                //cmd.ExecuteNonQuery();
+                //sqlConnection1.Close();
+                //this.Close();
 
 
             }
