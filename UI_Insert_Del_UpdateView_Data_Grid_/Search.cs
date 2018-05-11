@@ -23,9 +23,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
 
-            DataSet dpro = sqlQuery.GetDataFromSql(cmd.CommandText = "select projektNazwa from Projekt;");
+            DataSet dpro = sqlQuery.GetDataFromSql(cmd.CommandText = "select projektId, projektNazwa from Projekt;");
             comboProjektSearch.DataSource = dpro.Tables[0];
-            comboProjektSearch.ValueMember = "projektNazwa";
+            comboProjektSearch.ValueMember = "projektId";
+            comboProjektSearch.DisplayMember = "projektNazwa";
             comboProjektSearch.SelectedIndex = -1;
 
             DataSet dform = sqlQuery.GetDataFromSql(cmd.CommandText = "select formaNazwa from Forma;");
@@ -55,9 +56,17 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             string query = "select * from proby";
 
 
+
+
+            //select proj.projektNazwa, form.formaNazwa from proby prob, projekt proj, forma form where prob.projektId = proj.projektId and prob.formaId = form.formaId and proj.projektNazwa = 'V432';
+
+
+            //select proj.projektNazwa, form.formaNazwa from proby prob, projekt proj, forma form where prob.projektId = proj.projektId and prob.formaId = form.formaId;
+
+
             if (comboProjektSearch.Text.Length > 1)
             {
-                query = query + " where projektId = (select proj.projektId from Projekt proj where projektNazwa = '" + comboProjektSearch.Text + "')";
+                query = query + " where projektId = (select proj.projektId from Projekt proj where projektNazwa = '" + comboProjektSearch.SelectedValue + "')";
             }
             if (comboFormaSearch.Text.Length > 1)
             {
