@@ -57,7 +57,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         public void button1_Click(object sender, EventArgs e)
         {
 
-            string query = "select prob.probaId as 'Id próby' , proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Numer maszyny', det.detalNazwa as 'Nazwa detalu', prob.godzStart as 'Godzina', prob.dzienStart as 'Dzien', ce.celNazwa as 'el próby', prob.statusProby as 'Status próby' from proby prob, projekt proj, forma form, Maszyna masz, Detal_komplet det, cel ce where prob.projektId = proj.projektId and prob.formaId = form.formaId and prob.maszynaId = masz.maszynaId and prob.detalId = det.detalId and prob.celId =  ce.celId";
+            string query = "select prob.probaId as 'Id próby' , proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Numer maszyny', det.detalNazwa as 'Nazwa detalu', prob.godzStart as 'Godzina', prob.dzienStart as 'Dzien', ce.celNazwa as 'el próby', prob.statusProby as 'Status próby' from proby prob, projekt proj, forma form, Maszyna masz, Detal_komplet det, cel ce where prob.projektId = proj.projektId and prob.formaId = form.formaId and prob.maszynaId = masz.maszynaId and prob.detalId = det.detalId and prob.celId =  ce.celId and prob.dzienStart between '" + dateTimeOd.Value.Date + "' and '" + dateTimeDo.Value.Date + "'";
 
             if (comboProjektSearch.Text.Length > 1)
             {
@@ -83,19 +83,47 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 query += " and prob.statusProby = 'Zaplanowana' ";
             }
+            if (wykonanaCheckBox.Checked)
+            {
+                    query += " and prob.statusProby = 'Wykonana'";
+            }
             if (anulowanaCheckBox.Checked)
             {
-                    query += "and prob.statusProby = 'Anulowana'";
+                query += " and prob.statusProby = 'Anulowana'";
             }
-            if (anulowanaCheckBox.Checked && zaplanowanaCheckBox.Checked)
+            if (usunietaCheckBox.Checked)
             {
-                query = 
-                query += " and prob.statusProby = 'Anulowana' or 'Zaplanowana'";
-
+                query += " and prob.statusProby = 'Usunięta'";
             }
-
             DataSet dP = sqlQuery.GetDataFromSql(query);
             searchGrid.DataSource = dP.Tables[0];
+        }
+
+        private void zaplanowanaClick(object sender, EventArgs e)
+        {
+            anulowanaCheckBox.Checked = false;
+            usunietaCheckBox.Checked = false;
+            wykonanaCheckBox.Checked = false;
+        }
+
+        private void wykonanaClick(object sender, EventArgs e)
+        {
+            anulowanaCheckBox.Checked = false;
+            usunietaCheckBox.Checked = false;
+            zaplanowanaCheckBox.Checked = false;
+        }
+        private void anulowanaClick(object sender, EventArgs e)
+        {
+            wykonanaCheckBox.Checked = false;
+            usunietaCheckBox.Checked = false;
+            zaplanowanaCheckBox.Checked = false;
+        }
+
+        private void usunietaClick(object sender, EventArgs e)
+        {
+            wykonanaCheckBox.Checked = false;
+            anulowanaCheckBox.Checked = false;
+            zaplanowanaCheckBox.Checked = false;
         }
     }
 }
