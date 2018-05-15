@@ -33,7 +33,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 DataSet ds = sqlQuery.GetDataFromSql("select proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal',dzienStart as 'Dzień', godzStart as 'Godzina' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId; ");
 
                 ostatnioDodaneGrid.DataSource = ds.Tables[0];
-
+            
 
 
                 //DataSet ds = sqlQuery.GetDataFromSql("select top 14 probaid,projektId,formaId,maszynaId,detalId from Proby;");
