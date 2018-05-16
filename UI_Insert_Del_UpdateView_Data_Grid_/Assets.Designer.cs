@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,12 +45,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
-            this.BtnMachineCircAdd = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
-            this.BtnMachineCircRemove = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
-            this.circularButton1 = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
-            this.circularButton2 = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
-            this.circularButton3 = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
-            this.label5 = new System.Windows.Forms.Label();
+            this.machineAddCirc = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
+            this.circularButton5 = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
+            this.circularButton7 = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
+            this.circularButton8 = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
+            this.circularButton4 = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -67,13 +67,13 @@
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel3, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(8, 103);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(8, 3, 3, 3);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(11, 127);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(11, 4, 4, 4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(383, 294);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(510, 361);
             this.tableLayoutPanel5.TabIndex = 7;
             // 
             // tableLayoutPanel3
@@ -85,25 +85,25 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.18884F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.33798F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.056331F));
-            this.tableLayoutPanel3.Controls.Add(this.BtnMachineCircAdd, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.label2, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.BtnMachineCircRemove, 3, 0);
-            this.tableLayoutPanel3.Controls.Add(this.circularButton1, 2, 1);
-            this.tableLayoutPanel3.Controls.Add(this.circularButton2, 2, 2);
-            this.tableLayoutPanel3.Controls.Add(this.circularButton3, 2, 3);
             this.tableLayoutPanel3.Controls.Add(this.label8, 1, 3);
             this.tableLayoutPanel3.Controls.Add(this.label7, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.label5, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.machineAddCirc, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.circularButton5, 2, 1);
+            this.tableLayoutPanel3.Controls.Add(this.circularButton7, 2, 2);
+            this.tableLayoutPanel3.Controls.Add(this.circularButton8, 2, 3);
+            this.tableLayoutPanel3.Controls.Add(this.circularButton4, 3, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(2, 36);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 44);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 4;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(379, 256);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(504, 315);
             this.tableLayoutPanel3.TabIndex = 6;
             // 
             // label2
@@ -111,9 +111,10 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 22);
+            this.label2.Location = new System.Drawing.Point(49, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 21);
+            this.label2.Size = new System.Drawing.Size(92, 23);
             this.label2.TabIndex = 16;
             this.label2.Text = "Maszyny";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -123,9 +124,10 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(45, 212);
+            this.label8.Location = new System.Drawing.Point(63, 263);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 21);
+            this.label8.Size = new System.Drawing.Size(64, 23);
             this.label8.TabIndex = 24;
             this.label8.Text = "Detal";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -135,12 +137,26 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(41, 85);
+            this.label7.Location = new System.Drawing.Point(58, 106);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 21);
+            this.label7.Size = new System.Drawing.Size(74, 23);
             this.label7.TabIndex = 23;
             this.label7.Text = "Projekt";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(59, 184);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 23);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Forma";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -148,10 +164,9 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(2, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(379, 34);
+            this.label1.Size = new System.Drawing.Size(504, 42);
             this.label1.TabIndex = 5;
             this.label1.Text = "Dodawanie manualne";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -160,16 +175,17 @@
             // 
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(388, 94);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(517, 115);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
             // pictureBox1
@@ -178,9 +194,10 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(92, 69);
+            this.pictureBox1.Size = new System.Drawing.Size(123, 85);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -190,11 +207,12 @@
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(103, 13);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(137, 16);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.88679F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(238, 67);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(317, 82);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // label6
@@ -202,9 +220,10 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(3, 19);
+            this.label6.Location = new System.Drawing.Point(4, 22);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(144, 28);
+            this.label6.Size = new System.Drawing.Size(181, 37);
             this.label6.TabIndex = 0;
             this.label6.Text = "Asortyment";
             // 
@@ -217,13 +236,13 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 3, 8, 3);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 11, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(394, 667);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(525, 821);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -234,13 +253,14 @@
             this.tableLayoutPanel6.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel7, 0, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 403);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(4, 496);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.31579F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.68421F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 184F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(388, 261);
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 226F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(517, 321);
             this.tableLayoutPanel6.TabIndex = 8;
             // 
             // label3
@@ -249,10 +269,9 @@
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(4, 2);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(5, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(380, 31);
+            this.label3.Size = new System.Drawing.Size(507, 40);
             this.label3.TabIndex = 6;
             this.label3.Text = "Dodawanie z pliku";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -264,127 +283,86 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.1623F));
             this.tableLayoutPanel7.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(5, 38);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(6, 48);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(378, 31);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(505, 38);
             this.tableLayoutPanel7.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Location = new System.Drawing.Point(4, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 13);
+            this.label4.Size = new System.Drawing.Size(81, 17);
             this.label4.TabIndex = 0;
             this.label4.Text = "Pobierz plik";
             // 
-            // BtnMachineCircAdd
+            // machineAddCirc
             // 
-            this.BtnMachineCircAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnMachineCircAdd.BackColor = System.Drawing.Color.Lime;
-            this.BtnMachineCircAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMachineCircAdd.BackgroundImage")));
-            this.BtnMachineCircAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnMachineCircAdd.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BtnMachineCircAdd.FlatAppearance.BorderSize = 2;
-            this.BtnMachineCircAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.BtnMachineCircAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMachineCircAdd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnMachineCircAdd.Location = new System.Drawing.Point(156, 8);
-            this.BtnMachineCircAdd.Name = "BtnMachineCircAdd";
-            this.BtnMachineCircAdd.Size = new System.Drawing.Size(53, 49);
-            this.BtnMachineCircAdd.TabIndex = 17;
-            this.BtnMachineCircAdd.UseVisualStyleBackColor = false;
-            this.BtnMachineCircAdd.Click += new System.EventHandler(this.BtnMachineCircAdd_Click);
+            this.machineAddCirc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.machineAddCirc.BackColor = System.Drawing.Color.LimeGreen;
+            this.machineAddCirc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.machineAddCirc.Location = new System.Drawing.Point(210, 10);
+            this.machineAddCirc.Name = "machineAddCirc";
+            this.machineAddCirc.Size = new System.Drawing.Size(66, 60);
+            this.machineAddCirc.TabIndex = 26;
+            this.machineAddCirc.UseVisualStyleBackColor = false;
+            this.machineAddCirc.Click += new System.EventHandler(this.BtnMachineCircAdd_Click);
             // 
-            // BtnMachineCircRemove
+            // circularButton5
             // 
-            this.BtnMachineCircRemove.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnMachineCircRemove.BackColor = System.Drawing.Color.Red;
-            this.BtnMachineCircRemove.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMachineCircRemove.BackgroundImage")));
-            this.BtnMachineCircRemove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnMachineCircRemove.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.BtnMachineCircRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMachineCircRemove.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnMachineCircRemove.Location = new System.Drawing.Point(273, 8);
-            this.BtnMachineCircRemove.Name = "BtnMachineCircRemove";
-            this.BtnMachineCircRemove.Size = new System.Drawing.Size(53, 49);
-            this.BtnMachineCircRemove.TabIndex = 18;
-            this.BtnMachineCircRemove.UseVisualStyleBackColor = false;
-            this.BtnMachineCircRemove.Click += new System.EventHandler(this.BtnMachineCircRemove_Click);
+            this.circularButton5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton5.Location = new System.Drawing.Point(215, 88);
+            this.circularButton5.Name = "circularButton5";
+            this.circularButton5.Size = new System.Drawing.Size(56, 60);
+            this.circularButton5.TabIndex = 27;
+            this.circularButton5.Text = "circularButton5";
+            this.circularButton5.UseVisualStyleBackColor = true;
             // 
-            // circularButton1
+            // circularButton7
             // 
-            this.circularButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton1.BackColor = System.Drawing.Color.Lime;
-            this.circularButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("circularButton1.BackgroundImage")));
-            this.circularButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.circularButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.circularButton1.FlatAppearance.BorderSize = 2;
-            this.circularButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.circularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circularButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.circularButton1.Location = new System.Drawing.Point(156, 71);
-            this.circularButton1.Name = "circularButton1";
-            this.circularButton1.Size = new System.Drawing.Size(53, 49);
-            this.circularButton1.TabIndex = 19;
-            this.circularButton1.UseVisualStyleBackColor = false;
-            this.circularButton1.Click += new System.EventHandler(this.circularButton1_Click);
+            this.circularButton7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton7.Location = new System.Drawing.Point(215, 166);
+            this.circularButton7.Name = "circularButton7";
+            this.circularButton7.Size = new System.Drawing.Size(56, 60);
+            this.circularButton7.TabIndex = 29;
+            this.circularButton7.Text = "circularButton7";
+            this.circularButton7.UseVisualStyleBackColor = true;
             // 
-            // circularButton2
+            // circularButton8
             // 
-            this.circularButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton2.BackColor = System.Drawing.Color.Lime;
-            this.circularButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("circularButton2.BackgroundImage")));
-            this.circularButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.circularButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.circularButton2.FlatAppearance.BorderSize = 2;
-            this.circularButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.circularButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circularButton2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.circularButton2.Location = new System.Drawing.Point(156, 134);
-            this.circularButton2.Name = "circularButton2";
-            this.circularButton2.Size = new System.Drawing.Size(53, 49);
-            this.circularButton2.TabIndex = 20;
-            this.circularButton2.UseVisualStyleBackColor = false;
+            this.circularButton8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton8.Location = new System.Drawing.Point(215, 244);
+            this.circularButton8.Name = "circularButton8";
+            this.circularButton8.Size = new System.Drawing.Size(56, 60);
+            this.circularButton8.TabIndex = 30;
+            this.circularButton8.Text = "circularButton8";
+            this.circularButton8.UseVisualStyleBackColor = true;
             // 
-            // circularButton3
+            // circularButton4
             // 
-            this.circularButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton3.BackColor = System.Drawing.Color.Lime;
-            this.circularButton3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("circularButton3.BackgroundImage")));
-            this.circularButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.circularButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.circularButton3.FlatAppearance.BorderSize = 2;
-            this.circularButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.circularButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circularButton3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.circularButton3.Location = new System.Drawing.Point(156, 197);
-            this.circularButton3.Name = "circularButton3";
-            this.circularButton3.Size = new System.Drawing.Size(53, 51);
-            this.circularButton3.TabIndex = 21;
-            this.circularButton3.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(42, 148);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 21);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Forma";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.circularButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton4.BackColor = System.Drawing.Color.Crimson;
+            this.circularButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.circularButton4.Location = new System.Drawing.Point(365, 10);
+            this.circularButton4.Name = "circularButton4";
+            this.circularButton4.Size = new System.Drawing.Size(66, 60);
+            this.circularButton4.TabIndex = 31;
+            this.circularButton4.UseVisualStyleBackColor = false;
+            this.circularButton4.Click += new System.EventHandler(this.BtnMachineCircRemove_Click);
             // 
             // Assets
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 667);
+            this.ClientSize = new System.Drawing.Size(525, 821);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Assets";
             this.Text = "Asortyment";
             this.tableLayoutPanel5.ResumeLayout(false);
@@ -427,5 +405,10 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private CircularButton machineAddCirc;
+        private CircularButton circularButton5;
+        private CircularButton circularButton7;
+        private CircularButton circularButton8;
+        private CircularButton circularButton4;
     }
 }
