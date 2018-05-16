@@ -13,7 +13,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
     public partial class addFill : Form
     {
-        private Color green;
+ 
 
         public addFill()
         {
@@ -86,8 +86,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             if (MessageBox.Show("Czy chcesz dodać próbę?", "Potwierdź próbęe", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 System.Data.SqlClient.SqlConnection sqlConnection1 =
-                new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
-                //new System.Data.SqlClient.SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
+                //new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
+                new System.Data.SqlClient.SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
 
                 System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
                 cmd.CommandType = System.Data.CommandType.Text;
@@ -96,7 +96,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     + "Forma,Maszyna,Detal_komplet,Cel where "
                     + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNumer = @maszynaNumer "
                     + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa ";
-
 
 
                 cmd.Parameters.AddWithValue("@projectNazwa", comboProjekt.SelectedValue.ToString());
@@ -108,17 +107,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 cmd.Parameters.AddWithValue("@dzienStart", SqlDbType.Date).Value = dateTimeTerminRealizacjiDzien.Value.Date;
                 cmd.Parameters.AddWithValue("@celRoz", richTexCel.Text.ToString());
                 cmd.Parameters.AddWithValue("@Trwanie", comboTrwanie.SelectedValue.ToString());
-
-
-
-                //INSERT INTO table_name(column1, column2, column3, ...)
-                //VALUES(value1, value2, value3, ...);
-
-
-                //cmd.CommandText = "INSERT Proby (projektId,formaId,maszynaId,detalId, celId, godzStart, dzienStart, czasTrw, celRoz, statusProby) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @godzStart ,convert(date, @dzienStart, 103), @Trwanie, @celRoz, 'Zaplanowana' from Projekt, "
-                //    + "Forma,Maszyna,Detal_komplet,Cel where "
-                //    + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNumer = @maszynaNumer "
-                //    + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa ";
 
 
                 cmd.Connection = sqlConnection1;

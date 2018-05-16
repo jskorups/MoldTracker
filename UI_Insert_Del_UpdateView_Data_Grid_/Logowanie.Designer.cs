@@ -37,12 +37,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.logowanieExitBtn = new System.Windows.Forms.Button();
+            this.loginBtn = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.loginBtn = new System.Windows.Forms.Button();
-            this.logowanieExitBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -150,12 +150,38 @@
             this.tableLayoutPanel3.Controls.Add(this.loginBtn, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(147, 128);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(280, 39);
             this.tableLayoutPanel3.TabIndex = 6;
+            // 
+            // logowanieExitBtn
+            // 
+            this.logowanieExitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.logowanieExitBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.logowanieExitBtn.Location = new System.Drawing.Point(142, 2);
+            this.logowanieExitBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.logowanieExitBtn.Name = "logowanieExitBtn";
+            this.logowanieExitBtn.Size = new System.Drawing.Size(136, 35);
+            this.logowanieExitBtn.TabIndex = 2;
+            this.logowanieExitBtn.Text = "Zamknij";
+            this.logowanieExitBtn.UseVisualStyleBackColor = true;
+            this.logowanieExitBtn.Click += new System.EventHandler(this.logowanieExitBtn_Click);
+            // 
+            // loginBtn
+            // 
+            this.loginBtn.AutoSize = true;
+            this.loginBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.loginBtn.Location = new System.Drawing.Point(2, 2);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.loginBtn.Name = "loginBtn";
+            this.loginBtn.Size = new System.Drawing.Size(136, 35);
+            this.loginBtn.TabIndex = 0;
+            this.loginBtn.Text = "Zaloguj się";
+            this.loginBtn.UseVisualStyleBackColor = true;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // checkBox1
             // 
@@ -198,31 +224,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // loginBtn
-            // 
-            this.loginBtn.AutoSize = true;
-            this.loginBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.loginBtn.Location = new System.Drawing.Point(2, 2);
-            this.loginBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(136, 35);
-            this.loginBtn.TabIndex = 0;
-            this.loginBtn.Text = "Zaloguj się";
-            this.loginBtn.UseVisualStyleBackColor = true;
-            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
-            // 
-            // logowanieExitBtn
-            // 
-            this.logowanieExitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.logowanieExitBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.logowanieExitBtn.Location = new System.Drawing.Point(142, 2);
-            this.logowanieExitBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.logowanieExitBtn.Name = "logowanieExitBtn";
-            this.logowanieExitBtn.Size = new System.Drawing.Size(136, 35);
-            this.logowanieExitBtn.TabIndex = 2;
-            this.logowanieExitBtn.Text = "Zamknij";
-            this.logowanieExitBtn.UseVisualStyleBackColor = true;
             // 
             // Logowanie
             // 

@@ -660,6 +660,7 @@
             // comboDetalSearch
             // 
             this.comboDetalSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboDetalSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboDetalSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboDetalSearch.FormattingEnabled = true;
             this.comboDetalSearch.Location = new System.Drawing.Point(122, 5);
@@ -701,6 +702,7 @@
             // comboCelSearch
             // 
             this.comboCelSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboCelSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboCelSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboCelSearch.FormattingEnabled = true;
             this.comboCelSearch.Location = new System.Drawing.Point(122, 7);
@@ -741,6 +743,7 @@
             // comboFormaSearch
             // 
             this.comboFormaSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboFormaSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboFormaSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFormaSearch.FormattingEnabled = true;
             this.comboFormaSearch.Location = new System.Drawing.Point(121, 4);
@@ -792,6 +795,7 @@
             // comboProjektSearch
             // 
             this.comboProjektSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboProjektSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboProjektSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboProjektSearch.FormattingEnabled = true;
             this.comboProjektSearch.Location = new System.Drawing.Point(121, 4);
@@ -821,6 +825,7 @@
             // comboMaszynaSearch
             // 
             this.comboMaszynaSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboMaszynaSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboMaszynaSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboMaszynaSearch.FormattingEnabled = true;
             this.comboMaszynaSearch.Location = new System.Drawing.Point(121, 4);
@@ -876,7 +881,7 @@
             this.tableLayoutPanel24.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel24.ColumnCount = 2;
             this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 229F));
+            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 231F));
             this.tableLayoutPanel24.Controls.Add(this.label12, 0, 0);
             this.tableLayoutPanel24.Controls.Add(this.dateTimeDo, 1, 0);
             this.tableLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -895,7 +900,7 @@
             this.label12.Location = new System.Drawing.Point(13, 2);
             this.label12.Margin = new System.Windows.Forms.Padding(11, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(43, 36);
+            this.label12.Size = new System.Drawing.Size(41, 36);
             this.label12.TabIndex = 1;
             this.label12.Text = "Do:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -905,10 +910,10 @@
             this.dateTimeDo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimeDo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimeDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeDo.Location = new System.Drawing.Point(62, 6);
+            this.dateTimeDo.Location = new System.Drawing.Point(60, 6);
             this.dateTimeDo.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimeDo.Name = "dateTimeDo";
-            this.dateTimeDo.Size = new System.Drawing.Size(225, 27);
+            this.dateTimeDo.Size = new System.Drawing.Size(227, 27);
             this.dateTimeDo.TabIndex = 2;
             // 
             // tableLayoutPanel23
@@ -916,7 +921,7 @@
             this.tableLayoutPanel23.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel23.ColumnCount = 2;
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 229F));
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 231F));
             this.tableLayoutPanel23.Controls.Add(this.label11, 0, 0);
             this.tableLayoutPanel23.Controls.Add(this.dateTimeOd, 1, 0);
             this.tableLayoutPanel23.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -935,7 +940,7 @@
             this.label11.Location = new System.Drawing.Point(14, 2);
             this.label11.Margin = new System.Windows.Forms.Padding(12, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 36);
+            this.label11.Size = new System.Drawing.Size(40, 36);
             this.label11.TabIndex = 0;
             this.label11.Text = "Od:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -945,10 +950,10 @@
             this.dateTimeOd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimeOd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimeOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeOd.Location = new System.Drawing.Point(62, 6);
+            this.dateTimeOd.Location = new System.Drawing.Point(60, 6);
             this.dateTimeOd.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimeOd.Name = "dateTimeOd";
-            this.dateTimeOd.Size = new System.Drawing.Size(225, 27);
+            this.dateTimeOd.Size = new System.Drawing.Size(227, 27);
             this.dateTimeOd.TabIndex = 1;
             // 
             // tableLayoutPanel25
@@ -956,7 +961,7 @@
             this.tableLayoutPanel25.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel25.ColumnCount = 2;
             this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 152F));
             this.tableLayoutPanel25.Controls.Add(this.label13, 0, 0);
             this.tableLayoutPanel25.Controls.Add(this.button1, 1, 0);
             this.tableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -973,7 +978,7 @@
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label13.Location = new System.Drawing.Point(10, 59);
+            this.label13.Location = new System.Drawing.Point(9, 59);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(118, 26);
@@ -985,10 +990,10 @@
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(141, 4);
+            this.button1.Location = new System.Drawing.Point(139, 4);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 136);
+            this.button1.Size = new System.Drawing.Size(148, 136);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);

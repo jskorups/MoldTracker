@@ -25,7 +25,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (wgrajZdjecieDialog.ShowDialog() == DialogResult.OK) ;
+            if (wgrajZdjecieDialog.ShowDialog() == DialogResult.OK);
         }
     }
 }
