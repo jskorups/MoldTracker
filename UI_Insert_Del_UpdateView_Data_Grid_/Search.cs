@@ -125,5 +125,22 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             anulowanaCheckBox.Checked = false;
             zaplanowanaCheckBox.Checked = false;
         }
+
+        private void detailSearchClear_Click(object sender, EventArgs e)
+        {
+            comboProjektSearch.SelectedIndex = -1;
+            comboCelSearch.SelectedIndex = -1;
+            comboDetalSearch.SelectedIndex = -1;
+            comboFormaSearch.SelectedIndex = -1;
+            comboMaszynaSearch.SelectedIndex = -1;
+        }
+
+        private void statusSearchClear_Click(object sender, EventArgs e)
+        {
+            zaplanowanaCheckBox.Checked = false;
+            anulowanaCheckBox.Checked = false;
+            usunietaCheckBox.Checked = false;
+            wykonanaCheckBox.Checked = false;
+        }
     }
 }

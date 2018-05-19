@@ -147,8 +147,14 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             var maintaing = new Maintaining();
             maintaing.Show();
         }
+
+
         #endregion
 
-
+        private void statisticsBtn_Click(object sender, EventArgs e)
+        {
+            var statistics = new Statistics();
+            statistics.Show();
+        }
     }
 }

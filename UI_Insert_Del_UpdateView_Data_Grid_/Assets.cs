@@ -33,20 +33,16 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             machineRemove.Show();
         }
 
-        private void circularButton1_Click(object sender, EventArgs e)
+        private void projectAddCirc_Click(object sender, EventArgs e)
         {
             var projectAdd = new ProjectAdd();
             projectAdd.Show();
         }
 
-        private void BtnCircAdd_Click(object sender, EventArgs e)
+        private void moldAddCirc_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void BtnCircRemove_Click(object sender, EventArgs e)
-        {
-
+            var moldAdd = new moldAdd();
+            moldAdd.Show();
         }
     }
 }
