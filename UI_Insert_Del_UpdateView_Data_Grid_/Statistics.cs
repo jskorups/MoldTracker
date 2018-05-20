@@ -16,6 +16,17 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         public Statistics()
         {
             InitializeComponent();
+            chart6.Series["Series1"].Points.AddXY("Peter", 1000);
+            chart6.Series["Series1"].Points.AddXY("John", 5000);
+            chart6.Series["Series1"].Points.AddXY("Tan", 1500);
+            chart6.Series["Series1"].Points.AddXY("Lucy", 7000);
+            chart6.Series["Series1"].Points.AddXY("Peter", 1000);
+            chart6.Series["Series1"].Points.AddXY("John", 5000);
+            chart6.Series["Series1"].Points.AddXY("Tan", 1500);
+            chart6.Series["Series1"].Points.AddXY("Lucy", 7000);
+
         }
+
+
     }
 }
