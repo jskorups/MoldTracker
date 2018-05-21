@@ -334,6 +334,7 @@
     <Content Include="icons\save.png" />
     <Content Include="icons\update.png" />
     <Content Include="icons\update_2.png" />
+    <Content Include="sql.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

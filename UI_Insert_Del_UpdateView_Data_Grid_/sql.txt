@@ -1,0 +1,25 @@
+﻿
+-- licznik prob dla maszyny
+SELECT masz.maszynaNumer as 'Numer maszyny', COUNT(prob.maszynaId) AS 'Liczba prób' FROM Proby prob
+LEFT JOIN Maszyna masz ON prob.maszynaId = masz.maszynaId
+GROUP BY masz.maszynaNumer;
+
+select * from Proby;
+
+--licznik prob dla detali
+select det.detalNazwa as 'Detal', COUNT(prob.detalId) as 'Liczba prob' from Proby prob
+LEFT JOIN Detal_komplet det ON det.detalId = prob.detalId
+group by det.detalNazwa;
+
+
+--licznik prob dla projektu
+select det.detalNazwa as 'Detal', COUNT(prob.detalId) as 'Liczba prob' from Proby prob
+LEFT JOIN Detal_komplet det ON det.detalId = prob.detalId
+group by det.detalNazwa;
+
+
+--licznik prob dla wszystkich form w danym dniu
+select form.formaNazwa as 'Forma', COUNT(prob.formaId) as 'Liczba prob' from Proby prob
+LEFT JOIN Forma form ON form.formaId = prob.formaId
+where dzienStart = '2018-05-09'
+group by form.formaNazwa;

@@ -27,6 +27,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         }
 
-
+        private void checkedAllProjects(object sender, EventArgs e)
+        {
+            listBox1.
+        }
     }
 }
