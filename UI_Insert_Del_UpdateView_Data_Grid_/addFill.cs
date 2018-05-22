@@ -108,7 +108,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 cmd.Parameters.AddWithValue("@celRoz", richTexCel.Text.ToString());
                 cmd.Parameters.AddWithValue("@Trwanie", comboTrwanie.SelectedValue.ToString());
 
-
+            
                 cmd.Connection = sqlConnection1;
                 sqlConnection1.Open();
                 cmd.ExecuteNonQuery();

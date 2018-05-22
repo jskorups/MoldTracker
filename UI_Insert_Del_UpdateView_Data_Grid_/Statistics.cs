@@ -20,15 +20,15 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             InitializeComponent();
             wczytajProjekty();
-            chart6.Series["Series1"].Points.AddXY("Peter", 1000);
-            chart6.Series["Series1"].Points.AddXY("John", 5000);
-            chart6.Series["Series1"].Points.AddXY("Tan", 1500);
-            chart6.Series["Series1"].Points.AddXY("Lucy", 7000);
-            chart6.Series["Series1"].Points.AddXY("Peter", 1000);
-            chart6.Series["Series1"].Points.AddXY("John", 5000);
-            chart6.Series["Series1"].Points.AddXY("Tan", 1500);
-            chart6.Series["Series1"].Points.AddXY("Lucy", 7000);
+            listBox1.SelectedIndex = -1;
 
+
+
+            // fakechart
+            chart6.Series["Series1"].Points.AddXY("Peter", 1000);
+            chart6.Series["Series1"].Points.AddXY("John", 5000);
+            chart6.Series["Series1"].Points.AddXY("Tan", 1500);
+        
         }
 
         public void wczytajProjekty ()
@@ -63,6 +63,27 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         private void listBoxClick(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(listBox1.SelectedItem.ToString());
+            //string query = "select * from Projekt where projektNazwa = 'volvo'";
+            try
+            {
+                
+                //comboBox1.DataSource = listBox1.DataSource;
+                //DataSet dP = sqlQuery.GetDataFromSql(query);
+                //comboBox1.DataSource = dP.Tables[0];
+                //comboBox1.ValueMember = "projektID";
+                //chart6.DataSource = dP.Tables[0];
+               // comboBox1.DataSource = 
+               // chart6.ValueMember = "projektNazwa";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
