@@ -31,7 +31,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             string shortUkTimeFormatString = pl.DateTimeFormat.ShortTimePattern;
             myCI.DateTimeFormat.ShortDatePattern = shortUkDateFormatString;
             myCI.DateTimeFormat.ShortTimePattern = shortUkTimeFormatString;
-
             System.Threading.Thread.CurrentThread.CurrentCulture = myCI;
 
             Application.EnableVisualStyles();

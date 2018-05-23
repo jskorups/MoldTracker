@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Input;
-
 using System.Windows.Forms.DataVisualization.Charting;
 
 
@@ -16,13 +15,12 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
     public partial class Statistics : Form
     {
+        List<string> wybraneProjekty = new List<string>();
         public Statistics()
         {
             InitializeComponent();
             wczytajProjekty();
-            listBox1.SelectedIndex = -1;
-
-
+            //listBox1.SelectedIndex = 0;
 
             // fakechart
             chart6.Series["Series1"].Points.AddXY("Peter", 1000);
@@ -37,14 +35,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 DataSet dP = sqlQuery.GetDataFromSql("select * from Projekt");
                 listBox1.DataSource = dP.Tables[0];
-                listBox1.ValueMember = "projektNazwa";
+                listBox1.DisplayMember = "projektNazwa";
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 }
-
 
         private void checkAllProjects(object sender, EventArgs e)
         {
@@ -60,30 +57,24 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
         }
 
-        private void listBoxClick(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(listBox1.SelectedItem.ToString());
-            //string query = "select * from Projekt where projektNazwa = 'volvo'";
-            try
+
+            string str = string.Empty;
+            foreach (object selectedItem in listBox1.SelectedItems)
             {
-                
-                //comboBox1.DataSource = listBox1.DataSource;
-                //DataSet dP = sqlQuery.GetDataFromSql(query);
-                //comboBox1.DataSource = dP.Tables[0];
-                //comboBox1.ValueMember = "projektID";
-                //chart6.DataSource = dP.Tables[0];
-               // comboBox1.DataSource = 
-               // chart6.ValueMember = "projektNazwa";
+                str += listBox1.GetItemText(listBox1.SelectedItem) + Environment.NewLine;
             }
-            catch (Exception ex)
+            MessageBox.Show(str);
+
+            
+            for (int i = 0; i <= listBox1.SelectedItems.Count; i++)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(listBox1.GetItemText(listBox1.SelectedItems[i]) + Environment.NewLine);
+                //textboxes[i].Text = "Item: " + listBox1.Items[i].ToString();
             }
         }
+
+        }
     }
-}
+
