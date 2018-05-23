@@ -15,12 +15,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
     public partial class Statistics : Form
     {
-        List<string> wybraneProjekty = new List<string>();
+        
+
         public Statistics()
         {
             InitializeComponent();
             wczytajProjekty();
-            //listBox1.SelectedIndex = 0;
+            listBox1.SelectedIndex = -1;
 
             // fakechart
             chart6.Series["Series1"].Points.AddXY("Peter", 1000);
@@ -59,22 +60,27 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         private void button1_Click(object sender, EventArgs e)
         {
+            List<string> wybraneProjekty = new List<string>();
+            wybraneProjekty.Clear();
 
-            string str = string.Empty;
-            foreach (object selectedItem in listBox1.SelectedItems)
+            for (int i = 0; i < listBox1.SelectedItems.Count; i++)
             {
-                str += listBox1.GetItemText(listBox1.SelectedItem) + Environment.NewLine;
-            }
-            MessageBox.Show(str);
+                wybraneProjekty.Add(listBox1.GetItemText(listBox1.SelectedItems[i]));
 
-            
-            for (int i = 0; i <= listBox1.SelectedItems.Count; i++)
+            }
+
+            foreach (string item in wybraneProjekty)
+                comboBox1.Items.Add(item);
+            foreach (string item in wybraneProjekty)
             {
-                MessageBox.Show(listBox1.GetItemText(listBox1.SelectedItems[i]) + Environment.NewLine);
-                //textboxes[i].Text = "Item: " + listBox1.Items[i].ToString();
+                MessageBox.Show(item);
             }
-        }
+        }   
+
+        private void clearSelection(object sender, EventArgs e)
+        {
 
         }
+    }
     }
 
