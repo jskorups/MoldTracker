@@ -23,3 +23,5 @@ select form.formaNazwa as 'Forma', COUNT(prob.formaId) as 'Liczba prob' from Pro
 LEFT JOIN Forma form ON form.formaId = prob.formaId
 where dzienStart = '2018-05-09'
 group by form.formaNazwa;
+
+https://www.svenbit.com/2014/08/using-sqlparameter-with-sqls-in-clause-in-csharp/
