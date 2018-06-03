@@ -12,6 +12,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 using System.Data.SqlClient;
 
 
+
 namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
     public partial class Statistics : Form
@@ -63,15 +64,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         private void button1_Click(object sender, EventArgs e)
         {
 
-            
-
             for (int i = 0; i < listBox1.SelectedItems.Count; i++)
             {
                 wybraneProjekty.Add(listBox1.GetItemText(listBox1.SelectedItems[i]));
             }
-            foreach (string item in wybraneProjekty)
-            comboBox1.DataSource = wybraneProjekty;
-            //wybraneProjekty.Clear();
+            //foreach (string item in wybraneProjekty)
+            //comboBox1.DataSource = wybraneProjekty;
+            ////wybraneProjekty.Clear();
 
             using (var connection = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True")) 
             {
@@ -81,11 +80,36 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
 
-                var sql = "select proj.projektNazwa as 'Projekt', COUNT(prob.projektId) as 'Liczba prob' from Proby prob LEFT JOIN Projekt proj ON proj.projektId = prob.projektId where proj.projektNazwa in ({0}) and dzienStart between '2018-05-09' and '2018-05-22' group by proj.projektNazwa;";
+                var sql = "select proj.projektNazwa as 'Projekt', COUNT(prob.projektId) as 'Liczba prob' from Proby prob LEFT JOIN Projekt proj ON proj.projektId = prob.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerStatisticsOd.Value.Date + "' and '" + dateTimePickerStatisticsDo.Value.Date + "' group by proj.projektNazwa;";
                 
                 DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneProjekty.Select(x => $"\'{x}\'"))));
-                dataGridView1.DataSource = dP.Tables[0];
 
+                //DataTable dT = dP.Tables[0];
+
+                DataView source = new DataView(dP.Tables[0]);
+                chart6.DataSource = source;
+                chart6.Series[0].XValueMember = "Projekt";
+                chart6.Series[0].YValueMembers = "Liczba prob";
+                chart6.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
+                chart6.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+                chart6.DataBind();
+                chart6.Update();
+
+
+                //chart6.DataSource = dT;
+                //chart6.Series["Series1"].XValueMember = "Liczba prob";
+                //chart6.Series["Series2"].YValueMembers = "Projekt";
+
+             
+                //chart6.DataBind();
+                //chart6.Update();
+
+
+                //dataGridView1.DataSource = dP.Tables[0];
+
+                wybraneProjekty.Clear();
+
+                //dP.Clear();
 
                 //var idList = new List<int> { 100, 50, 40, 20, 10 };
                 ////var idParameterList = new List<string>();
@@ -124,8 +148,202 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 connection.Close();
             }
 
-        }  
-            
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Detale_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Projekty_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel15_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dateTimePickerStatisticsDo_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel16_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePickerStatisticsOd_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel17_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Maszyny_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel12_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel14_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 
