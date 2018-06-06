@@ -167,19 +167,14 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             try
             {
-                DataSet dD = sqlQuery.GetDataFromSql("select * from Detal_komplet");
-                listBoxDetaleWszystkie.DataSource = dD.Tables[0];
-                listBoxDetaleWszystkie.DisplayMember = "detalNazwa";
-
                 DataSet dP = sqlQuery.GetDataFromSql("select * from Projekt");
                 comboProjektDetaleWszystkie.DataSource = dP.Tables[0];
                 comboProjektDetaleWszystkie.ValueMember = "projektNazwa";
                 comboProjektDetaleWszystkie.SelectedIndex = -1;
 
-                DataSet dF = sqlQuery.GetDataFromSql("select * from Forma");
-                comboFormaDetaleWszystkie.DataSource = dF.Tables[0];
-                comboFormaDetaleWszystkie.ValueMember = "formaNazwa";
-                comboFormaDetaleWszystkie.SelectedIndex = -1;
+                DataSet dD = sqlQuery.GetDataFromSql("select * from Detal_komplet");
+                listBoxDetaleWszystkie.DataSource = dD.Tables[0];
+                listBoxDetaleWszystkie.DisplayMember = "detalNazwa";
             }
             catch (Exception ex)
             {
@@ -200,27 +195,47 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     listBoxDetaleWszystkie.SetSelected(i, false);
             }
         }
-        // ładowanie form dla wybranego projektu 
 
-        private void choseProjectDetaleWszytskie(object sender, EventArgs e)
-        {
-            DataSet dF = sqlQuery.GetDataFromSql("SELECT formaNazwa FROM Forma INNER JOIN Projekt ON Forma.FK_projektId = Projekt.projektId where projekt.projektNazwa = '" + comboProjektDetaleWszystkie.Text + "'");
-            comboFormaDetaleWszystkie.DataSource = dF.Tables[0];
-            comboFormaDetaleWszystkie.ValueMember = "formaNazwa";
-            comboFormaDetaleWszystkie.SelectedIndex = -1;
-
-        }
-
-
-        //zawezanie detali dla projektu
+        ////zawezanie detali dla projektu
         private void showDetailsProject(object sender, EventArgs e)
         {
-            DataSet dD = sqlQuery.GetDataFromSql("select detalNazwa from Detal_komplet where Forma in(select formaNazwa from Forma where FK_projektId = (select projektId from Projekt where projektNazwa = '" + comboProjektDetaleWszystkie.Text + "'))");
-            listBoxDetaleWszystkie.DataSource = dD.Tables[0];
-            listBoxDetaleWszystkie.DisplayMember = "detalNazwa";
-        }
-        //zawezanie detali dla formy po wyborze projektu
+            if (string.IsNullOrEmpty(comboProjektDetaleWszystkie.Text)) {
+                DataSet dD = sqlQuery.GetDataFromSql("select * from Detal_komplet");
+                listBoxDetaleWszystkie.DataSource = dD.Tables[0];
+                listBoxDetaleWszystkie.DisplayMember = "detalNazwa";
+                comboFormaDetaleWszystkie.Enabled = false;
+            }
 
+            else {
+                // ładowanie dla projektu
+                comboFormaDetaleWszystkie.Enabled = true;
+                DataSet dD2 = sqlQuery.GetDataFromSql("select detalNazwa from Detal_komplet where Forma in(select formaNazwa from Forma where FK_projektId = (select projektId from Projekt where projektNazwa = '" + comboProjektDetaleWszystkie.Text + "'))");
+                listBoxDetaleWszystkie.DataSource = dD2.Tables[0];
+                listBoxDetaleWszystkie.DisplayMember = "detalNazwa";
+
+                //ładowanie form dla wybranego projektu
+                DataSet dF = sqlQuery.GetDataFromSql("SELECT formaNazwa FROM Forma INNER JOIN Projekt ON Forma.FK_projektId = Projekt.projektId where projekt.projektNazwa = '" + comboProjektDetaleWszystkie.Text + "'");
+                comboFormaDetaleWszystkie.DataSource = dF.Tables[0];
+                comboFormaDetaleWszystkie.ValueMember = "formaNazwa";
+                comboFormaDetaleWszystkie.SelectedIndex = -1;
+            }
+        }
+        private void showMoldProject(object sender, EventArgs e)
+        {
+
+            if (string.IsNullOrEmpty(comboFormaDetaleWszystkie.Text)){
+
+                DataSet dD = sqlQuery.GetDataFromSql("select detalNazwa from Detal_komplet where Forma in(select formaNazwa from Forma where FK_projektId = (select projektId from Projekt where projektNazwa = '" + comboProjektDetaleWszystkie.Text + "'))");
+                listBoxDetaleWszystkie.DataSource = dD.Tables[0];
+                listBoxDetaleWszystkie.DisplayMember = "detalNazwa";
+            }
+            else
+            {
+                DataSet dD = sqlQuery.GetDataFromSql("select detalNazwa from Detal_komplet where Forma =  '" + comboFormaDetaleWszystkie.Text + "'");
+                listBoxDetaleWszystkie.DataSource = dD.Tables[0];
+                listBoxDetaleWszystkie.DisplayMember = "detalNazwa";
+            }
+        }
 
 
         private void detaleWszytskieChartButton(object sender, EventArgs e)
@@ -318,18 +333,12 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 connection.Close();
             }
         }
-
         #endregion
-
-
-
 
         private void statisticsClosed(object sender, FormClosedEventArgs e)
         {
             Statistics._instance = null;
         }
-
-
     }
 }
 
