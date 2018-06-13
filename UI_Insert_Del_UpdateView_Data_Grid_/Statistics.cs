@@ -25,6 +25,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         List<string> wybraneDetale = new List<string>();
         List<string> wybraneDetaleDlaProjektów = new List<string>();
         List<string> wybraneDetaleDlaProjektówCzas = new List<string>();
+        List<string> wybraneFormyDlaProjektówCzas = new List<string>();
 
 
         public Statistics()
@@ -34,6 +35,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             wczytajMaszyny();
             wczytajDetaleProjektyFormy();
             wczytajProjektyCzas();
+            wczytajFormyCzas();
             //wczytajDetaleDlaProjektu();
             listBox1.SelectedIndex = -1;
         }
@@ -49,8 +51,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 return Statistics._instance;
             }
         }
-
-
         #region Tab Projekty
         public void wczytajProjekty()
         {
@@ -84,7 +84,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 wybraneProjekty.Add(listBox1.GetItemText(listBox1.SelectedItems[i]));
             }
-            using (var connection = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            using (var connection = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
             {
                 connection.Open();
                 var sqlCommand = new SqlCommand();
@@ -141,7 +142,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 wybraneMaszyny.Add(listBoxMaszynyAll.GetItemText(listBoxMaszynyAll.SelectedItems[i]));
             }
-            using (var connection = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            using (var connection = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
             {
                 connection.Open();
                 var sqlCommand = new SqlCommand();
@@ -249,7 +251,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 wybraneDetale.Add(listBoxDetaleWszystkie.GetItemText(listBoxDetaleWszystkie.SelectedItems[i]));
             }
-            using (var connection = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            using (var connection = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
             {
                 connection.Open();
                 var sqlCommand = new SqlCommand();
@@ -272,119 +275,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 connection.Close();
             }
         }
-
-
-
-        #endregion
-        #region Detale / dla Projektów/Projektu
-
-        //public void wczytajDetaleDlaProjektu()
-        //{
-        //    try
-        //    {
-        //        DataSet dP = sqlQuery.GetDataFromSql("select * from Projekt");
-        //        listBoxDetaleWszystkieProjekt.DataSource = dP.Tables[0];
-        //        listBoxDetaleWszystkieProjekt.DisplayMember = "projektNazwa";
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
-
-
-        //private void checkAllDetailsProjekty(object sender, EventArgs e)
-        //{
-        //    if (checkBoxDetaleWszystkieProjekty.Checked == true)
-        //    {
-        //        for (int i = 0; i < listBoxDetaleWszystkieProjekt.Items.Count; i++)
-        //            listBoxDetaleWszystkieProjekt.SetSelected(i, true);
-        //    }
-        //    else if (checkBoxDetaleWszystkieProjekty.Checked == false)
-        //    {
-        //        for (int i = 0; i < listBoxDetaleWszystkieProjekt.Items.Count; i++)
-        //            listBoxDetaleWszystkieProjekt.SetSelected(i, false);
-        //    }
-        //}
-
-        //private void detaleAllChart2_Click(object sender, EventArgs e)
-        //{
-        //    for (int i = 0; i < listBoxDetaleWszystkieProjekt.SelectedItems.Count; i++)
-        //    {
-        //        wybraneDetaleDlaProjektów.Add(listBoxDetaleWszystkieProjekt.GetItemText(listBoxDetaleWszystkieProjekt.SelectedItems[i]));
-        //    }
-        //    using (var connection = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
-        //    {
-        //        connection.Open();
-        //        var sqlCommand = new SqlCommand();
-        //        sqlCommand.Connection = connection;
-        //        sqlCommand.CommandType = CommandType.Text;
-        //        var sql = "select proj.projektNazwa as 'projekt', det.detalNazwa as 'detal', count(prob.detalId) as 'liczbaporb' from Proby prob join Projekt proj ON proj.projektId = prob.projektId join Detal_komplet det ON det.detalId = prob.detalId where proj.projektNazwa in ({0})  group by det.detalNazwa, proj.projektNazwa;";
-
-        //        DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetaleDlaProjektów.Select(x => $"\'{x}\'"))));
-        //        DataView source = new DataView(dP.Tables[0]);
-
-
-
-
-
-        //        chartWszytskieDetaleProjekty.DataSource = source;
-
-        //        //Remove the Default Series.
-        //        if (chartWszytskieDetaleProjekty.Series.Count() == 1)
-        //        {
-        //            chartWszytskieDetaleProjekty.Series.Remove(chartWszytskieDetaleProjekty.Series[0]);
-        //        }
-        //        chartWszytskieDetaleProjekty.Series.Clear();
-        //        //Loop through the Countries.
-        //        foreach (string projekt in wybraneDetaleDlaProjektów)
-        //        {
-
-        //            ////Get the Year for each Country.
-        //            //int[] x = (from p in dt.AsEnumerable()
-        //            //           where p.Field<string>("ShipCountry") == country
-        //            //           orderby p.Field<int>("Year") ascending
-        //            //           select p.Field<int>("Year")).ToArray();
-
-        //            ////Get the Total of Orders for each Country.
-        //            //int[] y = (from p in dt.AsEnumerable()
-        //            //           where p.Field<string>("ShipCountry") == country
-        //            //           orderby p.Field<int>("Year") ascending
-        //            //           select p.Field<int>("Total")).ToArray();
-
-        //            //Add Series to the Chart.
-        //            chartWszytskieDetaleProjekty.Series.Add(new Series(projekt));
-
-        //            chartWszytskieDetaleProjekty.Series[projekt].IsValueShownAsLabel = true;
-        //            chartWszytskieDetaleProjekty.Series[projekt].BorderWidth = 3;
-        //            chartWszytskieDetaleProjekty.Series[projekt].ChartType = SeriesChartType.Column;
-
-        //            //   chartWszytskieDetaleProjekty.Series[projekt].Points.DataBindXY(x, y);
-        //        }
-
-        //        chartWszytskieDetaleProjekty.Legends[0].Enabled = true;
-
-
-
-
-
-
-        //        chartWszytskieDetaleProjekty.Series[0].XValueMember = "detal";
-        //        chartWszytskieDetaleProjekty.Series[0].YValueMembers = "liczbaporb";
-
-        //        chartWszytskieDetaleProjekty.ChartAreas[0].AxisX.Interval = 1;
-        //        chartWszytskieDetaleProjekty.ChartAreas[0].AxisY.Interval = 1;
-        //        chartWszytskieDetaleProjekty.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
-        //        chartWszytskieDetaleProjekty.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
-        //        chartWszytskieDetaleProjekty.DataBind();
-        //        chartWszytskieDetaleProjekty.Update();
-        //        wybraneDetaleDlaProjektów.Clear();
-
-        //        connection.Close();
-        //    }
-        //}
-
-
         #endregion
         #region Czas dla projektów
 
@@ -415,13 +305,137 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
         }
 
+        private void buttonChartTimeAllProjects_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < listBoxTimeProjects.SelectedItems.Count; i++)
+            {
+                wybraneDetaleDlaProjektówCzas.Add(listBoxTimeProjects.GetItemText(listBoxTimeProjects.SelectedItems[i]));
+            }
+            using (var connection = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
+            {
+                connection.Open();
+                var sqlCommand = new SqlCommand();
+                sqlCommand.Connection = connection;
+                sqlCommand.CommandType = CommandType.Text;
+                var sql = "select proj.projektNazwa as 'Projekt' , SUM(czasTrw)as 'Czas' from Proby prob left join Projekt proj on prob.projektId = proj.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerTimeProjectsOd.Value.Date + "' and '" + dateTimePickerTimeProjectsDo.Value.Date + "' group by proj.projektNazwa;";
+
+                DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetaleDlaProjektówCzas.Select(x => $"\'{x}\'"))));
+                DataView source = new DataView(dP.Tables[0]);
+                chartTimeAllProjects.DataSource = source;
+                chartTimeAllProjects.Series[0].XValueMember = "Projekt";
+                chartTimeAllProjects.Series[0].YValueMembers = "Czas";
+                chartTimeAllProjects.ChartAreas[0].AxisX.Interval = 1;
+                chartTimeAllProjects.ChartAreas[0].AxisY.Interval = 5;
+                chartTimeAllProjects.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
+                chartTimeAllProjects.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+                chartTimeAllProjects.DataBind();
+                chartTimeAllProjects.Update();
+                wybraneDetaleDlaProjektówCzas.Clear();
+                connection.Close();
+            }
+        }
+
+        #endregion
+        #region Czas dla form
+
+
+        public void wczytajFormyCzas()
+        {
+            try
+            {
+                DataSet dF = sqlQuery.GetDataFromSql("select * from Forma");
+                listBoxTimeMolds.DataSource = dF.Tables[0];
+                listBoxTimeMolds.DisplayMember = "formaNazwa";
+
+
+                DataSet dP = sqlQuery.GetDataFromSql("select * from Projekt");
+                comboBoxTimeMolds.DataSource = dP.Tables[0];
+                comboBoxTimeMolds.ValueMember = "projektNazwa";
+                comboBoxTimeMolds.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void timeMoldsCheckAllProjects(object sender, EventArgs e)
+        {
+            if (checkBoxAllMoldsTime.Checked == true)
+            {
+                for (int i = 0; i < listBoxTimeMolds.Items.Count; i++)
+                    listBoxTimeMolds.SetSelected(i, true);
+            }
+            else if (checkBoxAllMoldsTime.Checked == false)
+            {
+                for (int i = 0; i < listBoxTimeMolds.Items.Count; i++)
+                    listBoxTimeMolds.SetSelected(i, false);
+            }
+        }
+        private void showMoldsProjects(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(comboBoxTimeMolds.Text))
+            {
+                DataSet dD = sqlQuery.GetDataFromSql("select * from Forma");
+                listBoxTimeMolds.DataSource = dD.Tables[0];
+                listBoxTimeMolds.DisplayMember = "formaNazwa";
+
+            }
+            else
+            {
+                // ładowanie dla projektu
+
+                DataSet dD2 = sqlQuery.GetDataFromSql("select formaNazwa from Forma where FK_projektId = (select projektId from Projekt where projektNazwa = '" + comboBoxTimeMolds.Text + "')");
+                listBoxTimeMolds.DataSource = dD2.Tables[0];
+                listBoxTimeMolds.DisplayMember = "detalNazwa";
+                ////ładowanie form dla wybranego projektu
+                //DataSet dF = sqlQuery.GetDataFromSql("SELECT formaNazwa FROM Forma INNER JOIN Projekt ON Forma.FK_projektId = Projekt.projektId where projekt.projektNazwa = '" + comboProjektDetaleWszystkie.Text + "'");
+                //comboFormaDetaleWszystkie.DataSource = dF.Tables[0];
+                //comboFormaDetaleWszystkie.ValueMember = "formaNazwa";
+                //comboFormaDetaleWszystkie.SelectedIndex = -1;
+            }
+        }
+
+
+        private void buttonChartTimeAllMold_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < listBoxTimeMolds.SelectedItems.Count; i++)
+            {
+                wybraneFormyDlaProjektówCzas.Add(listBoxTimeMolds.GetItemText(listBoxTimeMolds.SelectedItems[i]));
+            }
+            using (var connection = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
+            {
+                connection.Open();
+                var sqlCommand = new SqlCommand();
+                sqlCommand.Connection = connection;
+                sqlCommand.CommandType = CommandType.Text;
+                var sql = "select proj.projektNazwa as 'Projekt' , SUM(czasTrw)as 'Czas' from Proby prob left join Projekt proj on prob.projektId = proj.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerTimeProjectsOd.Value.Date + "' and '" + dateTimePickerTimeProjectsDo.Value.Date + "' group by proj.projektNazwa;";
+
+                DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetaleDlaProjektówCzas.Select(x => $"\'{x}\'"))));
+                DataView source = new DataView(dP.Tables[0]);
+                chartTimeAllProjects.DataSource = source;
+                chartTimeAllProjects.Series[0].XValueMember = "Projekt";
+                chartTimeAllProjects.Series[0].YValueMembers = "Czas";
+                chartTimeAllProjects.ChartAreas[0].AxisX.Interval = 1;
+                chartTimeAllProjects.ChartAreas[0].AxisY.Interval = 5;
+                chartTimeAllProjects.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
+                chartTimeAllProjects.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+                chartTimeAllProjects.DataBind();
+                chartTimeAllProjects.Update();
+                wybraneDetaleDlaProjektówCzas.Clear();
+                connection.Close();
+            }
+        }
+
         #endregion
         private void statisticsClosed(object sender, FormClosedEventArgs e)
         {
             Statistics._instance = null;
         }
 
-
+        
     }
 }
+
 
