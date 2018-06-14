@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Statistics));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.Czas = new System.Windows.Forms.TabPage();
             this.tabTimeProjects = new System.Windows.Forms.TabControl();
             this.ProjektyCzas = new System.Windows.Forms.TabPage();
@@ -85,10 +85,10 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.tableLayoutPanel52 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerMoldDo = new System.Windows.Forms.DateTimePicker();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerMoldOd = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel53 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel54 = new System.Windows.Forms.TableLayoutPanel();
             this.checkBox19 = new System.Windows.Forms.CheckBox();
@@ -107,7 +107,7 @@
             this.label41 = new System.Windows.Forms.Label();
             this.comboBoxTimeMolds = new System.Windows.Forms.ComboBox();
             this.listBoxTimeMolds = new System.Windows.Forms.ListBox();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartTimeMolds = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.DetaleCzas = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel37 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel38 = new System.Windows.Forms.TableLayoutPanel();
@@ -134,12 +134,12 @@
             this.tableLayoutPanel41 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
             this.label27 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.comboBoxCzasDetaleDlaFormy = new System.Windows.Forms.ComboBox();
+            this.checkBoxDetailsTime = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel43 = new System.Windows.Forms.TableLayoutPanel();
             this.label28 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.comboBoxCzasDetaleDlaProjektu = new System.Windows.Forms.ComboBox();
+            this.listBoxDetaleCzas = new System.Windows.Forms.ListBox();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Projekty = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -246,7 +246,7 @@
             this.tableLayoutPanel57.SuspendLayout();
             this.tableLayoutPanel58.SuspendLayout();
             this.tableLayoutPanel60.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTimeMolds)).BeginInit();
             this.DetaleCzas.SuspendLayout();
             this.tableLayoutPanel37.SuspendLayout();
             this.tableLayoutPanel38.SuspendLayout();
@@ -681,36 +681,36 @@
             // 
             // chartTimeAllProjects
             // 
-            chartArea1.AxisX.Title = "Projekt";
-            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea1.AxisX2.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea1.AxisY.Interval = 5D;
-            chartArea1.AxisY.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea1.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
-            chartArea1.AxisY.Title = "Czas [h]";
-            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea1.AxisY2.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea1.Name = "ChartArea1";
-            this.chartTimeAllProjects.ChartAreas.Add(chartArea1);
+            chartArea8.AxisX.Title = "Projekt";
+            chartArea8.AxisX.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea8.AxisX2.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea8.AxisY.Interval = 5D;
+            chartArea8.AxisY.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea8.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
+            chartArea8.AxisY.Title = "Czas [h]";
+            chartArea8.AxisY.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea8.AxisY2.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea8.Name = "ChartArea1";
+            this.chartTimeAllProjects.ChartAreas.Add(chartArea8);
             this.chartTimeAllProjects.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Enabled = false;
-            legend1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            legend1.IsTextAutoFit = false;
-            legend1.Name = "Legend1";
-            legend1.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.chartTimeAllProjects.Legends.Add(legend1);
+            legend8.Enabled = false;
+            legend8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            legend8.IsTextAutoFit = false;
+            legend8.Name = "Legend1";
+            legend8.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.chartTimeAllProjects.Legends.Add(legend8);
             this.chartTimeAllProjects.Location = new System.Drawing.Point(4, 361);
             this.chartTimeAllProjects.Margin = new System.Windows.Forms.Padding(4);
             this.chartTimeAllProjects.Name = "chartTimeAllProjects";
-            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series1.BorderColor = System.Drawing.Color.Black;
-            series1.ChartArea = "ChartArea1";
-            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            series1.IsValueShownAsLabel = true;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartTimeAllProjects.Series.Add(series1);
+            series8.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series8.BorderColor = System.Drawing.Color.Black;
+            series8.ChartArea = "ChartArea1";
+            series8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            series8.IsValueShownAsLabel = true;
+            series8.Legend = "Legend1";
+            series8.Name = "Series1";
+            this.chartTimeAllProjects.Series.Add(series8);
             this.chartTimeAllProjects.Size = new System.Drawing.Size(1415, 579);
             this.chartTimeAllProjects.TabIndex = 3;
             this.chartTimeAllProjects.Text = "chart1";
@@ -730,7 +730,7 @@
             this.tableLayoutPanel49.ColumnCount = 1;
             this.tableLayoutPanel49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel50, 0, 0);
-            this.tableLayoutPanel49.Controls.Add(this.chart1, 0, 1);
+            this.tableLayoutPanel49.Controls.Add(this.chartTimeMolds, 0, 1);
             this.tableLayoutPanel49.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel49.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel49.Name = "tableLayoutPanel49";
@@ -806,10 +806,10 @@
             this.tableLayoutPanel52.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel52.ColumnCount = 1;
             this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel52.Controls.Add(this.dateTimePicker3, 0, 3);
+            this.tableLayoutPanel52.Controls.Add(this.dateTimePickerMoldDo, 0, 3);
             this.tableLayoutPanel52.Controls.Add(this.label36, 0, 2);
             this.tableLayoutPanel52.Controls.Add(this.label37, 0, 0);
-            this.tableLayoutPanel52.Controls.Add(this.dateTimePicker4, 0, 1);
+            this.tableLayoutPanel52.Controls.Add(this.dateTimePickerMoldOd, 0, 1);
             this.tableLayoutPanel52.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel52.Location = new System.Drawing.Point(5, 74);
             this.tableLayoutPanel52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -822,16 +822,16 @@
             this.tableLayoutPanel52.Size = new System.Drawing.Size(226, 309);
             this.tableLayoutPanel52.TabIndex = 2;
             // 
-            // dateTimePicker3
+            // dateTimePickerMoldDo
             // 
-            this.dateTimePicker3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(13, 254);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 28);
-            this.dateTimePicker3.TabIndex = 5;
+            this.dateTimePickerMoldDo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePickerMoldDo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimePickerMoldDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerMoldDo.Location = new System.Drawing.Point(13, 254);
+            this.dateTimePickerMoldDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePickerMoldDo.Name = "dateTimePickerMoldDo";
+            this.dateTimePickerMoldDo.Size = new System.Drawing.Size(200, 28);
+            this.dateTimePickerMoldDo.TabIndex = 5;
             // 
             // label36
             // 
@@ -855,16 +855,16 @@
             this.label37.TabIndex = 2;
             this.label37.Text = "Od:";
             // 
-            // dateTimePicker4
+            // dateTimePickerMoldOd
             // 
-            this.dateTimePicker4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker4.Location = new System.Drawing.Point(13, 101);
-            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(200, 28);
-            this.dateTimePicker4.TabIndex = 3;
+            this.dateTimePickerMoldOd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePickerMoldOd.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimePickerMoldOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerMoldOd.Location = new System.Drawing.Point(13, 101);
+            this.dateTimePickerMoldOd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePickerMoldOd.Name = "dateTimePickerMoldOd";
+            this.dateTimePickerMoldOd.Size = new System.Drawing.Size(200, 28);
+            this.dateTimePickerMoldOd.TabIndex = 3;
             // 
             // tableLayoutPanel53
             // 
@@ -1122,22 +1122,32 @@
             this.listBoxTimeMolds.Size = new System.Drawing.Size(929, 256);
             this.listBoxTimeMolds.TabIndex = 1;
             // 
-            // chart1
+            // chartTimeMolds
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(3, 402);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(1425, 547);
-            this.chart1.TabIndex = 7;
-            this.chart1.Text = "chart1";
+            chartArea9.AxisX.Title = "Formy";
+            chartArea9.AxisX.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea9.AxisY.Title = "Czas [h]";
+            chartArea9.AxisY.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea9.Name = "ChartArea1";
+            this.chartTimeMolds.ChartAreas.Add(chartArea9);
+            this.chartTimeMolds.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend9.Name = "Legend1";
+            this.chartTimeMolds.Legends.Add(legend9);
+            this.chartTimeMolds.Location = new System.Drawing.Point(3, 402);
+            this.chartTimeMolds.Name = "chartTimeMolds";
+            series9.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series9.BorderColor = System.Drawing.Color.Black;
+            series9.ChartArea = "ChartArea1";
+            series9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(90)))), ((int)(((byte)(255)))));
+            series9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            series9.IsValueShownAsLabel = true;
+            series9.IsVisibleInLegend = false;
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            this.chartTimeMolds.Series.Add(series9);
+            this.chartTimeMolds.Size = new System.Drawing.Size(1425, 547);
+            this.chartTimeMolds.TabIndex = 7;
+            this.chartTimeMolds.Text = "chart1";
             // 
             // DetaleCzas
             // 
@@ -1422,7 +1432,7 @@
             this.tableLayoutPanel39.ColumnCount = 1;
             this.tableLayoutPanel39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel39.Controls.Add(this.tableLayoutPanel40, 0, 0);
-            this.tableLayoutPanel39.Controls.Add(this.listBox2, 1, 1);
+            this.tableLayoutPanel39.Controls.Add(this.listBoxDetaleCzas, 1, 1);
             this.tableLayoutPanel39.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel39.Location = new System.Drawing.Point(6, 6);
             this.tableLayoutPanel39.Margin = new System.Windows.Forms.Padding(4);
@@ -1468,7 +1478,7 @@
             this.tableLayoutPanel41.ColumnCount = 1;
             this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel41.Controls.Add(this.tableLayoutPanel42, 0, 2);
-            this.tableLayoutPanel41.Controls.Add(this.checkBox6, 0, 0);
+            this.tableLayoutPanel41.Controls.Add(this.checkBoxDetailsTime, 0, 0);
             this.tableLayoutPanel41.Controls.Add(this.tableLayoutPanel43, 0, 1);
             this.tableLayoutPanel41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel41.Location = new System.Drawing.Point(205, 6);
@@ -1487,7 +1497,7 @@
             this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.54546F));
             this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.45454F));
             this.tableLayoutPanel42.Controls.Add(this.label27, 0, 0);
-            this.tableLayoutPanel42.Controls.Add(this.comboBox1, 1, 0);
+            this.tableLayoutPanel42.Controls.Add(this.comboBoxCzasDetaleDlaFormy, 1, 0);
             this.tableLayoutPanel42.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel42.Location = new System.Drawing.Point(6, 125);
             this.tableLayoutPanel42.Margin = new System.Windows.Forms.Padding(4);
@@ -1509,29 +1519,30 @@
             this.label27.TabIndex = 0;
             this.label27.Text = "Pokaż detale  dla formy:";
             // 
-            // comboBox1
+            // comboBoxCzasDetaleDlaFormy
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(245, 11);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(450, 29);
-            this.comboBox1.TabIndex = 1;
+            this.comboBoxCzasDetaleDlaFormy.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBoxCzasDetaleDlaFormy.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxCzasDetaleDlaFormy.FormattingEnabled = true;
+            this.comboBoxCzasDetaleDlaFormy.Location = new System.Drawing.Point(245, 11);
+            this.comboBoxCzasDetaleDlaFormy.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxCzasDetaleDlaFormy.Name = "comboBoxCzasDetaleDlaFormy";
+            this.comboBoxCzasDetaleDlaFormy.Size = new System.Drawing.Size(450, 29);
+            this.comboBoxCzasDetaleDlaFormy.TabIndex = 1;
             // 
-            // checkBox6
+            // checkBoxDetailsTime
             // 
-            this.checkBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox6.Location = new System.Drawing.Point(262, 13);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(186, 23);
-            this.checkBox6.TabIndex = 2;
-            this.checkBox6.Text = "Zaznacz wszystkie:";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBoxDetailsTime.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBoxDetailsTime.AutoSize = true;
+            this.checkBoxDetailsTime.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBoxDetailsTime.Location = new System.Drawing.Point(262, 13);
+            this.checkBoxDetailsTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBoxDetailsTime.Name = "checkBoxDetailsTime";
+            this.checkBoxDetailsTime.Size = new System.Drawing.Size(186, 23);
+            this.checkBoxDetailsTime.TabIndex = 2;
+            this.checkBoxDetailsTime.Text = "Zaznacz wszystkie:";
+            this.checkBoxDetailsTime.UseVisualStyleBackColor = true;
+            this.checkBoxDetailsTime.CheckedChanged += new System.EventHandler(this.checkAllDetailsTime);
             // 
             // tableLayoutPanel43
             // 
@@ -1539,7 +1550,7 @@
             this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.54546F));
             this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.45454F));
             this.tableLayoutPanel43.Controls.Add(this.label28, 0, 0);
-            this.tableLayoutPanel43.Controls.Add(this.comboBox2, 1, 0);
+            this.tableLayoutPanel43.Controls.Add(this.comboBoxCzasDetaleDlaProjektu, 1, 0);
             this.tableLayoutPanel43.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel43.Location = new System.Drawing.Point(6, 53);
             this.tableLayoutPanel43.Margin = new System.Windows.Forms.Padding(4);
@@ -1561,44 +1572,45 @@
             this.label28.TabIndex = 0;
             this.label28.Text = "Pokaż detale dla projektu:";
             // 
-            // comboBox2
+            // comboBoxCzasDetaleDlaProjektu
             // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(245, 16);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(450, 29);
-            this.comboBox2.TabIndex = 1;
+            this.comboBoxCzasDetaleDlaProjektu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBoxCzasDetaleDlaProjektu.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxCzasDetaleDlaProjektu.FormattingEnabled = true;
+            this.comboBoxCzasDetaleDlaProjektu.Location = new System.Drawing.Point(245, 16);
+            this.comboBoxCzasDetaleDlaProjektu.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxCzasDetaleDlaProjektu.Name = "comboBoxCzasDetaleDlaProjektu";
+            this.comboBoxCzasDetaleDlaProjektu.Size = new System.Drawing.Size(450, 29);
+            this.comboBoxCzasDetaleDlaProjektu.TabIndex = 1;
+            this.comboBoxCzasDetaleDlaProjektu.TextChanged += new System.EventHandler(this.showDetailsTimeProject);
             // 
-            // listBox2
+            // listBoxDetaleCzas
             // 
-            this.listBox2.ColumnWidth = 300;
-            this.listBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 21;
-            this.listBox2.Location = new System.Drawing.Point(3, 204);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBox2.Size = new System.Drawing.Size(924, 250);
-            this.listBox2.TabIndex = 1;
+            this.listBoxDetaleCzas.ColumnWidth = 300;
+            this.listBoxDetaleCzas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxDetaleCzas.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.listBoxDetaleCzas.FormattingEnabled = true;
+            this.listBoxDetaleCzas.ItemHeight = 21;
+            this.listBoxDetaleCzas.Location = new System.Drawing.Point(3, 204);
+            this.listBoxDetaleCzas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listBoxDetaleCzas.Name = "listBoxDetaleCzas";
+            this.listBoxDetaleCzas.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.listBoxDetaleCzas.Size = new System.Drawing.Size(924, 250);
+            this.listBoxDetaleCzas.TabIndex = 1;
             // 
             // chart2
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea3);
+            chartArea10.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea10);
             this.chart2.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend3.Name = "Legend1";
-            this.chart2.Legends.Add(legend3);
+            legend10.Name = "Legend1";
+            this.chart2.Legends.Add(legend10);
             this.chart2.Location = new System.Drawing.Point(3, 475);
             this.chart2.Name = "chart2";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart2.Series.Add(series3);
+            series10.ChartArea = "ChartArea1";
+            series10.Legend = "Legend1";
+            series10.Name = "Series1";
+            this.chart2.Series.Add(series10);
             this.chart2.Size = new System.Drawing.Size(1417, 466);
             this.chart2.TabIndex = 6;
             this.chart2.Text = "chart2";
@@ -1634,36 +1646,36 @@
             // 
             // chartDetaleWszystkie
             // 
-            chartArea4.AxisX.Interval = 1D;
-            chartArea4.AxisX.Title = "Detale";
-            chartArea4.AxisX.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea4.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
-            chartArea4.AxisY.Title = "Liczba prób";
-            chartArea4.AxisY.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea4.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            chartArea4.Name = "ChartArea1";
-            this.chartDetaleWszystkie.ChartAreas.Add(chartArea4);
+            chartArea11.AxisX.Interval = 1D;
+            chartArea11.AxisX.Title = "Detale";
+            chartArea11.AxisX.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea11.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
+            chartArea11.AxisY.Title = "Liczba prób";
+            chartArea11.AxisY.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea11.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            chartArea11.Name = "ChartArea1";
+            this.chartDetaleWszystkie.ChartAreas.Add(chartArea11);
             this.chartDetaleWszystkie.Cursor = System.Windows.Forms.Cursors.Default;
             this.chartDetaleWszystkie.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend4.IsTextAutoFit = false;
-            legend4.Name = "Legend1";
-            legend4.TitleFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chartDetaleWszystkie.Legends.Add(legend4);
+            legend11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend11.IsTextAutoFit = false;
+            legend11.Name = "Legend1";
+            legend11.TitleFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chartDetaleWszystkie.Legends.Add(legend11);
             this.chartDetaleWszystkie.Location = new System.Drawing.Point(4, 447);
             this.chartDetaleWszystkie.Margin = new System.Windows.Forms.Padding(4);
             this.chartDetaleWszystkie.Name = "chartDetaleWszystkie";
-            series4.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series4.BorderColor = System.Drawing.Color.Black;
-            series4.ChartArea = "ChartArea1";
-            series4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            series4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series4.IsValueShownAsLabel = true;
-            series4.IsVisibleInLegend = false;
-            series4.LabelBackColor = System.Drawing.Color.White;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chartDetaleWszystkie.Series.Add(series4);
+            series11.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series11.BorderColor = System.Drawing.Color.Black;
+            series11.ChartArea = "ChartArea1";
+            series11.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            series11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series11.IsValueShownAsLabel = true;
+            series11.IsVisibleInLegend = false;
+            series11.LabelBackColor = System.Drawing.Color.White;
+            series11.Legend = "Legend1";
+            series11.Name = "Series1";
+            this.chartDetaleWszystkie.Series.Add(series11);
             this.chartDetaleWszystkie.Size = new System.Drawing.Size(1425, 526);
             this.chartDetaleWszystkie.TabIndex = 5;
             this.chartDetaleWszystkie.Text = "chart1";
@@ -1787,7 +1799,7 @@
             this.comboFormaDetaleWszystkie.Name = "comboFormaDetaleWszystkie";
             this.comboFormaDetaleWszystkie.Size = new System.Drawing.Size(501, 29);
             this.comboFormaDetaleWszystkie.TabIndex = 1;
-            this.comboFormaDetaleWszystkie.TextChanged += new System.EventHandler(this.showMoldProject);
+            this.comboFormaDetaleWszystkie.TextChanged += new System.EventHandler(this.showDetailsTimeMolds);
             // 
             // checkBoxDetaleWszystkie
             // 
@@ -1981,18 +1993,18 @@
             // 
             // chart3
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea5);
+            chartArea12.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea12);
             this.chart3.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend5.Name = "Legend1";
-            this.chart3.Legends.Add(legend5);
+            legend12.Name = "Legend1";
+            this.chart3.Legends.Add(legend12);
             this.chart3.Location = new System.Drawing.Point(3, 2);
             this.chart3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart3.Name = "chart3";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart3.Series.Add(series5);
+            series12.ChartArea = "ChartArea1";
+            series12.Legend = "Legend1";
+            series12.Name = "Series1";
+            this.chart3.Series.Add(series12);
             this.chart3.Size = new System.Drawing.Size(1433, 977);
             this.chart3.TabIndex = 3;
             this.chart3.Text = "chart3";
@@ -2030,43 +2042,43 @@
             this.chartMaszyny.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             this.chartMaszyny.BorderlineWidth = 0;
             this.chartMaszyny.BorderSkin.BorderColor = System.Drawing.Color.White;
-            chartArea6.AxisX.Minimum = 1D;
-            chartArea6.AxisX.Title = "Maszyny";
-            chartArea6.AxisX.TitleFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea6.AxisX2.Interval = 1D;
-            chartArea6.AxisX2.IntervalOffset = 1D;
-            chartArea6.AxisX2.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea6.AxisY.Minimum = 0D;
-            chartArea6.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
-            chartArea6.AxisY.Title = "Liczba prób";
-            chartArea6.AxisY.TitleFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea6.BorderWidth = 0;
-            chartArea6.Name = "ChartArea1";
-            this.chartMaszyny.ChartAreas.Add(chartArea6);
+            chartArea13.AxisX.Minimum = 1D;
+            chartArea13.AxisX.Title = "Maszyny";
+            chartArea13.AxisX.TitleFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea13.AxisX2.Interval = 1D;
+            chartArea13.AxisX2.IntervalOffset = 1D;
+            chartArea13.AxisX2.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea13.AxisY.Minimum = 0D;
+            chartArea13.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
+            chartArea13.AxisY.Title = "Liczba prób";
+            chartArea13.AxisY.TitleFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea13.BorderWidth = 0;
+            chartArea13.Name = "ChartArea1";
+            this.chartMaszyny.ChartAreas.Add(chartArea13);
             this.chartMaszyny.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartMaszyny.ImeMode = System.Windows.Forms.ImeMode.Off;
-            legend6.BackColor = System.Drawing.Color.White;
-            legend6.BorderColor = System.Drawing.Color.White;
-            legend6.Enabled = false;
-            legend6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend6.IsTextAutoFit = false;
-            legend6.Name = "Legend1";
-            legend6.TitleFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chartMaszyny.Legends.Add(legend6);
+            legend13.BackColor = System.Drawing.Color.White;
+            legend13.BorderColor = System.Drawing.Color.White;
+            legend13.Enabled = false;
+            legend13.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend13.IsTextAutoFit = false;
+            legend13.Name = "Legend1";
+            legend13.TitleFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chartMaszyny.Legends.Add(legend13);
             this.chartMaszyny.Location = new System.Drawing.Point(4, 447);
             this.chartMaszyny.Margin = new System.Windows.Forms.Padding(4);
             this.chartMaszyny.Name = "chartMaszyny";
             this.chartMaszyny.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series6.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series6.BorderColor = System.Drawing.Color.Black;
-            series6.ChartArea = "ChartArea1";
-            series6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            series6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series6.IsValueShownAsLabel = true;
-            series6.IsVisibleInLegend = false;
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chartMaszyny.Series.Add(series6);
+            series13.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series13.BorderColor = System.Drawing.Color.Black;
+            series13.ChartArea = "ChartArea1";
+            series13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            series13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series13.IsValueShownAsLabel = true;
+            series13.IsVisibleInLegend = false;
+            series13.Legend = "Legend1";
+            series13.Name = "Series1";
+            this.chartMaszyny.Series.Add(series13);
             this.chartMaszyny.Size = new System.Drawing.Size(1425, 526);
             this.chartMaszyny.TabIndex = 3;
             this.chartMaszyny.Text = "chart5";
@@ -2754,37 +2766,37 @@
             this.chart6.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             this.chart6.BorderlineWidth = 0;
             this.chart6.BorderSkin.BorderColor = System.Drawing.Color.White;
-            chartArea7.AxisX.Title = "Projekty";
-            chartArea7.AxisX.TitleFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea7.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
-            chartArea7.AxisY.Title = "Liczba prób";
-            chartArea7.AxisY.TitleFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea7.BorderWidth = 0;
-            chartArea7.Name = "ChartArea1";
-            this.chart6.ChartAreas.Add(chartArea7);
+            chartArea14.AxisX.Title = "Projekty";
+            chartArea14.AxisX.TitleFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea14.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
+            chartArea14.AxisY.Title = "Liczba prób";
+            chartArea14.AxisY.TitleFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea14.BorderWidth = 0;
+            chartArea14.Name = "ChartArea1";
+            this.chart6.ChartAreas.Add(chartArea14);
             this.chart6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chart6.ImeMode = System.Windows.Forms.ImeMode.Off;
-            legend7.BackColor = System.Drawing.Color.White;
-            legend7.BorderColor = System.Drawing.Color.White;
-            legend7.Enabled = false;
-            legend7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend7.IsTextAutoFit = false;
-            legend7.Name = "Legend1";
-            legend7.TitleFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chart6.Legends.Add(legend7);
+            legend14.BackColor = System.Drawing.Color.White;
+            legend14.BorderColor = System.Drawing.Color.White;
+            legend14.Enabled = false;
+            legend14.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend14.IsTextAutoFit = false;
+            legend14.Name = "Legend1";
+            legend14.TitleFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chart6.Legends.Add(legend14);
             this.chart6.Location = new System.Drawing.Point(4, 449);
             this.chart6.Margin = new System.Windows.Forms.Padding(4);
             this.chart6.Name = "chart6";
             this.chart6.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series7.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series7.BorderColor = System.Drawing.Color.Black;
-            series7.ChartArea = "ChartArea1";
-            series7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series7.IsValueShownAsLabel = true;
-            series7.IsVisibleInLegend = false;
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.chart6.Series.Add(series7);
+            series14.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series14.BorderColor = System.Drawing.Color.Black;
+            series14.ChartArea = "ChartArea1";
+            series14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series14.IsValueShownAsLabel = true;
+            series14.IsVisibleInLegend = false;
+            series14.Legend = "Legend1";
+            series14.Name = "Series1";
+            this.chart6.Series.Add(series14);
             this.chart6.Size = new System.Drawing.Size(1425, 524);
             this.chart6.TabIndex = 2;
             this.chart6.Text = "chart6";
@@ -2862,7 +2874,7 @@
             this.tableLayoutPanel58.PerformLayout();
             this.tableLayoutPanel60.ResumeLayout(false);
             this.tableLayoutPanel60.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTimeMolds)).EndInit();
             this.DetaleCzas.ResumeLayout(false);
             this.tableLayoutPanel37.ResumeLayout(false);
             this.tableLayoutPanel38.ResumeLayout(false);
@@ -3059,12 +3071,12 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel41;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel42;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.ComboBox comboBoxCzasDetaleDlaFormy;
+        private System.Windows.Forms.CheckBox checkBoxDetailsTime;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel43;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ComboBox comboBoxCzasDetaleDlaProjektu;
+        private System.Windows.Forms.ListBox listBoxDetaleCzas;
         private System.Windows.Forms.TabPage CzasDetale;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel49;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel50;
@@ -3072,10 +3084,10 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel52;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dateTimePickerMoldDo;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker dateTimePickerMoldOd;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel53;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel54;
         private System.Windows.Forms.CheckBox checkBox19;
@@ -3094,7 +3106,7 @@
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.ComboBox comboBoxTimeMolds;
         private System.Windows.Forms.ListBox listBoxTimeMolds;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartTimeMolds;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel44;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
