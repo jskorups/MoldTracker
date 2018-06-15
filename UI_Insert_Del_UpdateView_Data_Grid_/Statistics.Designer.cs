@@ -115,10 +115,10 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.tableLayoutPanel45 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.detaleCzacDo = new System.Windows.Forms.DateTimePicker();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.detaleCzacOd = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel46 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel47 = new System.Windows.Forms.TableLayoutPanel();
             this.checkBox15 = new System.Windows.Forms.CheckBox();
@@ -1242,10 +1242,10 @@
             this.tableLayoutPanel45.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel45.ColumnCount = 1;
             this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel45.Controls.Add(this.dateTimePicker1, 0, 3);
+            this.tableLayoutPanel45.Controls.Add(this.detaleCzacDo, 0, 3);
             this.tableLayoutPanel45.Controls.Add(this.label31, 0, 2);
             this.tableLayoutPanel45.Controls.Add(this.label32, 0, 0);
-            this.tableLayoutPanel45.Controls.Add(this.dateTimePicker2, 0, 1);
+            this.tableLayoutPanel45.Controls.Add(this.detaleCzacOd, 0, 1);
             this.tableLayoutPanel45.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel45.Location = new System.Drawing.Point(5, 87);
             this.tableLayoutPanel45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1258,16 +1258,16 @@
             this.tableLayoutPanel45.Size = new System.Drawing.Size(224, 369);
             this.tableLayoutPanel45.TabIndex = 2;
             // 
-            // dateTimePicker1
+            // detaleCzacDo
             // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 307);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 28);
-            this.dateTimePicker1.TabIndex = 5;
+            this.detaleCzacDo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.detaleCzacDo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.detaleCzacDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.detaleCzacDo.Location = new System.Drawing.Point(12, 307);
+            this.detaleCzacDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.detaleCzacDo.Name = "detaleCzacDo";
+            this.detaleCzacDo.Size = new System.Drawing.Size(200, 28);
+            this.detaleCzacDo.TabIndex = 5;
             // 
             // label31
             // 
@@ -1291,16 +1291,16 @@
             this.label32.TabIndex = 2;
             this.label32.Text = "Od:";
             // 
-            // dateTimePicker2
+            // detaleCzacOd
             // 
-            this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(12, 123);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 28);
-            this.dateTimePicker2.TabIndex = 3;
+            this.detaleCzacOd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.detaleCzacOd.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.detaleCzacOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.detaleCzacOd.Location = new System.Drawing.Point(12, 123);
+            this.detaleCzacOd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.detaleCzacOd.Name = "detaleCzacOd";
+            this.detaleCzacOd.Size = new System.Drawing.Size(200, 28);
+            this.detaleCzacOd.TabIndex = 3;
             // 
             // tableLayoutPanel46
             // 
@@ -3113,10 +3113,10 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel45;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker detaleCzacDo;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker detaleCzacOd;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel46;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel47;
         private System.Windows.Forms.CheckBox checkBox15;

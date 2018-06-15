@@ -519,15 +519,15 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 var sqlCommand = new SqlCommand();
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
-                var sql = "select det.detalnazwa as 'Detal', COUNT(prob.detalId) as 'Liczba prob' from Proby prob LEFT JOIN Detal_komplet det ON det.detalId = prob.detalId where det.detalNazwa in ({0}) and dzienStart between '" + dateTimePickerDetailAllOd.Value.Date + "' and '" + dateTimePickerDetailAllDo.Value.Date + "' group by det.detalNazwa;";
+                var sql = "select det.detalNazwa as 'Detal' , SUM(czasTrw)as 'Czas' from Proby prob left join Detal_komplet det on prob.detalId = det.detalId where det.detalNazwa in ({0}) and dzienStart between '" + detaleCzacOd.Value.Date + "' and '" + detaleCzacDo.Value.Date + "' group by det.detalNazwa;";
 
-                DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetale.Select(x => $"\'{x}\'"))));
+                DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetaleDleFormCzas.Select(x => $"\'{x}\'"))));
                 DataView source = new DataView(dP.Tables[0]);
                 chartCzasDetale.DataSource = source;
                 chartCzasDetale.Series[0].XValueMember = "Detal";
-                chartCzasDetale.Series[0].YValueMembers = "Liczba prob";
+                chartCzasDetale.Series[0].YValueMembers = "Czas";
                 chartCzasDetale.ChartAreas[0].AxisX.Interval = 1;
-                chartCzasDetale.ChartAreas[0].AxisY.Interval = 1;
+                chartCzasDetale.ChartAreas[0].AxisY.Interval = 5;
                 chartCzasDetale.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
                 chartCzasDetale.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
                 chartCzasDetale.DataBind();
