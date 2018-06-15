@@ -28,6 +28,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         List<string> wybraneDetaleDlaProjektów = new List<string>();
         List<string> wybraneDetaleDlaProjektówCzas = new List<string>();
         List<string> wybraneFormyDlaProjektówCzas = new List<string>();
+        List<string> wybraneDetaleDleFormCzas = new List<string>();
 
 
         public Statistics()
@@ -488,60 +489,53 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 comboBoxCzasDetaleDlaFormy.SelectedIndex = -1;
             }
         }
-
-        //tutaj
         private void showDetailsTimeMolds(object sender, EventArgs e)
         {
 
-            if (string.IsNullOrEmpty(comboFormaDetaleWszystkie.Text))
+            if (string.IsNullOrEmpty(comboBoxCzasDetaleDlaFormy.Text))
             {
 
-                DataSet dD = sqlQuery.GetDataFromSql("select detalNazwa from Detal_komplet where Forma in(select formaNazwa from Forma where FK_projektId = (select projektId from Projekt where projektNazwa = '" + comboProjektDetaleWszystkie.Text + "'))");
-                listBoxDetaleWszystkie.DataSource = dD.Tables[0];
-                listBoxDetaleWszystkie.DisplayMember = "detalNazwa";
+                DataSet dD = sqlQuery.GetDataFromSql("select detalNazwa from Detal_komplet where Forma in(select formaNazwa from Forma where FK_projektId = (select projektId from Projekt where projektNazwa = '" + comboBoxCzasDetaleDlaProjektu.Text + "'))");
+                listBoxDetaleCzas.DataSource = dD.Tables[0];
+                listBoxDetaleCzas.DisplayMember = "detalNazwa";
             }
             else
             {
-                DataSet dD = sqlQuery.GetDataFromSql("select detalNazwa from Detal_komplet where Forma =  '" + comboFormaDetaleWszystkie.Text + "'");
-                listBoxDetaleWszystkie.DataSource = dD.Tables[0];
-                listBoxDetaleWszystkie.DisplayMember = "detalNazwa";
+                DataSet dD = sqlQuery.GetDataFromSql("select detalNazwa from Detal_komplet where Forma =  '" + comboBoxCzasDetaleDlaFormy.Text + "'");
+                listBoxDetaleCzas.DataSource = dD.Tables[0];
+                listBoxDetaleCzas.DisplayMember = "detalNazwa";
             }
         }
+        private void detaleTimeChart_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < listBoxDetaleCzas.SelectedItems.Count; i++)
+            {
+                wybraneDetaleDleFormCzas.Add(listBoxDetaleCzas.GetItemText(listBoxDetaleCzas.SelectedItems[i]));
+            }
+            using (var connection = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
+            {
+                connection.Open();
+                var sqlCommand = new SqlCommand();
+                sqlCommand.Connection = connection;
+                sqlCommand.CommandType = CommandType.Text;
+                var sql = "select det.detalnazwa as 'Detal', COUNT(prob.detalId) as 'Liczba prob' from Proby prob LEFT JOIN Detal_komplet det ON det.detalId = prob.detalId where det.detalNazwa in ({0}) and dzienStart between '" + dateTimePickerDetailAllOd.Value.Date + "' and '" + dateTimePickerDetailAllDo.Value.Date + "' group by det.detalNazwa;";
 
-
-
-
-
-        //private void detaleAllChart_Click(object sender, EventArgs e)
-        //{
-        //    for (int i = 0; i < listBoxDetaleWszystkie.SelectedItems.Count; i++)
-        //    {
-        //        wybraneDetale.Add(listBoxDetaleWszystkie.GetItemText(listBoxDetaleWszystkie.SelectedItems[i]));
-        //    }
-        //    using (var connection = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
-        //    new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
-        //    {
-        //        connection.Open();
-        //        var sqlCommand = new SqlCommand();
-        //        sqlCommand.Connection = connection;
-        //        sqlCommand.CommandType = CommandType.Text;
-        //        var sql = "select det.detalnazwa as 'Detal', COUNT(prob.detalId) as 'Liczba prob' from Proby prob LEFT JOIN Detal_komplet det ON det.detalId = prob.detalId where det.detalNazwa in ({0}) and dzienStart between '" + dateTimePickerDetailAllOd.Value.Date + "' and '" + dateTimePickerDetailAllDo.Value.Date + "' group by det.detalNazwa;";
-
-        //        DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetale.Select(x => $"\'{x}\'"))));
-        //        DataView source = new DataView(dP.Tables[0]);
-        //        chartDetaleWszystkie.DataSource = source;
-        //        chartDetaleWszystkie.Series[0].XValueMember = "Detal";
-        //        chartDetaleWszystkie.Series[0].YValueMembers = "Liczba prob";
-        //        chartDetaleWszystkie.ChartAreas[0].AxisX.Interval = 1;
-        //        chartDetaleWszystkie.ChartAreas[0].AxisY.Interval = 1;
-        //        chartDetaleWszystkie.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
-        //        chartDetaleWszystkie.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
-        //        chartDetaleWszystkie.DataBind();
-        //        chartDetaleWszystkie.Update();
-        //        wybraneDetale.Clear();
-        //        connection.Close();
-        //    }
-        //}
+                DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetale.Select(x => $"\'{x}\'"))));
+                DataView source = new DataView(dP.Tables[0]);
+                chartCzasDetale.DataSource = source;
+                chartCzasDetale.Series[0].XValueMember = "Detal";
+                chartCzasDetale.Series[0].YValueMembers = "Liczba prob";
+                chartCzasDetale.ChartAreas[0].AxisX.Interval = 1;
+                chartCzasDetale.ChartAreas[0].AxisY.Interval = 1;
+                chartCzasDetale.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
+                chartCzasDetale.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+                chartCzasDetale.DataBind();
+                chartCzasDetale.Update();
+                wybraneDetaleDleFormCzas.Clear();
+                connection.Close();
+            }
+        }
 
 
 
