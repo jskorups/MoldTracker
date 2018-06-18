@@ -54,6 +54,11 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 comboCel.ValueMember = "celNazwa";
                 comboCel.SelectedIndex = -1;
 
+                DataSet dOdpow = sqlQuery.GetDataFromSql("select * from Uzytkownicy");
+                comboOdpowiedzialny.DataSource = dOdpow.Tables[0];
+                comboOdpowiedzialny.ValueMember = "nazwisko";
+                comboOdpowiedzialny.SelectedIndex = -1;
+
             }
             catch (Exception ex)
             {
@@ -69,7 +74,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         public void sprawdzenieCombosow()
         {
-            if (!string.IsNullOrEmpty(comboProjekt.Text) && !string.IsNullOrEmpty(comboTrwanie.Text) && !string.IsNullOrEmpty(comboForma.Text) && !string.IsNullOrEmpty(comboMaszyna.Text) && !string.IsNullOrEmpty(comboDetal.Text) && !string.IsNullOrEmpty(comboCel.Text))
+            if (!string.IsNullOrEmpty(comboProjekt.Text) && !string.IsNullOrEmpty(comboTrwanie.Text) && !string.IsNullOrEmpty(comboForma.Text) && !string.IsNullOrEmpty(comboMaszyna.Text) && !string.IsNullOrEmpty(comboDetal.Text) && !string.IsNullOrEmpty(comboCel.Text) && !string.IsNullOrEmpty(comboOdpowiedzialny.Text))
             {
                 dodajProbeBtn.BackColor = System.Drawing.Color.Lime;
                 dodajProbeBtn.Enabled = true;
@@ -92,10 +97,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
                 cmd.CommandType = System.Data.CommandType.Text;
 
-                cmd.CommandText = "INSERT into Proby (projektId,formaId,maszynaId,detalId, celId, godzStart, dzienStart, czasTrw, celRoz, statusProby) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @godzStart ,convert(date, @dzienStart, 103), @Trwanie, @celRoz, 'Zaplanowana' from Projekt, "
+                cmd.CommandText = "INSERT into Proby (projektId,formaId,maszynaId,detalId, celId, godzStart, dzienStart, czasTrw, celRoz, statusProby, odpowiedzialny) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @godzStart ,convert(date, @dzienStart, 103), @Trwanie, @celRoz, 'Zaplanowana', @odpowiedzialny from Projekt, "
                     + "Forma,Maszyna,Detal_komplet,Cel where "
                     + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNumer = @maszynaNumer "
-                    + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa ";
+                    + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa";
 
 
                 cmd.Parameters.AddWithValue("@projectNazwa", comboProjekt.SelectedValue.ToString());
@@ -107,8 +112,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 cmd.Parameters.AddWithValue("@dzienStart", SqlDbType.Date).Value = dateTimeTerminRealizacjiDzien.Value.Date;
                 cmd.Parameters.AddWithValue("@celRoz", richTexCel.Text.ToString());
                 cmd.Parameters.AddWithValue("@Trwanie", comboTrwanie.SelectedValue.ToString());
+                cmd.Parameters.AddWithValue("@odpowiedzialny", comboOdpowiedzialny.SelectedValue.ToString());
 
-            
+
+
                 cmd.Connection = sqlConnection1;
                 sqlConnection1.Open();
                 cmd.ExecuteNonQuery();
@@ -130,6 +137,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             comboForma.Enabled = false;
             comboDetal.Enabled = false;
             comboCel.Enabled = false;
+            comboOdpowiedzialny.Enabled = false;
             dateTimeTerminRealizacjiDzien.Enabled = false;
             dateTimeTerminRealizacjiGodzina.Enabled = false;
         }
@@ -139,6 +147,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             comboForma.Enabled = true;
             comboDetal.Enabled = true;
             comboCel.Enabled = true;
+            comboOdpowiedzialny.Enabled = true;
             dateTimeTerminRealizacjiDzien.Enabled = true;
             dateTimeTerminRealizacjiGodzina.Enabled = true;
         }
@@ -196,6 +205,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             comboCel.SelectedIndex = -1;
             comboMaszyna.SelectedIndex = -1;
             comboTrwanie.SelectedIndex = -1;
+            comboOdpowiedzialny.SelectedIndex = -1;
             txtKolor.Text = "";
             txtMaterial.Text = "";
             txtSapDetalu.Text = "";
