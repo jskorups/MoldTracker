@@ -96,6 +96,7 @@
     <Compile Include="Delete.Designer.cs">
       <DependentUpon>Delete.cs</DependentUpon>
     </Compile>
+    <Compile Include="loginClass.cs" />
     <Compile Include="machineAdd.cs">
       <SubType>Form</SubType>
     </Compile>

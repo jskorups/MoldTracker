@@ -88,8 +88,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 wybraneProjekty.Add(listBox1.GetItemText(listBox1.SelectedItems[i]));
             }
-            using (var connection = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
-            new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
+            using (var connection = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            //new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
             {
                 connection.Open();
                 var sqlCommand = new SqlCommand();
@@ -146,8 +146,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 wybraneMaszyny.Add(listBoxMaszynyAll.GetItemText(listBoxMaszynyAll.SelectedItems[i]));
             }
-            using (var connection = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
-            new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
+            using (var connection = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            //new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
             {
                 connection.Open();
                 var sqlCommand = new SqlCommand();
@@ -254,8 +254,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 wybraneDetale.Add(listBoxDetaleWszystkie.GetItemText(listBoxDetaleWszystkie.SelectedItems[i]));
             }
-            using (var connection = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
-            new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
+            using (var connection = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            //new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
             {
                 connection.Open();
                 var sqlCommand = new SqlCommand();
@@ -314,8 +314,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 wybraneDetaleDlaProjektówCzas.Add(listBoxTimeProjects.GetItemText(listBoxTimeProjects.SelectedItems[i]));
             }
-            using (var connection = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
-            new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
+            using (var connection = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            //new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
             {
                 connection.Open();
                 var sqlCommand = new SqlCommand();
@@ -394,8 +394,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 wybraneFormyDlaProjektówCzas.Add(listBoxTimeMolds.GetItemText(listBoxTimeMolds.SelectedItems[i]));
             }
-            using (var connection = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
-            new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
+            using (var connection = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            //new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
             {
                 connection.Open();
                 var sqlCommand = new SqlCommand();
@@ -512,8 +512,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 wybraneDetaleDleFormCzas.Add(listBoxDetaleCzas.GetItemText(listBoxDetaleCzas.SelectedItems[i]));
             }
-            using (var connection = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
-            new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
+            using (var connection = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            //new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
             {
                 connection.Open();
                 var sqlCommand = new SqlCommand();
