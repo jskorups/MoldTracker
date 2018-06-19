@@ -91,7 +91,7 @@
             this.dailyGrid.AllowUserToDeleteRows = false;
             this.dailyGrid.AllowUserToOrderColumns = true;
             this.dailyGrid.AllowUserToResizeRows = false;
-            this.dailyGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dailyGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dailyGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.dailyGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dailyGrid.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -107,7 +107,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dailyGrid);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "dailyControl";
             this.Size = new System.Drawing.Size(1733, 985);
             ((System.ComponentModel.ISupportInitialize)(this.planDniaBindingSource1)).EndInit();

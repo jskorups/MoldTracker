@@ -21,6 +21,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             InitializeComponent();
             wczytajDoGridView_Click(null, null);
+            
         }
         private void wczytajDoGridView_Click(object sender, EventArgs e)
         {
@@ -32,8 +33,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             try
             {
-                DataSet ds = sqlQuery.GetDataFromSql("select proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal',dzienStart as 'Dzień', godzStart as 'Godzina' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId; ");
-                ostatnioDodaneGrid.DataSource = ds.Tables[0];
+                DataSet ds = sqlQuery.GetDataFromSql("select proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal',dzienStart as 'Dzień', godzStart as 'Godzina', statusProby as 'Status' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId; ");
+                ostatnioDodaneGrid.DataSource = ds.Tables[0];   
             }
             catch (Exception ex)
             {
@@ -41,6 +42,36 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
         }
         #endregion
+
+        #region Kolorwanie komorek
+        private void colouringCells(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            foreach (DataGridViewRow row in ostatnioDodaneGrid.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value.ToString() == "Zaplanowana")
+                    {
+                        cell.Style.BackColor = Color.Yellow;
+                        
+                    }
+                    else if (cell.Value.ToString() == "Anulowana")
+                    {
+                        cell.Style.BackColor = Color.Red;
+                    }
+                    else if (cell.Value.ToString() == "Zakonczona")
+                    {
+                        cell.Style.BackColor = Color.LimeGreen;
+                    }
+                }
+            }
+        }
+        #endregion
+
+
+
+
+
         #region - Button wyloguj się
         private void logoutBtn_Click(object sender, EventArgs e)
         {
@@ -102,9 +133,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             Statistics S = new Statistics();
             S.instance.Show();
         }
-
         #endregion
-
-
     }
 }

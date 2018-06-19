@@ -36,23 +36,15 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridViewProbyLogged = new System.Windows.Forms.DataGridView();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.zarzadzajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zakończPróbęToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zmieńStatusPróbyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuńPróbęToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zmieńDanePróbyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stwórzRaportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.raportExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.raportScientificMoldingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.wykresRadarowyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.otwórzFolderPróbyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maintainStripZaplanowana = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.Zarzadzanie = new System.Windows.Forms.ToolStripMenuItem();
+            this.Raporty = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProbyLogged)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
+            this.maintainStripZaplanowana.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -132,91 +124,35 @@
             // 
             this.dataGridViewProbyLogged.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewProbyLogged.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProbyLogged.ContextMenuStrip = this.maintainStripZaplanowana;
             this.dataGridViewProbyLogged.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewProbyLogged.Location = new System.Drawing.Point(3, 184);
             this.dataGridViewProbyLogged.Name = "dataGridViewProbyLogged";
             this.dataGridViewProbyLogged.RowTemplate.Height = 24;
             this.dataGridViewProbyLogged.Size = new System.Drawing.Size(1221, 750);
             this.dataGridViewProbyLogged.TabIndex = 7;
+            this.dataGridViewProbyLogged.CellContextMenuStripNeeded += new System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventHandler(this.wybieranieWiersza);
             // 
-            // contextMenuStrip1
+            // maintainStripZaplanowana
             // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.zarzadzajToolStripMenuItem,
-            this.stwórzRaportToolStripMenuItem,
-            this.otwórzFolderPróbyToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(223, 104);
+            this.maintainStripZaplanowana.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.maintainStripZaplanowana.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Zarzadzanie,
+            this.Raporty});
+            this.maintainStripZaplanowana.Name = "contextMenuStrip1";
+            this.maintainStripZaplanowana.Size = new System.Drawing.Size(214, 52);
             // 
-            // zarzadzajToolStripMenuItem
+            // Zarzadzanie
             // 
-            this.zarzadzajToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.zakończPróbęToolStripMenuItem,
-            this.zmieńStatusPróbyToolStripMenuItem,
-            this.usuńPróbęToolStripMenuItem,
-            this.zmieńDanePróbyToolStripMenuItem});
-            this.zarzadzajToolStripMenuItem.Name = "zarzadzajToolStripMenuItem";
-            this.zarzadzajToolStripMenuItem.Size = new System.Drawing.Size(222, 24);
-            this.zarzadzajToolStripMenuItem.Text = "Zarzadzaj próba";
+            this.Zarzadzanie.Name = "Zarzadzanie";
+            this.Zarzadzanie.Size = new System.Drawing.Size(213, 24);
+            this.Zarzadzanie.Text = "Zarządzaj próbą";
             // 
-            // zakończPróbęToolStripMenuItem
+            // Raporty
             // 
-            this.zakończPróbęToolStripMenuItem.Name = "zakończPróbęToolStripMenuItem";
-            this.zakończPróbęToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.zakończPróbęToolStripMenuItem.Text = "Zakończ próbę";
-            // 
-            // zmieńStatusPróbyToolStripMenuItem
-            // 
-            this.zmieńStatusPróbyToolStripMenuItem.Name = "zmieńStatusPróbyToolStripMenuItem";
-            this.zmieńStatusPróbyToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.zmieńStatusPróbyToolStripMenuItem.Text = "Zmień status próby";
-            // 
-            // usuńPróbęToolStripMenuItem
-            // 
-            this.usuńPróbęToolStripMenuItem.Name = "usuńPróbęToolStripMenuItem";
-            this.usuńPróbęToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.usuńPróbęToolStripMenuItem.Text = "Usuń próbę";
-            // 
-            // zmieńDanePróbyToolStripMenuItem
-            // 
-            this.zmieńDanePróbyToolStripMenuItem.Name = "zmieńDanePróbyToolStripMenuItem";
-            this.zmieńDanePróbyToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.zmieńDanePróbyToolStripMenuItem.Text = "Zmień dane próby";
-            // 
-            // stwórzRaportToolStripMenuItem
-            // 
-            this.stwórzRaportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.raportExcelToolStripMenuItem,
-            this.raportScientificMoldingToolStripMenuItem,
-            this.wykresRadarowyToolStripMenuItem});
-            this.stwórzRaportToolStripMenuItem.Name = "stwórzRaportToolStripMenuItem";
-            this.stwórzRaportToolStripMenuItem.Size = new System.Drawing.Size(222, 24);
-            this.stwórzRaportToolStripMenuItem.Text = "Stwórz raport z próby";
-            // 
-            // raportExcelToolStripMenuItem
-            // 
-            this.raportExcelToolStripMenuItem.Name = "raportExcelToolStripMenuItem";
-            this.raportExcelToolStripMenuItem.Size = new System.Drawing.Size(253, 26);
-            this.raportExcelToolStripMenuItem.Text = "Raport Excel";
-            // 
-            // raportScientificMoldingToolStripMenuItem
-            // 
-            this.raportScientificMoldingToolStripMenuItem.Name = "raportScientificMoldingToolStripMenuItem";
-            this.raportScientificMoldingToolStripMenuItem.Size = new System.Drawing.Size(253, 26);
-            this.raportScientificMoldingToolStripMenuItem.Text = "Raport Scientific Molding";
-            // 
-            // wykresRadarowyToolStripMenuItem
-            // 
-            this.wykresRadarowyToolStripMenuItem.Name = "wykresRadarowyToolStripMenuItem";
-            this.wykresRadarowyToolStripMenuItem.Size = new System.Drawing.Size(253, 26);
-            this.wykresRadarowyToolStripMenuItem.Text = "Wykres radarowy";
-            // 
-            // otwórzFolderPróbyToolStripMenuItem
-            // 
-            this.otwórzFolderPróbyToolStripMenuItem.Name = "otwórzFolderPróbyToolStripMenuItem";
-            this.otwórzFolderPróbyToolStripMenuItem.Size = new System.Drawing.Size(222, 24);
-            this.otwórzFolderPróbyToolStripMenuItem.Text = "Otwórz folder próby";
+            this.Raporty.Name = "Raporty";
+            this.Raporty.Size = new System.Drawing.Size(213, 24);
+            this.Raporty.Text = "Zarządzaj raportami";
             // 
             // Maintaining
             // 
@@ -234,7 +170,7 @@
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProbyLogged)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
+            this.maintainStripZaplanowana.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -247,16 +183,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dataGridViewProbyLogged;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem zarzadzajToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem zakończPróbęToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem zmieńStatusPróbyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem usuńPróbęToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem zmieńDanePróbyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem stwórzRaportToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem raportExcelToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem raportScientificMoldingToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem wykresRadarowyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem otwórzFolderPróbyToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip maintainStripZaplanowana;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem Zarzadzanie;
+        private System.Windows.Forms.ToolStripMenuItem Raporty;
     }
 }
