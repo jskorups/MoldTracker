@@ -827,10 +827,9 @@
             // 
             // comboOdpowiedzialny
             // 
-            this.comboOdpowiedzialny.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboOdpowiedzialny.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.comboOdpowiedzialny.FormattingEnabled = true;
-            this.comboOdpowiedzialny.Location = new System.Drawing.Point(250, 6);
+            this.comboOdpowiedzialny.Location = new System.Drawing.Point(249, 2);
             this.comboOdpowiedzialny.Margin = new System.Windows.Forms.Padding(51, 2, 51, 2);
             this.comboOdpowiedzialny.Name = "comboOdpowiedzialny";
             this.comboOdpowiedzialny.Size = new System.Drawing.Size(469, 31);
