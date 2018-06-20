@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using OfficeOpenXml;
+using 
 
 
 namespace UI_Insert_Del_UpdateView_Data_Grid_
@@ -35,22 +36,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 MessageBox.Show(ex.Message);
             }
         }
-        private void raportExcelToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                using (ExcelPackage excel = new ExcelPackage())
-                {
-                    excel.Workbook.Worksheets.Add("Worksheet1");
-                    FileInfo excelFile = new FileInfo(@"\\slssfil01\Pub-MoldTracker\Pliki_proby\test1.xlsx");
-                    excel.SaveAs(excelFile);
-                }
-            }
-            catch (Exception ex)
-            {
-
-            }
-        }
+       
         public void stwórzToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -58,6 +44,41 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             MessageBox.Show(dataGridViewProbyLogged.SelectedCells[1].Value.ToString());
             MessageBox.Show(dataGridViewProbyLogged.SelectedCells[2].Value.ToString());
             MessageBox.Show(dataGridViewProbyLogged.SelectedCells[3].Value.ToString());
+
+            try
+            {
+                FileInfo newFile = new FileInfo(@"\slssfil01\Pub-MoldTracker\Pliki_proby\test1");
+                FileInfo template = new FileInfo(@"\\slssfil01\Pub-MoldTracker\Templates\\proba_template.xlsx");
+
+                using (ExcelPackage xlPackage = new ExcelPackage(newFile, template))
+                {
+
+                    //Added This part
+                    foreach (ExcelWorksheet aworksheet in xlPackage.Workbook.Worksheets)
+                    {
+                        aworksheet.Cell(1, 1).Value = aworksheet.Cell(1, 1).Value;
+                    }
+
+                    ExcelWorksheet worksheet = xlPackage.Workbook.Worksheets["My Data"];
+
+                    excel cell = worksheet.Cell(5, 1);
+                    cell.Value = "15";
+
+                    //worksheet.Cell(5, 1).Value = "Soap";
+
+                    xlPackage.Save();
+                    //Response.Write("Excel file created successfully");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                //Response.WriteFile(ex.InnerException.ToString());
+            }
+
+
+
+
         }
         private void dataGridViewProbyLogged_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
         {
