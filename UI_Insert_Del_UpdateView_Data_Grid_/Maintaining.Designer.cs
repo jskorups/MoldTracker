@@ -38,7 +38,26 @@
             this.dataGridViewProbyLogged = new System.Windows.Forms.DataGridView();
             this.maintainStripZaplanowana = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.Zarzadzanie = new System.Windows.Forms.ToolStripMenuItem();
+            this.zakończPróbęToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kontynuujPróbęToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.usuńPróbęToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Raporty = new System.Windows.Forms.ToolStripMenuItem();
+            this.raportExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stwórzToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uaktualnijToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.wykresRadarowyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stwórzToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.uaktualnijToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.scientificModlingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stwórzToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.uaktualnijToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -131,7 +150,8 @@
             this.dataGridViewProbyLogged.RowTemplate.Height = 24;
             this.dataGridViewProbyLogged.Size = new System.Drawing.Size(1221, 750);
             this.dataGridViewProbyLogged.TabIndex = 7;
-            this.dataGridViewProbyLogged.CellContextMenuStripNeeded += new System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventHandler(this.wybieranieWiersza);
+            this.dataGridViewProbyLogged.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewProbyLogged_CellMouseDown);
+         //   this.dataGridViewProbyLogged.MouseDown += new System.Windows.Forms.MouseEventHandler(this.wybieranieWiersza_MouseDown);
             // 
             // maintainStripZaplanowana
             // 
@@ -144,15 +164,154 @@
             // 
             // Zarzadzanie
             // 
+            this.Zarzadzanie.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.zakończPróbęToolStripMenuItem,
+            this.kontynuujPróbęToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.usuńPróbęToolStripMenuItem});
             this.Zarzadzanie.Name = "Zarzadzanie";
             this.Zarzadzanie.Size = new System.Drawing.Size(213, 24);
             this.Zarzadzanie.Text = "Zarządzaj próbą";
             // 
+            // zakończPróbęToolStripMenuItem
+            // 
+            this.zakończPróbęToolStripMenuItem.Name = "zakończPróbęToolStripMenuItem";
+            this.zakończPróbęToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.zakończPróbęToolStripMenuItem.Text = "Zakończ próbę";
+            // 
+            // kontynuujPróbęToolStripMenuItem
+            // 
+            this.kontynuujPróbęToolStripMenuItem.Name = "kontynuujPróbęToolStripMenuItem";
+            this.kontynuujPróbęToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.kontynuujPróbęToolStripMenuItem.Text = "Kontynuuj próbę";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(191, 6);
+            // 
+            // usuńPróbęToolStripMenuItem
+            // 
+            this.usuńPróbęToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.usuńPróbęToolStripMenuItem.Name = "usuńPróbęToolStripMenuItem";
+            this.usuńPróbęToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.usuńPróbęToolStripMenuItem.Text = "Usuń próbę";
+            // 
             // Raporty
             // 
+            this.Raporty.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.raportExcelToolStripMenuItem,
+            this.wykresRadarowyToolStripMenuItem,
+            this.scientificModlingToolStripMenuItem});
             this.Raporty.Name = "Raporty";
             this.Raporty.Size = new System.Drawing.Size(213, 24);
             this.Raporty.Text = "Zarządzaj raportami";
+            // 
+            // raportExcelToolStripMenuItem
+            // 
+            this.raportExcelToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stwórzToolStripMenuItem,
+            this.uaktualnijToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.toolStripMenuItem2});
+            this.raportExcelToolStripMenuItem.Name = "raportExcelToolStripMenuItem";
+            this.raportExcelToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
+            this.raportExcelToolStripMenuItem.Text = "Raport excel";
+            // 
+            // stwórzToolStripMenuItem
+            // 
+            this.stwórzToolStripMenuItem.Name = "stwórzToolStripMenuItem";
+            this.stwórzToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.stwórzToolStripMenuItem.Text = "Stwórz";
+            this.stwórzToolStripMenuItem.Click += new System.EventHandler(this.stwórzToolStripMenuItem_Click);
+            // 
+            // uaktualnijToolStripMenuItem
+            // 
+            this.uaktualnijToolStripMenuItem.Name = "uaktualnijToolStripMenuItem";
+            this.uaktualnijToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.uaktualnijToolStripMenuItem.Text = "Uaktualnij";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(147, 6);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(150, 26);
+            this.toolStripMenuItem2.Text = "Usuń";
+            // 
+            // wykresRadarowyToolStripMenuItem
+            // 
+            this.wykresRadarowyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stwórzToolStripMenuItem1,
+            this.uaktualnijToolStripMenuItem1,
+            this.toolStripSeparator3,
+            this.toolStripMenuItem3});
+            this.wykresRadarowyToolStripMenuItem.Name = "wykresRadarowyToolStripMenuItem";
+            this.wykresRadarowyToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
+            this.wykresRadarowyToolStripMenuItem.Text = "Wykres radarowy";
+            // 
+            // stwórzToolStripMenuItem1
+            // 
+            this.stwórzToolStripMenuItem1.Name = "stwórzToolStripMenuItem1";
+            this.stwórzToolStripMenuItem1.Size = new System.Drawing.Size(150, 26);
+            this.stwórzToolStripMenuItem1.Text = "Stwórz";
+            // 
+            // uaktualnijToolStripMenuItem1
+            // 
+            this.uaktualnijToolStripMenuItem1.Name = "uaktualnijToolStripMenuItem1";
+            this.uaktualnijToolStripMenuItem1.Size = new System.Drawing.Size(150, 26);
+            this.uaktualnijToolStripMenuItem1.Text = "Uaktualnij";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(147, 6);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(150, 26);
+            this.toolStripMenuItem3.Text = "Usuń";
+            // 
+            // scientificModlingToolStripMenuItem
+            // 
+            this.scientificModlingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stwórzToolStripMenuItem2,
+            this.uaktualnijToolStripMenuItem2,
+            this.toolStripSeparator4,
+            this.toolStripMenuItem4});
+            this.scientificModlingToolStripMenuItem.Name = "scientificModlingToolStripMenuItem";
+            this.scientificModlingToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
+            this.scientificModlingToolStripMenuItem.Text = "Scientific modling";
+            // 
+            // stwórzToolStripMenuItem2
+            // 
+            this.stwórzToolStripMenuItem2.Name = "stwórzToolStripMenuItem2";
+            this.stwórzToolStripMenuItem2.Size = new System.Drawing.Size(150, 26);
+            this.stwórzToolStripMenuItem2.Text = "Stwórz";
+            // 
+            // uaktualnijToolStripMenuItem2
+            // 
+            this.uaktualnijToolStripMenuItem2.Name = "uaktualnijToolStripMenuItem2";
+            this.uaktualnijToolStripMenuItem2.Size = new System.Drawing.Size(150, 26);
+            this.uaktualnijToolStripMenuItem2.Text = "Uaktualnij";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(147, 6);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(150, 26);
+            this.toolStripMenuItem4.Text = "Usuń";
             // 
             // Maintaining
             // 
@@ -187,5 +346,24 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem Zarzadzanie;
         private System.Windows.Forms.ToolStripMenuItem Raporty;
+        private System.Windows.Forms.ToolStripMenuItem zakończPróbęToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kontynuujPróbęToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem usuńPróbęToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem raportExcelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stwórzToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uaktualnijToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem wykresRadarowyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stwórzToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem uaktualnijToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem scientificModlingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stwórzToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem uaktualnijToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
     }
 }

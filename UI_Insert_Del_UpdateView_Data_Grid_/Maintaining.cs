@@ -15,7 +15,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
     public partial class Maintaining : Form
     {
-        
+
 
         public Maintaining()
         {
@@ -51,20 +51,26 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
             }
         }
-        //zaznaczanie całego wiersza
-        private void wybieranieWiersza(object sender, DataGridViewCellContextMenuStripNeededEventArgs e)
+        public void stwórzToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dataGridViewProbyLogged.ClearSelection();
-            int rowSelected = e.RowIndex;
-            if (e.RowIndex != -1)
+
+            MessageBox.Show(dataGridViewProbyLogged.SelectedCells[0].Value.ToString());
+            MessageBox.Show(dataGridViewProbyLogged.SelectedCells[1].Value.ToString());
+            MessageBox.Show(dataGridViewProbyLogged.SelectedCells[2].Value.ToString());
+            MessageBox.Show(dataGridViewProbyLogged.SelectedCells[3].Value.ToString());
+        }
+        private void dataGridViewProbyLogged_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right && e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
-                this.dataGridViewProbyLogged.Rows[rowSelected].Selected = true;
+                dataGridViewProbyLogged.CurrentCell = dataGridViewProbyLogged.Rows[e.RowIndex].Cells[e.ColumnIndex];
+                dataGridViewProbyLogged.Rows[e.RowIndex].Selected = true;
+                dataGridViewProbyLogged.Focus();
             }
-            else if (e.RowIndex == -1)
+            else
             {
-                maintainStripZaplanowana.Enabled = false;
+                return;
             }
-            e.ContextMenuStrip = maintainStripZaplanowana;
         }
     }
 }
