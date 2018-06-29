@@ -57,7 +57,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     if (dailyGrid.Rows.Count == 0 || dailyGrid[0, dailyGrid.Rows.Count - 1].Value.ToString() != dr["maszynaId"].ToString()) dailyGrid.Rows.Add();
                     dailyGrid[0, dailyGrid.Rows.Count - 1].Value = dr["maszynaId"].ToString();
                     int index = dailyGrid.Columns[dr["godzStart"].ToString().Substring(0, 5)].Index;
-                    for (int i = 0; i < Convert.ToInt32(dr["CzasTrw"]); i++)
+                    for (int i = 0; i < Convert.ToInt32(dr["czasStart"]); i++)
                     {
                         dailyGrid[index + i, dailyGrid.Rows.Count - 1].Style.BackColor = Color.Red;
                     }

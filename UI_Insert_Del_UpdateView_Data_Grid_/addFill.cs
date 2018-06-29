@@ -98,7 +98,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
                 cmd.CommandType = System.Data.CommandType.Text;
 
-                cmd.CommandText = "INSERT into Proby (projektId,formaId,maszynaId,detalId, celId, godzStart, dzienStart, czasTrw, celRoz, statusProby, odpowiedzialny) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @godzStart ,convert(date, @dzienStart, 103), @Trwanie, @celRoz, 'Zaplanowana', @odpowiedzialny from Projekt, "
+                cmd.CommandText = "INSERT into Proby (projektId,formaId,maszynaId,detalId, celId, godzStart, dzienStart, czasStart, celRoz, statusProby, odpowiedzialny) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @godzStart ,convert(date, @dzienStart, 103), @Trwanie, @celRoz, 'Zaplanowana', @odpowiedzialny from Projekt, "
                     + "Forma,Maszyna,Detal_komplet,Cel where "
                     + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNumer = @maszynaNumer "
                     + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa";
@@ -306,5 +306,24 @@ private void txtKolor_TextChanged(object sender, EventArgs e)
             comboTrwanie.SelectedIndex = -1;
         }
 
+        private void sprawdzenieCombosow(object sender, EventArgs e)
+        {
+            sprawdzenieCombosow();
+        }
+
+        private void sprawdzenieCombosowDlaRichTextBoxa(object sender, EventArgs e)
+        {
+            sprawdzenieCombosow();
+        }
+
+        private void sprawdzenieCombosowMaszyna(object sender, EventArgs e)
+        {
+            sprawdzenieCombosow();
+        }
+
+        private void sprawdzeniueCombosowDetal(object sender, EventArgs e)
+        {
+            sprawdzenieCombosow();
+        }
     }
 }

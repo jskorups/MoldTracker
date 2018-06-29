@@ -69,6 +69,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         private void logowanieExitBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+            Application.Exit();
         }
     }
 }

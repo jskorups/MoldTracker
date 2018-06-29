@@ -51,10 +51,10 @@
     <Reference Include="EPPlus, Version=4.5.2.1, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
       <HintPath>..\packages\EPPlus.4.5.2.1\lib\net40\EPPlus.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
-      <HintPath>..\packages\ExcelPackage.1.0.0\lib\Microsoft.Office.Interop.Excel.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
@@ -201,6 +201,7 @@
     <Compile Include="Search.Designer.cs">
       <DependentUpon>Search.cs</DependentUpon>
     </Compile>
+    <Compile Include="selectedDataGridmaintain.cs" />
     <Compile Include="sqlNonQuery.cs" />
     <Compile Include="sqlQuery.cs" />
     <Compile Include="Statistics.cs">
@@ -208,6 +209,12 @@
     </Compile>
     <Compile Include="Statistics.Designer.cs">
       <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrialEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrialEnd.Designer.cs">
+      <DependentUpon>TrialEnd.cs</DependentUpon>
     </Compile>
     <Compile Include="Ustawienia.cs">
       <SubType>Form</SubType>
@@ -281,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Statistics.resx">
       <DependentUpon>Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrialEnd.resx">
+      <DependentUpon>TrialEnd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ustawienia.resx">
       <DependentUpon>Ustawienia.cs</DependentUpon>

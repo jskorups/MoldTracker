@@ -37,14 +37,14 @@ select * from Detal_komplet;
 
 -- 12.06.2018
 
-select proj.projektNazwa as 'Projekt' , SUM(czasTrw)as 'Czas' from Proby prob left join Projekt proj on prob.projektId = proj.projektId where proj.projektNazwa in ('VOLVO', 'W62') group by proj.projektNazwa;
+select proj.projektNazwa as 'Projekt' , SUM(czasStart)as 'Czas' from Proby prob left join Projekt proj on prob.projektId = proj.projektId where proj.projektNazwa in ('VOLVO', 'W62') group by proj.projektNazwa;
 
--- zmiana  datatype czasTrw w Proby z varchar na int
+-- zmiana  datatype czasStart w Proby z varchar na int
 
 
 select formaNazwa from Forma where FK_projektId = (select projektId from Projekt where projektNazwa = 'VOLVO');
 
 
-select det.detalnazwa as 'Detal', sum(prob.czasTrw) as 'Czas' 
+select det.detalnazwa as 'Detal', sum(prob.czasStart) as 'Czas' 
 from Proby prob LEFT JOIN Detal_komplet det ON det.detalId = prob.detalId 
 where det.detalNazwa in() group by det.detalNazwa;";

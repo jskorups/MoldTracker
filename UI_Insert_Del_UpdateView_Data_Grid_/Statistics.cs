@@ -321,7 +321,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 var sqlCommand = new SqlCommand();
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
-                var sql = "select proj.projektNazwa as 'Projekt' , SUM(czasTrw)as 'Czas' from Proby prob left join Projekt proj on prob.projektId = proj.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerTimeProjectsOd.Value.Date + "' and '" + dateTimePickerTimeProjectsDo.Value.Date + "' group by proj.projektNazwa;";
+                var sql = "select proj.projektNazwa as 'Projekt' , SUM(czasStart)as 'Czas' from Proby prob left join Projekt proj on prob.projektId = proj.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerTimeProjectsOd.Value.Date + "' and '" + dateTimePickerTimeProjectsDo.Value.Date + "' group by proj.projektNazwa;";
 
                 DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetaleDlaProjektówCzas.Select(x => $"\'{x}\'"))));
                 DataView source = new DataView(dP.Tables[0]);
@@ -401,7 +401,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 var sqlCommand = new SqlCommand();
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
-                var sql = "select form.formaNazwa as 'Forma' , SUM(czasTrw)as 'Czas' from Proby prob left join Forma form on prob.formaId = form.formaId where form.formaNazwa in ({0}) and dzienStart between '" + dateTimePickerMoldOd.Value.Date + "' and '" + dateTimePickerMoldDo.Value.Date + "' group by form.formaNazwa;";
+                var sql = "select form.formaNazwa as 'Forma' , SUM(czasStart)as 'Czas' from Proby prob left join Forma form on prob.formaId = form.formaId where form.formaNazwa in ({0}) and dzienStart between '" + dateTimePickerMoldOd.Value.Date + "' and '" + dateTimePickerMoldDo.Value.Date + "' group by form.formaNazwa;";
 
                 DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneFormyDlaProjektówCzas.Select(x => $"\'{x}\'"))));
                 DataView source = new DataView(dP.Tables[0]);
@@ -519,7 +519,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 var sqlCommand = new SqlCommand();
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
-                var sql = "select det.detalNazwa as 'Detal' , SUM(czasTrw)as 'Czas' from Proby prob left join Detal_komplet det on prob.detalId = det.detalId where det.detalNazwa in ({0}) and dzienStart between '" + detaleCzacOd.Value.Date + "' and '" + detaleCzacDo.Value.Date + "' group by det.detalNazwa;";
+                var sql = "select det.detalNazwa as 'Detal' , SUM(czasStart)as 'Czas' from Proby prob left join Detal_komplet det on prob.detalId = det.detalId where det.detalNazwa in ({0}) and dzienStart between '" + detaleCzacOd.Value.Date + "' and '" + detaleCzacDo.Value.Date + "' group by det.detalNazwa;";
 
                 DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetaleDleFormCzas.Select(x => $"\'{x}\'"))));
                 DataView source = new DataView(dP.Tables[0]);

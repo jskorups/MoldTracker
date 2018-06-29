@@ -31,6 +31,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         #region - Wczytanie danych o ostanich dziesieciu probach  z bazy danych
         private void WczytajOstatnieProby()
         {
+
             try
             {
                 DataSet ds = sqlQuery.GetDataFromSql("select proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal',dzienStart as 'Dzień', godzStart as 'Godzina', statusProby as 'Status' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId; ");
@@ -68,10 +69,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         }
         #endregion
 
-
-
-
-
         #region - Button wyloguj się
         private void logoutBtn_Click(object sender, EventArgs e)
         {
@@ -83,6 +80,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 fl.Show();
             }
         }
+
+
         #endregion
         #region - Button - odswiezanie Datagrid - ostanie proby
         private void button6_Click(object sender, EventArgs e)
