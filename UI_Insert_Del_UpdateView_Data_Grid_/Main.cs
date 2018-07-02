@@ -21,12 +21,14 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             InitializeComponent();
             wczytajDoGridView_Click(null, null);
-            
+
+
         }
         private void wczytajDoGridView_Click(object sender, EventArgs e)
         {
-           WczytajOstatnieProby();
+            WczytajOstatnieProby();
         }
+
 
         #region - Wczytanie danych o ostanich dziesieciu probach  z bazy danych
         private void WczytajOstatnieProby()
@@ -34,8 +36,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
             try
             {
-                DataSet ds = sqlQuery.GetDataFromSql("select proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal',dzienStart as 'Dzień', godzStart as 'Godzina', statusProby as 'Status' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId; ");
-                ostatnioDodaneGrid.DataSource = ds.Tables[0];   
+                DataSet ds = sqlQuery.GetDataFromSql("select proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal',dzienStart as 'Dzień', godzStart as 'Godzina', statusProby as 'Status', odpowiedzialny as 'Inżynier' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId; ");
+                ostatnioDodaneGrid.DataSource = ds.Tables[0];
+;
             }
             catch (Exception ex)
             {

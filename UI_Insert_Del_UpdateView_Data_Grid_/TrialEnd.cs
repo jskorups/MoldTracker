@@ -15,12 +15,11 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         public TrialEnd()
         {
             InitializeComponent();
+
             DateTimePickerKonczeniePróby.Format = DateTimePickerFormat.Time;
             DateTimePickerKonczeniePróby.CustomFormat = "hh:mm";
             DateTimePickerKonczeniePróby.ShowUpDown = true;
             DateTimePickerKonczeniePróby.Value = DateTimePicker.MinimumDateTime;
-
-           
 
         }
 
@@ -33,6 +32,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             loaddata();
         }
+
         public void loaddata()
         {
 
@@ -53,9 +53,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             sqlConnection1.Close();
             this.Close();
 
-            TrialEnd frm = new TrialEnd();
-            frm.Update();
-            this.Close();
+            var mT = new Maintaining();
+            mT.ShowDialog();
+        
         }
     }
 }

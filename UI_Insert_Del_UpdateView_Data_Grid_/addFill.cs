@@ -14,8 +14,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
     public partial class addFill : Form
     {
- 
-
         public addFill()
         {
             InitializeComponent();
@@ -322,6 +320,11 @@ private void txtKolor_TextChanged(object sender, EventArgs e)
         }
 
         private void sprawdzeniueCombosowDetal(object sender, EventArgs e)
+        {
+            sprawdzenieCombosow();
+        }
+
+        private void czasTrwaniaCombo(object sender, EventArgs e)
         {
             sprawdzenieCombosow();
         }
