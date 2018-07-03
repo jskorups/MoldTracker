@@ -88,8 +88,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 wybraneProjekty.Add(listBox1.GetItemText(listBox1.SelectedItems[i]));
             }
-            using (var connection = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
-            new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
+            using (var connection = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            //new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
             {
                 connection.Open();
                 var sqlCommand = new SqlCommand();

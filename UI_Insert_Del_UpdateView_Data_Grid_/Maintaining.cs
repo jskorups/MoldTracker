@@ -39,9 +39,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 DataSet ds = sqlQuery.GetDataFromSql("select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby = 'Zaplanowana' and odpowiedzialny =(select nazwisko from Uzytkownicy where nazwauzytkownika = 'sgil')");
                 dataGridViewProbyLogged.DataSource = ds.Tables[0];
-                //   this.dataGridViewProbyLogged.Columns["Cel"].Visible = false;
-                //   this.dataGridViewProbyLogged.Columns["Cel2"].Visible = false;
-                //   this.dataGridViewProbyLogged.Columns["Odpowiedzialny"].Visible = false;
+                this.dataGridViewProbyLogged.Columns["Cel"].Visible = false;
+                this.dataGridViewProbyLogged.Columns["Cel2"].Visible = false;
+                this.dataGridViewProbyLogged.Columns["Odpowiedzialny"].Visible = false;
             }
             catch (Exception ex)
             {
