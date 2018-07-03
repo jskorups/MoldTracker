@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D4F5CF7-0A8C-407E-9238-1A591F7ECCDA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI_Insert_Del_UpdateView_Data_Grid_</RootNamespace>
+    <AssemblyName>UI_Insert_Del_UpdateView_Data_Grid_</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=4.5.2.1, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.2.1\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addFill.Designer.cs">
+      <DependentUpon>addFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assets.Designer.cs">
+      <DependentUpon>Assets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CircularButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dailyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dailyControl.Designer.cs">
+      <DependentUpon>dailyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete.Designer.cs">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginClass.cs" />
+    <Compile Include="machineAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="machineAdd.Designer.cs">
+      <DependentUpon>machineAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="machineRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="machineRemove.Designer.cs">
+      <DependentUpon>machineRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintaining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintaining.Designer.cs">
+      <DependentUpon>Maintaining.cs</DependentUpon>
+    </Compile>
+    <Compile Include="moldAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moldAdd.Designer.cs">
+      <DependentUpon>moldAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldTrackerDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoldTrackerDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MoldTrackerDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoldTrackerDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="monthlyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="monthlyControl.Designer.cs">
+      <DependentUpon>monthlyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NowyTermin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NowyTermin.Designer.cs">
+      <DependentUpon>NowyTermin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning.Designer.cs">
+      <DependentUpon>Planning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logowanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logowanie.Designer.cs">
+      <DependentUpon>Logowanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldTrackerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoldTrackerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MoldTrackerDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoldTrackerDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profil.Designer.cs">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectAdd.Designer.cs">
+      <DependentUpon>ProjectAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selectedDataGridmaintain.cs" />
+    <Compile Include="sqlNonQuery.cs" />
+    <Compile Include="sqlQuery.cs" />
+    <Compile Include="Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrialEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrialEnd.Designer.cs">
+      <DependentUpon>TrialEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ustawienia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ustawienia.Designer.cs">
+      <DependentUpon>Ustawienia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="weeklyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="weeklyControl.Designer.cs">
+      <DependentUpon>weeklyControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addFill.resx">
+      <DependentUpon>addFill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets.resx">
+      <DependentUpon>Assets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dailyControl.resx">
+      <DependentUpon>dailyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logowanie.resx">
+      <DependentUpon>Logowanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="machineAdd.resx">
+      <DependentUpon>machineAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="machineRemove.resx">
+      <DependentUpon>machineRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintaining.resx">
+      <DependentUpon>Maintaining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="moldAdd.resx">
+      <DependentUpon>moldAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="monthlyControl.resx">
+      <DependentUpon>monthlyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NowyTermin.resx">
+      <DependentUpon>NowyTermin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning.resx">
+      <DependentUpon>Planning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profil.resx">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectAdd.resx">
+      <DependentUpon>ProjectAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrialEnd.resx">
+      <DependentUpon>TrialEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ustawienia.resx">
+      <DependentUpon>Ustawienia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="weeklyControl.resx">
+      <DependentUpon>weeklyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MoldTrackerDataSet.xsc">
+      <DependentUpon>MoldTrackerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MoldTrackerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MoldTrackerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MoldTrackerDataSet.xss">
+      <DependentUpon>MoldTrackerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MoldTrackerDataSet1.xsc">
+      <DependentUpon>MoldTrackerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MoldTrackerDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MoldTrackerDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MoldTrackerDataSet1.xss">
+      <DependentUpon>MoldTrackerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MoldTrackerDataSet2.xsc">
+      <DependentUpon>MoldTrackerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MoldTrackerDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MoldTrackerDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MoldTrackerDataSet2.xss">
+      <DependentUpon>MoldTrackerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MoldTrackerDataSet3.xsc">
+      <DependentUpon>MoldTrackerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MoldTrackerDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MoldTrackerDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MoldTrackerDataSet3.xss">
+      <DependentUpon>MoldTrackerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\delete.png" />
+    <Content Include="icons\save.png" />
+    <Content Include="icons\update.png" />
+    <Content Include="icons\update_2.png" />
+    <Content Include="sql.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 i x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="System\Web\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

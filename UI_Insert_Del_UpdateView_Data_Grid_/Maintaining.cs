@@ -24,7 +24,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             dataGridViewProbyLogged.Update();
             dataGridViewProbyLogged.Refresh();
         }
-
+   
         public Maintaining()
         {
             
@@ -37,8 +37,11 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             try
             {
-                DataSet ds = sqlQuery.GetDataFromSql("select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and statusProby = 'Zaplanowana' and odpowiedzialny =(select nazwisko from Uzytkownicy where nazwauzytkownika = 'sgil')");
+                DataSet ds = sqlQuery.GetDataFromSql("select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby = 'Zaplanowana' and odpowiedzialny =(select nazwisko from Uzytkownicy where nazwauzytkownika = 'sgil')");
                 dataGridViewProbyLogged.DataSource = ds.Tables[0];
+                //   this.dataGridViewProbyLogged.Columns["Cel"].Visible = false;
+                //   this.dataGridViewProbyLogged.Columns["Cel2"].Visible = false;
+                //   this.dataGridViewProbyLogged.Columns["Odpowiedzialny"].Visible = false;
             }
             catch (Exception ex)
             {
@@ -46,16 +49,19 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
         }
 
-
         public void stwórzToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             string idProby = dataGridViewProbyLogged.SelectedCells[0].Value.ToString();
             string nazwaProjektu = dataGridViewProbyLogged.SelectedCells[1].Value.ToString().Replace(@"/", "-");
             string nazwaFormy = dataGridViewProbyLogged.SelectedCells[2].Value.ToString();
-            string nazwaDetalu = (dataGridViewProbyLogged.SelectedCells[4].Value.ToString()); // zostaw kilka znaków początkowych
-            string dzienStart = (dataGridViewProbyLogged.SelectedCells[6].Value.ToString()); // zostaw kilka znaków początkowych
+            string nazwaMaszyny = dataGridViewProbyLogged.SelectedCells[3].Value.ToString();
+            string nazwaDetalu = dataGridViewProbyLogged.SelectedCells[4].Value.ToString();
+            string nazwaCel = dataGridViewProbyLogged.SelectedCells[5].Value.ToString();
+            string dzienStart = dataGridViewProbyLogged.SelectedCells[7].Value.ToString();
+            string nazwaCel2 = dataGridViewProbyLogged.SelectedCells[9].Value.ToString();
+            string odpowiedzialny = dataGridViewProbyLogged.SelectedCells[10].Value.ToString();
 
+         
 
             if (dzienStart.Length <= 0)
             {
@@ -81,15 +87,25 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 Microsoft.Office.Interop.Excel.Worksheet x = excel.ActiveSheet as Microsoft.Office.Interop.Excel.Worksheet;
 
 
-                x.Range["B14"].Value = idProby;
+                x.Range["F5"].Value = nazwaProjektu;
+                x.Range["F6"].Value = nazwaDetalu;
+                x.Range["F7"].Value = nazwaFormy;
+                x.Range["F8"].Value = nazwaMaszyny;
+                x.Range["F9"].Value = nazwaCel;
+                x.Range["AC6"].Value = dzienStart;
+                x.Range["AC8"].Value = odpowiedzialny;
+                x.Range["Y2"].Value = idProby;
+                x.Range["AC2"].Value = System.DateTime.Today;
+
+                
+                //DataSet dP = sqlQuery.GetDataFromSql("select celNazwa from Cel where celId = (select celId from Proby where probaId = '"+idProby+"');");
+               
+                //string costam = dP.Tables["celNazwa"].ToString();
+                //MessageBox.Show(costam);
+
 
                 sheet.Close(true, Type.Missing, Type.Missing);
                 excel.Quit();
-
-                //oXL.Visible = true;
-                //oXL.DisplayAlerts = false;
-
-                //oXL.Workbooks.Open(@"\\slssfil01\\Pub-MoldTracker\\Templates\\" +idProby + "_" + nazwaProjektu + "_" + nazwaFormy+ "_" + dzienStart.Replace(@"/", "_") + ".xls");
 
             }
             catch (Exception ex)
@@ -105,7 +121,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             string nazwaProjektu = dataGridViewProbyLogged.SelectedCells[1].Value.ToString().Replace(@"/", "-");
             string nazwaFormy = dataGridViewProbyLogged.SelectedCells[2].Value.ToString();
             string nazwaDetalu = dataGridViewProbyLogged.SelectedCells[4].Value.ToString(); // zostaw kilka znaków początkowych
-            string dzienStart = dataGridViewProbyLogged.SelectedCells[6].Value.ToString(); // zostaw kilka znaków początkowych
+            string dzienStart = dataGridViewProbyLogged.SelectedCells[7].Value.ToString(); // zostaw kilka znaków początkowych
 
 
             if (dzienStart.Length <= 0 ) {
