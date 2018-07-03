@@ -16,13 +16,23 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
     public partial class Maintaining : Form
     {
-      
+        TrialEnd obj = (TrialEnd)System.Windows.Forms.Application.OpenForms["Maintaining"];
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            obj.loaddata(); ;
+            dataGridViewProbyLogged.Update();
+            dataGridViewProbyLogged.Refresh();
+        }
+
         public Maintaining()
         {
-
+            
             InitializeComponent();
             WczytajProbyZalogowanego();
+
         }
+
         private void WczytajProbyZalogowanego()
         {
             try
@@ -36,6 +46,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
         }
 
+
         public void stwórzToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -44,6 +55,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             string nazwaFormy = dataGridViewProbyLogged.SelectedCells[2].Value.ToString();
             string nazwaDetalu = (dataGridViewProbyLogged.SelectedCells[4].Value.ToString()); // zostaw kilka znaków początkowych
             string dzienStart = (dataGridViewProbyLogged.SelectedCells[6].Value.ToString()); // zostaw kilka znaków początkowych
+
 
             if (dzienStart.Length <= 0)
             {
@@ -60,8 +72,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             try
             {
                 string templateFilePath = @"\\slssfil01\\Pub-MoldTracker\\Templates\\proba_template.xls";
-                string newFilePath = @"\\slssfil01\\Pub-MoldTracker\\Templates\\" + idProby + "_" + nazwaProjektu + "_" + nazwaFormy + "_" + dzienStart.Replace(@"/", "_") + ".xls";
-                File.Copy(@"" + templateFilePath + "", @"" + newFilePath + "");
+                string newFilePath = @"\\slssfil01\\Pub-MoldTracker\\Templates\\" + idProby + "_" + nazwaProjektu + "_" +nazwaFormy+ "_" + dzienStart.Replace(@"/", "_") + ".xls";
+                File.Copy(@""+templateFilePath+"", @""+newFilePath+ "");
 
 
                 Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
@@ -96,8 +108,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             string dzienStart = dataGridViewProbyLogged.SelectedCells[6].Value.ToString(); // zostaw kilka znaków początkowych
 
 
-            if (dzienStart.Length <= 0)
-            {
+            if (dzienStart.Length <= 0 ) {
 
                 MessageBox.Show("Nie można wykonać takiej akcji");
                 return;
@@ -108,9 +119,15 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 dzienStart = dzienStart.Substring(0, dzienStart.Length - 9);
             }
 
+
+
             try
             {
-                string newFilePath = @"\\slssfil01\\Pub-MoldTracker\\Templates\\" + idProby + "_" + nazwaProjektu + "_" + nazwaFormy + "_" + dzienStart.Replace(@"/", "_") + ".xls";
+                // string templateFilePath = @"\\slssfil01\\Pub-MoldTracker\\Templates\\proba_template.xls";
+                string newFilePath = @"\\slssfil01\\Pub-MoldTracker\\Templates\\" +idProby + "_" +nazwaProjektu+ "_" +nazwaFormy+ "_"+dzienStart.Replace(@"/", "_")+".xls";
+                // newFilePath = newFilePath.Replace
+                //  File.Copy(@"" + templateFilePath + "", @"" + newFilePath.Replace(@"/", "_") + "");
+
                 bool czyIstnieje = File.Exists(newFilePath);
 
                 if (czyIstnieje == true)
@@ -120,17 +137,17 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     oXL.DisplayAlerts = false;
                     oXL.Workbooks.Open(@"\\slssfil01\\Pub-MoldTracker\\Templates\\" + idProby + "_" + nazwaProjektu + "_" + nazwaFormy + "_" + dzienStart.Replace(@"/", "_") + ".xls");
                 }
-                else
-                {
+                else{
                     MessageBox.Show("Nie ma takiego pliku - Stwórz plik");
                 }
             }
             catch (Exception ex)
             {
-
+                
                 MessageBox.Show(ex.Message);
             }
         }
+
         private void dataGridViewProbyLogged_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right && e.RowIndex >= 0 && e.ColumnIndex >= 0)
@@ -150,8 +167,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             var TrialEnd = new TrialEnd();
             TrialEnd.Show();
-
-
 
         }
     }
