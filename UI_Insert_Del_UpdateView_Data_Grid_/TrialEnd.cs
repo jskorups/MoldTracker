@@ -19,10 +19,16 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             DateTimePickerKonczeniePróby.CustomFormat = "hh:mm";
             DateTimePickerKonczeniePróby.ShowUpDown = true;
             DateTimePickerKonczeniePróby.Value = DateTimePicker.MinimumDateTime;
-
-           
-
         }
+
+
+        //public TrialEnd(Maintaining frm)
+        //{
+        //    InitializeComponent();
+
+        //    frm1 = frm;
+        //}
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -47,15 +53,20 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             cmd.Parameters.AddWithValue("@czasTrwania", DateTimePickerKonczeniePróby.Value);
             cmd.Parameters.AddWithValue("@probaId", selectedDataGridmaintain.selectedId);
 
+
+
             cmd.Connection = sqlConnection1;
             sqlConnection1.Open();
             cmd.ExecuteNonQuery();
             sqlConnection1.Close();
             this.Close();
 
-            TrialEnd frm = new TrialEnd();
-            frm.Update();
-            this.Close();
+          
+
+
+
+
+
         }
     }
 }

@@ -1,50 +1,5 @@
 ﻿
--- licznik prob dla maszyny
-SELECT masz.maszynaNumer as 'Numer maszyny', COUNT(prob.maszynaId) AS 'Liczba prób' FROM Proby prob
-LEFT JOIN Maszyna masz ON prob.maszynaId = masz.maszynaId
-GROUP BY masz.maszynaNumer;
-
-select * from Proby;
-
---licznik prob dla detali
-select det.detalNazwa as 'Detal', COUNT(prob.detalId) as 'Liczba prob' from Proby prob
-LEFT JOIN Detal_komplet det ON det.detalId = prob.detalId
-group by det.detalNazwa;
-
-
---licznik prob dla projektu
-select det.detalNazwa as 'Detal', COUNT(prob.detalId) as 'Liczba prob' from Proby prob
-LEFT JOIN Detal_komplet det ON det.detalId = prob.detalId
-group by det.detalNazwa;
-
-
---licznik prob dla wszystkich form w danym dniu
-select form.formaNazwa as 'Forma', COUNT(prob.formaId) as 'Liczba prob' from Proby prob
-LEFT JOIN Forma form ON form.formaId = prob.formaId
-where dzienStart = '2018-05-09'
-group by form.formaNazwa;
-
-https://www.svenbit.com/2014/08/using-sqlparameter-with-sqls-in-clause-in-csharp/
-
-
-
-
-select * from Proby;
-select * from Projekt;
-select * from Forma;
-select * from Detal_komplet;
-
-
--- 12.06.2018
-
-select proj.projektNazwa as 'Projekt' , SUM(czasStart)as 'Czas' from Proby prob left join Projekt proj on prob.projektId = proj.projektId where proj.projektNazwa in ('VOLVO', 'W62') group by proj.projektNazwa;
-
--- zmiana  datatype czasStart w Proby z varchar na int
-
-
-select formaNazwa from Forma where FK_projektId = (select projektId from Projekt where projektNazwa = 'VOLVO');
-
-
-select det.detalnazwa as 'Detal', sum(prob.czasStart) as 'Czas' 
-from Proby prob LEFT JOIN Detal_komplet det ON det.detalId = prob.detalId 
-where det.detalNazwa in() group by det.detalNazwa;";
+1. Sprawdzic date w maintain czy zgodna z formatem na komputerach
+2. Czy wystepuje sql jumping
+3. Detalizowany menustrip nie dziala jak sie kl;iknie gdzies z boku
+4. Ustawia zły format slectedId gdy sie klinie na cos innego niz int
