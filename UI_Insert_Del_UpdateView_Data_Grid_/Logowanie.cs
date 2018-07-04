@@ -27,8 +27,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         private void loginBtn_Click (object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
-            //new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
+            SqlConnection con = //new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
+            new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
             SqlDataAdapter sda = new SqlDataAdapter("select count(*) from Uzytkownicy where nazwauzytkownika ='" + loginTxt.Text + "' and haslo = '" + passwordTxt.Text + "'",con);
             DataTable dt = new DataTable();
             sda.Fill(dt);

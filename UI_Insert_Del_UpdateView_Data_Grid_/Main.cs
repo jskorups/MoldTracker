@@ -64,6 +64,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     {
                         cell.Style.BackColor = Color.LimeGreen;
                     }
+                    else if (cell.Value.ToString() == "Usunieta")
+                    {
+                        cell.Style.BackColor = Color.Violet;
+                    }
                 }
             }
         }
