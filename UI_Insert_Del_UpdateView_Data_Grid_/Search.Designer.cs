@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search));
             this.searchStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.więcejToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -181,8 +183,24 @@
             this.searchGrid.AllowUserToResizeColumns = false;
             this.searchGrid.AllowUserToResizeRows = false;
             this.searchGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.searchGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.searchGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.searchGrid.ContextMenuStrip = this.searchStrip;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.searchGrid.DefaultCellStyle = dataGridViewCellStyle2;
             this.searchGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.searchGrid.Location = new System.Drawing.Point(3, 444);
             this.searchGrid.Name = "searchGrid";
@@ -313,7 +331,7 @@
             this.tableLayoutPanel26.Controls.Add(this.checkBox9, 0, 0);
             this.tableLayoutPanel26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel26.Location = new System.Drawing.Point(2, 291);
-            this.tableLayoutPanel26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel26.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel26.Name = "tableLayoutPanel26";
             this.tableLayoutPanel26.RowCount = 1;
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -339,7 +357,7 @@
             this.tableLayoutPanel9.Controls.Add(this.checkBox5, 0, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(2, 235);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -440,7 +458,7 @@
             this.tableLayoutPanel28.Controls.Add(this.tableLayoutPanel32, 0, 0);
             this.tableLayoutPanel28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel28.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel28.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel28.Name = "tableLayoutPanel28";
             this.tableLayoutPanel28.RowCount = 1;
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -456,7 +474,7 @@
             this.tableLayoutPanel32.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel32.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel32.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel32.Name = "tableLayoutPanel32";
             this.tableLayoutPanel32.RowCount = 1;
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -469,7 +487,7 @@
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button3.Location = new System.Drawing.Point(123, 2);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(91, 50);
             this.button3.TabIndex = 55;
@@ -517,7 +535,7 @@
             this.tableLayoutPanel13.Controls.Add(this.usunietaCheckBox, 0, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel13.Location = new System.Drawing.Point(2, 278);
-            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 1;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -622,7 +640,7 @@
             this.tableLayoutPanel27.Controls.Add(this.tableLayoutPanel31, 0, 0);
             this.tableLayoutPanel27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel27.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel27.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel27.Name = "tableLayoutPanel27";
             this.tableLayoutPanel27.RowCount = 1;
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -638,7 +656,7 @@
             this.tableLayoutPanel31.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel31.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel31.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel31.Name = "tableLayoutPanel31";
             this.tableLayoutPanel31.RowCount = 1;
             this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -651,7 +669,7 @@
             this.statusSearchClear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.statusSearchClear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.statusSearchClear.Location = new System.Drawing.Point(111, 2);
-            this.statusSearchClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.statusSearchClear.Margin = new System.Windows.Forms.Padding(2);
             this.statusSearchClear.Name = "statusSearchClear";
             this.statusSearchClear.Size = new System.Drawing.Size(89, 48);
             this.statusSearchClear.TabIndex = 54;
@@ -719,7 +737,7 @@
             this.tableLayoutPanel19.Controls.Add(this.comboDetalSearch, 0, 0);
             this.tableLayoutPanel19.Controls.Add(this.label7, 0, 0);
             this.tableLayoutPanel19.Location = new System.Drawing.Point(4, 224);
-            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 1;
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -761,7 +779,7 @@
             this.tableLayoutPanel12.Controls.Add(this.comboCelSearch, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.label8, 0, 0);
             this.tableLayoutPanel12.Location = new System.Drawing.Point(4, 278);
-            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -923,7 +941,7 @@
             this.tableLayoutPanel30.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel30.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel30.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel30.Name = "tableLayoutPanel30";
             this.tableLayoutPanel30.RowCount = 1;
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -936,7 +954,7 @@
             this.detailSearchClear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.detailSearchClear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.detailSearchClear.Location = new System.Drawing.Point(273, 2);
-            this.detailSearchClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.detailSearchClear.Margin = new System.Windows.Forms.Padding(2);
             this.detailSearchClear.Name = "detailSearchClear";
             this.detailSearchClear.Size = new System.Drawing.Size(116, 48);
             this.detailSearchClear.TabIndex = 53;
@@ -966,7 +984,7 @@
             this.tableLayoutPanel22.Controls.Add(this.tableLayoutPanel29, 0, 0);
             this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel22.Location = new System.Drawing.Point(875, 4);
-            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel22.Name = "tableLayoutPanel22";
             this.tableLayoutPanel22.RowCount = 4;
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -981,12 +999,12 @@
             this.tableLayoutPanel24.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel24.ColumnCount = 2;
             this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 236F));
+            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 238F));
             this.tableLayoutPanel24.Controls.Add(this.label12, 0, 0);
             this.tableLayoutPanel24.Controls.Add(this.dateTimeDo, 1, 0);
             this.tableLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel24.Location = new System.Drawing.Point(2, 121);
-            this.tableLayoutPanel24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel24.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel24.Name = "tableLayoutPanel24";
             this.tableLayoutPanel24.RowCount = 1;
             this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1000,7 +1018,7 @@
             this.label12.Location = new System.Drawing.Point(13, 2);
             this.label12.Margin = new System.Windows.Forms.Padding(11, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(36, 43);
+            this.label12.Size = new System.Drawing.Size(34, 43);
             this.label12.TabIndex = 1;
             this.label12.Text = "Do:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1010,10 +1028,10 @@
             this.dateTimeDo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimeDo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimeDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeDo.Location = new System.Drawing.Point(55, 10);
-            this.dateTimeDo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimeDo.Location = new System.Drawing.Point(53, 10);
+            this.dateTimeDo.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimeDo.Name = "dateTimeDo";
-            this.dateTimeDo.Size = new System.Drawing.Size(232, 27);
+            this.dateTimeDo.Size = new System.Drawing.Size(234, 27);
             this.dateTimeDo.TabIndex = 2;
             // 
             // tableLayoutPanel23
@@ -1021,12 +1039,12 @@
             this.tableLayoutPanel23.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel23.ColumnCount = 2;
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 236F));
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 238F));
             this.tableLayoutPanel23.Controls.Add(this.label11, 0, 0);
             this.tableLayoutPanel23.Controls.Add(this.dateTimeOd, 1, 0);
             this.tableLayoutPanel23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel23.Location = new System.Drawing.Point(2, 70);
-            this.tableLayoutPanel23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel23.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel23.Name = "tableLayoutPanel23";
             this.tableLayoutPanel23.RowCount = 1;
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1040,7 +1058,7 @@
             this.label11.Location = new System.Drawing.Point(14, 2);
             this.label11.Margin = new System.Windows.Forms.Padding(12, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 43);
+            this.label11.Size = new System.Drawing.Size(33, 43);
             this.label11.TabIndex = 0;
             this.label11.Text = "Od:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1050,10 +1068,10 @@
             this.dateTimeOd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimeOd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimeOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeOd.Location = new System.Drawing.Point(55, 10);
-            this.dateTimeOd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimeOd.Location = new System.Drawing.Point(53, 10);
+            this.dateTimeOd.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimeOd.Name = "dateTimeOd";
-            this.dateTimeOd.Size = new System.Drawing.Size(232, 27);
+            this.dateTimeOd.Size = new System.Drawing.Size(234, 27);
             this.dateTimeOd.TabIndex = 1;
             // 
             // tableLayoutPanel25
@@ -1061,12 +1079,12 @@
             this.tableLayoutPanel25.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel25.ColumnCount = 2;
             this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
+            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 159F));
             this.tableLayoutPanel25.Controls.Add(this.label13, 0, 0);
             this.tableLayoutPanel25.Controls.Add(this.button1, 1, 0);
             this.tableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel25.Location = new System.Drawing.Point(2, 172);
-            this.tableLayoutPanel25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel25.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel25.Name = "tableLayoutPanel25";
             this.tableLayoutPanel25.RowCount = 1;
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1078,7 +1096,7 @@
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label13.Location = new System.Drawing.Point(7, 70);
+            this.label13.Location = new System.Drawing.Point(6, 70);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(118, 26);
@@ -1090,10 +1108,10 @@
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(134, 4);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(132, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 159);
+            this.button1.Size = new System.Drawing.Size(155, 159);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -1106,7 +1124,7 @@
             this.tableLayoutPanel29.Controls.Add(this.label10, 0, 0);
             this.tableLayoutPanel29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel29.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel29.Name = "tableLayoutPanel29";
             this.tableLayoutPanel29.RowCount = 1;
             this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));

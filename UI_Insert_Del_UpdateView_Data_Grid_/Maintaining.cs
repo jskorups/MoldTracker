@@ -16,14 +16,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
     public partial class Maintaining : Form
     {
-        TrialEnd obj = (TrialEnd)System.Windows.Forms.Application.OpenForms["Maintaining"];
+       
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            obj.loaddata(); ;
-            dataGridViewProbyLogged.Update();
-            dataGridViewProbyLogged.Refresh();
-        }
+
    
         public Maintaining()
         {
@@ -61,7 +56,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             string nazwaCel2 = dataGridViewProbyLogged.SelectedCells[9].Value.ToString();
             string odpowiedzialny = dataGridViewProbyLogged.SelectedCells[10].Value.ToString();
 
-         
+            
 
             if (dzienStart.Length <= 0)
             {
@@ -116,7 +111,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         private void otwórzToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+    
             string idProby = dataGridViewProbyLogged.SelectedCells[0].Value.ToString();
             string nazwaProjektu = dataGridViewProbyLogged.SelectedCells[1].Value.ToString().Replace(@"/", "-");
             string nazwaFormy = dataGridViewProbyLogged.SelectedCells[2].Value.ToString();
@@ -134,8 +129,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 dzienStart = dzienStart.Replace(@"/", "_");
                 dzienStart = dzienStart.Substring(0, dzienStart.Length - 9);
             }
-
-
 
             try
             {
@@ -182,8 +175,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         private void zakończPróbęToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var TrialEnd = new TrialEnd();
-            TrialEnd.Show();
-
+            TrialEnd.ShowDialog();
+            WczytajProbyZalogowanego();
         }
     }
 }

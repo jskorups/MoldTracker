@@ -132,6 +132,12 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             Statistics S = new Statistics();
             S.instance.Show();
         }
+
         #endregion
+
+        private void zamkniecieMain(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
