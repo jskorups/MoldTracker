@@ -155,15 +155,22 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         #region Zaznacz caly wiersz prawym
         public void dataGridViewProbyLogged_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right && e.RowIndex >= 0 && e.ColumnIndex >= 0)
+
+            int number;
+            bool result = Int32.TryParse(dataGridViewProbyLogged.SelectedCells[0].Value.ToString(), out number);
+            selectedDataGridmaintain.selectedId = number;
+
+            if (e.Button == MouseButtons.Right && e.RowIndex >= 0 && e.ColumnIndex >= 0 && result == true)
             {
-                selectedDataGridmaintain.selectedId = Convert.ToInt32(dataGridViewProbyLogged.SelectedCells[0].Value);
+
                 dataGridViewProbyLogged.CurrentCell = dataGridViewProbyLogged.Rows[e.RowIndex].Cells[e.ColumnIndex];
                 dataGridViewProbyLogged.Rows[e.RowIndex].Selected = true;
+                maintainStripZaplanowana.Enabled = true;
                 dataGridViewProbyLogged.Focus();
             }
             else
             {
+                maintainStripZaplanowana.Enabled = false;
                 return;
             }
         }
@@ -237,16 +244,16 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         private void otwieranieStripa(object sender, CancelEventArgs e)
         {
 
-            if (dataGridViewProbyLogged.SelectedCells[6].Value.ToString() == "Zakonczona" && dataGridViewProbyLogged.SelectedRows.Count > 0)
-            {
-                zakończPróbęToolStripMenuItem.Enabled = false;
+            //if (dataGridViewProbyLogged.SelectedCells[6].Value.ToString() == "Zakonczona" && dataGridViewProbyLogged.SelectedRows.Count > 0)
+            //{
+            //    zakończPróbęToolStripMenuItem.Enabled = false;
          
-            }
-            else 
-            {
-                return;
-                //zakończPróbęToolStripMenuItem.Enabled = true;
-            }
+            //}
+            //else 
+            //{
+            //    return;
+            //    //zakończPróbęToolStripMenuItem.Enabled = true;
+            //}
 
         }
         #endregion
