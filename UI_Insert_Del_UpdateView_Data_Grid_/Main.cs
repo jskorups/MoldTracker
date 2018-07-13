@@ -143,5 +143,11 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             Application.Exit();
         }
+
+        private void buttonMsg_Click(object sender, EventArgs e)
+        {
+            var maintaing = new MSG();
+            maintaing.Show();
+        }
     }
 }

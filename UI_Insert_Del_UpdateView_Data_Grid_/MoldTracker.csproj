@@ -148,6 +148,12 @@
     <Compile Include="monthlyControl.Designer.cs">
       <DependentUpon>monthlyControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="MSG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSG.Designer.cs">
+      <DependentUpon>MSG.cs</DependentUpon>
+    </Compile>
     <Compile Include="NowyTermin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -261,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="monthlyControl.resx">
       <DependentUpon>monthlyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSG.resx">
+      <DependentUpon>MSG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NowyTermin.resx">
       <DependentUpon>NowyTermin.cs</DependentUpon>

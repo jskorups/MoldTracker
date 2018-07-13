@@ -31,7 +31,12 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             //string department = null;
 
             string sql = "select imie, nazwisko, stanowisko, poziomUprawnien, nazwauzytkownika from Uzytkownicy where nazwauzytkownika = '"+loginClass.loginMain+"'";
-            string connString = "Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True";
+           // string connString = "Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True";
+            string connString = "Data Source = SLSVMDB01; Initial Catalog = MoldTracker; User Id = MoldTracker; Password = P1r4m1d4";
+
+
+            
+
 
             using (SqlConnection conn = new SqlConnection(connString))
             {
