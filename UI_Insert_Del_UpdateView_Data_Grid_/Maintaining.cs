@@ -26,16 +26,19 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             InitializeComponent();
             WczytajProbyZalogowanego();
         }
+
+
         #region Wczytywanie prób zalogowanego
         private void WczytajProbyZalogowanego()
         {
             try
             {
-                DataSet ds = sqlQuery.GetDataFromSql("select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby = 'Zaplanowana' and odpowiedzialny =(select nazwisko from Uzytkownicy where nazwauzytkownika = 'sgil')");
+                DataSet ds = sqlQuery.GetDataFromSql("select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny', czasTrwania as 'Czas' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby = 'Zaplanowana' and odpowiedzialny =(select nazwisko from Uzytkownicy where nazwauzytkownika = 'sgil')");
                 dataGridViewProbyLogged.DataSource = ds.Tables[0];
                 this.dataGridViewProbyLogged.Columns["Cel"].Visible = false;
                 this.dataGridViewProbyLogged.Columns["Cel2"].Visible = false;
                 this.dataGridViewProbyLogged.Columns["Odpowiedzialny"].Visible = false;
+                this.dataGridViewProbyLogged.Columns["Czas"].Visible = false;
             }
             catch (Exception ex)
             {
@@ -46,6 +49,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         #region Swtórz plik - Menu Strip
         public void stwórzToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+         
+          
+
             string idProby = dataGridViewProbyLogged.SelectedCells[0].Value.ToString();
             string nazwaProjektu = dataGridViewProbyLogged.SelectedCells[1].Value.ToString().Replace(@"/", "-");
             string nazwaFormy = dataGridViewProbyLogged.SelectedCells[2].Value.ToString();
@@ -55,6 +62,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             string dzienStart = dataGridViewProbyLogged.SelectedCells[7].Value.ToString();
             string nazwaCel2 = dataGridViewProbyLogged.SelectedCells[9].Value.ToString();
             string odpowiedzialny = dataGridViewProbyLogged.SelectedCells[10].Value.ToString();
+            string czasTrw = dataGridViewProbyLogged.SelectedCells[11].Value.ToString();
 
             if (dzienStart.Length <= 0)
             {
@@ -68,11 +76,41 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
             if (dataGridViewProbyLogged.SelectedCells.Count > 3)
             {
-
                 try
                 {
-                    string templateFilePath = @"\\slssfil01\\Pub-MoldTracker\\Templates\\proba_template.xls";
-                    string newFilePath = @"\\slssfil01\\Pub-MoldTracker\\Templates\\" + idProby + "_" + nazwaProjektu + "_" + nazwaFormy + "_" + dzienStart.Replace(@"/", "_") + ".xls";
+                   //string rok = System.DateTime.Now.Year.ToString();
+                   // //string miesiac = System.DateTime.Now.Month.ToString();
+
+
+                   // string monthName = DateTime.Today.ToString("MMMM");
+
+                   // string folderyTermin = @"\\slssfil01\\Pub-MoldTracker\\Raport\\"+rok+"\\"+ monthName+ "";
+
+
+                   // MessageBox.Show(folderyTermin);
+
+                   // // string foldery = @"\\slssfil01\\Pub-MoldTracker\\Raport\\proba_template.xlsx";
+                   // ////// bool czyIstnieje = File.Exists(foldery);
+
+                   // // if (czyIstnieje == true)
+                   // // {
+                   // //     Microsoft.Office.Interop.Excel.Application oXL = new Microsoft.Office.Interop.Excel.Application();
+                   // //     oXL.Visible = true;
+                   // //     oXL.DisplayAlerts = false;
+                   // //     oXL.Workbooks.Open(@"\\slssfil01\\Pub-MoldTracker\\Templates\\" + idProby + "_" + nazwaProjektu + "_" + nazwaFormy + "_" + dzienStart.Replace(@"/", "_") + ".xlsx");
+                   // // }
+                   // // else
+                   // // {
+                   // //     MessageBox.Show("Nie ma takiego pliku - Stwórz plik");
+                    // }
+                    string templateFilePath = @"\\slssfil01\\Pub-MoldTracker\\Templates\\proba_template.xlsx";
+
+
+                    string newFilePath = @"\\slssfil01\\Pub-MoldTracker\\Raporty\\" + idProby + "_" + nazwaProjektu + "_" + nazwaFormy + "_" + dzienStart.Replace(@"/", "_") + ".xlsx";
+
+
+
+
                     File.Copy(@"" + templateFilePath + "", @"" + newFilePath + "");
 
                     Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
@@ -89,9 +127,11 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     x.Range["AC8"].Value = odpowiedzialny;
                     x.Range["Y2"].Value = idProby;
                     x.Range["AC2"].Value = System.DateTime.Today;
+                    x.Range["AC5"].Value = czasTrw;
 
                     sheet.Close(true, Type.Missing, Type.Missing);
                     excel.Quit();
+                    MessageBox.Show("Pomyślnie stworzono plik");
                 }
                 catch (Exception ex)
                 {
@@ -100,8 +140,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
             else
             {
+                MessageBox.Show("Plik nie został stworzony");
                 return;
             }
+
+
+            WczytajProbyZalogowanego();
+
         }
         #endregion
         #region Otworz plik - Menu Strip
@@ -128,7 +173,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             try
             {
                 // string templateFilePath = @"\\slssfil01\\Pub-MoldTracker\\Templates\\proba_template.xls";
-                string newFilePath = @"\\slssfil01\\Pub-MoldTracker\\Templates\\" + idProby + "_" + nazwaProjektu + "_" + nazwaFormy + "_" + dzienStart.Replace(@"/", "_") + ".xls";
+                string newFilePath = @"\\slssfil01\\Pub-MoldTracker\\Raporty\\" + idProby + "_" + nazwaProjektu + "_" + nazwaFormy + "_" + dzienStart.Replace(@"/", "_") + ".xlsx";
                 // newFilePath = newFilePath.Replace
                 //  File.Copy(@"" + templateFilePath + "", @"" + newFilePath.Replace(@"/", "_") + "");
 
@@ -139,7 +184,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     Microsoft.Office.Interop.Excel.Application oXL = new Microsoft.Office.Interop.Excel.Application();
                     oXL.Visible = true;
                     oXL.DisplayAlerts = false;
-                    oXL.Workbooks.Open(@"\\slssfil01\\Pub-MoldTracker\\Templates\\" + idProby + "_" + nazwaProjektu + "_" + nazwaFormy + "_" + dzienStart.Replace(@"/", "_") + ".xls");
+                    oXL.Workbooks.Open(@"\\slssfil01\\Pub-MoldTracker\\Raporty\\" + idProby + "_" + nazwaProjektu + "_" + nazwaFormy + "_" + dzienStart.Replace(@"/", "_") + ".xlsx");
                 }
                 else
                 {
@@ -167,6 +212,27 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 dataGridViewProbyLogged.Rows[e.RowIndex].Selected = true;
                 maintainStripZaplanowana.Enabled = true;
                 dataGridViewProbyLogged.Focus();
+
+                if(dataGridViewProbyLogged.SelectedCells[6].Value.ToString() == "Zakonczona" && dataGridViewProbyLogged.SelectedRows.Count > 0)
+                {
+
+                    zakończPróbęToolStripMenuItem.Enabled = false;
+                    stwórzToolStripMenuItem.Enabled = false;
+                    Raporty.Enabled = true;
+                    otwórzToolStripMenuItem.Enabled = true;
+                    stwórzToolStripMenuItem.Enabled = true;
+                    kontynuujPróbęToolStripMenuItem.Enabled = true;
+                }
+                else if (dataGridViewProbyLogged.SelectedCells[6].Value.ToString() == "Zaplanowana" && dataGridViewProbyLogged.SelectedRows.Count > 0)
+                {
+                    zakończPróbęToolStripMenuItem.Enabled = true;
+                    kontynuujPróbęToolStripMenuItem.Enabled = false;
+                    usuńPróbęToolStripMenuItem.Enabled = false;
+                    otwórzToolStripMenuItem.Enabled = false;
+                    stwórzToolStripMenuItem.Enabled = false;
+                    Raporty.Enabled = false;
+                    //zakończPróbęToolStripMenuItem.Enabled = true;
+                }
             }
             else
             {
@@ -181,7 +247,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             var TrialEnd = new TrialEnd();
             TrialEnd.ShowDialog();
             WczytajProbyZalogowanego();
-
         }
         #endregion
         #region Dodawanie elementów do listy - Checkboxy
@@ -223,13 +288,15 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         #region Button Pokaż
         public void maintainPokazButton_Click(object sender, EventArgs e)
         {
-            using (var connection = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+            using //(var connection = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True"))
+                (var connection = new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4"))
+
             {
                 connection.Open();
                 var sqlCommand = new SqlCommand();
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
-                var sql = "select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby in ({0}) and odpowiedzialny = (select nazwisko from Uzytkownicy where nazwauzytkownika = 'sgil') and dzienStart between '" + dateTimePickerMaintainOd.Value.Date + "' and '" + dateTimePickerMaintainDo.Value.Date + "'";
+                var sql = "select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny', czasTrwania as 'Czas' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby in ({0}) and odpowiedzialny = (select nazwisko from Uzytkownicy where nazwauzytkownika = '"+loginClass.loginMain+"') and dzienStart between '" + dateTimePickerMaintainOd.Value.Date + "' and '" + dateTimePickerMaintainDo.Value.Date + "'";
 
                 listaStatusów.Add("Zaplanowana");
 
@@ -239,22 +306,95 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
         }
 
+
+
         #endregion
         #region MenuStrip dla roznych statusow ZAKONCZONA/ZAPLANOWANA/ANULOWNA
-        private void otwieranieStripa(object sender, CancelEventArgs e)
+        //private void otwieranieStripa(object sender, CancelEventArgs e)
+        //{
+
+        //    if (dataGridViewProbyLogged.SelectedCells[6].Value.ToString() == "Zakonczona" && dataGridViewProbyLogged.SelectedRows.Count > 0)
+        //    {
+        //        zakończPróbęToolStripMenuItem.Enabled = false;
+        //        stwórzToolStripMenuItem.Enabled = false;
+        //        Raporty.Enabled = true;
+        //        otwórzToolStripMenuItem.Enabled = true;
+        //        stwórzToolStripMenuItem.Enabled = true;
+        //    }
+        //    else if (dataGridViewProbyLogged.SelectedCells[6].Value.ToString() == "Zaplanowana" && dataGridViewProbyLogged.SelectedRows.Count > 0)
+        //    {
+
+        //        kontynuujPróbęToolStripMenuItem.Enabled = false;
+        //        usuńPróbęToolStripMenuItem.Enabled = false;
+        //        otwórzToolStripMenuItem.Enabled = false;
+        //        stwórzToolStripMenuItem.Enabled = false;
+        //        Raporty.Enabled = false;
+        //        //zakończPróbęToolStripMenuItem.Enabled = true;
+        //    }
+
+        //}
+        #endregion
+        #region Usuwanie próby
+        private void usuńPróbęToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            string idProby = dataGridViewProbyLogged.SelectedCells[0].Value.ToString();
 
-            //if (dataGridViewProbyLogged.SelectedCells[6].Value.ToString() == "Zakonczona" && dataGridViewProbyLogged.SelectedRows.Count > 0)
-            //{
-            //    zakończPróbęToolStripMenuItem.Enabled = false;
-         
-            //}
-            //else 
-            //{
-            //    return;
-            //    //zakończPróbęToolStripMenuItem.Enabled = true;
-            //}
+            if (MessageBox.Show("Czy chcesz usunąć próbę?", "Potwierdź usunięcie", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
 
+            {
+                System.Data.SqlClient.SqlConnection sqlConnection1 =
+                           new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
+                          // new System.Data.SqlClient.SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
+                System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                cmd.CommandText = ("UPDATE Proby SET statusProby = 'Usunieta' WHERE probaId = @probaId ");
+                cmd.Parameters.AddWithValue("@probaId", dataGridViewProbyLogged.SelectedCells[0].Value.ToString());
+
+                cmd.Connection = sqlConnection1;
+                sqlConnection1.Open();
+                cmd.ExecuteNonQuery();
+                sqlConnection1.Close();
+          
+
+                WczytajProbyZalogowanego();
+            }
+            else
+            {
+                MessageBox.Show("Próba nie dodana");
+                return;
+            }
+        }
+        #endregion
+        #region Kontynuowanie próby
+        private void kontynuujPróbęToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string idProby = dataGridViewProbyLogged.SelectedCells[0].Value.ToString();
+
+            if (MessageBox.Show("Czy chcesz przywrócic próbę?", "Potwierdź przywrócenie", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+
+            {
+                System.Data.SqlClient.SqlConnection sqlConnection1 =
+                           new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
+                // new System.Data.SqlClient.SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
+                System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                cmd.CommandText = ("UPDATE Proby SET statusProby = 'Zaplanowana' WHERE probaId = @probaId ");
+                cmd.Parameters.AddWithValue("@probaId", dataGridViewProbyLogged.SelectedCells[0].Value.ToString());
+
+                cmd.Connection = sqlConnection1;
+                sqlConnection1.Open();
+                cmd.ExecuteNonQuery();
+                sqlConnection1.Close();
+
+
+            }
+            else
+            {
+                MessageBox.Show("Próba nie przywrócna");
+                return;
+            }
         }
         #endregion
     }

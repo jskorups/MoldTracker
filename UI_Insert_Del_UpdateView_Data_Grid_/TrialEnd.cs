@@ -20,39 +20,25 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             DateTimePickerKonczeniePróby.ShowUpDown = true;
             DateTimePickerKonczeniePróby.Value = DateTimePicker.MinimumDateTime;
         }
-
-
-        //public TrialEnd(Maintaining frm)
-        //{
-        //    InitializeComponent();
-
-        //    frm1 = frm;
-        //}
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             loaddata();
         }
         public void loaddata()
         {
-
             System.Data.SqlClient.SqlConnection sqlConnection1 =
-            //new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
-            new System.Data.SqlClient.SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
+            new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
+            //new System.Data.SqlClient.SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-
 
             cmd.CommandText = ("UPDATE Proby SET czasTrwania = @czasTrwania, statusProby = 'Zakończona' WHERE probaId = @probaId ");
             cmd.Parameters.AddWithValue("@czasTrwania", DateTimePickerKonczeniePróby.Value);
             cmd.Parameters.AddWithValue("@probaId", selectedDataGridmaintain.selectedId);
-
 
 
             cmd.Connection = sqlConnection1;
@@ -60,13 +46,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             cmd.ExecuteNonQuery();
             sqlConnection1.Close();
             this.Close();
-
-          
-
-
-
-
-
         }
     }
 }

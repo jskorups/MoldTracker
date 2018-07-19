@@ -223,6 +223,7 @@
             this.circularButton4.Size = new System.Drawing.Size(66, 59);
             this.circularButton4.TabIndex = 34;
             this.circularButton4.UseVisualStyleBackColor = false;
+            this.circularButton4.Click += new System.EventHandler(this.circularButton4_Click);
             // 
             // label1
             // 

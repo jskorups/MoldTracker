@@ -16,5 +16,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

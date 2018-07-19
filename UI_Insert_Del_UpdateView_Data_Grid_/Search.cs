@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Office.Interop.Excel;
 
 namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
@@ -64,12 +67,12 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 query = "select prob.probaId as 'Id próby' , proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Numer maszyny', det.detalNazwa as 'Nazwa detalu', prob.godzStart as 'Godzina', prob.dzienStart as 'Dzien', ce.celNazwa as 'Cel próby', prob.statusProby as 'Status próby' from proby prob, projekt proj, forma form, Maszyna masz, Detal_komplet det, cel ce where prob.projektId = proj.projektId and prob.formaId = form.formaId and prob.maszynaId = masz.maszynaId and prob.detalId = det.detalId and prob.celId =  ce.celId and proj.projektId = '" + comboProjektSearch.SelectedValue + "'";
             }
             if (comboFormaSearch.Text.Length > 1)
-            {  
-                    query += " and form.formaId = '" + comboFormaSearch.SelectedValue + "' ";
+            {
+                query += " and form.formaId = '" + comboFormaSearch.SelectedValue + "' ";
             }
             if (comboMaszynaSearch.Text.Length > 1)
             {
-                    query += " and masz.maszynaNumer = '" + comboMaszynaSearch.SelectedValue + "' ";
+                query += " and masz.maszynaNumer = '" + comboMaszynaSearch.SelectedValue + "' ";
             }
             if (comboDetalSearch.Text.Length > 1)
             {
@@ -83,9 +86,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 query += " and prob.statusProby = 'Zaplanowana' ";
             }
-            if (wykonanaCheckBox.Checked)
+            if (zakonczonaCheckBox.Checked)
             {
-                    query += " and prob.statusProby = 'Wykonana'";
+                query += " and prob.statusProby = 'Zakonczona'";
             }
             if (anulowanaCheckBox.Checked)
             {
@@ -103,7 +106,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             anulowanaCheckBox.Checked = false;
             usunietaCheckBox.Checked = false;
-            wykonanaCheckBox.Checked = false;
+            zakonczonaCheckBox.Checked = false;
         }
 
         private void wykonanaClick(object sender, EventArgs e)
@@ -114,14 +117,14 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         }
         private void anulowanaClick(object sender, EventArgs e)
         {
-            wykonanaCheckBox.Checked = false;
+            zakonczonaCheckBox.Checked = false;
             usunietaCheckBox.Checked = false;
             zaplanowanaCheckBox.Checked = false;
         }
 
         private void usunietaClick(object sender, EventArgs e)
         {
-            wykonanaCheckBox.Checked = false;
+            zakonczonaCheckBox.Checked = false;
             anulowanaCheckBox.Checked = false;
             zaplanowanaCheckBox.Checked = false;
         }
@@ -140,7 +143,49 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             zaplanowanaCheckBox.Checked = false;
             anulowanaCheckBox.Checked = false;
             usunietaCheckBox.Checked = false;
-            wykonanaCheckBox.Checked = false;
+            zakonczonaCheckBox.Checked = false;
         }
+
+
+        #region Otwieranie Folderu
+        private void otwórzFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"\\slssfil01\Pub-MoldTracker\\Raporty");
+
+        }
+        #endregion
+
+        #region Otwieranie Excela
+        private void otworzExcelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string partialName = searchGrid.SelectedCells[0].Value.ToString() + "_";
+            DirectoryInfo hdDirectoryInWhichToSearch = new DirectoryInfo(@"\\slssfil01\\Pub-MoldTracker\\Raporty\\");
+            FileInfo[] filesInDir = hdDirectoryInWhichToSearch.GetFiles(partialName + "*.*");
+
+            if (filesInDir.Length > 0)
+            {
+                foreach (FileInfo foundFile in filesInDir)
+                {
+                    string fullName = foundFile.FullName;
+
+                    Microsoft.Office.Interop.Excel.Application oXL = new Microsoft.Office.Interop.Excel.Application();
+                    oXL.Visible = true;
+                    oXL.DisplayAlerts = false;
+                    oXL.Workbooks.Open(fullName);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nie można odnalezc pliku");
+            }
+            #endregion
+        }
+
+        //private void wykonanaCheckBox_CheckedChanged(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }
+    
+
