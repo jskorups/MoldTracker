@@ -614,7 +614,7 @@
             this.buttonMsg.Size = new System.Drawing.Size(55, 63);
             this.buttonMsg.TabIndex = 3;
             this.buttonMsg.UseVisualStyleBackColor = false;
-            this.buttonMsg.Click += new System.EventHandler(this.buttonMsg_Click);
+         //   this.buttonMsg.Click += new System.EventHandler(this.buttonMsg_Click);
             // 
             // logoutBtn
             // 

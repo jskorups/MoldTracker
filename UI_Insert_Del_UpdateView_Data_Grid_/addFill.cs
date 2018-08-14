@@ -88,13 +88,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         }
         private void dodajProbeBtn_Click(object sender, EventArgs e)
         {
-
             if (MessageBox.Show("Czy chcesz dodać próbę?", "Potwierdź próbęe", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                System.Data.SqlClient.SqlConnection sqlConnection1 =
-                new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
-                //new System.Data.SqlClient.SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
-
+                string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
+                System.Data.SqlClient.SqlConnection sqlConnection1 = new System.Data.SqlClient.SqlConnection(connectionStrin);
                 System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
                 cmd.CommandType = System.Data.CommandType.Text;
 
@@ -102,7 +99,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     + "Forma,Maszyna,Detal_komplet,Cel where "
                     + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNumer = @maszynaNumer "
                     + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa";
-
 
                 cmd.Parameters.AddWithValue("@projectNazwa", comboProjekt.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@formaNazwa", comboForma.SelectedValue.ToString());
@@ -114,8 +110,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 cmd.Parameters.AddWithValue("@celRoz", richTexCel.Text.ToString());
                 cmd.Parameters.AddWithValue("@Trwanie", comboTrwanie.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@odpowiedzialny", comboOdpowiedzialny.SelectedValue.ToString());
-
-
 
                 cmd.Connection = sqlConnection1;
                 sqlConnection1.Open();

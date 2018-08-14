@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.Configuration;
 
 
 namespace UI_Insert_Del_UpdateView_Data_Grid_
@@ -15,8 +16,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         public static DataSet GetDataFromSql (string query)
         {
             DataSet ds = new DataSet();
-            //SqlConnection con = new SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
-            SqlConnection con = new SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
+            string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(connectionStrin);
 
             using (con)
             {
