@@ -11,6 +11,7 @@ using System.IO;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+using System.Configuration;
 
 namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
@@ -23,22 +24,12 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         private void Profil_Load(object sender, EventArgs e)
         {
-            //DataSet ds = sqlQuery.GetDataFromSql("select imie, nazwisko, stanowisko, poziomUprawnien, nazwauzytkownika from Uzytkownicy where nazwauzytkownika = 'jskor'");
-            //label11.
-            //MessageBox.Show("niema");
-
-            //string name = null;
-            //string department = null;
 
             string sql = "select imie, nazwisko, stanowisko, poziomUprawnien, nazwauzytkownika from Uzytkownicy where nazwauzytkownika = '"+loginClass.loginMain+"'";
-           // string connString = "Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True";
-            string connString = "Data Source = SLSVMDB01; Initial Catalog = MoldTracker; User Id = MoldTracker; Password = P1r4m1d4";
 
 
-            
-
-
-            using (SqlConnection conn = new SqlConnection(connString))
+            string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
+            using (SqlConnection conn = new SqlConnection(connectionStrin))
             {
                 conn.Open();
                 using (SqlCommand command = new SqlCommand(sql, conn))

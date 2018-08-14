@@ -150,8 +150,15 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         #region Otwieranie Folderu
         private void otwórzFolderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start(@"\\slssfil01\Pub-MoldTracker\\Raporty");
-
+            if (Directory.Exists(@"C:\drivers"))
+            {
+                Process.Start(@"C:\drivers");
+            }
+            else
+            {
+                MessageBox.Show("Podana lokalizacja nie istnieje. Skontaktuj sie z administratorem");
+            }
+              
         }
         #endregion
 
