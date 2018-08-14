@@ -29,6 +29,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         List<string> wybraneDetaleDlaProjektówCzas = new List<string>();
         List<string> wybraneFormyDlaProjektówCzas = new List<string>();
         List<string> wybraneDetaleDleFormCzas = new List<string>();
+        List<string> wybraneInzynierCzas = new List<string>();
 
 
         public Statistics()
@@ -40,6 +41,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             wczytajProjektyCzas();
             wczytajFormyCzas();
             wczytajDetaleCzas();
+            wczytajInynierowCzas();
             //wczytajDetaleDlaProjektu();
             listBox1.SelectedIndex = -1;
         }
@@ -439,7 +441,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         #endregion
         #region Czas dla detali
 
-     
+
         public void wczytajDetaleCzas()
         {
             try
@@ -522,6 +524,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 wybraneDetaleDleFormCzas.Add(listBoxDetaleCzas.GetItemText(listBoxDetaleCzas.SelectedItems[i]));
             }
+
+
+
             string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
             using (var connection = new SqlConnection(connectionStrin))
             {
@@ -530,6 +535,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
                 var sql = "select det.detalNazwa as 'Detal' , SUM(czasStart)as 'Czas' from Proby prob left join Detal_komplet det on prob.detalId = det.detalId where det.detalNazwa in ({0}) and dzienStart between '" + detaleCzacOd.Value.Date + "' and '" + detaleCzacDo.Value.Date + "' group by det.detalNazwa;";
+
 
                 DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetaleDleFormCzas.Select(x => $"\'{x}\'"))));
                 DataView source = new DataView(dP.Tables[0]);
@@ -547,7 +553,79 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
         }
         #endregion
+        #region Czas dla inżynierów
 
+        public void wczytajInynierowCzas()
+        {
+            try
+            {
+                DataSet dI = sqlQuery.GetDataFromSql("select nazwisko from Uzytkownicy;");
+                listBoxInzynierCzas.DataSource = dI.Tables[0];
+                listBoxInzynierCzas.DisplayMember = "nazwisko";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void checkAllEnginners(object sender, EventArgs e)
+        {
+            if (checkBox26.Checked == true)
+            {
+                for (int i = 0; i < listBoxInzynierCzas.Items.Count; i++)
+                    listBoxInzynierCzas.SetSelected(i, true);
+            }
+            else if (checkBox26.Checked == false)
+            {
+                for (int i = 0; i < listBoxInzynierCzas.Items.Count; i++)
+                    listBoxInzynierCzas.SetSelected(i, false);
+            }
+        }
+        //tutaj 
+        private void inzynierowieChartButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(wybraneInzynierCzas.ToString());
+
+            for (int i = 0; i < listBoxInzynierCzas.SelectedItems.Count; i++)
+            {
+                wybraneInzynierCzas.Add(listBoxInzynierCzas.GetItemText(listBoxInzynierCzas.SelectedItems[i]));
+            }
+
+            string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
+
+            using (var connection = new SqlConnection(connectionStrin))
+            {
+                connection.Open();
+                var sqlCommand = new SqlCommand();
+                sqlCommand.Connection = connection;
+                sqlCommand.CommandType = CommandType.Text;
+
+                var sql = "select odpowiedzialny, cast(dateadd(MINUTE,sum(datediff(MINUTE,0,cast(czasTrwania as datetime))),0) as time(0)) as czas from Proby where odpowiedzialny in ({0}) group by odpowiedzialny;";
+
+                DataSet dI2 = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneInzynierCzas.Select(x => $"\'{x}\'"))));
+                DataView source = new DataView(dI2.Tables[0]);
+
+
+
+
+                chartCzasInzynier.DataSource = source;
+                chartCzasInzynier.Series[0].XValueMember = "odpowiedzialny";
+                chartCzasInzynier.Series[0].YValueMembers = "czas";
+                chartCzasInzynier.ChartAreas[0].AxisX.Interval = 1;
+                chartCzasInzynier.ChartAreas[0].AxisY.Interval = 1;
+                chartCzasInzynier.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
+                chartCzasInzynier.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+                chartCzasInzynier.DataBind();
+                chartCzasInzynier.Update();
+                wybraneInzynierCzas.Clear();
+                connection.Close();
+            }
+        }
+
+
+
+
+        #endregion
 
 
 
