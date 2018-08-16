@@ -609,8 +609,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
 
                 chartCzasInzynier.DataSource = source;
+
+                chartCzasInzynier.Series[0].YValueType = ChartValueType.DateTime;
+
                 chartCzasInzynier.Series[0].XValueMember = "odpowiedzialny";
                 chartCzasInzynier.Series[0].YValueMembers = "czas";
+
+
                 chartCzasInzynier.ChartAreas[0].AxisX.Interval = 1;
                 chartCzasInzynier.ChartAreas[0].AxisY.Interval = 1;
                 chartCzasInzynier.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
