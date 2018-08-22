@@ -113,7 +113,7 @@
             this.dataGridViewProbyLogged.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Siemens Sans SC", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -123,7 +123,7 @@
             this.dataGridViewProbyLogged.ContextMenuStrip = this.maintainStripZaplanowana;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -376,7 +376,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Siemens Sans SC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(4, 0);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
@@ -441,7 +441,7 @@
             // maintainUsunietaCheckbox
             // 
             this.maintainUsunietaCheckbox.AutoSize = true;
-            this.maintainUsunietaCheckbox.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.maintainUsunietaCheckbox.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.maintainUsunietaCheckbox.Location = new System.Drawing.Point(13, 163);
             this.maintainUsunietaCheckbox.Margin = new System.Windows.Forms.Padding(11, 2, 3, 2);
             this.maintainUsunietaCheckbox.Name = "maintainUsunietaCheckbox";
@@ -454,7 +454,7 @@
             // maintainAnulowanaCheckbox
             // 
             this.maintainAnulowanaCheckbox.AutoSize = true;
-            this.maintainAnulowanaCheckbox.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.maintainAnulowanaCheckbox.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.maintainAnulowanaCheckbox.Location = new System.Drawing.Point(13, 110);
             this.maintainAnulowanaCheckbox.Margin = new System.Windows.Forms.Padding(11, 2, 3, 2);
             this.maintainAnulowanaCheckbox.Name = "maintainAnulowanaCheckbox";
@@ -467,7 +467,7 @@
             // maintainZakonczonaCheckbox
             // 
             this.maintainZakonczonaCheckbox.AutoSize = true;
-            this.maintainZakonczonaCheckbox.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.maintainZakonczonaCheckbox.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.maintainZakonczonaCheckbox.Location = new System.Drawing.Point(13, 57);
             this.maintainZakonczonaCheckbox.Margin = new System.Windows.Forms.Padding(11, 2, 3, 2);
             this.maintainZakonczonaCheckbox.Name = "maintainZakonczonaCheckbox";
@@ -481,7 +481,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(56, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 19);
@@ -509,7 +509,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(129, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 19);
@@ -543,7 +543,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(16, 31);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 21);
@@ -554,7 +554,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(17, 112);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 21);
@@ -564,7 +564,7 @@
             // dateTimePickerMaintainOd
             // 
             this.dateTimePickerMaintainOd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerMaintainOd.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimePickerMaintainOd.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerMaintainOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerMaintainOd.Location = new System.Drawing.Point(86, 27);
             this.dateTimePickerMaintainOd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -575,7 +575,7 @@
             // dateTimePickerMaintainDo
             // 
             this.dateTimePickerMaintainDo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerMaintainDo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimePickerMaintainDo.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerMaintainDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerMaintainDo.Location = new System.Drawing.Point(86, 109);
             this.dateTimePickerMaintainDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -587,7 +587,7 @@
             // 
             this.maintainPokazButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.maintainPokazButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.maintainPokazButton.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.maintainPokazButton.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.maintainPokazButton.Location = new System.Drawing.Point(3, 226);
             this.maintainPokazButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.maintainPokazButton.Name = "maintainPokazButton";

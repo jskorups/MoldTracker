@@ -72,7 +72,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Siemens Sans SC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(98, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -85,7 +85,7 @@
             // 
             this.ComboMachineNameRemove.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ComboMachineNameRemove.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboMachineNameRemove.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.ComboMachineNameRemove.Font = new System.Drawing.Font("Siemens Sans SC", 12F);
             this.ComboMachineNameRemove.FormattingEnabled = true;
             this.ComboMachineNameRemove.Location = new System.Drawing.Point(328, 13);
             this.ComboMachineNameRemove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -157,7 +157,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Siemens Sans SC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(4, 0);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
@@ -199,7 +199,7 @@
             // BtnMachineAddClose
             // 
             this.BtnMachineAddClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.BtnMachineAddClose.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMachineAddClose.Font = new System.Drawing.Font("Siemens Sans SC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMachineAddClose.Location = new System.Drawing.Point(376, 4);
             this.BtnMachineAddClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnMachineAddClose.Name = "BtnMachineAddClose";
@@ -212,7 +212,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Siemens Sans SC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(4, 4);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";

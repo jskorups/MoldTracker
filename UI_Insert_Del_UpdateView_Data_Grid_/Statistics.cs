@@ -333,7 +333,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 var sqlCommand = new SqlCommand();
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
-                var sql = "select proj.projektNazwa as 'Projekt' , SUM(czasStart)as 'Czas' from Proby prob left join Projekt proj on prob.projektId = proj.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerTimeProjectsOd.Value.Date + "' and '" + dateTimePickerTimeProjectsDo.Value.Date + "' group by proj.projektNazwa;";
+                var sql = "select proj.projektNazwa as 'Projekt' , sum(((DATEPART(hour, czasTrwania) * 3600) + (DATEPART(minute, czasTrwania) * 60) + DATEPART(second, czasTrwania))/3600) as 'Czas' from Proby prob left join Projekt proj on prob.projektId = proj.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerTimeProjectsOd.Value.Date + "' and '" + dateTimePickerTimeProjectsDo.Value.Date + "' group by proj.projektNazwa;";
 
                 DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetaleDlaProjektówCzas.Select(x => $"\'{x}\'"))));
                 DataView source = new DataView(dP.Tables[0]);
@@ -413,7 +413,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 var sqlCommand = new SqlCommand();
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
-                var sql = "select form.formaNazwa as 'Forma' , SUM(czasStart)as 'Czas' from Proby prob left join Forma form on prob.formaId = form.formaId where form.formaNazwa in ({0}) and dzienStart between '" + dateTimePickerMoldOd.Value.Date + "' and '" + dateTimePickerMoldDo.Value.Date + "' group by form.formaNazwa;";
+                var sql = "select form.formaNazwa as 'Forma' , sum(((DATEPART(hour, czasTrwania) * 3600) + (DATEPART(minute, czasTrwania) * 60) + DATEPART(second, czasTrwania))/3600) as 'Czas' from Proby prob left join Forma form on prob.formaId = form.formaId where form.formaNazwa in ({0}) and dzienStart between '" + dateTimePickerMoldOd.Value.Date + "' and '" + dateTimePickerMoldDo.Value.Date + "' group by form.formaNazwa;";
 
                 DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneFormyDlaProjektówCzas.Select(x => $"\'{x}\'"))));
                 DataView source = new DataView(dP.Tables[0]);
@@ -534,7 +534,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 var sqlCommand = new SqlCommand();
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
-                var sql = "select det.detalNazwa as 'Detal' , SUM(czasStart)as 'Czas' from Proby prob left join Detal_komplet det on prob.detalId = det.detalId where det.detalNazwa in ({0}) and dzienStart between '" + detaleCzacOd.Value.Date + "' and '" + detaleCzacDo.Value.Date + "' group by det.detalNazwa;";
+                var sql = "select det.detalNazwa as 'Detal' , sum(((DATEPART(hour, czasTrwania) * 3600) + (DATEPART(minute, czasTrwania) * 60) + DATEPART(second, czasTrwania))/3600) as 'Czas' from Proby prob left join Detal_komplet det on prob.detalId = det.detalId where det.detalNazwa in ({0}) and dzienStart between '" + detaleCzacOd.Value.Date + "' and '" + detaleCzacDo.Value.Date + "' group by det.detalNazwa;";
 
 
                 DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetaleDleFormCzas.Select(x => $"\'{x}\'"))));
@@ -584,7 +584,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         //tutaj 
         private void inzynierowieChartButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(wybraneInzynierCzas.ToString());
 
             for (int i = 0; i < listBoxInzynierCzas.SelectedItems.Count; i++)
             {
@@ -600,24 +599,14 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
 
-                var sql = "select odpowiedzialny, cast(dateadd(MINUTE,sum(datediff(MINUTE,0,cast(czasTrwania as datetime))),0) as time(0)) as czas from Proby where odpowiedzialny in ({0}) group by odpowiedzialny;";
+                var sql = "SELECT odpowiedzialny, sum(((DATEPART(hour, czasTrwania) * 3600) + (DATEPART(minute, czasTrwania) * 60) + DATEPART(second, czasTrwania))/3600) as Czas FROM Proby where odpowiedzialny in ({0}) group by odpowiedzialny;";
 
                 DataSet dI2 = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneInzynierCzas.Select(x => $"\'{x}\'"))));
                 DataView source = new DataView(dI2.Tables[0]);
 
-
-
-
                 chartCzasInzynier.DataSource = source;
-
-                chartCzasInzynier.Series[0].YValueType = ChartValueType.DateTime;
-
                 chartCzasInzynier.Series[0].XValueMember = "odpowiedzialny";
-                chartCzasInzynier.Series[0].YValueMembers = "czas";
-
-
-                chartCzasInzynier.ChartAreas[0].AxisX.Interval = 1;
-                chartCzasInzynier.ChartAreas[0].AxisY.Interval = 1;
+                chartCzasInzynier.Series[0].YValueMembers = "Czas";
                 chartCzasInzynier.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
                 chartCzasInzynier.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
                 chartCzasInzynier.DataBind();
@@ -629,11 +618,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
 
 
-
         #endregion
-
-
-
+        #region Cel dla projektów
+        #endregion
+        #region Cel dla projektów
+        #endregion
+        #region Cel dla projektów
+        #endregion
 
     }
 }

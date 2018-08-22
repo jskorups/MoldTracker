@@ -187,7 +187,7 @@
             this.searchGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -197,7 +197,7 @@
             this.searchGrid.ContextMenuStrip = this.searchStrip;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -256,7 +256,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Siemens Sans SC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(239, 54);
@@ -343,7 +343,7 @@
             // checkBox9
             // 
             this.checkBox9.AutoSize = true;
-            this.checkBox9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox9.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox9.Location = new System.Drawing.Point(5, 5);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(62, 23);
@@ -369,7 +369,7 @@
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox5.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox5.Location = new System.Drawing.Point(5, 5);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(62, 23);
@@ -394,7 +394,7 @@
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox6.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox6.Location = new System.Drawing.Point(5, 5);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(62, 23);
@@ -419,7 +419,7 @@
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox7.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox7.Location = new System.Drawing.Point(5, 5);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(62, 23);
@@ -444,7 +444,7 @@
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox8.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox8.Location = new System.Drawing.Point(5, 5);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(62, 23);
@@ -487,7 +487,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Yellow;
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button3.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button3.Location = new System.Drawing.Point(118, 2);
             this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
@@ -499,7 +499,7 @@
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.label2.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Italic);
             this.label2.Location = new System.Drawing.Point(16, 16);
             this.label2.Margin = new System.Windows.Forms.Padding(15, 8, 2, 0);
             this.label2.Name = "label2";
@@ -547,7 +547,7 @@
             // usunietaCheckBox
             // 
             this.usunietaCheckBox.AutoSize = true;
-            this.usunietaCheckBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usunietaCheckBox.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usunietaCheckBox.Location = new System.Drawing.Point(5, 5);
             this.usunietaCheckBox.Name = "usunietaCheckBox";
             this.usunietaCheckBox.Size = new System.Drawing.Size(93, 23);
@@ -573,7 +573,7 @@
             // zakonczonaCheckBox
             // 
             this.zakonczonaCheckBox.AutoSize = true;
-            this.zakonczonaCheckBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zakonczonaCheckBox.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zakonczonaCheckBox.Location = new System.Drawing.Point(5, 5);
             this.zakonczonaCheckBox.Name = "zakonczonaCheckBox";
             this.zakonczonaCheckBox.Size = new System.Drawing.Size(124, 23);
@@ -599,7 +599,7 @@
             // zaplanowanaCheckBox
             // 
             this.zaplanowanaCheckBox.AutoSize = true;
-            this.zaplanowanaCheckBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zaplanowanaCheckBox.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zaplanowanaCheckBox.Location = new System.Drawing.Point(5, 5);
             this.zaplanowanaCheckBox.Name = "zaplanowanaCheckBox";
             this.zaplanowanaCheckBox.Size = new System.Drawing.Size(138, 23);
@@ -625,7 +625,7 @@
             // anulowanaCheckBox
             // 
             this.anulowanaCheckBox.AutoSize = true;
-            this.anulowanaCheckBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.anulowanaCheckBox.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.anulowanaCheckBox.Location = new System.Drawing.Point(5, 5);
             this.anulowanaCheckBox.Name = "anulowanaCheckBox";
             this.anulowanaCheckBox.Size = new System.Drawing.Size(119, 23);
@@ -669,7 +669,7 @@
             // 
             this.statusSearchClear.BackColor = System.Drawing.Color.Yellow;
             this.statusSearchClear.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.statusSearchClear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.statusSearchClear.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.statusSearchClear.Location = new System.Drawing.Point(107, 2);
             this.statusSearchClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.statusSearchClear.Name = "statusSearchClear";
@@ -682,7 +682,7 @@
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.label1.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Italic);
             this.label1.Location = new System.Drawing.Point(15, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(15, 8, 2, 0);
             this.label1.Name = "label1";
@@ -750,7 +750,7 @@
             // 
             this.comboDetalSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboDetalSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboDetalSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboDetalSearch.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboDetalSearch.FormattingEnabled = true;
             this.comboDetalSearch.Location = new System.Drawing.Point(118, 9);
             this.comboDetalSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 3);
@@ -761,7 +761,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(12, 12);
             this.label7.Margin = new System.Windows.Forms.Padding(10, 10, 25, 0);
             this.label7.Name = "label7";
@@ -792,7 +792,7 @@
             // 
             this.comboCelSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboCelSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboCelSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboCelSearch.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboCelSearch.FormattingEnabled = true;
             this.comboCelSearch.Location = new System.Drawing.Point(118, 10);
             this.comboCelSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 3);
@@ -803,7 +803,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(12, 12);
             this.label8.Margin = new System.Windows.Forms.Padding(10, 10, 25, 0);
             this.label8.Name = "label8";
@@ -833,7 +833,7 @@
             // 
             this.comboFormaSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboFormaSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboFormaSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboFormaSearch.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFormaSearch.FormattingEnabled = true;
             this.comboFormaSearch.Location = new System.Drawing.Point(117, 8);
             this.comboFormaSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 3);
@@ -844,7 +844,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(12, 12);
             this.label5.Margin = new System.Windows.Forms.Padding(10, 10, 25, 0);
             this.label5.Name = "label5";
@@ -873,7 +873,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(12, 12);
             this.label4.Margin = new System.Windows.Forms.Padding(10, 10, 25, 0);
             this.label4.Name = "label4";
@@ -885,7 +885,7 @@
             // 
             this.comboProjektSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboProjektSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboProjektSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboProjektSearch.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboProjektSearch.FormattingEnabled = true;
             this.comboProjektSearch.Location = new System.Drawing.Point(117, 8);
             this.comboProjektSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 3);
@@ -915,7 +915,7 @@
             // 
             this.comboMaszynaSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboMaszynaSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboMaszynaSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboMaszynaSearch.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboMaszynaSearch.FormattingEnabled = true;
             this.comboMaszynaSearch.Location = new System.Drawing.Point(117, 8);
             this.comboMaszynaSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 3);
@@ -926,7 +926,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(12, 12);
             this.label3.Margin = new System.Windows.Forms.Padding(10, 10, 25, 0);
             this.label3.Name = "label3";
@@ -954,7 +954,7 @@
             // 
             this.detailSearchClear.BackColor = System.Drawing.Color.Yellow;
             this.detailSearchClear.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.detailSearchClear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.detailSearchClear.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.detailSearchClear.Location = new System.Drawing.Point(263, 2);
             this.detailSearchClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.detailSearchClear.Name = "detailSearchClear";
@@ -967,7 +967,7 @@
             // label9
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.label9.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Italic);
             this.label9.Location = new System.Drawing.Point(33, 12);
             this.label9.Margin = new System.Windows.Forms.Padding(8, 2, 2, 0);
             this.label9.Name = "label9";
@@ -1016,7 +1016,7 @@
             // label12
             // 
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label12.Location = new System.Drawing.Point(13, 2);
             this.label12.Margin = new System.Windows.Forms.Padding(11, 0, 2, 0);
             this.label12.Name = "label12";
@@ -1028,7 +1028,7 @@
             // dateTimeDo
             // 
             this.dateTimeDo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimeDo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimeDo.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimeDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeDo.Location = new System.Drawing.Point(77, 10);
             this.dateTimeDo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -1056,7 +1056,7 @@
             // label11
             // 
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.label11.Font = new System.Drawing.Font("Siemens Sans SC", 10F, System.Drawing.FontStyle.Bold);
             this.label11.Location = new System.Drawing.Point(14, 2);
             this.label11.Margin = new System.Windows.Forms.Padding(12, 0, 2, 0);
             this.label11.Name = "label11";
@@ -1068,7 +1068,7 @@
             // dateTimeOd
             // 
             this.dateTimeOd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimeOd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimeOd.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimeOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeOd.Location = new System.Drawing.Point(77, 10);
             this.dateTimeOd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -1097,7 +1097,7 @@
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label13.Font = new System.Drawing.Font("Siemens Sans SC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label13.Location = new System.Drawing.Point(17, 70);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
@@ -1136,7 +1136,7 @@
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.Font = new System.Drawing.Font("Siemens Sans SC", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label10.Location = new System.Drawing.Point(67, 21);
             this.label10.Margin = new System.Windows.Forms.Padding(15, 8, 2, 0);
             this.label10.Name = "label10";

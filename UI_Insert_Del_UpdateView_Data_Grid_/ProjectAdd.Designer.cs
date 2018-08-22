@@ -118,7 +118,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Siemens Sans SC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(4, 0);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
@@ -166,7 +166,7 @@
             // TextBoxProjectNameAdd
             // 
             this.TextBoxProjectNameAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBoxProjectNameAdd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxProjectNameAdd.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxProjectNameAdd.Location = new System.Drawing.Point(302, 12);
             this.TextBoxProjectNameAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBoxProjectNameAdd.Name = "TextBoxProjectNameAdd";
@@ -178,7 +178,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Siemens Sans SC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(103, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -207,7 +207,7 @@
             // BtnProjectAddClose
             // 
             this.BtnProjectAddClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.BtnProjectAddClose.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnProjectAddClose.Font = new System.Drawing.Font("Siemens Sans SC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnProjectAddClose.Location = new System.Drawing.Point(376, 4);
             this.BtnProjectAddClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnProjectAddClose.Name = "BtnProjectAddClose";
@@ -220,7 +220,7 @@
             // BtnProjectAdd
             // 
             this.BtnProjectAdd.BackColor = System.Drawing.Color.Lime;
-            this.BtnProjectAdd.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnProjectAdd.Font = new System.Drawing.Font("Siemens Sans SC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnProjectAdd.Location = new System.Drawing.Point(4, 4);
             this.BtnProjectAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnProjectAdd.Name = "BtnProjectAdd";
