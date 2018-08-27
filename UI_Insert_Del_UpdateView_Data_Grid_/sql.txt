@@ -1,2 +1,4 @@
 ﻿
 1. Inzynier - czas / dodac podpisy do inzynierów
+2. Dodac blokowanie dodawania tej samej daty dla proby , dodawanie proby pomiedzy
+3. Dodac planowanie

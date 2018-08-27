@@ -29,39 +29,39 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Statistics));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend15 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea16 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend16 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend17 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend18 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend19 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea21 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend21 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend20 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea22 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend22 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.Czas = new System.Windows.Forms.TabPage();
             this.tabTimeProjects = new System.Windows.Forms.TabControl();
             this.ProjektyCzas = new System.Windows.Forms.TabPage();
@@ -482,14 +482,13 @@
             // Czas
             // 
             this.Czas.Controls.Add(this.tabTimeProjects);
-            this.Czas.Location = new System.Drawing.Point(4, 24);
+            this.Czas.Location = new System.Drawing.Point(4, 27);
             this.Czas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Czas.Name = "Czas";
-            this.Czas.Size = new System.Drawing.Size(1258, 1009);
+            this.Czas.Size = new System.Drawing.Size(1258, 1006);
             this.Czas.TabIndex = 5;
             this.Czas.Text = "Czas";
             this.Czas.UseVisualStyleBackColor = true;
-//            this.Czas.Click += new System.EventHandler(this.Czas_Click);
             // 
             // tabTimeProjects
             // 
@@ -502,22 +501,20 @@
             this.tabTimeProjects.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabTimeProjects.Name = "tabTimeProjects";
             this.tabTimeProjects.SelectedIndex = 0;
-            this.tabTimeProjects.Size = new System.Drawing.Size(1258, 1009);
+            this.tabTimeProjects.Size = new System.Drawing.Size(1258, 1006);
             this.tabTimeProjects.TabIndex = 0;
-         //   this.tabTimeProjects.SelectedIndexChanged += new System.EventHandler(this.tabTimeProjects_SelectedIndexChanged);
             // 
             // ProjektyCzas
             // 
             this.ProjektyCzas.Controls.Add(this.tableLayoutPanel1);
-            this.ProjektyCzas.Location = new System.Drawing.Point(4, 24);
+            this.ProjektyCzas.Location = new System.Drawing.Point(4, 27);
             this.ProjektyCzas.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ProjektyCzas.Name = "ProjektyCzas";
             this.ProjektyCzas.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ProjektyCzas.Size = new System.Drawing.Size(1250, 981);
+            this.ProjektyCzas.Size = new System.Drawing.Size(1250, 975);
             this.ProjektyCzas.TabIndex = 0;
             this.ProjektyCzas.Text = "Projekty";
             this.ProjektyCzas.UseVisualStyleBackColor = true;
-         //   this.ProjektyCzas.Click += new System.EventHandler(this.ProjektyCzas_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -532,9 +529,8 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.8768F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.1232F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1244, 973);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1244, 967);
             this.tableLayoutPanel1.TabIndex = 0;
-        //    this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // tableLayoutPanel2
             // 
@@ -550,9 +546,8 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1240, 362);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1240, 360);
             this.tableLayoutPanel2.TabIndex = 2;
-          //  this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // tableLayoutPanel3
             // 
@@ -567,9 +562,8 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.92115F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.07885F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(698, 350);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(698, 348);
             this.tableLayoutPanel3.TabIndex = 0;
-        //    this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
             // tableLayoutPanel6
             // 
@@ -588,30 +582,28 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(692, 54);
             this.tableLayoutPanel6.TabIndex = 0;
-          //  this.tableLayoutPanel6.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel6_Paint);
             // 
             // label19
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label19.Location = new System.Drawing.Point(122, 19);
+            this.label19.Location = new System.Drawing.Point(109, 17);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(117, 16);
+            this.label19.Size = new System.Drawing.Size(142, 20);
             this.label19.TabIndex = 2;
             this.label19.Text = "Wybierz projekt:";
-         //   this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // checkBoxAllProjectsTime
             // 
             this.checkBoxAllProjectsTime.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxAllProjectsTime.AutoSize = true;
             this.checkBoxAllProjectsTime.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBoxAllProjectsTime.Location = new System.Drawing.Point(449, 17);
+            this.checkBoxAllProjectsTime.Location = new System.Drawing.Point(433, 15);
             this.checkBoxAllProjectsTime.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBoxAllProjectsTime.Name = "checkBoxAllProjectsTime";
-            this.checkBoxAllProjectsTime.Size = new System.Drawing.Size(153, 20);
+            this.checkBoxAllProjectsTime.Size = new System.Drawing.Size(184, 24);
             this.checkBoxAllProjectsTime.TabIndex = 1;
             this.checkBoxAllProjectsTime.Text = "Zaznacz wszystkie:";
             this.checkBoxAllProjectsTime.UseVisualStyleBackColor = true;
@@ -623,15 +615,14 @@
             this.listBoxTimeProjects.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxTimeProjects.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBoxTimeProjects.FormattingEnabled = true;
-            this.listBoxTimeProjects.ItemHeight = 16;
+            this.listBoxTimeProjects.ItemHeight = 20;
             this.listBoxTimeProjects.Location = new System.Drawing.Point(2, 65);
             this.listBoxTimeProjects.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.listBoxTimeProjects.MultiColumn = true;
             this.listBoxTimeProjects.Name = "listBoxTimeProjects";
             this.listBoxTimeProjects.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBoxTimeProjects.Size = new System.Drawing.Size(694, 282);
+            this.listBoxTimeProjects.Size = new System.Drawing.Size(694, 280);
             this.listBoxTimeProjects.TabIndex = 1;
-        //    this.listBoxTimeProjects.SelectedIndexChanged += new System.EventHandler(this.listBoxTimeProjects_SelectedIndexChanged);
             // 
             // tableLayoutPanel32
             // 
@@ -651,35 +642,32 @@
             this.tableLayoutPanel32.RowCount = 2;
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.71429F));
-            this.tableLayoutPanel32.Size = new System.Drawing.Size(526, 352);
+            this.tableLayoutPanel32.Size = new System.Drawing.Size(526, 350);
             this.tableLayoutPanel32.TabIndex = 1;
-         //   this.tableLayoutPanel32.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel32_Paint);
             // 
             // label20
             // 
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label20.Location = new System.Drawing.Point(373, 18);
+            this.label20.Location = new System.Drawing.Point(369, 16);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(41, 16);
+            this.label20.Size = new System.Drawing.Size(49, 20);
             this.label20.TabIndex = 3;
             this.label20.Text = "Inne:";
-         //   this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // label21
             // 
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label21.Location = new System.Drawing.Point(83, 18);
+            this.label21.Location = new System.Drawing.Point(73, 16);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(97, 16);
+            this.label21.Size = new System.Drawing.Size(118, 20);
             this.label21.TabIndex = 1;
             this.label21.Text = "Wybierz datę:";
-         //   this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // tableLayoutPanel33
             // 
@@ -699,59 +687,54 @@
             this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel33.Size = new System.Drawing.Size(256, 291);
+            this.tableLayoutPanel33.Size = new System.Drawing.Size(256, 289);
             this.tableLayoutPanel33.TabIndex = 2;
-         //   this.tableLayoutPanel33.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel33_Paint);
             // 
             // dateTimePickerTimeProjectsDo
             // 
             this.dateTimePickerTimeProjectsDo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerTimeProjectsDo.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerTimeProjectsDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerTimeProjectsDo.Location = new System.Drawing.Point(40, 241);
+            this.dateTimePickerTimeProjectsDo.Location = new System.Drawing.Point(40, 237);
             this.dateTimePickerTimeProjectsDo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePickerTimeProjectsDo.Name = "dateTimePickerTimeProjectsDo";
-            this.dateTimePickerTimeProjectsDo.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePickerTimeProjectsDo.Size = new System.Drawing.Size(175, 28);
             this.dateTimePickerTimeProjectsDo.TabIndex = 5;
-         //   this.dateTimePickerTimeProjectsDo.ValueChanged += new System.EventHandler(this.dateTimePickerTimeProjectsDo_ValueChanged);
             // 
             // label22
             // 
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label22.Location = new System.Drawing.Point(112, 173);
+            this.label22.Location = new System.Drawing.Point(109, 168);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(31, 16);
+            this.label22.Size = new System.Drawing.Size(37, 20);
             this.label22.TabIndex = 4;
             this.label22.Text = "Do:";
-         //   this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // label23
             // 
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label23.Location = new System.Drawing.Point(113, 29);
+            this.label23.Location = new System.Drawing.Point(109, 26);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(30, 16);
+            this.label23.Size = new System.Drawing.Size(37, 20);
             this.label23.TabIndex = 2;
             this.label23.Text = "Od:";
-         //   this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // dateTimePickerTimeProjectsOd
             // 
             this.dateTimePickerTimeProjectsOd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerTimeProjectsOd.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerTimeProjectsOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerTimeProjectsOd.Location = new System.Drawing.Point(40, 97);
+            this.dateTimePickerTimeProjectsOd.Location = new System.Drawing.Point(40, 93);
             this.dateTimePickerTimeProjectsOd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePickerTimeProjectsOd.Name = "dateTimePickerTimeProjectsOd";
-            this.dateTimePickerTimeProjectsOd.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePickerTimeProjectsOd.Size = new System.Drawing.Size(175, 28);
             this.dateTimePickerTimeProjectsOd.TabIndex = 3;
-         //   this.dateTimePickerTimeProjectsOd.ValueChanged += new System.EventHandler(this.dateTimePickerTimeProjectsOd_ValueChanged);
             // 
             // tableLayoutPanel34
             // 
@@ -768,9 +751,8 @@
             this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.65611F));
             this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.34389F));
             this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel34.Size = new System.Drawing.Size(256, 291);
+            this.tableLayoutPanel34.Size = new System.Drawing.Size(256, 289);
             this.tableLayoutPanel34.TabIndex = 4;
-         //   this.tableLayoutPanel34.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel34_Paint);
             // 
             // tableLayoutPanel35
             // 
@@ -789,65 +771,60 @@
             this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel35.Size = new System.Drawing.Size(248, 152);
+            this.tableLayoutPanel35.Size = new System.Drawing.Size(248, 151);
             this.tableLayoutPanel35.TabIndex = 4;
-         //   this.tableLayoutPanel35.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel35_Paint);
             // 
             // checkBox11
             // 
             this.checkBox11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBox11.AutoSize = true;
             this.checkBox11.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox11.Location = new System.Drawing.Point(2, 123);
+            this.checkBox11.Location = new System.Drawing.Point(2, 120);
             this.checkBox11.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(87, 19);
+            this.checkBox11.Size = new System.Drawing.Size(105, 22);
             this.checkBox11.TabIndex = 3;
             this.checkBox11.Text = "checkBox11";
             this.checkBox11.UseVisualStyleBackColor = true;
-         //   this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
             // checkBox12
             // 
             this.checkBox12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBox12.AutoSize = true;
             this.checkBox12.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox12.Location = new System.Drawing.Point(2, 85);
+            this.checkBox12.Location = new System.Drawing.Point(2, 81);
             this.checkBox12.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(88, 19);
+            this.checkBox12.Size = new System.Drawing.Size(107, 22);
             this.checkBox12.TabIndex = 2;
             this.checkBox12.Text = "checkBox12";
             this.checkBox12.UseVisualStyleBackColor = true;
-         //   this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
             // 
             // checkBox13
             // 
             this.checkBox13.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBox13.AutoSize = true;
             this.checkBox13.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox13.Location = new System.Drawing.Point(2, 47);
+            this.checkBox13.Location = new System.Drawing.Point(2, 44);
             this.checkBox13.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(88, 19);
+            this.checkBox13.Size = new System.Drawing.Size(107, 22);
             this.checkBox13.TabIndex = 1;
             this.checkBox13.Text = "checkBox13";
             this.checkBox13.UseVisualStyleBackColor = true;
-         //   this.checkBox13.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
             // 
             // checkBox14
             // 
             this.checkBox14.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBox14.AutoSize = true;
             this.checkBox14.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox14.Location = new System.Drawing.Point(2, 9);
+            this.checkBox14.Location = new System.Drawing.Point(2, 7);
             this.checkBox14.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(89, 19);
+            this.checkBox14.Size = new System.Drawing.Size(107, 22);
             this.checkBox14.TabIndex = 0;
             this.checkBox14.Text = "checkBox14";
             this.checkBox14.UseVisualStyleBackColor = true;
-         //   this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
             // 
             // tableLayoutPanel36
             // 
@@ -856,15 +833,14 @@
             this.tableLayoutPanel36.Controls.Add(this.buttonChartTimeAllProjects, 0, 1);
             this.tableLayoutPanel36.Controls.Add(this.label24, 0, 0);
             this.tableLayoutPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel36.Location = new System.Drawing.Point(4, 165);
+            this.tableLayoutPanel36.Location = new System.Drawing.Point(4, 164);
             this.tableLayoutPanel36.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel36.Name = "tableLayoutPanel36";
             this.tableLayoutPanel36.RowCount = 2;
             this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.08772F));
             this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.91228F));
-            this.tableLayoutPanel36.Size = new System.Drawing.Size(248, 121);
+            this.tableLayoutPanel36.Size = new System.Drawing.Size(248, 120);
             this.tableLayoutPanel36.TabIndex = 5;
-         //   this.tableLayoutPanel36.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel36_Paint);
             // 
             // buttonChartTimeAllProjects
             // 
@@ -874,7 +850,7 @@
             this.buttonChartTimeAllProjects.Location = new System.Drawing.Point(2, 45);
             this.buttonChartTimeAllProjects.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonChartTimeAllProjects.Name = "buttonChartTimeAllProjects";
-            this.buttonChartTimeAllProjects.Size = new System.Drawing.Size(244, 73);
+            this.buttonChartTimeAllProjects.Size = new System.Drawing.Size(244, 72);
             this.buttonChartTimeAllProjects.TabIndex = 0;
             this.buttonChartTimeAllProjects.UseVisualStyleBackColor = true;
             this.buttonChartTimeAllProjects.Click += new System.EventHandler(this.buttonChartTimeAllProjects_Click);
@@ -884,62 +860,59 @@
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label24.Location = new System.Drawing.Point(60, 13);
+            this.label24.Location = new System.Drawing.Point(47, 11);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(128, 16);
+            this.label24.Size = new System.Drawing.Size(153, 20);
             this.label24.TabIndex = 1;
             this.label24.Text = "Pokaż liczbę prób:";
-         //   this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // chartTimeAllProjects
             // 
-            chartArea1.AxisX.Title = "Projekt";
-            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea1.AxisX2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea1.AxisY.Interval = 5D;
-            chartArea1.AxisY.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea1.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
-            chartArea1.AxisY.Title = "Czas [h]";
-            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea1.AxisY2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea1.Name = "ChartArea1";
-            this.chartTimeAllProjects.ChartAreas.Add(chartArea1);
+            chartArea12.AxisX.Title = "Projekt";
+            chartArea12.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea12.AxisX2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea12.AxisY.Interval = 5D;
+            chartArea12.AxisY.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea12.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
+            chartArea12.AxisY.Title = "Czas [h]";
+            chartArea12.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea12.AxisY2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea12.Name = "ChartArea1";
+            this.chartTimeAllProjects.ChartAreas.Add(chartArea12);
             this.chartTimeAllProjects.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Enabled = false;
-            legend1.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            legend1.IsTextAutoFit = false;
-            legend1.Name = "Legend1";
-            legend1.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.chartTimeAllProjects.Legends.Add(legend1);
-            this.chartTimeAllProjects.Location = new System.Drawing.Point(3, 372);
+            legend12.Enabled = false;
+            legend12.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            legend12.IsTextAutoFit = false;
+            legend12.Name = "Legend1";
+            legend12.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.chartTimeAllProjects.Legends.Add(legend12);
+            this.chartTimeAllProjects.Location = new System.Drawing.Point(3, 370);
             this.chartTimeAllProjects.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chartTimeAllProjects.Name = "chartTimeAllProjects";
-            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series1.BorderColor = System.Drawing.Color.Black;
-            series1.ChartArea = "ChartArea1";
-            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series1.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            series1.IsValueShownAsLabel = true;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartTimeAllProjects.Series.Add(series1);
-            this.chartTimeAllProjects.Size = new System.Drawing.Size(1238, 597);
+            series12.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series12.BorderColor = System.Drawing.Color.Black;
+            series12.ChartArea = "ChartArea1";
+            series12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series12.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            series12.IsValueShownAsLabel = true;
+            series12.Legend = "Legend1";
+            series12.Name = "Series1";
+            this.chartTimeAllProjects.Series.Add(series12);
+            this.chartTimeAllProjects.Size = new System.Drawing.Size(1238, 593);
             this.chartTimeAllProjects.TabIndex = 3;
             this.chartTimeAllProjects.Text = "chart1";
-         //   this.chartTimeAllProjects.Click += new System.EventHandler(this.chartTimeAllProjects_Click);
             // 
             // CzasDetale
             // 
             this.CzasDetale.Controls.Add(this.tableLayoutPanel49);
-            this.CzasDetale.Location = new System.Drawing.Point(4, 24);
+            this.CzasDetale.Location = new System.Drawing.Point(4, 27);
             this.CzasDetale.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.CzasDetale.Name = "CzasDetale";
-            this.CzasDetale.Size = new System.Drawing.Size(1250, 981);
+            this.CzasDetale.Size = new System.Drawing.Size(1250, 978);
             this.CzasDetale.TabIndex = 2;
             this.CzasDetale.Text = "Formy";
             this.CzasDetale.UseVisualStyleBackColor = true;
-         //   this.CzasDetale.Click += new System.EventHandler(this.CzasDetale_Click);
             // 
             // tableLayoutPanel49
             // 
@@ -954,9 +927,8 @@
             this.tableLayoutPanel49.RowCount = 2;
             this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.91177F));
             this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.08823F));
-            this.tableLayoutPanel49.Size = new System.Drawing.Size(1250, 981);
+            this.tableLayoutPanel49.Size = new System.Drawing.Size(1250, 978);
             this.tableLayoutPanel49.TabIndex = 0;
-         //   this.tableLayoutPanel49.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel49_Paint);
             // 
             // tableLayoutPanel50
             // 
@@ -972,9 +944,8 @@
             this.tableLayoutPanel50.Name = "tableLayoutPanel50";
             this.tableLayoutPanel50.RowCount = 1;
             this.tableLayoutPanel50.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel50.Size = new System.Drawing.Size(1246, 405);
+            this.tableLayoutPanel50.Size = new System.Drawing.Size(1246, 403);
             this.tableLayoutPanel50.TabIndex = 6;
-         //   this.tableLayoutPanel50.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel50_Paint);
             // 
             // tableLayoutPanel51
             // 
@@ -994,35 +965,32 @@
             this.tableLayoutPanel51.RowCount = 2;
             this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.05158F));
             this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.94843F));
-            this.tableLayoutPanel51.Size = new System.Drawing.Size(412, 395);
+            this.tableLayoutPanel51.Size = new System.Drawing.Size(412, 393);
             this.tableLayoutPanel51.TabIndex = 2;
-         //   this.tableLayoutPanel51.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel51_Paint);
             // 
             // label34
             // 
             this.label34.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label34.Location = new System.Drawing.Point(288, 29);
+            this.label34.Location = new System.Drawing.Point(284, 26);
             this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(41, 16);
+            this.label34.Size = new System.Drawing.Size(49, 20);
             this.label34.TabIndex = 3;
             this.label34.Text = "Inne:";
-         //   this.label34.Click += new System.EventHandler(this.label34_Click);
             // 
             // label35
             // 
             this.label35.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label35.Location = new System.Drawing.Point(55, 29);
+            this.label35.Location = new System.Drawing.Point(44, 26);
             this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(97, 16);
+            this.label35.Size = new System.Drawing.Size(118, 20);
             this.label35.TabIndex = 1;
             this.label35.Text = "Wybierz datę:";
-          //  this.label35.Click += new System.EventHandler(this.label35_Click);
             // 
             // tableLayoutPanel52
             // 
@@ -1035,7 +1003,7 @@
             this.tableLayoutPanel52.Controls.Add(this.label37, 0, 0);
             this.tableLayoutPanel52.Controls.Add(this.dateTimePickerMoldOd, 0, 1);
             this.tableLayoutPanel52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel52.Location = new System.Drawing.Point(4, 77);
+            this.tableLayoutPanel52.Location = new System.Drawing.Point(4, 76);
             this.tableLayoutPanel52.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel52.Name = "tableLayoutPanel52";
             this.tableLayoutPanel52.RowCount = 4;
@@ -1043,59 +1011,54 @@
             this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel52.Size = new System.Drawing.Size(199, 313);
+            this.tableLayoutPanel52.Size = new System.Drawing.Size(199, 312);
             this.tableLayoutPanel52.TabIndex = 2;
-        //    this.tableLayoutPanel52.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel52_Paint);
             // 
             // dateTimePickerMoldDo
             // 
             this.dateTimePickerMoldDo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerMoldDo.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerMoldDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerMoldDo.Location = new System.Drawing.Point(12, 260);
+            this.dateTimePickerMoldDo.Location = new System.Drawing.Point(12, 257);
             this.dateTimePickerMoldDo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePickerMoldDo.Name = "dateTimePickerMoldDo";
-            this.dateTimePickerMoldDo.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePickerMoldDo.Size = new System.Drawing.Size(175, 28);
             this.dateTimePickerMoldDo.TabIndex = 5;
-          //  this.dateTimePickerMoldDo.ValueChanged += new System.EventHandler(this.dateTimePickerMoldDo_ValueChanged);
             // 
             // label36
             // 
             this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label36.Location = new System.Drawing.Point(84, 185);
+            this.label36.Location = new System.Drawing.Point(81, 183);
             this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(31, 16);
+            this.label36.Size = new System.Drawing.Size(37, 20);
             this.label36.TabIndex = 4;
             this.label36.Text = "Do:";
-         //   this.label36.Click += new System.EventHandler(this.label36_Click);
             // 
             // label37
             // 
             this.label37.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label37.Location = new System.Drawing.Point(84, 31);
+            this.label37.Location = new System.Drawing.Point(81, 29);
             this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(30, 16);
+            this.label37.Size = new System.Drawing.Size(37, 20);
             this.label37.TabIndex = 2;
             this.label37.Text = "Od:";
-         //   this.label37.Click += new System.EventHandler(this.label37_Click);
             // 
             // dateTimePickerMoldOd
             // 
             this.dateTimePickerMoldOd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerMoldOd.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerMoldOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerMoldOd.Location = new System.Drawing.Point(12, 104);
+            this.dateTimePickerMoldOd.Location = new System.Drawing.Point(12, 102);
             this.dateTimePickerMoldOd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePickerMoldOd.Name = "dateTimePickerMoldOd";
-            this.dateTimePickerMoldOd.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePickerMoldOd.Size = new System.Drawing.Size(175, 28);
             this.dateTimePickerMoldOd.TabIndex = 3;
-         //   this.dateTimePickerMoldOd.ValueChanged += new System.EventHandler(this.dateTimePickerMoldOd_ValueChanged);
             // 
             // tableLayoutPanel53
             // 
@@ -1105,16 +1068,15 @@
             this.tableLayoutPanel53.Controls.Add(this.tableLayoutPanel54, 0, 0);
             this.tableLayoutPanel53.Controls.Add(this.tableLayoutPanel55, 0, 1);
             this.tableLayoutPanel53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel53.Location = new System.Drawing.Point(209, 77);
+            this.tableLayoutPanel53.Location = new System.Drawing.Point(209, 76);
             this.tableLayoutPanel53.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel53.Name = "tableLayoutPanel53";
             this.tableLayoutPanel53.RowCount = 2;
             this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.65611F));
             this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.34389F));
             this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel53.Size = new System.Drawing.Size(199, 313);
+            this.tableLayoutPanel53.Size = new System.Drawing.Size(199, 312);
             this.tableLayoutPanel53.TabIndex = 4;
-         //   this.tableLayoutPanel53.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel53_Paint);
             // 
             // tableLayoutPanel54
             // 
@@ -1135,7 +1097,6 @@
             this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel54.Size = new System.Drawing.Size(191, 164);
             this.tableLayoutPanel54.TabIndex = 4;
-          //  this.tableLayoutPanel54.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel54_Paint);
             // 
             // checkBox19
             // 
@@ -1144,11 +1105,10 @@
             this.checkBox19.Location = new System.Drawing.Point(2, 126);
             this.checkBox19.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(99, 20);
+            this.checkBox19.Size = new System.Drawing.Size(119, 24);
             this.checkBox19.TabIndex = 3;
             this.checkBox19.Text = "checkBox19";
             this.checkBox19.UseVisualStyleBackColor = true;
-         //   this.checkBox19.CheckedChanged += new System.EventHandler(this.checkBox19_CheckedChanged);
             // 
             // checkBox20
             // 
@@ -1157,11 +1117,10 @@
             this.checkBox20.Location = new System.Drawing.Point(2, 85);
             this.checkBox20.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(100, 20);
+            this.checkBox20.Size = new System.Drawing.Size(121, 24);
             this.checkBox20.TabIndex = 2;
             this.checkBox20.Text = "checkBox20";
             this.checkBox20.UseVisualStyleBackColor = true;
-         //   this.checkBox20.CheckedChanged += new System.EventHandler(this.checkBox20_CheckedChanged);
             // 
             // checkBox21
             // 
@@ -1170,11 +1129,10 @@
             this.checkBox21.Location = new System.Drawing.Point(2, 44);
             this.checkBox21.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(98, 20);
+            this.checkBox21.Size = new System.Drawing.Size(118, 24);
             this.checkBox21.TabIndex = 1;
             this.checkBox21.Text = "checkBox21";
             this.checkBox21.UseVisualStyleBackColor = true;
-         //   this.checkBox21.CheckedChanged += new System.EventHandler(this.checkBox21_CheckedChanged);
             // 
             // checkBox22
             // 
@@ -1183,11 +1141,10 @@
             this.checkBox22.Location = new System.Drawing.Point(2, 3);
             this.checkBox22.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(99, 20);
+            this.checkBox22.Size = new System.Drawing.Size(120, 24);
             this.checkBox22.TabIndex = 0;
             this.checkBox22.Text = "checkBox22";
             this.checkBox22.UseVisualStyleBackColor = true;
-          //  this.checkBox22.CheckedChanged += new System.EventHandler(this.checkBox22_CheckedChanged);
             // 
             // tableLayoutPanel55
             // 
@@ -1202,9 +1159,8 @@
             this.tableLayoutPanel55.RowCount = 2;
             this.tableLayoutPanel55.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.08772F));
             this.tableLayoutPanel55.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.91228F));
-            this.tableLayoutPanel55.Size = new System.Drawing.Size(191, 131);
+            this.tableLayoutPanel55.Size = new System.Drawing.Size(191, 130);
             this.tableLayoutPanel55.TabIndex = 5;
-          //  this.tableLayoutPanel55.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel55_Paint);
             // 
             // buttonChartTimeAllMolds
             // 
@@ -1214,23 +1170,21 @@
             this.buttonChartTimeAllMolds.Location = new System.Drawing.Point(2, 48);
             this.buttonChartTimeAllMolds.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonChartTimeAllMolds.Name = "buttonChartTimeAllMolds";
-            this.buttonChartTimeAllMolds.Size = new System.Drawing.Size(187, 80);
+            this.buttonChartTimeAllMolds.Size = new System.Drawing.Size(187, 79);
             this.buttonChartTimeAllMolds.TabIndex = 0;
             this.buttonChartTimeAllMolds.UseVisualStyleBackColor = true;
-          //  this.buttonChartTimeAllMolds.Click += new System.EventHandler(this.buttonChartTimeAllMold_Click);
             // 
             // label38
             // 
             this.label38.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label38.Location = new System.Drawing.Point(31, 14);
+            this.label38.Location = new System.Drawing.Point(19, 12);
             this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(128, 16);
+            this.label38.Size = new System.Drawing.Size(153, 20);
             this.label38.TabIndex = 1;
             this.label38.Text = "Pokaż liczbę prób:";
-          //  this.label38.Click += new System.EventHandler(this.label38_Click);
             // 
             // tableLayoutPanel56
             // 
@@ -1245,9 +1199,8 @@
             this.tableLayoutPanel56.RowCount = 2;
             this.tableLayoutPanel56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.31132F));
             this.tableLayoutPanel56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67.68868F));
-            this.tableLayoutPanel56.Size = new System.Drawing.Size(818, 393);
+            this.tableLayoutPanel56.Size = new System.Drawing.Size(818, 391);
             this.tableLayoutPanel56.TabIndex = 0;
-         //   this.tableLayoutPanel56.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel56_Paint);
             // 
             // tableLayoutPanel57
             // 
@@ -1266,20 +1219,18 @@
             this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel57.Size = new System.Drawing.Size(812, 118);
             this.tableLayoutPanel57.TabIndex = 0;
-          //  this.tableLayoutPanel57.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel57_Paint);
             // 
             // label39
             // 
             this.label39.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label39.Location = new System.Drawing.Point(34, 51);
+            this.label39.Location = new System.Drawing.Point(23, 49);
             this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(109, 16);
+            this.label39.Size = new System.Drawing.Size(131, 20);
             this.label39.TabIndex = 2;
             this.label39.Text = "Wybierz formę:";
-           // this.label39.Click += new System.EventHandler(this.label39_Click);
             // 
             // tableLayoutPanel58
             // 
@@ -1297,17 +1248,16 @@
             this.tableLayoutPanel58.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.11976F));
             this.tableLayoutPanel58.Size = new System.Drawing.Size(626, 106);
             this.tableLayoutPanel58.TabIndex = 3;
-          //  this.tableLayoutPanel58.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel58_Paint);
             // 
             // checkBoxAllMoldsTime
             // 
             this.checkBoxAllMoldsTime.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxAllMoldsTime.AutoSize = true;
             this.checkBoxAllMoldsTime.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBoxAllMoldsTime.Location = new System.Drawing.Point(236, 11);
+            this.checkBoxAllMoldsTime.Location = new System.Drawing.Point(221, 9);
             this.checkBoxAllMoldsTime.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBoxAllMoldsTime.Name = "checkBoxAllMoldsTime";
-            this.checkBoxAllMoldsTime.Size = new System.Drawing.Size(153, 20);
+            this.checkBoxAllMoldsTime.Size = new System.Drawing.Size(184, 24);
             this.checkBoxAllMoldsTime.TabIndex = 2;
             this.checkBoxAllMoldsTime.Text = "Zaznacz wszystkie:";
             this.checkBoxAllMoldsTime.UseVisualStyleBackColor = true;
@@ -1328,31 +1278,28 @@
             this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel60.Size = new System.Drawing.Size(616, 53);
             this.tableLayoutPanel60.TabIndex = 3;
-          //  this.tableLayoutPanel60.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel60_Paint);
             // 
             // label41
             // 
             this.label41.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label41.Location = new System.Drawing.Point(26, 19);
+            this.label41.Location = new System.Drawing.Point(8, 17);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(159, 15);
+            this.label41.Size = new System.Drawing.Size(195, 18);
             this.label41.TabIndex = 0;
             this.label41.Text = "Pokaż formy dla projektu:";
-          //  this.label41.Click += new System.EventHandler(this.label41_Click);
             // 
             // comboBoxTimeMolds
             // 
             this.comboBoxTimeMolds.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBoxTimeMolds.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxTimeMolds.FormattingEnabled = true;
-            this.comboBoxTimeMolds.Location = new System.Drawing.Point(218, 15);
+            this.comboBoxTimeMolds.Location = new System.Drawing.Point(218, 12);
             this.comboBoxTimeMolds.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBoxTimeMolds.Name = "comboBoxTimeMolds";
-            this.comboBoxTimeMolds.Size = new System.Drawing.Size(391, 23);
+            this.comboBoxTimeMolds.Size = new System.Drawing.Size(391, 27);
             this.comboBoxTimeMolds.TabIndex = 1;
-          //  this.comboBoxTimeMolds.SelectedIndexChanged += new System.EventHandler(this.comboBoxTimeMolds_SelectedIndexChanged);
             this.comboBoxTimeMolds.TextChanged += new System.EventHandler(this.showMoldsProjects);
             // 
             // listBoxTimeMolds
@@ -1361,56 +1308,53 @@
             this.listBoxTimeMolds.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxTimeMolds.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBoxTimeMolds.FormattingEnabled = true;
-            this.listBoxTimeMolds.ItemHeight = 16;
+            this.listBoxTimeMolds.ItemHeight = 20;
             this.listBoxTimeMolds.Location = new System.Drawing.Point(2, 129);
             this.listBoxTimeMolds.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.listBoxTimeMolds.Name = "listBoxTimeMolds";
             this.listBoxTimeMolds.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBoxTimeMolds.Size = new System.Drawing.Size(814, 261);
+            this.listBoxTimeMolds.Size = new System.Drawing.Size(814, 259);
             this.listBoxTimeMolds.TabIndex = 1;
-         //   this.listBoxTimeMolds.SelectedIndexChanged += new System.EventHandler(this.listBoxTimeMolds_SelectedIndexChanged);
             // 
             // chartTimeMolds
             // 
-            chartArea2.AxisX.Title = "Formy";
-            chartArea2.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea2.AxisY.Title = "Czas [h]";
-            chartArea2.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea2.Name = "ChartArea1";
-            this.chartTimeMolds.ChartAreas.Add(chartArea2);
+            chartArea13.AxisX.Title = "Formy";
+            chartArea13.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea13.AxisY.Title = "Czas [h]";
+            chartArea13.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea13.Name = "ChartArea1";
+            this.chartTimeMolds.ChartAreas.Add(chartArea13);
             this.chartTimeMolds.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chartTimeMolds.Legends.Add(legend2);
-            this.chartTimeMolds.Location = new System.Drawing.Point(2, 414);
+            legend13.Name = "Legend1";
+            this.chartTimeMolds.Legends.Add(legend13);
+            this.chartTimeMolds.Location = new System.Drawing.Point(2, 412);
             this.chartTimeMolds.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chartTimeMolds.Name = "chartTimeMolds";
-            series2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series2.BorderColor = System.Drawing.Color.Black;
-            series2.ChartArea = "ChartArea1";
-            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series2.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            series2.IsValueShownAsLabel = true;
-            series2.IsVisibleInLegend = false;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartTimeMolds.Series.Add(series2);
-            this.chartTimeMolds.Size = new System.Drawing.Size(1246, 564);
+            series13.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series13.BorderColor = System.Drawing.Color.Black;
+            series13.ChartArea = "ChartArea1";
+            series13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series13.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            series13.IsValueShownAsLabel = true;
+            series13.IsVisibleInLegend = false;
+            series13.Legend = "Legend1";
+            series13.Name = "Series1";
+            this.chartTimeMolds.Series.Add(series13);
+            this.chartTimeMolds.Size = new System.Drawing.Size(1246, 563);
             this.chartTimeMolds.TabIndex = 7;
             this.chartTimeMolds.Text = "chart1";
-         //   this.chartTimeMolds.Click += new System.EventHandler(this.chartTimeMolds_Click);
             // 
             // DetaleCzas
             // 
             this.DetaleCzas.Controls.Add(this.tableLayoutPanel37);
-            this.DetaleCzas.Location = new System.Drawing.Point(4, 24);
+            this.DetaleCzas.Location = new System.Drawing.Point(4, 27);
             this.DetaleCzas.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DetaleCzas.Name = "DetaleCzas";
             this.DetaleCzas.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.DetaleCzas.Size = new System.Drawing.Size(1250, 981);
+            this.DetaleCzas.Size = new System.Drawing.Size(1250, 978);
             this.DetaleCzas.TabIndex = 1;
             this.DetaleCzas.Text = "Detale";
             this.DetaleCzas.UseVisualStyleBackColor = true;
-          //  this.DetaleCzas.Click += new System.EventHandler(this.DetaleCzas_Click);
             // 
             // tableLayoutPanel37
             // 
@@ -1425,9 +1369,8 @@
             this.tableLayoutPanel37.RowCount = 2;
             this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel37.Size = new System.Drawing.Size(1244, 973);
+            this.tableLayoutPanel37.Size = new System.Drawing.Size(1244, 970);
             this.tableLayoutPanel37.TabIndex = 0;
-          //  this.tableLayoutPanel37.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel37_Paint);
             // 
             // tableLayoutPanel38
             // 
@@ -1443,9 +1386,8 @@
             this.tableLayoutPanel38.Name = "tableLayoutPanel38";
             this.tableLayoutPanel38.RowCount = 1;
             this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel38.Size = new System.Drawing.Size(1240, 480);
+            this.tableLayoutPanel38.Size = new System.Drawing.Size(1240, 479);
             this.tableLayoutPanel38.TabIndex = 5;
-          //  this.tableLayoutPanel38.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel38_Paint);
             // 
             // tableLayoutPanel44
             // 
@@ -1465,35 +1407,32 @@
             this.tableLayoutPanel44.RowCount = 2;
             this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.05158F));
             this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.94843F));
-            this.tableLayoutPanel44.Size = new System.Drawing.Size(410, 470);
+            this.tableLayoutPanel44.Size = new System.Drawing.Size(410, 469);
             this.tableLayoutPanel44.TabIndex = 2;
-            //   this.tableLayoutPanel44.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel44_Paint);
             // 
             // label29
             // 
             this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label29.Location = new System.Drawing.Point(286, 35);
+            this.label29.Location = new System.Drawing.Point(282, 33);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(41, 16);
+            this.label29.Size = new System.Drawing.Size(49, 20);
             this.label29.TabIndex = 3;
             this.label29.Text = "Inne:";
-            //   this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
             // label30
             // 
             this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label30.Location = new System.Drawing.Point(54, 35);
+            this.label30.Location = new System.Drawing.Point(44, 33);
             this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(97, 16);
+            this.label30.Size = new System.Drawing.Size(118, 20);
             this.label30.TabIndex = 1;
             this.label30.Text = "Wybierz datę:";
-            // this.label30.Click += new System.EventHandler(this.label30_Click);
             // 
             // tableLayoutPanel45
             // 
@@ -1514,59 +1453,54 @@
             this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel45.Size = new System.Drawing.Size(198, 375);
+            this.tableLayoutPanel45.Size = new System.Drawing.Size(198, 374);
             this.tableLayoutPanel45.TabIndex = 2;
-            //  this.tableLayoutPanel45.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel45_Paint);
             // 
             // detaleCzacDo
             // 
             this.detaleCzacDo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.detaleCzacDo.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.detaleCzacDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.detaleCzacDo.Location = new System.Drawing.Point(11, 315);
+            this.detaleCzacDo.Location = new System.Drawing.Point(11, 312);
             this.detaleCzacDo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.detaleCzacDo.Name = "detaleCzacDo";
-            this.detaleCzacDo.Size = new System.Drawing.Size(175, 24);
+            this.detaleCzacDo.Size = new System.Drawing.Size(175, 28);
             this.detaleCzacDo.TabIndex = 5;
-            //  this.detaleCzacDo.ValueChanged += new System.EventHandler(this.detaleCzacDo_ValueChanged);
             // 
             // label31
             // 
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label31.Location = new System.Drawing.Point(83, 225);
+            this.label31.Location = new System.Drawing.Point(80, 223);
             this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(31, 16);
+            this.label31.Size = new System.Drawing.Size(37, 20);
             this.label31.TabIndex = 4;
             this.label31.Text = "Do:";
-            //   this.label31.Click += new System.EventHandler(this.label31_Click);
             // 
             // label32
             // 
             this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label32.Location = new System.Drawing.Point(84, 39);
+            this.label32.Location = new System.Drawing.Point(80, 37);
             this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(30, 16);
+            this.label32.Size = new System.Drawing.Size(37, 20);
             this.label32.TabIndex = 2;
             this.label32.Text = "Od:";
-            //   this.label32.Click += new System.EventHandler(this.label32_Click);
             // 
             // detaleCzacOd
             // 
             this.detaleCzacOd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.detaleCzacOd.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.detaleCzacOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.detaleCzacOd.Location = new System.Drawing.Point(11, 128);
+            this.detaleCzacOd.Location = new System.Drawing.Point(11, 126);
             this.detaleCzacOd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.detaleCzacOd.Name = "detaleCzacOd";
-            this.detaleCzacOd.Size = new System.Drawing.Size(175, 24);
+            this.detaleCzacOd.Size = new System.Drawing.Size(175, 28);
             this.detaleCzacOd.TabIndex = 3;
-            //  this.detaleCzacOd.ValueChanged += new System.EventHandler(this.detaleCzacOd_ValueChanged);
             // 
             // tableLayoutPanel46
             // 
@@ -1583,9 +1517,8 @@
             this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.65611F));
             this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.34389F));
             this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel46.Size = new System.Drawing.Size(198, 375);
+            this.tableLayoutPanel46.Size = new System.Drawing.Size(198, 374);
             this.tableLayoutPanel46.TabIndex = 4;
-            //   this.tableLayoutPanel46.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel46_Paint);
             // 
             // tableLayoutPanel47
             // 
@@ -1605,9 +1538,8 @@
             this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel47.Size = new System.Drawing.Size(190, 199);
+            this.tableLayoutPanel47.Size = new System.Drawing.Size(190, 198);
             this.tableLayoutPanel47.TabIndex = 4;
-            //  this.tableLayoutPanel47.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel47_Paint);
             // 
             // checkBox15
             // 
@@ -1616,11 +1548,10 @@
             this.checkBox15.Location = new System.Drawing.Point(2, 150);
             this.checkBox15.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(99, 20);
+            this.checkBox15.Size = new System.Drawing.Size(118, 24);
             this.checkBox15.TabIndex = 3;
             this.checkBox15.Text = "checkBox15";
             this.checkBox15.UseVisualStyleBackColor = true;
-            //   this.checkBox15.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
             // 
             // checkBox16
             // 
@@ -1629,11 +1560,10 @@
             this.checkBox16.Location = new System.Drawing.Point(2, 101);
             this.checkBox16.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(99, 20);
+            this.checkBox16.Size = new System.Drawing.Size(119, 24);
             this.checkBox16.TabIndex = 2;
             this.checkBox16.Text = "checkBox16";
             this.checkBox16.UseVisualStyleBackColor = true;
-            //  this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
             // 
             // checkBox17
             // 
@@ -1642,11 +1572,10 @@
             this.checkBox17.Location = new System.Drawing.Point(2, 52);
             this.checkBox17.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(97, 20);
+            this.checkBox17.Size = new System.Drawing.Size(117, 24);
             this.checkBox17.TabIndex = 1;
             this.checkBox17.Text = "checkBox17";
             this.checkBox17.UseVisualStyleBackColor = true;
-            //   this.checkBox17.CheckedChanged += new System.EventHandler(this.checkBox17_CheckedChanged);
             // 
             // checkBox18
             // 
@@ -1655,11 +1584,10 @@
             this.checkBox18.Location = new System.Drawing.Point(2, 3);
             this.checkBox18.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(99, 20);
+            this.checkBox18.Size = new System.Drawing.Size(119, 24);
             this.checkBox18.TabIndex = 0;
             this.checkBox18.Text = "checkBox18";
             this.checkBox18.UseVisualStyleBackColor = true;
-            //  this.checkBox18.CheckedChanged += new System.EventHandler(this.checkBox18_CheckedChanged);
             // 
             // tableLayoutPanel48
             // 
@@ -1668,7 +1596,7 @@
             this.tableLayoutPanel48.Controls.Add(this.detaleTimeChart, 0, 1);
             this.tableLayoutPanel48.Controls.Add(this.label33, 0, 0);
             this.tableLayoutPanel48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel48.Location = new System.Drawing.Point(4, 212);
+            this.tableLayoutPanel48.Location = new System.Drawing.Point(4, 211);
             this.tableLayoutPanel48.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel48.Name = "tableLayoutPanel48";
             this.tableLayoutPanel48.RowCount = 2;
@@ -1676,7 +1604,6 @@
             this.tableLayoutPanel48.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.91228F));
             this.tableLayoutPanel48.Size = new System.Drawing.Size(190, 158);
             this.tableLayoutPanel48.TabIndex = 5;
-            //   this.tableLayoutPanel48.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel48_Paint);
             // 
             // detaleTimeChart
             // 
@@ -1696,13 +1623,12 @@
             this.label33.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label33.Location = new System.Drawing.Point(31, 19);
+            this.label33.Location = new System.Drawing.Point(18, 17);
             this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(128, 16);
+            this.label33.Size = new System.Drawing.Size(153, 20);
             this.label33.TabIndex = 1;
             this.label33.Text = "Pokaż liczbę prób:";
-            //   this.label33.Click += new System.EventHandler(this.label33_Click);
             // 
             // tableLayoutPanel39
             // 
@@ -1717,9 +1643,8 @@
             this.tableLayoutPanel39.RowCount = 2;
             this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.49649F));
             this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.50351F));
-            this.tableLayoutPanel39.Size = new System.Drawing.Size(814, 468);
+            this.tableLayoutPanel39.Size = new System.Drawing.Size(814, 467);
             this.tableLayoutPanel39.TabIndex = 0;
-            //  this.tableLayoutPanel39.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel39_Paint);
             // 
             // tableLayoutPanel40
             // 
@@ -1736,22 +1661,20 @@
             this.tableLayoutPanel40.Name = "tableLayoutPanel40";
             this.tableLayoutPanel40.RowCount = 1;
             this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel40.Size = new System.Drawing.Size(808, 200);
+            this.tableLayoutPanel40.Size = new System.Drawing.Size(808, 199);
             this.tableLayoutPanel40.TabIndex = 0;
-            //   this.tableLayoutPanel40.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel40_Paint);
             // 
             // label26
             // 
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label26.Location = new System.Drawing.Point(37, 92);
+            this.label26.Location = new System.Drawing.Point(26, 89);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(103, 16);
+            this.label26.Size = new System.Drawing.Size(125, 20);
             this.label26.TabIndex = 2;
             this.label26.Text = "Wybierz detal:";
-            //  this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // tableLayoutPanel41
             // 
@@ -1769,9 +1692,8 @@
             this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.7485F));
             this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.11976F));
             this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel41.Size = new System.Drawing.Size(623, 188);
+            this.tableLayoutPanel41.Size = new System.Drawing.Size(623, 187);
             this.tableLayoutPanel41.TabIndex = 3;
-            //  this.tableLayoutPanel41.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel41_Paint);
             // 
             // tableLayoutPanel42
             // 
@@ -1786,33 +1708,30 @@
             this.tableLayoutPanel42.Name = "tableLayoutPanel42";
             this.tableLayoutPanel42.RowCount = 1;
             this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel42.Size = new System.Drawing.Size(613, 54);
+            this.tableLayoutPanel42.Size = new System.Drawing.Size(613, 53);
             this.tableLayoutPanel42.TabIndex = 4;
-            //   this.tableLayoutPanel42.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel42_Paint);
             // 
             // label27
             // 
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label27.Location = new System.Drawing.Point(31, 19);
+            this.label27.Location = new System.Drawing.Point(13, 17);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(149, 15);
+            this.label27.Size = new System.Drawing.Size(185, 18);
             this.label27.TabIndex = 0;
             this.label27.Text = "Pokaż detale  dla formy:";
-         //   this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // comboBoxCzasDetaleDlaFormy
             // 
             this.comboBoxCzasDetaleDlaFormy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBoxCzasDetaleDlaFormy.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCzasDetaleDlaFormy.FormattingEnabled = true;
-            this.comboBoxCzasDetaleDlaFormy.Location = new System.Drawing.Point(217, 15);
+            this.comboBoxCzasDetaleDlaFormy.Location = new System.Drawing.Point(217, 12);
             this.comboBoxCzasDetaleDlaFormy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBoxCzasDetaleDlaFormy.Name = "comboBoxCzasDetaleDlaFormy";
-            this.comboBoxCzasDetaleDlaFormy.Size = new System.Drawing.Size(389, 23);
+            this.comboBoxCzasDetaleDlaFormy.Size = new System.Drawing.Size(389, 27);
             this.comboBoxCzasDetaleDlaFormy.TabIndex = 1;
-            //  this.comboBoxCzasDetaleDlaFormy.SelectedIndexChanged += new System.EventHandler(this.comboBoxCzasDetaleDlaFormy_SelectedIndexChanged);
             this.comboBoxCzasDetaleDlaFormy.TextChanged += new System.EventHandler(this.showDetailsTimeMolds);
             // 
             // checkBoxDetailsTime
@@ -1820,10 +1739,10 @@
             this.checkBoxDetailsTime.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxDetailsTime.AutoSize = true;
             this.checkBoxDetailsTime.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBoxDetailsTime.Location = new System.Drawing.Point(235, 15);
+            this.checkBoxDetailsTime.Location = new System.Drawing.Point(219, 13);
             this.checkBoxDetailsTime.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBoxDetailsTime.Name = "checkBoxDetailsTime";
-            this.checkBoxDetailsTime.Size = new System.Drawing.Size(153, 20);
+            this.checkBoxDetailsTime.Size = new System.Drawing.Size(184, 24);
             this.checkBoxDetailsTime.TabIndex = 2;
             this.checkBoxDetailsTime.Text = "Zaznacz wszystkie:";
             this.checkBoxDetailsTime.UseVisualStyleBackColor = true;
@@ -1844,31 +1763,28 @@
             this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel43.Size = new System.Drawing.Size(613, 64);
             this.tableLayoutPanel43.TabIndex = 3;
-            //   this.tableLayoutPanel43.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel43_Paint);
             // 
             // label28
             // 
             this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label28.Location = new System.Drawing.Point(25, 24);
+            this.label28.Location = new System.Drawing.Point(7, 23);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(161, 15);
+            this.label28.Size = new System.Drawing.Size(197, 18);
             this.label28.TabIndex = 0;
             this.label28.Text = "Pokaż detale dla projektu:";
-            //   this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
             // comboBoxCzasDetaleDlaProjektu
             // 
             this.comboBoxCzasDetaleDlaProjektu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBoxCzasDetaleDlaProjektu.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCzasDetaleDlaProjektu.FormattingEnabled = true;
-            this.comboBoxCzasDetaleDlaProjektu.Location = new System.Drawing.Point(217, 20);
+            this.comboBoxCzasDetaleDlaProjektu.Location = new System.Drawing.Point(217, 18);
             this.comboBoxCzasDetaleDlaProjektu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBoxCzasDetaleDlaProjektu.Name = "comboBoxCzasDetaleDlaProjektu";
-            this.comboBoxCzasDetaleDlaProjektu.Size = new System.Drawing.Size(389, 23);
+            this.comboBoxCzasDetaleDlaProjektu.Size = new System.Drawing.Size(389, 27);
             this.comboBoxCzasDetaleDlaProjektu.TabIndex = 1;
-            //  this.comboBoxCzasDetaleDlaProjektu.SelectedIndexChanged += new System.EventHandler(this.comboBoxCzasDetaleDlaProjektu_SelectedIndexChanged);
             this.comboBoxCzasDetaleDlaProjektu.TextChanged += new System.EventHandler(this.showDetailsTimeProject);
             // 
             // listBoxDetaleCzas
@@ -1877,55 +1793,52 @@
             this.listBoxDetaleCzas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxDetaleCzas.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBoxDetaleCzas.FormattingEnabled = true;
-            this.listBoxDetaleCzas.ItemHeight = 16;
-            this.listBoxDetaleCzas.Location = new System.Drawing.Point(2, 211);
+            this.listBoxDetaleCzas.ItemHeight = 20;
+            this.listBoxDetaleCzas.Location = new System.Drawing.Point(2, 210);
             this.listBoxDetaleCzas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.listBoxDetaleCzas.Name = "listBoxDetaleCzas";
             this.listBoxDetaleCzas.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listBoxDetaleCzas.Size = new System.Drawing.Size(810, 254);
             this.listBoxDetaleCzas.TabIndex = 1;
-            //   this.listBoxDetaleCzas.SelectedIndexChanged += new System.EventHandler(this.listBoxDetaleCzas_SelectedIndexChanged);
             // 
             // chartCzasDetale
             // 
-            chartArea3.AxisX.Title = "Detale";
-            chartArea3.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea3.AxisY.Title = "Czas [h]";
-            chartArea3.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea3.Name = "ChartArea1";
-            this.chartCzasDetale.ChartAreas.Add(chartArea3);
+            chartArea14.AxisX.Title = "Detale";
+            chartArea14.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea14.AxisY.Title = "Czas [h]";
+            chartArea14.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea14.Name = "ChartArea1";
+            this.chartCzasDetale.ChartAreas.Add(chartArea14);
             this.chartCzasDetale.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend3.Name = "Legend1";
-            this.chartCzasDetale.Legends.Add(legend3);
-            this.chartCzasDetale.Location = new System.Drawing.Point(2, 489);
+            legend14.Name = "Legend1";
+            this.chartCzasDetale.Legends.Add(legend14);
+            this.chartCzasDetale.Location = new System.Drawing.Point(2, 488);
             this.chartCzasDetale.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chartCzasDetale.Name = "chartCzasDetale";
-            series3.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series3.BorderColor = System.Drawing.Color.Black;
-            series3.ChartArea = "ChartArea1";
-            series3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series3.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series3.IsValueShownAsLabel = true;
-            series3.IsVisibleInLegend = false;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartCzasDetale.Series.Add(series3);
-            this.chartCzasDetale.Size = new System.Drawing.Size(1240, 481);
+            series14.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series14.BorderColor = System.Drawing.Color.Black;
+            series14.ChartArea = "ChartArea1";
+            series14.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series14.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series14.IsValueShownAsLabel = true;
+            series14.IsVisibleInLegend = false;
+            series14.Legend = "Legend1";
+            series14.Name = "Series1";
+            this.chartCzasDetale.Series.Add(series14);
+            this.chartCzasDetale.Size = new System.Drawing.Size(1240, 479);
             this.chartCzasDetale.TabIndex = 6;
             this.chartCzasDetale.Text = "chart2";
-            //  this.chartCzasDetale.Click += new System.EventHandler(this.chartCzasDetale_Click);
             // 
             // Inżynier
             // 
             this.Inżynier.Controls.Add(this.tableLayoutPanel59);
-            this.Inżynier.Location = new System.Drawing.Point(4, 24);
+            this.Inżynier.Location = new System.Drawing.Point(4, 27);
             this.Inżynier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Inżynier.Name = "Inżynier";
-            this.Inżynier.Size = new System.Drawing.Size(1250, 981);
+            this.Inżynier.Size = new System.Drawing.Size(1250, 975);
             this.Inżynier.TabIndex = 3;
             this.Inżynier.Text = "Inżynier";
             this.Inżynier.UseVisualStyleBackColor = true;
-            //  this.Inżynier.Click += new System.EventHandler(this.Inżynier_Click);
             // 
             // tableLayoutPanel59
             // 
@@ -1939,42 +1852,40 @@
             this.tableLayoutPanel59.RowCount = 2;
             this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.63116F));
             this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.36884F));
-            this.tableLayoutPanel59.Size = new System.Drawing.Size(1250, 981);
+            this.tableLayoutPanel59.Size = new System.Drawing.Size(1250, 975);
             this.tableLayoutPanel59.TabIndex = 0;
-            //  this.tableLayoutPanel59.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel59_Paint);
             // 
             // chartCzasInzynier
             // 
-            chartArea4.AxisX.Interval = 1D;
-            chartArea4.AxisX.Title = "INŻYNIER";
-            chartArea4.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea4.AxisY.Interval = 20D;
-            chartArea4.AxisY.IsStartedFromZero = false;
-            chartArea4.AxisY.Title = "Czas [h]";
-            chartArea4.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea4.Name = "ChartArea1";
-            this.chartCzasInzynier.ChartAreas.Add(chartArea4);
+            chartArea15.AxisX.Interval = 1D;
+            chartArea15.AxisX.Title = "INŻYNIER";
+            chartArea15.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea15.AxisY.Interval = 20D;
+            chartArea15.AxisY.IsStartedFromZero = false;
+            chartArea15.AxisY.Title = "Czas [h]";
+            chartArea15.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea15.Name = "ChartArea1";
+            this.chartCzasInzynier.ChartAreas.Add(chartArea15);
             this.chartCzasInzynier.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend4.Name = "Legend1";
-            this.chartCzasInzynier.Legends.Add(legend4);
-            this.chartCzasInzynier.Location = new System.Drawing.Point(2, 401);
+            legend15.Name = "Legend1";
+            this.chartCzasInzynier.Legends.Add(legend15);
+            this.chartCzasInzynier.Location = new System.Drawing.Point(2, 399);
             this.chartCzasInzynier.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chartCzasInzynier.Name = "chartCzasInzynier";
-            series4.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series4.BorderColor = System.Drawing.Color.Black;
-            series4.ChartArea = "ChartArea1";
-            series4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series4.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series4.IsValueShownAsLabel = true;
-            series4.IsVisibleInLegend = false;
-            series4.IsXValueIndexed = true;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chartCzasInzynier.Series.Add(series4);
-            this.chartCzasInzynier.Size = new System.Drawing.Size(1246, 577);
+            series15.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series15.BorderColor = System.Drawing.Color.Black;
+            series15.ChartArea = "ChartArea1";
+            series15.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series15.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series15.IsValueShownAsLabel = true;
+            series15.IsVisibleInLegend = false;
+            series15.IsXValueIndexed = true;
+            series15.Legend = "Legend1";
+            series15.Name = "Series1";
+            this.chartCzasInzynier.Series.Add(series15);
+            this.chartCzasInzynier.Size = new System.Drawing.Size(1246, 573);
             this.chartCzasInzynier.TabIndex = 7;
             this.chartCzasInzynier.Text = "chart2";
-            //   this.chartCzasInzynier.Click += new System.EventHandler(this.chartCzasInzynier_Click);
             // 
             // tableLayoutPanel61
             // 
@@ -1990,9 +1901,8 @@
             this.tableLayoutPanel61.Name = "tableLayoutPanel61";
             this.tableLayoutPanel61.RowCount = 1;
             this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel61.Size = new System.Drawing.Size(1246, 392);
+            this.tableLayoutPanel61.Size = new System.Drawing.Size(1246, 390);
             this.tableLayoutPanel61.TabIndex = 6;
-            //  this.tableLayoutPanel61.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel61_Paint);
             // 
             // tableLayoutPanel62
             // 
@@ -2012,35 +1922,32 @@
             this.tableLayoutPanel62.RowCount = 2;
             this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.05158F));
             this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.94843F));
-            this.tableLayoutPanel62.Size = new System.Drawing.Size(412, 382);
+            this.tableLayoutPanel62.Size = new System.Drawing.Size(412, 380);
             this.tableLayoutPanel62.TabIndex = 2;
-            //   this.tableLayoutPanel62.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel62_Paint);
             // 
             // label40
             // 
             this.label40.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label40.Location = new System.Drawing.Point(285, 26);
+            this.label40.Location = new System.Drawing.Point(279, 23);
             this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(47, 19);
+            this.label40.Size = new System.Drawing.Size(58, 24);
             this.label40.TabIndex = 3;
             this.label40.Text = "Inne:";
-            //  this.label40.Click += new System.EventHandler(this.label40_Click);
             // 
             // label42
             // 
             this.label42.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label42.Location = new System.Drawing.Point(48, 26);
+            this.label42.Location = new System.Drawing.Point(34, 23);
             this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(111, 19);
+            this.label42.Size = new System.Drawing.Size(139, 24);
             this.label42.TabIndex = 1;
             this.label42.Text = "Wybierz datę:";
-            //  this.label42.Click += new System.EventHandler(this.label42_Click);
             // 
             // tableLayoutPanel63
             // 
@@ -2061,59 +1968,54 @@
             this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel63.Size = new System.Drawing.Size(199, 303);
+            this.tableLayoutPanel63.Size = new System.Drawing.Size(199, 301);
             this.tableLayoutPanel63.TabIndex = 2;
-            //  this.tableLayoutPanel63.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel63_Paint);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker1.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 250);
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 245);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(175, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(175, 32);
             this.dateTimePicker1.TabIndex = 5;
-            // this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label43
             // 
             this.label43.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label43.Location = new System.Drawing.Point(82, 179);
+            this.label43.Location = new System.Drawing.Point(78, 174);
             this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(35, 19);
+            this.label43.Size = new System.Drawing.Size(43, 24);
             this.label43.TabIndex = 4;
             this.label43.Text = "Do:";
-            //  this.label43.Click += new System.EventHandler(this.label43_Click);
             // 
             // label44
             // 
             this.label44.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label44.Location = new System.Drawing.Point(82, 29);
+            this.label44.Location = new System.Drawing.Point(78, 26);
             this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(35, 19);
+            this.label44.Size = new System.Drawing.Size(43, 24);
             this.label44.TabIndex = 2;
             this.label44.Text = "Od:";
-            //  this.label44.Click += new System.EventHandler(this.label44_Click);
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker2.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(12, 100);
+            this.dateTimePicker2.Location = new System.Drawing.Point(12, 96);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(175, 27);
+            this.dateTimePicker2.Size = new System.Drawing.Size(175, 32);
             this.dateTimePicker2.TabIndex = 3;
-            //  this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // tableLayoutPanel64
             // 
@@ -2130,9 +2032,8 @@
             this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.65611F));
             this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.34389F));
             this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel64.Size = new System.Drawing.Size(199, 303);
+            this.tableLayoutPanel64.Size = new System.Drawing.Size(199, 301);
             this.tableLayoutPanel64.TabIndex = 4;
-            // this.tableLayoutPanel64.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel64_Paint);
             // 
             // tableLayoutPanel65
             // 
@@ -2151,9 +2052,8 @@
             this.tableLayoutPanel65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel65.Size = new System.Drawing.Size(191, 159);
+            this.tableLayoutPanel65.Size = new System.Drawing.Size(191, 158);
             this.tableLayoutPanel65.TabIndex = 4;
-            // this.tableLayoutPanel65.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel65_Paint);
             // 
             // checkBox6
             // 
@@ -2162,11 +2062,10 @@
             this.checkBox6.Location = new System.Drawing.Point(2, 120);
             this.checkBox6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(93, 20);
+            this.checkBox6.Size = new System.Drawing.Size(112, 24);
             this.checkBox6.TabIndex = 3;
             this.checkBox6.Text = "checkBox6";
             this.checkBox6.UseVisualStyleBackColor = true;
-            //  this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // checkBox23
             // 
@@ -2175,11 +2074,10 @@
             this.checkBox23.Location = new System.Drawing.Point(2, 81);
             this.checkBox23.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(99, 20);
+            this.checkBox23.Size = new System.Drawing.Size(120, 24);
             this.checkBox23.TabIndex = 2;
             this.checkBox23.Text = "checkBox23";
             this.checkBox23.UseVisualStyleBackColor = true;
-            //  this.checkBox23.CheckedChanged += new System.EventHandler(this.checkBox23_CheckedChanged);
             // 
             // checkBox24
             // 
@@ -2188,11 +2086,10 @@
             this.checkBox24.Location = new System.Drawing.Point(2, 42);
             this.checkBox24.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(100, 20);
+            this.checkBox24.Size = new System.Drawing.Size(121, 24);
             this.checkBox24.TabIndex = 1;
             this.checkBox24.Text = "checkBox24";
             this.checkBox24.UseVisualStyleBackColor = true;
-            //  this.checkBox24.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // checkBox25
             // 
@@ -2201,11 +2098,10 @@
             this.checkBox25.Location = new System.Drawing.Point(2, 3);
             this.checkBox25.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(100, 20);
+            this.checkBox25.Size = new System.Drawing.Size(120, 24);
             this.checkBox25.TabIndex = 0;
             this.checkBox25.Text = "checkBox25";
             this.checkBox25.UseVisualStyleBackColor = true;
-            //  this.checkBox25.CheckedChanged += new System.EventHandler(this.checkBox25_CheckedChanged);
             // 
             // tableLayoutPanel66
             // 
@@ -2214,22 +2110,21 @@
             this.tableLayoutPanel66.Controls.Add(this.button2, 0, 1);
             this.tableLayoutPanel66.Controls.Add(this.label45, 0, 0);
             this.tableLayoutPanel66.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel66.Location = new System.Drawing.Point(4, 172);
+            this.tableLayoutPanel66.Location = new System.Drawing.Point(4, 171);
             this.tableLayoutPanel66.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel66.Name = "tableLayoutPanel66";
             this.tableLayoutPanel66.RowCount = 2;
             this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.08772F));
             this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.91228F));
-            this.tableLayoutPanel66.Size = new System.Drawing.Size(191, 126);
+            this.tableLayoutPanel66.Size = new System.Drawing.Size(191, 125);
             this.tableLayoutPanel66.TabIndex = 5;
-            //  this.tableLayoutPanel66.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel66_Paint);
             // 
             // button2
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Location = new System.Drawing.Point(2, 47);
+            this.button2.Location = new System.Drawing.Point(2, 46);
             this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(187, 76);
@@ -2242,13 +2137,12 @@
             this.label45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label45.Location = new System.Drawing.Point(23, 12);
+            this.label45.Location = new System.Drawing.Point(5, 9);
             this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(145, 19);
+            this.label45.Size = new System.Drawing.Size(181, 24);
             this.label45.TabIndex = 1;
             this.label45.Text = "Pokaż liczbę prób:";
-            //  this.label45.Click += new System.EventHandler(this.label45_Click);
             // 
             // tableLayoutPanel67
             // 
@@ -2263,9 +2157,8 @@
             this.tableLayoutPanel67.RowCount = 2;
             this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.1269F));
             this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.87309F));
-            this.tableLayoutPanel67.Size = new System.Drawing.Size(818, 380);
+            this.tableLayoutPanel67.Size = new System.Drawing.Size(818, 378);
             this.tableLayoutPanel67.TabIndex = 0;
-            //  this.tableLayoutPanel67.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel67_Paint);
             // 
             // tableLayoutPanel68
             // 
@@ -2282,22 +2175,20 @@
             this.tableLayoutPanel68.Name = "tableLayoutPanel68";
             this.tableLayoutPanel68.RowCount = 1;
             this.tableLayoutPanel68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel68.Size = new System.Drawing.Size(812, 87);
+            this.tableLayoutPanel68.Size = new System.Drawing.Size(812, 86);
             this.tableLayoutPanel68.TabIndex = 0;
-            //  this.tableLayoutPanel68.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel68_Paint);
             // 
             // label46
             // 
             this.label46.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label46.Location = new System.Drawing.Point(33, 24);
+            this.label46.Location = new System.Drawing.Point(19, 19);
             this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(112, 38);
+            this.label46.Size = new System.Drawing.Size(139, 48);
             this.label46.TabIndex = 2;
             this.label46.Text = "Wybierz użytkownika:";
-            //  this.label46.Click += new System.EventHandler(this.label46_Click);
             // 
             // tableLayoutPanel69
             // 
@@ -2312,19 +2203,18 @@
             this.tableLayoutPanel69.Name = "tableLayoutPanel69";
             this.tableLayoutPanel69.RowCount = 1;
             this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.7485F));
-            this.tableLayoutPanel69.Size = new System.Drawing.Size(626, 75);
+            this.tableLayoutPanel69.Size = new System.Drawing.Size(626, 74);
             this.tableLayoutPanel69.TabIndex = 3;
-            //   this.tableLayoutPanel69.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel69_Paint);
             // 
             // checkBox26
             // 
             this.checkBox26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox26.AutoSize = true;
             this.checkBox26.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox26.Location = new System.Drawing.Point(222, 26);
+            this.checkBox26.Location = new System.Drawing.Point(202, 23);
             this.checkBox26.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(182, 23);
+            this.checkBox26.Size = new System.Drawing.Size(222, 28);
             this.checkBox26.TabIndex = 2;
             this.checkBox26.Text = "Zaznacz wszystkich:";
             this.checkBox26.UseVisualStyleBackColor = true;
@@ -2336,29 +2226,27 @@
             this.listBoxInzynierCzas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxInzynierCzas.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBoxInzynierCzas.FormattingEnabled = true;
-            this.listBoxInzynierCzas.ItemHeight = 16;
-            this.listBoxInzynierCzas.Location = new System.Drawing.Point(2, 98);
+            this.listBoxInzynierCzas.ItemHeight = 20;
+            this.listBoxInzynierCzas.Location = new System.Drawing.Point(2, 97);
             this.listBoxInzynierCzas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.listBoxInzynierCzas.MultiColumn = true;
             this.listBoxInzynierCzas.Name = "listBoxInzynierCzas";
             this.listBoxInzynierCzas.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBoxInzynierCzas.Size = new System.Drawing.Size(814, 279);
+            this.listBoxInzynierCzas.Size = new System.Drawing.Size(814, 278);
             this.listBoxInzynierCzas.TabIndex = 1;
-            // this.listBoxInzynierCzas.SelectedIndexChanged += new System.EventHandler(this.listBoxInzynierCzas_SelectedIndexChanged);
             // 
             // Projekty
             // 
             this.Projekty.Controls.Add(this.tableLayoutPanel4);
             this.Projekty.Controls.Add(this.chart3);
-            this.Projekty.Location = new System.Drawing.Point(4, 24);
+            this.Projekty.Location = new System.Drawing.Point(4, 27);
             this.Projekty.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Projekty.Name = "Projekty";
             this.Projekty.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Projekty.Size = new System.Drawing.Size(1258, 1009);
+            this.Projekty.Size = new System.Drawing.Size(1258, 1006);
             this.Projekty.TabIndex = 4;
             this.Projekty.Text = "Detale";
             this.Projekty.UseVisualStyleBackColor = true;
-            //  this.Projekty.Click += new System.EventHandler(this.Projekty_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -2373,46 +2261,44 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.38559F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.61441F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1254, 1003);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1254, 1000);
             this.tableLayoutPanel4.TabIndex = 2;
-            // this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
             // 
             // chartDetaleWszystkie
             // 
-            chartArea5.AxisX.Interval = 1D;
-            chartArea5.AxisX.Title = "Detale";
-            chartArea5.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea5.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
-            chartArea5.AxisY.Title = "Liczba prób";
-            chartArea5.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea5.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            chartArea5.Name = "ChartArea1";
-            this.chartDetaleWszystkie.ChartAreas.Add(chartArea5);
+            chartArea16.AxisX.Interval = 1D;
+            chartArea16.AxisX.Title = "Detale";
+            chartArea16.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea16.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
+            chartArea16.AxisY.Title = "Liczba prób";
+            chartArea16.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea16.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            chartArea16.Name = "ChartArea1";
+            this.chartDetaleWszystkie.ChartAreas.Add(chartArea16);
             this.chartDetaleWszystkie.Cursor = System.Windows.Forms.Cursors.Default;
             this.chartDetaleWszystkie.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend5.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend5.IsTextAutoFit = false;
-            legend5.Name = "Legend1";
-            legend5.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chartDetaleWszystkie.Legends.Add(legend5);
-            this.chartDetaleWszystkie.Location = new System.Drawing.Point(3, 459);
+            legend16.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend16.IsTextAutoFit = false;
+            legend16.Name = "Legend1";
+            legend16.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chartDetaleWszystkie.Legends.Add(legend16);
+            this.chartDetaleWszystkie.Location = new System.Drawing.Point(3, 457);
             this.chartDetaleWszystkie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chartDetaleWszystkie.Name = "chartDetaleWszystkie";
-            series5.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series5.BorderColor = System.Drawing.Color.Black;
-            series5.ChartArea = "ChartArea1";
-            series5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            series5.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series5.IsValueShownAsLabel = true;
-            series5.IsVisibleInLegend = false;
-            series5.LabelBackColor = System.Drawing.Color.White;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartDetaleWszystkie.Series.Add(series5);
-            this.chartDetaleWszystkie.Size = new System.Drawing.Size(1248, 540);
+            series16.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series16.BorderColor = System.Drawing.Color.Black;
+            series16.ChartArea = "ChartArea1";
+            series16.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            series16.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series16.IsValueShownAsLabel = true;
+            series16.IsVisibleInLegend = false;
+            series16.LabelBackColor = System.Drawing.Color.White;
+            series16.Legend = "Legend1";
+            series16.Name = "Series1";
+            this.chartDetaleWszystkie.Series.Add(series16);
+            this.chartDetaleWszystkie.Size = new System.Drawing.Size(1248, 539);
             this.chartDetaleWszystkie.TabIndex = 5;
             this.chartDetaleWszystkie.Text = "chart1";
-            //  this.chartDetaleWszystkie.Click += new System.EventHandler(this.chartDetaleWszystkie_Click);
             // 
             // tableLayoutPanel25
             // 
@@ -2428,9 +2314,8 @@
             this.tableLayoutPanel25.Name = "tableLayoutPanel25";
             this.tableLayoutPanel25.RowCount = 1;
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(1250, 449);
+            this.tableLayoutPanel25.Size = new System.Drawing.Size(1250, 447);
             this.tableLayoutPanel25.TabIndex = 4;
-            //  this.tableLayoutPanel25.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel25_Paint);
             // 
             // tableLayoutPanel26
             // 
@@ -2445,9 +2330,8 @@
             this.tableLayoutPanel26.RowCount = 2;
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.49649F));
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.50351F));
-            this.tableLayoutPanel26.Size = new System.Drawing.Size(910, 437);
+            this.tableLayoutPanel26.Size = new System.Drawing.Size(910, 435);
             this.tableLayoutPanel26.TabIndex = 0;
-            //  this.tableLayoutPanel26.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel26_Paint);
             // 
             // tableLayoutPanel27
             // 
@@ -2464,22 +2348,20 @@
             this.tableLayoutPanel27.Name = "tableLayoutPanel27";
             this.tableLayoutPanel27.RowCount = 1;
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel27.Size = new System.Drawing.Size(904, 186);
+            this.tableLayoutPanel27.Size = new System.Drawing.Size(904, 185);
             this.tableLayoutPanel27.TabIndex = 0;
-            //  this.tableLayoutPanel27.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel27_Paint);
             // 
             // label13
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label13.Location = new System.Drawing.Point(47, 85);
+            this.label13.Location = new System.Drawing.Point(36, 82);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(103, 16);
+            this.label13.Size = new System.Drawing.Size(125, 20);
             this.label13.TabIndex = 2;
             this.label13.Text = "Wybierz detal:";
-            //  this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // tableLayoutPanel30
             // 
@@ -2497,9 +2379,8 @@
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.7485F));
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.11976F));
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel30.Size = new System.Drawing.Size(698, 174);
+            this.tableLayoutPanel30.Size = new System.Drawing.Size(698, 173);
             this.tableLayoutPanel30.TabIndex = 3;
-            //  this.tableLayoutPanel30.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel30_Paint);
             // 
             // tableLayoutPanel5
             // 
@@ -2509,38 +2390,35 @@
             this.tableLayoutPanel5.Controls.Add(this.label25, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.comboFormaDetaleWszystkie, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(5, 120);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(5, 118);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(688, 48);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(688, 49);
             this.tableLayoutPanel5.TabIndex = 4;
-            //   this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
             // 
             // label25
             // 
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(40, 16);
+            this.label25.Location = new System.Drawing.Point(15, 14);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(157, 15);
+            this.label25.Size = new System.Drawing.Size(207, 20);
             this.label25.TabIndex = 0;
             this.label25.Text = "Pokaż detale  dla Formy:";
-            //  this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // comboFormaDetaleWszystkie
             // 
             this.comboFormaDetaleWszystkie.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboFormaDetaleWszystkie.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFormaDetaleWszystkie.FormattingEnabled = true;
-            this.comboFormaDetaleWszystkie.Location = new System.Drawing.Point(243, 12);
+            this.comboFormaDetaleWszystkie.Location = new System.Drawing.Point(243, 10);
             this.comboFormaDetaleWszystkie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboFormaDetaleWszystkie.Name = "comboFormaDetaleWszystkie";
-            this.comboFormaDetaleWszystkie.Size = new System.Drawing.Size(439, 23);
+            this.comboFormaDetaleWszystkie.Size = new System.Drawing.Size(439, 27);
             this.comboFormaDetaleWszystkie.TabIndex = 1;
-            // this.comboFormaDetaleWszystkie.SelectedIndexChanged += new System.EventHandler(this.comboFormaDetaleWszystkie_SelectedIndexChanged);
             this.comboFormaDetaleWszystkie.TextChanged += new System.EventHandler(this.showDetailsTimeMolds);
             // 
             // checkBoxDetaleWszystkie
@@ -2548,10 +2426,10 @@
             this.checkBoxDetaleWszystkie.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxDetaleWszystkie.AutoSize = true;
             this.checkBoxDetaleWszystkie.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBoxDetaleWszystkie.Location = new System.Drawing.Point(272, 13);
+            this.checkBoxDetaleWszystkie.Location = new System.Drawing.Point(257, 11);
             this.checkBoxDetaleWszystkie.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBoxDetaleWszystkie.Name = "checkBoxDetaleWszystkie";
-            this.checkBoxDetaleWszystkie.Size = new System.Drawing.Size(153, 20);
+            this.checkBoxDetaleWszystkie.Size = new System.Drawing.Size(184, 24);
             this.checkBoxDetaleWszystkie.TabIndex = 2;
             this.checkBoxDetaleWszystkie.Text = "Zaznacz wszystkie:";
             this.checkBoxDetaleWszystkie.UseVisualStyleBackColor = true;
@@ -2565,38 +2443,35 @@
             this.tableLayoutPanel31.Controls.Add(this.label14, 0, 0);
             this.tableLayoutPanel31.Controls.Add(this.comboProjektDetaleWszystkie, 1, 0);
             this.tableLayoutPanel31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel31.Location = new System.Drawing.Point(5, 51);
+            this.tableLayoutPanel31.Location = new System.Drawing.Point(5, 50);
             this.tableLayoutPanel31.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel31.Name = "tableLayoutPanel31";
             this.tableLayoutPanel31.RowCount = 1;
             this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel31.Size = new System.Drawing.Size(688, 59);
+            this.tableLayoutPanel31.Size = new System.Drawing.Size(688, 58);
             this.tableLayoutPanel31.TabIndex = 3;
-            //  this.tableLayoutPanel31.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel31_Paint);
             // 
             // label14
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(34, 22);
+            this.label14.Location = new System.Drawing.Point(7, 19);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(168, 15);
+            this.label14.Size = new System.Drawing.Size(222, 20);
             this.label14.TabIndex = 0;
             this.label14.Text = "Pokaż detale dla projektu:";
-            //  this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // comboProjektDetaleWszystkie
             // 
             this.comboProjektDetaleWszystkie.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboProjektDetaleWszystkie.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboProjektDetaleWszystkie.FormattingEnabled = true;
-            this.comboProjektDetaleWszystkie.Location = new System.Drawing.Point(243, 18);
+            this.comboProjektDetaleWszystkie.Location = new System.Drawing.Point(243, 15);
             this.comboProjektDetaleWszystkie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboProjektDetaleWszystkie.Name = "comboProjektDetaleWszystkie";
-            this.comboProjektDetaleWszystkie.Size = new System.Drawing.Size(439, 23);
+            this.comboProjektDetaleWszystkie.Size = new System.Drawing.Size(439, 27);
             this.comboProjektDetaleWszystkie.TabIndex = 1;
-            //  this.comboProjektDetaleWszystkie.SelectedIndexChanged += new System.EventHandler(this.comboProjektDetaleWszystkie_SelectedIndexChanged);
             this.comboProjektDetaleWszystkie.TextChanged += new System.EventHandler(this.showDetailsProject);
             // 
             // listBoxDetaleWszystkie
@@ -2605,14 +2480,13 @@
             this.listBoxDetaleWszystkie.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxDetaleWszystkie.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBoxDetaleWszystkie.FormattingEnabled = true;
-            this.listBoxDetaleWszystkie.ItemHeight = 16;
-            this.listBoxDetaleWszystkie.Location = new System.Drawing.Point(2, 197);
+            this.listBoxDetaleWszystkie.ItemHeight = 20;
+            this.listBoxDetaleWszystkie.Location = new System.Drawing.Point(2, 196);
             this.listBoxDetaleWszystkie.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.listBoxDetaleWszystkie.Name = "listBoxDetaleWszystkie";
             this.listBoxDetaleWszystkie.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBoxDetaleWszystkie.Size = new System.Drawing.Size(906, 237);
+            this.listBoxDetaleWszystkie.Size = new System.Drawing.Size(906, 236);
             this.listBoxDetaleWszystkie.TabIndex = 1;
-            // this.listBoxDetaleWszystkie.SelectedIndexChanged += new System.EventHandler(this.listBoxDetaleWszystkie_SelectedIndexChanged);
             // 
             // tableLayoutPanel28
             // 
@@ -2629,22 +2503,20 @@
             this.tableLayoutPanel28.RowCount = 2;
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.05158F));
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.94843F));
-            this.tableLayoutPanel28.Size = new System.Drawing.Size(324, 439);
+            this.tableLayoutPanel28.Size = new System.Drawing.Size(324, 437);
             this.tableLayoutPanel28.TabIndex = 1;
-            //  this.tableLayoutPanel28.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel28_Paint);
             // 
             // label15
             // 
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label15.Location = new System.Drawing.Point(113, 33);
+            this.label15.Location = new System.Drawing.Point(103, 30);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(97, 16);
+            this.label15.Size = new System.Drawing.Size(118, 20);
             this.label15.TabIndex = 1;
             this.label15.Text = "Wybierz datę:";
-            //  this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // tableLayoutPanel29
             // 
@@ -2658,7 +2530,7 @@
             this.tableLayoutPanel29.Controls.Add(this.dateTimePickerDetailAllOd, 0, 1);
             this.tableLayoutPanel29.Controls.Add(this.label18, 0, 4);
             this.tableLayoutPanel29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel29.Location = new System.Drawing.Point(4, 85);
+            this.tableLayoutPanel29.Location = new System.Drawing.Point(4, 84);
             this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel29.Name = "tableLayoutPanel29";
             this.tableLayoutPanel29.RowCount = 6;
@@ -2668,19 +2540,18 @@
             this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.62162F));
             this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel29.Size = new System.Drawing.Size(316, 349);
+            this.tableLayoutPanel29.Size = new System.Drawing.Size(316, 348);
             this.tableLayoutPanel29.TabIndex = 2;
-            // this.tableLayoutPanel29.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel29_Paint);
             // 
             // detaleAllChart
             // 
             this.detaleAllChart.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("detaleAllChart.BackgroundImage")));
             this.detaleAllChart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.detaleAllChart.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.detaleAllChart.Location = new System.Drawing.Point(4, 268);
+            this.detaleAllChart.Location = new System.Drawing.Point(4, 266);
             this.detaleAllChart.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.detaleAllChart.Name = "detaleAllChart";
-            this.detaleAllChart.Size = new System.Drawing.Size(308, 76);
+            this.detaleAllChart.Size = new System.Drawing.Size(308, 77);
             this.detaleAllChart.TabIndex = 7;
             this.detaleAllChart.UseVisualStyleBackColor = true;
             this.detaleAllChart.Click += new System.EventHandler(this.detaleAllChart_Click);
@@ -2690,96 +2561,89 @@
             this.dateTimePickerDetailAllDo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerDetailAllDo.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerDetailAllDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerDetailAllDo.Location = new System.Drawing.Point(70, 161);
+            this.dateTimePickerDetailAllDo.Location = new System.Drawing.Point(70, 157);
             this.dateTimePickerDetailAllDo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePickerDetailAllDo.Name = "dateTimePickerDetailAllDo";
-            this.dateTimePickerDetailAllDo.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePickerDetailAllDo.Size = new System.Drawing.Size(175, 28);
             this.dateTimePickerDetailAllDo.TabIndex = 5;
-            //  this.dateTimePickerDetailAllDo.ValueChanged += new System.EventHandler(this.dateTimePickerDetailAllDo_ValueChanged);
             // 
             // label16
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label16.Location = new System.Drawing.Point(142, 101);
+            this.label16.Location = new System.Drawing.Point(139, 98);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(31, 16);
+            this.label16.Size = new System.Drawing.Size(37, 20);
             this.label16.TabIndex = 4;
             this.label16.Text = "Do:";
-            //  this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label17
             // 
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label17.Location = new System.Drawing.Point(143, 10);
+            this.label17.Location = new System.Drawing.Point(139, 7);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(30, 16);
+            this.label17.Size = new System.Drawing.Size(37, 20);
             this.label17.TabIndex = 2;
             this.label17.Text = "Od:";
-            // this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // dateTimePickerDetailAllOd
             // 
             this.dateTimePickerDetailAllOd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerDetailAllOd.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerDetailAllOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerDetailAllOd.Location = new System.Drawing.Point(70, 50);
+            this.dateTimePickerDetailAllOd.Location = new System.Drawing.Point(70, 47);
             this.dateTimePickerDetailAllOd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePickerDetailAllOd.Name = "dateTimePickerDetailAllOd";
-            this.dateTimePickerDetailAllOd.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePickerDetailAllOd.Size = new System.Drawing.Size(175, 28);
             this.dateTimePickerDetailAllOd.TabIndex = 3;
-            //  this.dateTimePickerDetailAllOd.ValueChanged += new System.EventHandler(this.dateTimePickerDetailAllOd_ValueChanged);
             // 
             // label18
             // 
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label18.Location = new System.Drawing.Point(94, 233);
+            this.label18.Location = new System.Drawing.Point(81, 229);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(128, 16);
+            this.label18.Size = new System.Drawing.Size(153, 20);
             this.label18.TabIndex = 6;
             this.label18.Text = "Pokaż liczbę prób:";
-            // this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // chart3
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea6);
+            chartArea17.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea17);
             this.chart3.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend6.Name = "Legend1";
-            this.chart3.Legends.Add(legend6);
+            legend17.Name = "Legend1";
+            this.chart3.Legends.Add(legend17);
             this.chart3.Location = new System.Drawing.Point(2, 3);
             this.chart3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chart3.Name = "chart3";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chart3.Series.Add(series6);
-            this.chart3.Size = new System.Drawing.Size(1254, 1003);
+            series17.ChartArea = "ChartArea1";
+            series17.Legend = "Legend1";
+            series17.Name = "Series1";
+            this.chart3.Series.Add(series17);
+            this.chart3.Size = new System.Drawing.Size(1254, 1000);
             this.chart3.TabIndex = 3;
             this.chart3.Text = "chart3";
-            //   this.chart3.Click += new System.EventHandler(this.chart3_Click);
             // 
             // Maszyny
             // 
             this.Maszyny.Controls.Add(this.tableLayoutPanel7);
             this.Maszyny.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Maszyny.Location = new System.Drawing.Point(4, 24);
+            this.Maszyny.Location = new System.Drawing.Point(4, 27);
             this.Maszyny.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Maszyny.Name = "Maszyny";
             this.Maszyny.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Maszyny.Size = new System.Drawing.Size(1258, 1009);
+            this.Maszyny.Size = new System.Drawing.Size(1258, 1006);
             this.Maszyny.TabIndex = 2;
             this.Maszyny.Text = "Maszyny";
             this.Maszyny.UseVisualStyleBackColor = true;
-            //   this.Maszyny.Click += new System.EventHandler(this.Maszyny_Click);
             // 
             // tableLayoutPanel7
             // 
@@ -2794,56 +2658,54 @@
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.42636F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.57364F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1254, 1003);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(1254, 1000);
             this.tableLayoutPanel7.TabIndex = 0;
-            //  this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel7_Paint);
             // 
             // chartMaszyny
             // 
             this.chartMaszyny.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             this.chartMaszyny.BorderlineWidth = 0;
             this.chartMaszyny.BorderSkin.BorderColor = System.Drawing.Color.White;
-            chartArea7.AxisX.Minimum = 1D;
-            chartArea7.AxisX.Title = "Maszyny";
-            chartArea7.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea7.AxisX2.Interval = 1D;
-            chartArea7.AxisX2.IntervalOffset = 1D;
-            chartArea7.AxisX2.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea7.AxisY.Minimum = 0D;
-            chartArea7.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
-            chartArea7.AxisY.Title = "Liczba prób";
-            chartArea7.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea7.BorderWidth = 0;
-            chartArea7.Name = "ChartArea1";
-            this.chartMaszyny.ChartAreas.Add(chartArea7);
+            chartArea18.AxisX.Minimum = 1D;
+            chartArea18.AxisX.Title = "Maszyny";
+            chartArea18.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea18.AxisX2.Interval = 1D;
+            chartArea18.AxisX2.IntervalOffset = 1D;
+            chartArea18.AxisX2.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea18.AxisY.Minimum = 0D;
+            chartArea18.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
+            chartArea18.AxisY.Title = "Liczba prób";
+            chartArea18.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea18.BorderWidth = 0;
+            chartArea18.Name = "ChartArea1";
+            this.chartMaszyny.ChartAreas.Add(chartArea18);
             this.chartMaszyny.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartMaszyny.ImeMode = System.Windows.Forms.ImeMode.Off;
-            legend7.BackColor = System.Drawing.Color.White;
-            legend7.BorderColor = System.Drawing.Color.White;
-            legend7.Enabled = false;
-            legend7.Font = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend7.IsTextAutoFit = false;
-            legend7.Name = "Legend1";
-            legend7.TitleFont = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chartMaszyny.Legends.Add(legend7);
-            this.chartMaszyny.Location = new System.Drawing.Point(3, 459);
+            legend18.BackColor = System.Drawing.Color.White;
+            legend18.BorderColor = System.Drawing.Color.White;
+            legend18.Enabled = false;
+            legend18.Font = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend18.IsTextAutoFit = false;
+            legend18.Name = "Legend1";
+            legend18.TitleFont = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chartMaszyny.Legends.Add(legend18);
+            this.chartMaszyny.Location = new System.Drawing.Point(3, 458);
             this.chartMaszyny.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chartMaszyny.Name = "chartMaszyny";
             this.chartMaszyny.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series7.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series7.BorderColor = System.Drawing.Color.Black;
-            series7.ChartArea = "ChartArea1";
-            series7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            series7.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series7.IsValueShownAsLabel = true;
-            series7.IsVisibleInLegend = false;
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.chartMaszyny.Series.Add(series7);
-            this.chartMaszyny.Size = new System.Drawing.Size(1248, 540);
+            series18.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series18.BorderColor = System.Drawing.Color.Black;
+            series18.ChartArea = "ChartArea1";
+            series18.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            series18.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series18.IsValueShownAsLabel = true;
+            series18.IsVisibleInLegend = false;
+            series18.Legend = "Legend1";
+            series18.Name = "Series1";
+            this.chartMaszyny.Series.Add(series18);
+            this.chartMaszyny.Size = new System.Drawing.Size(1248, 538);
             this.chartMaszyny.TabIndex = 3;
             this.chartMaszyny.Text = "chart5";
-            //  this.chartMaszyny.Click += new System.EventHandler(this.chartMaszyny_Click);
             // 
             // tableLayoutPanel8
             // 
@@ -2859,9 +2721,8 @@
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(1250, 449);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(1250, 448);
             this.tableLayoutPanel8.TabIndex = 2;
-            //   this.tableLayoutPanel8.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel8_Paint);
             // 
             // tableLayoutPanel18
             // 
@@ -2876,9 +2737,8 @@
             this.tableLayoutPanel18.RowCount = 2;
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.92115F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.07885F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(704, 437);
+            this.tableLayoutPanel18.Size = new System.Drawing.Size(704, 436);
             this.tableLayoutPanel18.TabIndex = 0;
-            //  this.tableLayoutPanel18.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel18_Paint);
             // 
             // tableLayoutPanel19
             // 
@@ -2897,30 +2757,28 @@
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel19.Size = new System.Drawing.Size(698, 70);
             this.tableLayoutPanel19.TabIndex = 0;
-            //  this.tableLayoutPanel19.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel19_Paint);
             // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(120, 27);
+            this.label7.Location = new System.Drawing.Point(107, 25);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(124, 16);
+            this.label7.Size = new System.Drawing.Size(149, 20);
             this.label7.TabIndex = 2;
             this.label7.Text = "Wybierz maszynę:";
-            //   this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // checkBoxAllMaszyny
             // 
             this.checkBoxAllMaszyny.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxAllMaszyny.AutoSize = true;
             this.checkBoxAllMaszyny.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBoxAllMaszyny.Location = new System.Drawing.Point(453, 25);
+            this.checkBoxAllMaszyny.Location = new System.Drawing.Point(438, 23);
             this.checkBoxAllMaszyny.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBoxAllMaszyny.Name = "checkBoxAllMaszyny";
-            this.checkBoxAllMaszyny.Size = new System.Drawing.Size(153, 20);
+            this.checkBoxAllMaszyny.Size = new System.Drawing.Size(184, 24);
             this.checkBoxAllMaszyny.TabIndex = 1;
             this.checkBoxAllMaszyny.Text = "Zaznacz wszystkie:";
             this.checkBoxAllMaszyny.UseVisualStyleBackColor = true;
@@ -2932,15 +2790,14 @@
             this.listBoxMaszynyAll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxMaszynyAll.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBoxMaszynyAll.FormattingEnabled = true;
-            this.listBoxMaszynyAll.ItemHeight = 16;
+            this.listBoxMaszynyAll.ItemHeight = 20;
             this.listBoxMaszynyAll.Location = new System.Drawing.Point(2, 81);
             this.listBoxMaszynyAll.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.listBoxMaszynyAll.MultiColumn = true;
             this.listBoxMaszynyAll.Name = "listBoxMaszynyAll";
             this.listBoxMaszynyAll.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBoxMaszynyAll.Size = new System.Drawing.Size(700, 353);
+            this.listBoxMaszynyAll.Size = new System.Drawing.Size(700, 352);
             this.listBoxMaszynyAll.TabIndex = 1;
-            //   this.listBoxMaszynyAll.SelectedIndexChanged += new System.EventHandler(this.listBoxMaszynyAll_SelectedIndexChanged);
             // 
             // tableLayoutPanel20
             // 
@@ -2960,35 +2817,32 @@
             this.tableLayoutPanel20.RowCount = 2;
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.05158F));
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.94843F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(530, 439);
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(530, 438);
             this.tableLayoutPanel20.TabIndex = 1;
-            //  this.tableLayoutPanel20.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel20_Paint);
             // 
             // label8
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(376, 33);
+            this.label8.Location = new System.Drawing.Point(372, 30);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 16);
+            this.label8.Size = new System.Drawing.Size(49, 20);
             this.label8.TabIndex = 3;
             this.label8.Text = "Inne:";
-            // this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(84, 33);
+            this.label9.Location = new System.Drawing.Point(74, 30);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 16);
+            this.label9.Size = new System.Drawing.Size(118, 20);
             this.label9.TabIndex = 1;
             this.label9.Text = "Wybierz datę:";
-            //  this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // tableLayoutPanel21
             // 
@@ -3000,7 +2854,7 @@
             this.tableLayoutPanel21.Controls.Add(this.label11, 0, 0);
             this.tableLayoutPanel21.Controls.Add(this.dateTimePickerMachinesOd, 0, 1);
             this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(4, 85);
+            this.tableLayoutPanel21.Location = new System.Drawing.Point(4, 84);
             this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
             this.tableLayoutPanel21.RowCount = 4;
@@ -3010,57 +2864,52 @@
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel21.Size = new System.Drawing.Size(258, 349);
             this.tableLayoutPanel21.TabIndex = 2;
-            // this.tableLayoutPanel21.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel21_Paint);
             // 
             // dateTimePickerMachinesDo
             // 
             this.dateTimePickerMachinesDo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerMachinesDo.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerMachinesDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerMachinesDo.Location = new System.Drawing.Point(41, 291);
+            this.dateTimePickerMachinesDo.Location = new System.Drawing.Point(41, 289);
             this.dateTimePickerMachinesDo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePickerMachinesDo.Name = "dateTimePickerMachinesDo";
-            this.dateTimePickerMachinesDo.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePickerMachinesDo.Size = new System.Drawing.Size(175, 28);
             this.dateTimePickerMachinesDo.TabIndex = 5;
-            //  this.dateTimePickerMachinesDo.ValueChanged += new System.EventHandler(this.dateTimePickerMachinesDo_ValueChanged);
             // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.Location = new System.Drawing.Point(113, 208);
+            this.label10.Location = new System.Drawing.Point(110, 206);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(31, 16);
+            this.label10.Size = new System.Drawing.Size(37, 20);
             this.label10.TabIndex = 4;
             this.label10.Text = "Do:";
-            //  this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.Location = new System.Drawing.Point(114, 36);
+            this.label11.Location = new System.Drawing.Point(110, 34);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(30, 16);
+            this.label11.Size = new System.Drawing.Size(37, 20);
             this.label11.TabIndex = 2;
             this.label11.Text = "Od:";
-            //  this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // dateTimePickerMachinesOd
             // 
             this.dateTimePickerMachinesOd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerMachinesOd.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerMachinesOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerMachinesOd.Location = new System.Drawing.Point(41, 118);
+            this.dateTimePickerMachinesOd.Location = new System.Drawing.Point(41, 116);
             this.dateTimePickerMachinesOd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePickerMachinesOd.Name = "dateTimePickerMachinesOd";
-            this.dateTimePickerMachinesOd.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePickerMachinesOd.Size = new System.Drawing.Size(175, 28);
             this.dateTimePickerMachinesOd.TabIndex = 3;
-            //  this.dateTimePickerMachinesOd.ValueChanged += new System.EventHandler(this.dateTimePickerMachinesOd_ValueChanged);
             // 
             // tableLayoutPanel22
             // 
@@ -3070,7 +2919,7 @@
             this.tableLayoutPanel22.Controls.Add(this.tableLayoutPanel23, 0, 0);
             this.tableLayoutPanel22.Controls.Add(this.tableLayoutPanel24, 0, 1);
             this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(268, 85);
+            this.tableLayoutPanel22.Location = new System.Drawing.Point(268, 84);
             this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel22.Name = "tableLayoutPanel22";
             this.tableLayoutPanel22.RowCount = 2;
@@ -3079,7 +2928,6 @@
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel22.Size = new System.Drawing.Size(258, 349);
             this.tableLayoutPanel22.TabIndex = 4;
-            //  this.tableLayoutPanel22.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel22_Paint);
             // 
             // tableLayoutPanel23
             // 
@@ -3100,7 +2948,6 @@
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel23.Size = new System.Drawing.Size(250, 184);
             this.tableLayoutPanel23.TabIndex = 4;
-            // this.tableLayoutPanel23.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel23_Paint);
             // 
             // checkBox7
             // 
@@ -3109,11 +2956,10 @@
             this.checkBox7.Location = new System.Drawing.Point(2, 141);
             this.checkBox7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(91, 20);
+            this.checkBox7.Size = new System.Drawing.Size(110, 24);
             this.checkBox7.TabIndex = 3;
             this.checkBox7.Text = "checkBox7";
             this.checkBox7.UseVisualStyleBackColor = true;
-            //  this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
             // checkBox8
             // 
@@ -3122,11 +2968,10 @@
             this.checkBox8.Location = new System.Drawing.Point(2, 95);
             this.checkBox8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(93, 20);
+            this.checkBox8.Size = new System.Drawing.Size(112, 24);
             this.checkBox8.TabIndex = 2;
             this.checkBox8.Text = "checkBox8";
             this.checkBox8.UseVisualStyleBackColor = true;
-            //  this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // checkBox9
             // 
@@ -3135,11 +2980,10 @@
             this.checkBox9.Location = new System.Drawing.Point(2, 49);
             this.checkBox9.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(93, 20);
+            this.checkBox9.Size = new System.Drawing.Size(112, 24);
             this.checkBox9.TabIndex = 1;
             this.checkBox9.Text = "checkBox9";
             this.checkBox9.UseVisualStyleBackColor = true;
-            //  this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 
             // checkBox10
             // 
@@ -3148,11 +2992,10 @@
             this.checkBox10.Location = new System.Drawing.Point(2, 3);
             this.checkBox10.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(99, 20);
+            this.checkBox10.Size = new System.Drawing.Size(119, 24);
             this.checkBox10.TabIndex = 0;
             this.checkBox10.Text = "checkBox10";
             this.checkBox10.UseVisualStyleBackColor = true;
-            //  this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
             // 
             // tableLayoutPanel24
             // 
@@ -3169,7 +3012,6 @@
             this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.91228F));
             this.tableLayoutPanel24.Size = new System.Drawing.Size(250, 147);
             this.tableLayoutPanel24.TabIndex = 5;
-            //  this.tableLayoutPanel24.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel24_Paint);
             // 
             // maszynyChartButton
             // 
@@ -3189,27 +3031,25 @@
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.Location = new System.Drawing.Point(61, 17);
+            this.label12.Location = new System.Drawing.Point(48, 15);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(128, 16);
+            this.label12.Size = new System.Drawing.Size(153, 20);
             this.label12.TabIndex = 1;
             this.label12.Text = "Pokaż liczbę prób:";
-            //  this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // Detale
             // 
             this.Detale.Controls.Add(this.tableLayoutPanel9);
             this.Detale.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Detale.Location = new System.Drawing.Point(4, 24);
+            this.Detale.Location = new System.Drawing.Point(4, 27);
             this.Detale.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Detale.Name = "Detale";
             this.Detale.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Detale.Size = new System.Drawing.Size(1258, 1009);
+            this.Detale.Size = new System.Drawing.Size(1258, 1006);
             this.Detale.TabIndex = 0;
             this.Detale.Text = "Projekty";
             this.Detale.UseVisualStyleBackColor = true;
-            //  this.Detale.Click += new System.EventHandler(this.Detale_Click);
             // 
             // tableLayoutPanel9
             // 
@@ -3224,9 +3064,8 @@
             this.tableLayoutPanel9.RowCount = 2;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.58139F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.41861F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(1254, 1003);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(1254, 1000);
             this.tableLayoutPanel9.TabIndex = 0;
-            // this.tableLayoutPanel9.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel9_Paint);
             // 
             // tableLayoutPanel10
             // 
@@ -3242,9 +3081,8 @@
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(1250, 451);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(1250, 449);
             this.tableLayoutPanel10.TabIndex = 1;
-            //  this.tableLayoutPanel10.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel10_Paint);
             // 
             // tableLayoutPanel11
             // 
@@ -3259,9 +3097,8 @@
             this.tableLayoutPanel11.RowCount = 2;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.92115F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.07885F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(704, 439);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(704, 437);
             this.tableLayoutPanel11.TabIndex = 0;
-            //  this.tableLayoutPanel11.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel11_Paint);
             // 
             // tableLayoutPanel12
             // 
@@ -3280,30 +3117,28 @@
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel12.Size = new System.Drawing.Size(698, 70);
             this.tableLayoutPanel12.TabIndex = 0;
-            //  this.tableLayoutPanel12.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel12_Paint);
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Siemens Sans SC", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(120, 26);
+            this.label1.Location = new System.Drawing.Point(102, 23);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 18);
+            this.label1.Size = new System.Drawing.Size(159, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "Wybierz projekt:";
-            //  this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // checkBox1
             // 
             this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox1.Location = new System.Drawing.Point(453, 25);
+            this.checkBox1.Location = new System.Drawing.Point(438, 23);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(153, 20);
+            this.checkBox1.Size = new System.Drawing.Size(184, 24);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Zaznacz wszystkie:";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -3315,15 +3150,14 @@
             this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBox1.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
+            this.listBox1.ItemHeight = 20;
             this.listBox1.Location = new System.Drawing.Point(2, 81);
             this.listBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.listBox1.MultiColumn = true;
             this.listBox1.Name = "listBox1";
             this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBox1.Size = new System.Drawing.Size(700, 355);
+            this.listBox1.Size = new System.Drawing.Size(700, 353);
             this.listBox1.TabIndex = 1;
-            //  this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // tableLayoutPanel13
             // 
@@ -3343,35 +3177,32 @@
             this.tableLayoutPanel13.RowCount = 2;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.05158F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.94843F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(530, 441);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(530, 439);
             this.tableLayoutPanel13.TabIndex = 1;
-            //   this.tableLayoutPanel13.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel13_Paint);
             // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(376, 33);
+            this.label5.Location = new System.Drawing.Point(372, 31);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 16);
+            this.label5.Size = new System.Drawing.Size(49, 20);
             this.label5.TabIndex = 3;
             this.label5.Text = "Inne:";
-            //  this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(84, 33);
+            this.label2.Location = new System.Drawing.Point(74, 31);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 16);
+            this.label2.Size = new System.Drawing.Size(118, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Wybierz datę:";
-            //  this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // tableLayoutPanel14
             // 
@@ -3391,59 +3222,54 @@
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(258, 351);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(258, 349);
             this.tableLayoutPanel14.TabIndex = 2;
-            //  this.tableLayoutPanel14.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel14_Paint);
             // 
             // dateTimePickerStatisticsDo
             // 
             this.dateTimePickerStatisticsDo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerStatisticsDo.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerStatisticsDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerStatisticsDo.Location = new System.Drawing.Point(41, 294);
+            this.dateTimePickerStatisticsDo.Location = new System.Drawing.Point(41, 289);
             this.dateTimePickerStatisticsDo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePickerStatisticsDo.Name = "dateTimePickerStatisticsDo";
-            this.dateTimePickerStatisticsDo.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePickerStatisticsDo.Size = new System.Drawing.Size(175, 28);
             this.dateTimePickerStatisticsDo.TabIndex = 5;
-            //  this.dateTimePickerStatisticsDo.ValueChanged += new System.EventHandler(this.dateTimePickerStatisticsDo_ValueChanged);
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(113, 210);
+            this.label4.Location = new System.Drawing.Point(110, 206);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 16);
+            this.label4.Size = new System.Drawing.Size(37, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "Do:";
-            // this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(114, 36);
+            this.label3.Location = new System.Drawing.Point(110, 34);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 16);
+            this.label3.Size = new System.Drawing.Size(37, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Od:";
-            //  this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // dateTimePickerStatisticsOd
             // 
             this.dateTimePickerStatisticsOd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerStatisticsOd.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerStatisticsOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerStatisticsOd.Location = new System.Drawing.Point(41, 119);
+            this.dateTimePickerStatisticsOd.Location = new System.Drawing.Point(41, 116);
             this.dateTimePickerStatisticsOd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePickerStatisticsOd.Name = "dateTimePickerStatisticsOd";
-            this.dateTimePickerStatisticsOd.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePickerStatisticsOd.Size = new System.Drawing.Size(175, 28);
             this.dateTimePickerStatisticsOd.TabIndex = 3;
-            // this.dateTimePickerStatisticsOd.ValueChanged += new System.EventHandler(this.dateTimePickerStatisticsOd_ValueChanged);
             // 
             // tableLayoutPanel15
             // 
@@ -3460,9 +3286,8 @@
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.65611F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.34389F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(258, 351);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(258, 349);
             this.tableLayoutPanel15.TabIndex = 4;
-            //  this.tableLayoutPanel15.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel15_Paint);
             // 
             // tableLayoutPanel16
             // 
@@ -3481,9 +3306,8 @@
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(250, 186);
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(250, 184);
             this.tableLayoutPanel16.TabIndex = 4;
-            //  this.tableLayoutPanel16.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel16_Paint);
             // 
             // checkBox5
             // 
@@ -3492,11 +3316,10 @@
             this.checkBox5.Location = new System.Drawing.Point(2, 141);
             this.checkBox5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(93, 20);
+            this.checkBox5.Size = new System.Drawing.Size(111, 24);
             this.checkBox5.TabIndex = 3;
             this.checkBox5.Text = "checkBox5";
             this.checkBox5.UseVisualStyleBackColor = true;
-            //  this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -3505,11 +3328,10 @@
             this.checkBox4.Location = new System.Drawing.Point(2, 95);
             this.checkBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(93, 20);
+            this.checkBox4.Size = new System.Drawing.Size(112, 24);
             this.checkBox4.TabIndex = 2;
             this.checkBox4.Text = "checkBox4";
             this.checkBox4.UseVisualStyleBackColor = true;
-            //  this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -3518,11 +3340,10 @@
             this.checkBox3.Location = new System.Drawing.Point(2, 49);
             this.checkBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(92, 20);
+            this.checkBox3.Size = new System.Drawing.Size(111, 24);
             this.checkBox3.TabIndex = 1;
             this.checkBox3.Text = "checkBox3";
             this.checkBox3.UseVisualStyleBackColor = true;
-            //  this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -3531,11 +3352,10 @@
             this.checkBox2.Location = new System.Drawing.Point(2, 3);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(92, 20);
+            this.checkBox2.Size = new System.Drawing.Size(111, 24);
             this.checkBox2.TabIndex = 0;
             this.checkBox2.Text = "checkBox2";
             this.checkBox2.UseVisualStyleBackColor = true;
-            //  this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // tableLayoutPanel17
             // 
@@ -3544,7 +3364,7 @@
             this.tableLayoutPanel17.Controls.Add(this.button1, 0, 1);
             this.tableLayoutPanel17.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel17.Location = new System.Drawing.Point(4, 199);
+            this.tableLayoutPanel17.Location = new System.Drawing.Point(4, 197);
             this.tableLayoutPanel17.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel17.Name = "tableLayoutPanel17";
             this.tableLayoutPanel17.RowCount = 2;
@@ -3552,7 +3372,6 @@
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.91228F));
             this.tableLayoutPanel17.Size = new System.Drawing.Size(250, 147);
             this.tableLayoutPanel17.TabIndex = 5;
-            // this.tableLayoutPanel17.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel17_Paint);
             // 
             // button1
             // 
@@ -3572,54 +3391,52 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(61, 17);
+            this.label6.Location = new System.Drawing.Point(48, 15);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(128, 16);
+            this.label6.Size = new System.Drawing.Size(153, 20);
             this.label6.TabIndex = 1;
             this.label6.Text = "Pokaż liczbę prób:";
-            //  this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // chart6
             // 
             this.chart6.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             this.chart6.BorderlineWidth = 0;
             this.chart6.BorderSkin.BorderColor = System.Drawing.Color.White;
-            chartArea8.AxisX.Title = "Projekty";
-            chartArea8.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea8.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
-            chartArea8.AxisY.Title = "Liczba prób";
-            chartArea8.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea8.BorderWidth = 0;
-            chartArea8.Name = "ChartArea1";
-            this.chart6.ChartAreas.Add(chartArea8);
+            chartArea19.AxisX.Title = "Projekty";
+            chartArea19.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea19.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
+            chartArea19.AxisY.Title = "Liczba prób";
+            chartArea19.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea19.BorderWidth = 0;
+            chartArea19.Name = "ChartArea1";
+            this.chart6.ChartAreas.Add(chartArea19);
             this.chart6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chart6.ImeMode = System.Windows.Forms.ImeMode.Off;
-            legend8.BackColor = System.Drawing.Color.White;
-            legend8.BorderColor = System.Drawing.Color.White;
-            legend8.Enabled = false;
-            legend8.Font = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend8.IsTextAutoFit = false;
-            legend8.Name = "Legend1";
-            legend8.TitleFont = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chart6.Legends.Add(legend8);
-            this.chart6.Location = new System.Drawing.Point(3, 461);
+            legend19.BackColor = System.Drawing.Color.White;
+            legend19.BorderColor = System.Drawing.Color.White;
+            legend19.Enabled = false;
+            legend19.Font = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend19.IsTextAutoFit = false;
+            legend19.Name = "Legend1";
+            legend19.TitleFont = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chart6.Legends.Add(legend19);
+            this.chart6.Location = new System.Drawing.Point(3, 459);
             this.chart6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart6.Name = "chart6";
             this.chart6.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series8.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series8.BorderColor = System.Drawing.Color.Black;
-            series8.ChartArea = "ChartArea1";
-            series8.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series8.IsValueShownAsLabel = true;
-            series8.IsVisibleInLegend = false;
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            this.chart6.Series.Add(series8);
-            this.chart6.Size = new System.Drawing.Size(1248, 538);
+            series19.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series19.BorderColor = System.Drawing.Color.Black;
+            series19.ChartArea = "ChartArea1";
+            series19.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series19.IsValueShownAsLabel = true;
+            series19.IsVisibleInLegend = false;
+            series19.Legend = "Legend1";
+            series19.Name = "Series1";
+            this.chart6.Series.Add(series19);
+            this.chart6.Size = new System.Drawing.Size(1248, 537);
             this.chart6.TabIndex = 2;
             this.chart6.Text = "chart6";
-            // this.chart6.Click += new System.EventHandler(this.chart6_Click);
             // 
             // tabControl1
             // 
@@ -3635,20 +3452,18 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1266, 1037);
             this.tabControl1.TabIndex = 0;
-            //  this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tabControl2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1258, 1009);
+            this.tabPage2.Size = new System.Drawing.Size(1258, 1006);
             this.tabPage2.TabIndex = 6;
             this.tabPage2.Text = "Cel";
             this.tabPage2.UseVisualStyleBackColor = true;
-            //  this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // tabControl2
             // 
@@ -3660,17 +3475,17 @@
             this.tabControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1252, 1001);
+            this.tabControl2.Size = new System.Drawing.Size(1252, 998);
             this.tabControl2.TabIndex = 1;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.tableLayoutPanel70);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1244, 973);
+            this.tabPage1.Size = new System.Drawing.Size(1244, 967);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Projekty";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -3688,7 +3503,7 @@
             this.tableLayoutPanel70.RowCount = 2;
             this.tableLayoutPanel70.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.8768F));
             this.tableLayoutPanel70.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.1232F));
-            this.tableLayoutPanel70.Size = new System.Drawing.Size(1238, 965);
+            this.tableLayoutPanel70.Size = new System.Drawing.Size(1238, 959);
             this.tableLayoutPanel70.TabIndex = 0;
             // 
             // tableLayoutPanel71
@@ -3705,7 +3520,7 @@
             this.tableLayoutPanel71.Name = "tableLayoutPanel71";
             this.tableLayoutPanel71.RowCount = 1;
             this.tableLayoutPanel71.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel71.Size = new System.Drawing.Size(1234, 359);
+            this.tableLayoutPanel71.Size = new System.Drawing.Size(1234, 357);
             this.tableLayoutPanel71.TabIndex = 2;
             // 
             // tableLayoutPanel72
@@ -3721,7 +3536,7 @@
             this.tableLayoutPanel72.RowCount = 2;
             this.tableLayoutPanel72.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.92115F));
             this.tableLayoutPanel72.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.07885F));
-            this.tableLayoutPanel72.Size = new System.Drawing.Size(695, 347);
+            this.tableLayoutPanel72.Size = new System.Drawing.Size(695, 345);
             this.tableLayoutPanel72.TabIndex = 0;
             // 
             // tableLayoutPanel73
@@ -3739,7 +3554,7 @@
             this.tableLayoutPanel73.Name = "tableLayoutPanel73";
             this.tableLayoutPanel73.RowCount = 1;
             this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel73.Size = new System.Drawing.Size(689, 54);
+            this.tableLayoutPanel73.Size = new System.Drawing.Size(689, 53);
             this.tableLayoutPanel73.TabIndex = 0;
             // 
             // label47
@@ -3747,10 +3562,10 @@
             this.label47.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label47.Location = new System.Drawing.Point(121, 19);
+            this.label47.Location = new System.Drawing.Point(108, 16);
             this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(117, 16);
+            this.label47.Size = new System.Drawing.Size(142, 20);
             this.label47.TabIndex = 2;
             this.label47.Text = "Wybierz projekt:";
             // 
@@ -3759,10 +3574,10 @@
             this.checkBox27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox27.AutoSize = true;
             this.checkBox27.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox27.Location = new System.Drawing.Point(446, 17);
+            this.checkBox27.Location = new System.Drawing.Point(431, 14);
             this.checkBox27.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(153, 20);
+            this.checkBox27.Size = new System.Drawing.Size(184, 24);
             this.checkBox27.TabIndex = 1;
             this.checkBox27.Text = "Zaznacz wszystkie:";
             this.checkBox27.UseVisualStyleBackColor = true;
@@ -3773,13 +3588,13 @@
             this.listBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBox2.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(2, 65);
+            this.listBox2.ItemHeight = 20;
+            this.listBox2.Location = new System.Drawing.Point(2, 64);
             this.listBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.listBox2.MultiColumn = true;
             this.listBox2.Name = "listBox2";
             this.listBox2.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBox2.Size = new System.Drawing.Size(691, 279);
+            this.listBox2.Size = new System.Drawing.Size(691, 278);
             this.listBox2.TabIndex = 1;
             // 
             // tableLayoutPanel74
@@ -3800,7 +3615,7 @@
             this.tableLayoutPanel74.RowCount = 2;
             this.tableLayoutPanel74.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel74.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.71429F));
-            this.tableLayoutPanel74.Size = new System.Drawing.Size(523, 349);
+            this.tableLayoutPanel74.Size = new System.Drawing.Size(523, 347);
             this.tableLayoutPanel74.TabIndex = 1;
             // 
             // label48
@@ -3808,10 +3623,10 @@
             this.label48.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label48.Location = new System.Drawing.Point(371, 18);
+            this.label48.Location = new System.Drawing.Point(367, 16);
             this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(41, 16);
+            this.label48.Size = new System.Drawing.Size(49, 20);
             this.label48.TabIndex = 3;
             this.label48.Text = "Inne:";
             // 
@@ -3820,10 +3635,10 @@
             this.label49.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label49.Location = new System.Drawing.Point(82, 18);
+            this.label49.Location = new System.Drawing.Point(72, 16);
             this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(97, 16);
+            this.label49.Size = new System.Drawing.Size(118, 20);
             this.label49.TabIndex = 1;
             this.label49.Text = "Wybierz datę:";
             // 
@@ -3846,7 +3661,7 @@
             this.tableLayoutPanel75.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel75.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel75.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel75.Size = new System.Drawing.Size(254, 289);
+            this.tableLayoutPanel75.Size = new System.Drawing.Size(254, 287);
             this.tableLayoutPanel75.TabIndex = 2;
             // 
             // dateTimePicker3
@@ -3854,10 +3669,10 @@
             this.dateTimePicker3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker3.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(39, 239);
+            this.dateTimePicker3.Location = new System.Drawing.Point(39, 236);
             this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePicker3.Size = new System.Drawing.Size(175, 28);
             this.dateTimePicker3.TabIndex = 5;
             // 
             // label50
@@ -3865,10 +3680,10 @@
             this.label50.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label50.Location = new System.Drawing.Point(111, 170);
+            this.label50.Location = new System.Drawing.Point(108, 168);
             this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(31, 16);
+            this.label50.Size = new System.Drawing.Size(37, 20);
             this.label50.TabIndex = 4;
             this.label50.Text = "Do:";
             // 
@@ -3877,10 +3692,10 @@
             this.label51.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label51.Location = new System.Drawing.Point(112, 28);
+            this.label51.Location = new System.Drawing.Point(108, 26);
             this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(30, 16);
+            this.label51.Size = new System.Drawing.Size(37, 20);
             this.label51.TabIndex = 2;
             this.label51.Text = "Od:";
             // 
@@ -3889,10 +3704,10 @@
             this.dateTimePicker4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker4.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker4.Location = new System.Drawing.Point(39, 95);
+            this.dateTimePicker4.Location = new System.Drawing.Point(39, 93);
             this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePicker4.Size = new System.Drawing.Size(175, 28);
             this.dateTimePicker4.TabIndex = 3;
             // 
             // tableLayoutPanel76
@@ -3910,7 +3725,7 @@
             this.tableLayoutPanel76.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.65611F));
             this.tableLayoutPanel76.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.34389F));
             this.tableLayoutPanel76.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel76.Size = new System.Drawing.Size(255, 289);
+            this.tableLayoutPanel76.Size = new System.Drawing.Size(255, 287);
             this.tableLayoutPanel76.TabIndex = 4;
             // 
             // tableLayoutPanel77
@@ -3930,7 +3745,7 @@
             this.tableLayoutPanel77.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel77.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel77.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel77.Size = new System.Drawing.Size(247, 151);
+            this.tableLayoutPanel77.Size = new System.Drawing.Size(247, 150);
             this.tableLayoutPanel77.TabIndex = 4;
             // 
             // checkBox28
@@ -3938,10 +3753,10 @@
             this.checkBox28.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBox28.AutoSize = true;
             this.checkBox28.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox28.Location = new System.Drawing.Point(2, 121);
+            this.checkBox28.Location = new System.Drawing.Point(2, 119);
             this.checkBox28.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(90, 19);
+            this.checkBox28.Size = new System.Drawing.Size(110, 22);
             this.checkBox28.TabIndex = 3;
             this.checkBox28.Text = "checkBox28";
             this.checkBox28.UseVisualStyleBackColor = true;
@@ -3951,10 +3766,10 @@
             this.checkBox29.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBox29.AutoSize = true;
             this.checkBox29.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox29.Location = new System.Drawing.Point(2, 83);
+            this.checkBox29.Location = new System.Drawing.Point(2, 81);
             this.checkBox29.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox29.Name = "checkBox29";
-            this.checkBox29.Size = new System.Drawing.Size(90, 19);
+            this.checkBox29.Size = new System.Drawing.Size(110, 22);
             this.checkBox29.TabIndex = 2;
             this.checkBox29.Text = "checkBox29";
             this.checkBox29.UseVisualStyleBackColor = true;
@@ -3964,10 +3779,10 @@
             this.checkBox30.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBox30.AutoSize = true;
             this.checkBox30.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox30.Location = new System.Drawing.Point(2, 46);
+            this.checkBox30.Location = new System.Drawing.Point(2, 44);
             this.checkBox30.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox30.Name = "checkBox30";
-            this.checkBox30.Size = new System.Drawing.Size(90, 19);
+            this.checkBox30.Size = new System.Drawing.Size(110, 22);
             this.checkBox30.TabIndex = 1;
             this.checkBox30.Text = "checkBox30";
             this.checkBox30.UseVisualStyleBackColor = true;
@@ -3977,10 +3792,10 @@
             this.checkBox31.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBox31.AutoSize = true;
             this.checkBox31.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox31.Location = new System.Drawing.Point(2, 9);
+            this.checkBox31.Location = new System.Drawing.Point(2, 7);
             this.checkBox31.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox31.Name = "checkBox31";
-            this.checkBox31.Size = new System.Drawing.Size(88, 19);
+            this.checkBox31.Size = new System.Drawing.Size(107, 22);
             this.checkBox31.TabIndex = 0;
             this.checkBox31.Text = "checkBox31";
             this.checkBox31.UseVisualStyleBackColor = true;
@@ -3992,13 +3807,13 @@
             this.tableLayoutPanel78.Controls.Add(this.button3, 0, 1);
             this.tableLayoutPanel78.Controls.Add(this.label52, 0, 0);
             this.tableLayoutPanel78.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel78.Location = new System.Drawing.Point(4, 164);
+            this.tableLayoutPanel78.Location = new System.Drawing.Point(4, 163);
             this.tableLayoutPanel78.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel78.Name = "tableLayoutPanel78";
             this.tableLayoutPanel78.RowCount = 2;
             this.tableLayoutPanel78.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.08772F));
             this.tableLayoutPanel78.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.91228F));
-            this.tableLayoutPanel78.Size = new System.Drawing.Size(247, 120);
+            this.tableLayoutPanel78.Size = new System.Drawing.Size(247, 119);
             this.tableLayoutPanel78.TabIndex = 5;
             // 
             // button3
@@ -4006,7 +3821,7 @@
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(2, 45);
+            this.button3.Location = new System.Drawing.Point(2, 44);
             this.button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(243, 72);
@@ -4018,56 +3833,56 @@
             this.label52.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label52.Location = new System.Drawing.Point(59, 13);
+            this.label52.Location = new System.Drawing.Point(47, 10);
             this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(128, 16);
+            this.label52.Size = new System.Drawing.Size(153, 20);
             this.label52.TabIndex = 1;
             this.label52.Text = "Pokaż liczbę prób:";
             // 
             // chart1
             // 
-            chartArea9.AxisX.Title = "Projekt";
-            chartArea9.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea9.AxisX2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea9.AxisY.Interval = 5D;
-            chartArea9.AxisY.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea9.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
-            chartArea9.AxisY.Title = "Czas [h]";
-            chartArea9.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea9.AxisY2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea9.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea9);
+            chartArea21.AxisX.Title = "Projekt";
+            chartArea21.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea21.AxisX2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea21.AxisY.Interval = 5D;
+            chartArea21.AxisY.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea21.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
+            chartArea21.AxisY.Title = "Czas [h]";
+            chartArea21.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea21.AxisY2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea21.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea21);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend9.Enabled = false;
-            legend9.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            legend9.IsTextAutoFit = false;
-            legend9.Name = "Legend1";
-            legend9.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.chart1.Legends.Add(legend9);
-            this.chart1.Location = new System.Drawing.Point(3, 369);
+            legend21.Enabled = false;
+            legend21.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            legend21.IsTextAutoFit = false;
+            legend21.Name = "Legend1";
+            legend21.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.chart1.Legends.Add(legend21);
+            this.chart1.Location = new System.Drawing.Point(3, 367);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart1.Name = "chart1";
-            series9.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series9.BorderColor = System.Drawing.Color.Black;
-            series9.ChartArea = "ChartArea1";
-            series9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            series9.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            series9.IsValueShownAsLabel = true;
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            this.chart1.Series.Add(series9);
-            this.chart1.Size = new System.Drawing.Size(1232, 592);
+            series21.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series21.BorderColor = System.Drawing.Color.Black;
+            series21.ChartArea = "ChartArea1";
+            series21.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            series21.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            series21.IsValueShownAsLabel = true;
+            series21.Legend = "Legend1";
+            series21.Name = "Series1";
+            this.chart1.Series.Add(series21);
+            this.chart1.Size = new System.Drawing.Size(1232, 588);
             this.chart1.TabIndex = 3;
             this.chart1.Text = "chart1";
             // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.tableLayoutPanel79);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Location = new System.Drawing.Point(4, 27);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1244, 973);
+            this.tabPage3.Size = new System.Drawing.Size(1244, 967);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Formy";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -4085,7 +3900,7 @@
             this.tableLayoutPanel79.RowCount = 2;
             this.tableLayoutPanel79.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.91177F));
             this.tableLayoutPanel79.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.08823F));
-            this.tableLayoutPanel79.Size = new System.Drawing.Size(1244, 973);
+            this.tableLayoutPanel79.Size = new System.Drawing.Size(1244, 967);
             this.tableLayoutPanel79.TabIndex = 0;
             // 
             // tableLayoutPanel80
@@ -4102,7 +3917,7 @@
             this.tableLayoutPanel80.Name = "tableLayoutPanel80";
             this.tableLayoutPanel80.RowCount = 1;
             this.tableLayoutPanel80.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel80.Size = new System.Drawing.Size(1240, 401);
+            this.tableLayoutPanel80.Size = new System.Drawing.Size(1240, 399);
             this.tableLayoutPanel80.TabIndex = 6;
             // 
             // tableLayoutPanel81
@@ -4123,7 +3938,7 @@
             this.tableLayoutPanel81.RowCount = 2;
             this.tableLayoutPanel81.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.05158F));
             this.tableLayoutPanel81.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.94843F));
-            this.tableLayoutPanel81.Size = new System.Drawing.Size(410, 391);
+            this.tableLayoutPanel81.Size = new System.Drawing.Size(410, 389);
             this.tableLayoutPanel81.TabIndex = 2;
             // 
             // label53
@@ -4131,10 +3946,10 @@
             this.label53.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label53.Location = new System.Drawing.Point(286, 28);
+            this.label53.Location = new System.Drawing.Point(282, 26);
             this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(41, 16);
+            this.label53.Size = new System.Drawing.Size(49, 20);
             this.label53.TabIndex = 3;
             this.label53.Text = "Inne:";
             // 
@@ -4143,10 +3958,10 @@
             this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label54.Location = new System.Drawing.Point(54, 28);
+            this.label54.Location = new System.Drawing.Point(44, 26);
             this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(97, 16);
+            this.label54.Size = new System.Drawing.Size(118, 20);
             this.label54.TabIndex = 1;
             this.label54.Text = "Wybierz datę:";
             // 
@@ -4169,7 +3984,7 @@
             this.tableLayoutPanel82.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel82.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel82.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel82.Size = new System.Drawing.Size(198, 310);
+            this.tableLayoutPanel82.Size = new System.Drawing.Size(198, 308);
             this.tableLayoutPanel82.TabIndex = 2;
             // 
             // dateTimePicker5
@@ -4177,10 +3992,10 @@
             this.dateTimePicker5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker5.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker5.Location = new System.Drawing.Point(11, 258);
+            this.dateTimePicker5.Location = new System.Drawing.Point(11, 254);
             this.dateTimePicker5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePicker5.Size = new System.Drawing.Size(175, 28);
             this.dateTimePicker5.TabIndex = 5;
             // 
             // label55
@@ -4188,10 +4003,10 @@
             this.label55.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label55.Location = new System.Drawing.Point(83, 185);
+            this.label55.Location = new System.Drawing.Point(80, 181);
             this.label55.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(31, 16);
+            this.label55.Size = new System.Drawing.Size(37, 20);
             this.label55.TabIndex = 4;
             this.label55.Text = "Do:";
             // 
@@ -4200,10 +4015,10 @@
             this.label56.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label56.Location = new System.Drawing.Point(84, 31);
+            this.label56.Location = new System.Drawing.Point(80, 29);
             this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(30, 16);
+            this.label56.Size = new System.Drawing.Size(37, 20);
             this.label56.TabIndex = 2;
             this.label56.Text = "Od:";
             // 
@@ -4212,10 +4027,10 @@
             this.dateTimePicker6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker6.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker6.Location = new System.Drawing.Point(11, 104);
+            this.dateTimePicker6.Location = new System.Drawing.Point(11, 101);
             this.dateTimePicker6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePicker6.Size = new System.Drawing.Size(175, 28);
             this.dateTimePicker6.TabIndex = 3;
             // 
             // tableLayoutPanel83
@@ -4233,7 +4048,7 @@
             this.tableLayoutPanel83.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.65611F));
             this.tableLayoutPanel83.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.34389F));
             this.tableLayoutPanel83.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel83.Size = new System.Drawing.Size(198, 310);
+            this.tableLayoutPanel83.Size = new System.Drawing.Size(198, 308);
             this.tableLayoutPanel83.TabIndex = 4;
             // 
             // tableLayoutPanel84
@@ -4253,7 +4068,7 @@
             this.tableLayoutPanel84.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel84.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel84.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel84.Size = new System.Drawing.Size(190, 163);
+            this.tableLayoutPanel84.Size = new System.Drawing.Size(190, 162);
             this.tableLayoutPanel84.TabIndex = 4;
             // 
             // checkBox32
@@ -4263,7 +4078,7 @@
             this.checkBox32.Location = new System.Drawing.Point(2, 123);
             this.checkBox32.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox32.Name = "checkBox32";
-            this.checkBox32.Size = new System.Drawing.Size(99, 20);
+            this.checkBox32.Size = new System.Drawing.Size(120, 24);
             this.checkBox32.TabIndex = 3;
             this.checkBox32.Text = "checkBox32";
             this.checkBox32.UseVisualStyleBackColor = true;
@@ -4275,7 +4090,7 @@
             this.checkBox33.Location = new System.Drawing.Point(2, 83);
             this.checkBox33.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox33.Name = "checkBox33";
-            this.checkBox33.Size = new System.Drawing.Size(99, 20);
+            this.checkBox33.Size = new System.Drawing.Size(120, 24);
             this.checkBox33.TabIndex = 2;
             this.checkBox33.Text = "checkBox33";
             this.checkBox33.UseVisualStyleBackColor = true;
@@ -4287,7 +4102,7 @@
             this.checkBox34.Location = new System.Drawing.Point(2, 43);
             this.checkBox34.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox34.Name = "checkBox34";
-            this.checkBox34.Size = new System.Drawing.Size(100, 20);
+            this.checkBox34.Size = new System.Drawing.Size(121, 24);
             this.checkBox34.TabIndex = 1;
             this.checkBox34.Text = "checkBox34";
             this.checkBox34.UseVisualStyleBackColor = true;
@@ -4299,7 +4114,7 @@
             this.checkBox35.Location = new System.Drawing.Point(2, 3);
             this.checkBox35.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox35.Name = "checkBox35";
-            this.checkBox35.Size = new System.Drawing.Size(100, 20);
+            this.checkBox35.Size = new System.Drawing.Size(120, 24);
             this.checkBox35.TabIndex = 0;
             this.checkBox35.Text = "checkBox35";
             this.checkBox35.UseVisualStyleBackColor = true;
@@ -4311,13 +4126,13 @@
             this.tableLayoutPanel85.Controls.Add(this.button4, 0, 1);
             this.tableLayoutPanel85.Controls.Add(this.label57, 0, 0);
             this.tableLayoutPanel85.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel85.Location = new System.Drawing.Point(4, 176);
+            this.tableLayoutPanel85.Location = new System.Drawing.Point(4, 175);
             this.tableLayoutPanel85.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel85.Name = "tableLayoutPanel85";
             this.tableLayoutPanel85.RowCount = 2;
             this.tableLayoutPanel85.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.08772F));
             this.tableLayoutPanel85.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.91228F));
-            this.tableLayoutPanel85.Size = new System.Drawing.Size(190, 129);
+            this.tableLayoutPanel85.Size = new System.Drawing.Size(190, 128);
             this.tableLayoutPanel85.TabIndex = 5;
             // 
             // button4
@@ -4325,7 +4140,7 @@
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Location = new System.Drawing.Point(2, 48);
+            this.button4.Location = new System.Drawing.Point(2, 47);
             this.button4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(186, 78);
@@ -4337,10 +4152,10 @@
             this.label57.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label57.Location = new System.Drawing.Point(31, 14);
+            this.label57.Location = new System.Drawing.Point(18, 12);
             this.label57.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(128, 16);
+            this.label57.Size = new System.Drawing.Size(153, 20);
             this.label57.TabIndex = 1;
             this.label57.Text = "Pokaż liczbę prób:";
             // 
@@ -4357,7 +4172,7 @@
             this.tableLayoutPanel86.RowCount = 2;
             this.tableLayoutPanel86.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.31132F));
             this.tableLayoutPanel86.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67.68868F));
-            this.tableLayoutPanel86.Size = new System.Drawing.Size(814, 389);
+            this.tableLayoutPanel86.Size = new System.Drawing.Size(814, 387);
             this.tableLayoutPanel86.TabIndex = 0;
             // 
             // tableLayoutPanel87
@@ -4383,10 +4198,10 @@
             this.label58.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label58.Location = new System.Drawing.Point(34, 50);
+            this.label58.Location = new System.Drawing.Point(23, 48);
             this.label58.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(109, 16);
+            this.label58.Size = new System.Drawing.Size(131, 20);
             this.label58.TabIndex = 2;
             this.label58.Text = "Wybierz formę:";
             // 
@@ -4412,10 +4227,10 @@
             this.checkBox36.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox36.AutoSize = true;
             this.checkBox36.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox36.Location = new System.Drawing.Point(235, 11);
+            this.checkBox36.Location = new System.Drawing.Point(219, 9);
             this.checkBox36.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox36.Name = "checkBox36";
-            this.checkBox36.Size = new System.Drawing.Size(153, 20);
+            this.checkBox36.Size = new System.Drawing.Size(184, 24);
             this.checkBox36.TabIndex = 2;
             this.checkBox36.Text = "Zaznacz wszystkie:";
             this.checkBox36.UseVisualStyleBackColor = true;
@@ -4441,9 +4256,9 @@
             this.label59.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label59.Location = new System.Drawing.Point(26, 19);
+            this.label59.Location = new System.Drawing.Point(8, 17);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(159, 15);
+            this.label59.Size = new System.Drawing.Size(195, 18);
             this.label59.TabIndex = 0;
             this.label59.Text = "Pokaż formy dla projektu:";
             // 
@@ -4452,10 +4267,10 @@
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(216, 15);
+            this.comboBox1.Location = new System.Drawing.Point(216, 12);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(391, 23);
+            this.comboBox1.Size = new System.Drawing.Size(391, 27);
             this.comboBox1.TabIndex = 1;
             // 
             // listBox3
@@ -4464,50 +4279,50 @@
             this.listBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBox3.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
+            this.listBox3.ItemHeight = 20;
             this.listBox3.Location = new System.Drawing.Point(2, 128);
             this.listBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.listBox3.Name = "listBox3";
             this.listBox3.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBox3.Size = new System.Drawing.Size(810, 258);
+            this.listBox3.Size = new System.Drawing.Size(810, 256);
             this.listBox3.TabIndex = 1;
             // 
             // chart2
             // 
-            chartArea10.AxisX.Title = "Formy";
-            chartArea10.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea10.AxisY.Title = "Czas [h]";
-            chartArea10.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea10.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea10);
+            chartArea20.AxisX.Title = "Formy";
+            chartArea20.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea20.AxisY.Title = "Czas [h]";
+            chartArea20.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea20.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea20);
             this.chart2.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend10.Name = "Legend1";
-            this.chart2.Legends.Add(legend10);
-            this.chart2.Location = new System.Drawing.Point(2, 410);
+            legend20.Name = "Legend1";
+            this.chart2.Legends.Add(legend20);
+            this.chart2.Location = new System.Drawing.Point(2, 408);
             this.chart2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chart2.Name = "chart2";
-            series10.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series10.BorderColor = System.Drawing.Color.Black;
-            series10.ChartArea = "ChartArea1";
-            series10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            series10.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            series10.IsValueShownAsLabel = true;
-            series10.IsVisibleInLegend = false;
-            series10.Legend = "Legend1";
-            series10.Name = "Series1";
-            this.chart2.Series.Add(series10);
-            this.chart2.Size = new System.Drawing.Size(1240, 560);
+            series20.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series20.BorderColor = System.Drawing.Color.Black;
+            series20.ChartArea = "ChartArea1";
+            series20.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            series20.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            series20.IsValueShownAsLabel = true;
+            series20.IsVisibleInLegend = false;
+            series20.Legend = "Legend1";
+            series20.Name = "Series1";
+            this.chart2.Series.Add(series20);
+            this.chart2.Size = new System.Drawing.Size(1240, 556);
             this.chart2.TabIndex = 7;
             this.chart2.Text = "chart1";
             // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.tableLayoutPanel90);
-            this.tabPage4.Location = new System.Drawing.Point(4, 24);
+            this.tabPage4.Location = new System.Drawing.Point(4, 27);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage4.Size = new System.Drawing.Size(1244, 973);
+            this.tabPage4.Size = new System.Drawing.Size(1244, 967);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Detale";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -4525,7 +4340,7 @@
             this.tableLayoutPanel90.RowCount = 2;
             this.tableLayoutPanel90.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel90.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel90.Size = new System.Drawing.Size(1238, 965);
+            this.tableLayoutPanel90.Size = new System.Drawing.Size(1238, 959);
             this.tableLayoutPanel90.TabIndex = 0;
             // 
             // tableLayoutPanel91
@@ -4542,7 +4357,7 @@
             this.tableLayoutPanel91.Name = "tableLayoutPanel91";
             this.tableLayoutPanel91.RowCount = 1;
             this.tableLayoutPanel91.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel91.Size = new System.Drawing.Size(1234, 476);
+            this.tableLayoutPanel91.Size = new System.Drawing.Size(1234, 473);
             this.tableLayoutPanel91.TabIndex = 5;
             // 
             // tableLayoutPanel92
@@ -4563,7 +4378,7 @@
             this.tableLayoutPanel92.RowCount = 2;
             this.tableLayoutPanel92.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.05158F));
             this.tableLayoutPanel92.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.94843F));
-            this.tableLayoutPanel92.Size = new System.Drawing.Size(408, 466);
+            this.tableLayoutPanel92.Size = new System.Drawing.Size(408, 463);
             this.tableLayoutPanel92.TabIndex = 2;
             // 
             // label60
@@ -4571,10 +4386,10 @@
             this.label60.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label60.AutoSize = true;
             this.label60.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label60.Location = new System.Drawing.Point(285, 35);
+            this.label60.Location = new System.Drawing.Point(281, 33);
             this.label60.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(41, 16);
+            this.label60.Size = new System.Drawing.Size(49, 20);
             this.label60.TabIndex = 3;
             this.label60.Text = "Inne:";
             // 
@@ -4583,10 +4398,10 @@
             this.label61.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label61.Location = new System.Drawing.Point(54, 35);
+            this.label61.Location = new System.Drawing.Point(43, 33);
             this.label61.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(97, 16);
+            this.label61.Size = new System.Drawing.Size(118, 20);
             this.label61.TabIndex = 1;
             this.label61.Text = "Wybierz datę:";
             // 
@@ -4601,7 +4416,7 @@
             this.tableLayoutPanel93.Controls.Add(this.label63, 0, 0);
             this.tableLayoutPanel93.Controls.Add(this.dateTimePicker8, 0, 1);
             this.tableLayoutPanel93.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel93.Location = new System.Drawing.Point(4, 90);
+            this.tableLayoutPanel93.Location = new System.Drawing.Point(4, 89);
             this.tableLayoutPanel93.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel93.Name = "tableLayoutPanel93";
             this.tableLayoutPanel93.RowCount = 4;
@@ -4609,7 +4424,7 @@
             this.tableLayoutPanel93.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel93.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel93.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel93.Size = new System.Drawing.Size(197, 371);
+            this.tableLayoutPanel93.Size = new System.Drawing.Size(197, 369);
             this.tableLayoutPanel93.TabIndex = 2;
             // 
             // dateTimePicker7
@@ -4617,10 +4432,10 @@
             this.dateTimePicker7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker7.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePicker7.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker7.Location = new System.Drawing.Point(11, 311);
+            this.dateTimePicker7.Location = new System.Drawing.Point(11, 307);
             this.dateTimePicker7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker7.Name = "dateTimePicker7";
-            this.dateTimePicker7.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePicker7.Size = new System.Drawing.Size(175, 28);
             this.dateTimePicker7.TabIndex = 5;
             // 
             // label62
@@ -4628,10 +4443,10 @@
             this.label62.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label62.AutoSize = true;
             this.label62.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label62.Location = new System.Drawing.Point(83, 223);
+            this.label62.Location = new System.Drawing.Point(80, 218);
             this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(31, 16);
+            this.label62.Size = new System.Drawing.Size(37, 20);
             this.label62.TabIndex = 4;
             this.label62.Text = "Do:";
             // 
@@ -4640,10 +4455,10 @@
             this.label63.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label63.Location = new System.Drawing.Point(83, 39);
+            this.label63.Location = new System.Drawing.Point(80, 36);
             this.label63.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(30, 16);
+            this.label63.Size = new System.Drawing.Size(37, 20);
             this.label63.TabIndex = 2;
             this.label63.Text = "Od:";
             // 
@@ -4652,10 +4467,10 @@
             this.dateTimePicker8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker8.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePicker8.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker8.Location = new System.Drawing.Point(11, 127);
+            this.dateTimePicker8.Location = new System.Drawing.Point(11, 123);
             this.dateTimePicker8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker8.Name = "dateTimePicker8";
-            this.dateTimePicker8.Size = new System.Drawing.Size(175, 24);
+            this.dateTimePicker8.Size = new System.Drawing.Size(175, 28);
             this.dateTimePicker8.TabIndex = 3;
             // 
             // tableLayoutPanel94
@@ -4666,14 +4481,14 @@
             this.tableLayoutPanel94.Controls.Add(this.tableLayoutPanel95, 0, 0);
             this.tableLayoutPanel94.Controls.Add(this.tableLayoutPanel96, 0, 1);
             this.tableLayoutPanel94.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel94.Location = new System.Drawing.Point(207, 90);
+            this.tableLayoutPanel94.Location = new System.Drawing.Point(207, 89);
             this.tableLayoutPanel94.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel94.Name = "tableLayoutPanel94";
             this.tableLayoutPanel94.RowCount = 2;
             this.tableLayoutPanel94.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.65611F));
             this.tableLayoutPanel94.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.34389F));
             this.tableLayoutPanel94.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel94.Size = new System.Drawing.Size(197, 371);
+            this.tableLayoutPanel94.Size = new System.Drawing.Size(197, 369);
             this.tableLayoutPanel94.TabIndex = 4;
             // 
             // tableLayoutPanel95
@@ -4694,7 +4509,7 @@
             this.tableLayoutPanel95.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel95.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel95.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel95.Size = new System.Drawing.Size(189, 197);
+            this.tableLayoutPanel95.Size = new System.Drawing.Size(189, 196);
             this.tableLayoutPanel95.TabIndex = 4;
             // 
             // checkBox37
@@ -4704,7 +4519,7 @@
             this.checkBox37.Location = new System.Drawing.Point(2, 150);
             this.checkBox37.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox37.Name = "checkBox37";
-            this.checkBox37.Size = new System.Drawing.Size(98, 20);
+            this.checkBox37.Size = new System.Drawing.Size(119, 24);
             this.checkBox37.TabIndex = 3;
             this.checkBox37.Text = "checkBox37";
             this.checkBox37.UseVisualStyleBackColor = true;
@@ -4716,7 +4531,7 @@
             this.checkBox38.Location = new System.Drawing.Point(2, 101);
             this.checkBox38.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox38.Name = "checkBox38";
-            this.checkBox38.Size = new System.Drawing.Size(100, 20);
+            this.checkBox38.Size = new System.Drawing.Size(121, 24);
             this.checkBox38.TabIndex = 2;
             this.checkBox38.Text = "checkBox38";
             this.checkBox38.UseVisualStyleBackColor = true;
@@ -4728,7 +4543,7 @@
             this.checkBox39.Location = new System.Drawing.Point(2, 52);
             this.checkBox39.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox39.Name = "checkBox39";
-            this.checkBox39.Size = new System.Drawing.Size(100, 20);
+            this.checkBox39.Size = new System.Drawing.Size(121, 24);
             this.checkBox39.TabIndex = 1;
             this.checkBox39.Text = "checkBox39";
             this.checkBox39.UseVisualStyleBackColor = true;
@@ -4740,7 +4555,7 @@
             this.checkBox40.Location = new System.Drawing.Point(2, 3);
             this.checkBox40.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox40.Name = "checkBox40";
-            this.checkBox40.Size = new System.Drawing.Size(101, 20);
+            this.checkBox40.Size = new System.Drawing.Size(122, 24);
             this.checkBox40.TabIndex = 0;
             this.checkBox40.Text = "checkBox40";
             this.checkBox40.UseVisualStyleBackColor = true;
@@ -4752,13 +4567,13 @@
             this.tableLayoutPanel96.Controls.Add(this.button5, 0, 1);
             this.tableLayoutPanel96.Controls.Add(this.label64, 0, 0);
             this.tableLayoutPanel96.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel96.Location = new System.Drawing.Point(4, 210);
+            this.tableLayoutPanel96.Location = new System.Drawing.Point(4, 209);
             this.tableLayoutPanel96.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel96.Name = "tableLayoutPanel96";
             this.tableLayoutPanel96.RowCount = 2;
             this.tableLayoutPanel96.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.08772F));
             this.tableLayoutPanel96.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.91228F));
-            this.tableLayoutPanel96.Size = new System.Drawing.Size(189, 156);
+            this.tableLayoutPanel96.Size = new System.Drawing.Size(189, 155);
             this.tableLayoutPanel96.TabIndex = 5;
             // 
             // button5
@@ -4769,7 +4584,7 @@
             this.button5.Location = new System.Drawing.Point(2, 57);
             this.button5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(185, 96);
+            this.button5.Size = new System.Drawing.Size(185, 95);
             this.button5.TabIndex = 0;
             this.button5.UseVisualStyleBackColor = true;
             // 
@@ -4778,10 +4593,10 @@
             this.label64.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label64.Location = new System.Drawing.Point(30, 19);
+            this.label64.Location = new System.Drawing.Point(18, 17);
             this.label64.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(128, 16);
+            this.label64.Size = new System.Drawing.Size(153, 20);
             this.label64.TabIndex = 1;
             this.label64.Text = "Pokaż liczbę prób:";
             // 
@@ -4798,7 +4613,7 @@
             this.tableLayoutPanel97.RowCount = 2;
             this.tableLayoutPanel97.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.49649F));
             this.tableLayoutPanel97.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.50351F));
-            this.tableLayoutPanel97.Size = new System.Drawing.Size(810, 464);
+            this.tableLayoutPanel97.Size = new System.Drawing.Size(810, 461);
             this.tableLayoutPanel97.TabIndex = 0;
             // 
             // tableLayoutPanel98
@@ -4816,7 +4631,7 @@
             this.tableLayoutPanel98.Name = "tableLayoutPanel98";
             this.tableLayoutPanel98.RowCount = 1;
             this.tableLayoutPanel98.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel98.Size = new System.Drawing.Size(804, 198);
+            this.tableLayoutPanel98.Size = new System.Drawing.Size(804, 197);
             this.tableLayoutPanel98.TabIndex = 0;
             // 
             // label65
@@ -4824,10 +4639,10 @@
             this.label65.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label65.Location = new System.Drawing.Point(36, 91);
+            this.label65.Location = new System.Drawing.Point(25, 88);
             this.label65.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(103, 16);
+            this.label65.Size = new System.Drawing.Size(125, 20);
             this.label65.TabIndex = 2;
             this.label65.Text = "Wybierz detal:";
             // 
@@ -4847,7 +4662,7 @@
             this.tableLayoutPanel99.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.7485F));
             this.tableLayoutPanel99.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.11976F));
             this.tableLayoutPanel99.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel99.Size = new System.Drawing.Size(620, 186);
+            this.tableLayoutPanel99.Size = new System.Drawing.Size(620, 185);
             this.tableLayoutPanel99.TabIndex = 3;
             // 
             // tableLayoutPanel100
@@ -4858,7 +4673,7 @@
             this.tableLayoutPanel100.Controls.Add(this.label66, 0, 0);
             this.tableLayoutPanel100.Controls.Add(this.comboBox2, 1, 0);
             this.tableLayoutPanel100.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel100.Location = new System.Drawing.Point(5, 127);
+            this.tableLayoutPanel100.Location = new System.Drawing.Point(5, 126);
             this.tableLayoutPanel100.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel100.Name = "tableLayoutPanel100";
             this.tableLayoutPanel100.RowCount = 1;
@@ -4871,9 +4686,9 @@
             this.label66.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label66.AutoSize = true;
             this.label66.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label66.Location = new System.Drawing.Point(30, 19);
+            this.label66.Location = new System.Drawing.Point(12, 17);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(149, 15);
+            this.label66.Size = new System.Drawing.Size(185, 18);
             this.label66.TabIndex = 0;
             this.label66.Text = "Pokaż detale  dla formy:";
             // 
@@ -4882,10 +4697,10 @@
             this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox2.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(215, 15);
+            this.comboBox2.Location = new System.Drawing.Point(215, 12);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(389, 23);
+            this.comboBox2.Size = new System.Drawing.Size(389, 27);
             this.comboBox2.TabIndex = 1;
             // 
             // checkBox41
@@ -4893,10 +4708,10 @@
             this.checkBox41.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox41.AutoSize = true;
             this.checkBox41.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox41.Location = new System.Drawing.Point(233, 15);
+            this.checkBox41.Location = new System.Drawing.Point(218, 12);
             this.checkBox41.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox41.Name = "checkBox41";
-            this.checkBox41.Size = new System.Drawing.Size(153, 20);
+            this.checkBox41.Size = new System.Drawing.Size(184, 24);
             this.checkBox41.TabIndex = 2;
             this.checkBox41.Text = "Zaznacz wszystkie:";
             this.checkBox41.UseVisualStyleBackColor = true;
@@ -4909,7 +4724,7 @@
             this.tableLayoutPanel101.Controls.Add(this.label67, 0, 0);
             this.tableLayoutPanel101.Controls.Add(this.comboBox3, 1, 0);
             this.tableLayoutPanel101.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel101.Location = new System.Drawing.Point(5, 54);
+            this.tableLayoutPanel101.Location = new System.Drawing.Point(5, 53);
             this.tableLayoutPanel101.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel101.Name = "tableLayoutPanel101";
             this.tableLayoutPanel101.RowCount = 1;
@@ -4922,9 +4737,9 @@
             this.label67.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label67.Location = new System.Drawing.Point(24, 24);
+            this.label67.Location = new System.Drawing.Point(6, 22);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(161, 15);
+            this.label67.Size = new System.Drawing.Size(197, 18);
             this.label67.TabIndex = 0;
             this.label67.Text = "Pokaż detale dla projektu:";
             // 
@@ -4933,10 +4748,10 @@
             this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox3.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(215, 20);
+            this.comboBox3.Location = new System.Drawing.Point(215, 17);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(389, 23);
+            this.comboBox3.Size = new System.Drawing.Size(389, 27);
             this.comboBox3.TabIndex = 1;
             // 
             // listBox4
@@ -4945,45 +4760,45 @@
             this.listBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBox4.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 16;
-            this.listBox4.Location = new System.Drawing.Point(2, 209);
+            this.listBox4.ItemHeight = 20;
+            this.listBox4.Location = new System.Drawing.Point(2, 208);
             this.listBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.listBox4.Name = "listBox4";
             this.listBox4.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBox4.Size = new System.Drawing.Size(806, 252);
+            this.listBox4.Size = new System.Drawing.Size(806, 250);
             this.listBox4.TabIndex = 1;
             // 
             // chart4
             // 
-            chartArea11.AxisX.Title = "Detale";
-            chartArea11.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea11.AxisY.Title = "Czas [h]";
-            chartArea11.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea11.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea11);
+            chartArea22.AxisX.Title = "Detale";
+            chartArea22.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea22.AxisY.Title = "Czas [h]";
+            chartArea22.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea22.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea22);
             this.chart4.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend11.Name = "Legend1";
-            this.chart4.Legends.Add(legend11);
-            this.chart4.Location = new System.Drawing.Point(2, 485);
+            legend22.Name = "Legend1";
+            this.chart4.Legends.Add(legend22);
+            this.chart4.Location = new System.Drawing.Point(2, 482);
             this.chart4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chart4.Name = "chart4";
-            series11.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series11.BorderColor = System.Drawing.Color.Black;
-            series11.ChartArea = "ChartArea1";
-            series11.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            series11.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series11.IsValueShownAsLabel = true;
-            series11.IsVisibleInLegend = false;
-            series11.Legend = "Legend1";
-            series11.Name = "Series1";
-            this.chart4.Series.Add(series11);
-            this.chart4.Size = new System.Drawing.Size(1234, 477);
+            series22.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series22.BorderColor = System.Drawing.Color.Black;
+            series22.ChartArea = "ChartArea1";
+            series22.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            series22.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series22.IsValueShownAsLabel = true;
+            series22.IsVisibleInLegend = false;
+            series22.Legend = "Legend1";
+            series22.Name = "Series1";
+            this.chart4.Series.Add(series22);
+            this.chart4.Size = new System.Drawing.Size(1234, 474);
             this.chart4.TabIndex = 6;
             this.chart4.Text = "chart2";
             // 
             // Statistics
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1266, 1037);
             this.Controls.Add(this.tabControl1);
