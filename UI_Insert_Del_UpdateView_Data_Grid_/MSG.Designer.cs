@@ -34,26 +34,26 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.Dodaj = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.gfh = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.gfh = new System.Windows.Forms.TabControl();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.gfh.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.gfh.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -85,7 +85,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(921, 127);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(921, 126);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // pictureBox1
@@ -112,7 +112,7 @@
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.88679F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(780, 119);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(780, 118);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // Dodaj
@@ -120,62 +120,29 @@
             this.Dodaj.AutoSize = true;
             this.Dodaj.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.Dodaj.Font = new System.Drawing.Font("Siemens Sans SC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Dodaj.Location = new System.Drawing.Point(3, 49);
+            this.Dodaj.Location = new System.Drawing.Point(3, 46);
             this.Dodaj.Name = "Dodaj";
-            this.Dodaj.Size = new System.Drawing.Size(774, 70);
+            this.Dodaj.Size = new System.Drawing.Size(774, 72);
             this.Dodaj.TabIndex = 1;
             this.Dodaj.Text = "Wiadomości";
             // 
-            // tabPage2
+            // gfh
             // 
-            this.tabPage2.Controls.Add(this.tableLayoutPanel5);
-            this.tabPage2.Location = new System.Drawing.Point(4, 32);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(915, 385);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Odebrane wiadomości";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.22442F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.77558F));
-            this.tableLayoutPanel5.Controls.Add(this.richTextBox2, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.dataGridView2, 0, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.25641F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(909, 379);
-            this.tableLayoutPanel5.TabIndex = 1;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(395, 373);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox2.Location = new System.Drawing.Point(404, 3);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(502, 373);
-            this.richTextBox2.TabIndex = 2;
-            this.richTextBox2.Text = "";
+            this.gfh.Controls.Add(this.tabPage1);
+            this.gfh.Controls.Add(this.tabPage2);
+            this.gfh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gfh.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.gfh.Location = new System.Drawing.Point(3, 137);
+            this.gfh.Name = "gfh";
+            this.gfh.SelectedIndex = 0;
+            this.gfh.Size = new System.Drawing.Size(923, 422);
+            this.gfh.TabIndex = 8;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.tableLayoutPanel3);
             this.tabPage1.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 32);
+            this.tabPage1.Location = new System.Drawing.Point(4, 33);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(915, 385);
@@ -198,15 +165,6 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(909, 379);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(404, 3);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(502, 373);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -217,17 +175,59 @@
             this.dataGridView1.Size = new System.Drawing.Size(395, 373);
             this.dataGridView1.TabIndex = 0;
             // 
-            // gfh
+            // richTextBox1
             // 
-            this.gfh.Controls.Add(this.tabPage1);
-            this.gfh.Controls.Add(this.tabPage2);
-            this.gfh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gfh.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.gfh.Location = new System.Drawing.Point(3, 138);
-            this.gfh.Name = "gfh";
-            this.gfh.SelectedIndex = 0;
-            this.gfh.Size = new System.Drawing.Size(923, 421);
-            this.gfh.TabIndex = 8;
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Location = new System.Drawing.Point(404, 3);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(502, 373);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.tableLayoutPanel5);
+            this.tabPage2.Location = new System.Drawing.Point(4, 33);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(915, 385);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Odebrane wiadomości";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.22442F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.77558F));
+            this.tableLayoutPanel5.Controls.Add(this.richTextBox2, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.dataGridView2, 0, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.25641F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(909, 379);
+            this.tableLayoutPanel5.TabIndex = 1;
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox2.Location = new System.Drawing.Point(404, 3);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(502, 373);
+            this.richTextBox2.TabIndex = 2;
+            this.richTextBox2.Text = "";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(395, 373);
+            this.dataGridView2.TabIndex = 0;
             // 
             // MSG
             // 
@@ -243,13 +243,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.gfh.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.gfh.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }

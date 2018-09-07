@@ -2,3 +2,7 @@
 1. Inzynier - czas / dodac podpisy do inzynierów
 2. Dodac blokowanie dodawania tej samej daty dla proby , dodawanie proby pomiedzy
 3. Dodac planowanie
+4. Przycisk msg - otwieraj waidomosci
+// 5. Statystki - czas detal
+6. Statystyki - cel (calosc)
+7. Dodawanie detali

@@ -30,6 +30,11 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         List<string> wybraneFormyDlaProjektówCzas = new List<string>();
         List<string> wybraneDetaleDleFormCzas = new List<string>();
         List<string> wybraneInzynierCzas = new List<string>();
+        //listy - cel
+        List<string> wybraneCelProjekty = new List<string>();
+        List<string> wybraneCelFormy = new List<string>();
+        List<string> wybraneCelDetale = new List<string>();
+
 
 
         public Statistics()
@@ -42,6 +47,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             wczytajFormyCzas();
             wczytajDetaleCzas();
             wczytajInynierowCzas();
+
+            wczytajProjektyCel();
+
             //wczytajDetaleDlaProjektu();
             listBox1.SelectedIndex = -1;
         }
@@ -372,6 +380,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 MessageBox.Show(ex.Message);
             }
         }
+
+
+
         private void timeMoldsCheckAllProjects(object sender, EventArgs e)
         {
             if (checkBoxAllMoldsTime.Checked == true)
@@ -400,7 +411,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 listBoxTimeMolds.DisplayMember = "detalNazwa";
             }
         }
-        private void buttonChartTimeAllMold_Click(object sender, EventArgs e)
+        private void buttonChartTimeAllMolds_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < listBoxTimeMolds.SelectedItems.Count; i++)
             {
@@ -619,12 +630,88 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
 
         #endregion
+
         #region Cel dla projektów
+
+        public void wczytajProjektyCel()
+        {
+            try
+            {
+                DataSet dF = sqlQuery.GetDataFromSql("select * from Projekt");
+                listBoxTargetProjects.DataSource = dF.Tables[0];
+                listBoxTargetProjects.DisplayMember = "projektNazwa";
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void checkBoxTargetProjects_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxTargetProjects.Checked == true)
+            {
+                for (int i = 0; i < listBoxTargetProjects.Items.Count; i++)
+                    listBoxTargetProjects.SetSelected(i, true);
+            }
+            else if (checkBoxTargetProjects.Checked == false)
+            {
+                for (int i = 0; i < listBoxTargetProjects.Items.Count; i++)
+                    listBoxTargetProjects.SetSelected(i, false);
+            }
+        }
+        private void buttonChartTargetAllProjects_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < listBoxTargetProjects.SelectedItems.Count; i++)
+            {
+                wybraneCelProjekty.Add(listBoxTargetProjects.GetItemText(listBoxTargetProjects.SelectedItems[i]));
+            }
+            string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
+            using (var connection = new SqlConnection(connectionStrin))
+            {
+                connection.Open();
+                var sqlCommand = new SqlCommand();
+                sqlCommand.Connection = connection;
+                sqlCommand.CommandType = CommandType.Text;
+                var sql = "select count(Proby.celId) as 'Suma celów', (Cel.celNazwa) as 'Cel Id' from Proby LEFT JOIN Cel ON Proby.celId = Cel.celId where Proby.projektId in (select projektId from Projekt where projektNazwa in ({0})) and dzienStart between '" + dateTimePickerTargetProjectsOd.Value.Date + "' and '" + dateTimePickerTargetProjectsDo.Value.Date + "' group by Cel.celNazwa;";
+                DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneCelProjekty.Select(x => $"\'{x}\'"))));
+                DataView source = new DataView(dP.Tables[0]);
+                chartTargetAllProjects.DataSource = source;
+                chartTargetAllProjects.Series[0].XValueMember = "Cel Id";
+                chartTargetAllProjects.Series[0].YValueMembers = "Suma celów";
+                chartTargetAllProjects.ChartAreas[0].AxisX.Interval = 1;
+                chartTargetAllProjects.ChartAreas[0].AxisY.Interval = 5;
+                chartTargetAllProjects.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
+                chartTargetAllProjects.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+                chartTargetAllProjects.DataBind();
+                chartTargetAllProjects.Update();
+                wybraneCelProjekty.Clear();
+                connection.Close();
+            }
+        }
+
+
+
+
+
+
+
         #endregion
-        #region Cel dla projektów
+
+        #region Cel dla form
+
+
+
+
+
+
+
+
         #endregion
-        #region Cel dla projektów
+
+        #region Cel dla detali
         #endregion
+
 
     }
 }

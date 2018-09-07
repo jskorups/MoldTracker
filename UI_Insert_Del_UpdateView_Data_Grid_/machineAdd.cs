@@ -16,6 +16,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         public machineAdd()
         {
             InitializeComponent();
+            ustawBtn();
         }
 
         private void BtnMachineAddClose_Click(object sender, EventArgs e)
@@ -77,7 +78,24 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+        private void ustawBtn()
+        {
+            if (String.IsNullOrEmpty(TextBoxMachineNameAdd.Text))
+            {
+                BtnMachineAdd.Enabled = false;
+                BtnMachineAdd.BackColor = Color.LightGray;
+            }
+            else if (!String.IsNullOrEmpty(TextBoxMachineNameAdd.Text))
+            {
+                BtnMachineAdd.Enabled = true;
+                BtnMachineAdd.BackColor = Color.Lime;
+            }
+        }
 
+        private void TextBoxMachineNameAdd_TextChanged(object sender, EventArgs e)
+        {
+            ustawBtn();
         }
     }
 }

@@ -50,5 +50,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             this.Close();
             Application.Exit();
         }
+
+        private void Logowanie_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

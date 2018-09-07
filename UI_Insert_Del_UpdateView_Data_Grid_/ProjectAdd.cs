@@ -16,6 +16,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         public ProjectAdd()
         {
             InitializeComponent();
+            ustawBtn();
         }
 
         private void BtnProjectAddClose_Click(object sender, EventArgs e)
@@ -77,55 +78,23 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 }
             }
         }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        private void ustawBtn()
         {
-
+            if (String.IsNullOrEmpty(TextBoxProjectNameAdd.Text))
+            {
+                BtnProjectAdd.Enabled = false;
+                BtnProjectAdd.BackColor = Color.LightGray;
+            }
+            else if (!String.IsNullOrEmpty(TextBoxProjectNameAdd.Text))
+            {
+                BtnProjectAdd.Enabled = true;
+                BtnProjectAdd.BackColor = Color.Lime;
+            }
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void TextBoxProjectNameAdd_TextChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            ustawBtn();
         }
     }
-}
+    }
+

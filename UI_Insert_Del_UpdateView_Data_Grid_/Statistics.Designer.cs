@@ -29,39 +29,39 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Statistics));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend15 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea16 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend16 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend17 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend18 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend19 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea21 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend21 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend20 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea22 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend22 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea56 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend56 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series56 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea57 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend57 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series57 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea58 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend58 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series58 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea59 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend59 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series59 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea60 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend60 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series60 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea61 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend61 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series61 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea62 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend62 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series62 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea63 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend63 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series63 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea64 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend64 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series64 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea65 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend65 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series65 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea66 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend66 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series66 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.Czas = new System.Windows.Forms.TabPage();
             this.tabTimeProjects = new System.Windows.Forms.TabControl();
             this.ProjektyCzas = new System.Windows.Forms.TabPage();
@@ -267,16 +267,16 @@
             this.tableLayoutPanel72 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel73 = new System.Windows.Forms.TableLayoutPanel();
             this.label47 = new System.Windows.Forms.Label();
-            this.checkBox27 = new System.Windows.Forms.CheckBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.checkBoxTargetProjects = new System.Windows.Forms.CheckBox();
+            this.listBoxTargetProjects = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel74 = new System.Windows.Forms.TableLayoutPanel();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.tableLayoutPanel75 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerTargetProjectsDo = new System.Windows.Forms.DateTimePicker();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerTargetProjectsOd = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel76 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel77 = new System.Windows.Forms.TableLayoutPanel();
             this.checkBox28 = new System.Windows.Forms.CheckBox();
@@ -284,9 +284,9 @@
             this.checkBox30 = new System.Windows.Forms.CheckBox();
             this.checkBox31 = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel78 = new System.Windows.Forms.TableLayoutPanel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonChartTargetAllProjects = new System.Windows.Forms.Button();
             this.label52 = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartTargetAllProjects = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel79 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel80 = new System.Windows.Forms.TableLayoutPanel();
@@ -294,10 +294,10 @@
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.tableLayoutPanel82 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerMoldsDo = new System.Windows.Forms.DateTimePicker();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerMoldsOd = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel83 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel84 = new System.Windows.Forms.TableLayoutPanel();
             this.checkBox32 = new System.Windows.Forms.CheckBox();
@@ -305,17 +305,17 @@
             this.checkBox34 = new System.Windows.Forms.CheckBox();
             this.checkBox35 = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel85 = new System.Windows.Forms.TableLayoutPanel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonChartTargetAllMolds = new System.Windows.Forms.Button();
             this.label57 = new System.Windows.Forms.Label();
             this.tableLayoutPanel86 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel87 = new System.Windows.Forms.TableLayoutPanel();
             this.label58 = new System.Windows.Forms.Label();
             this.tableLayoutPanel88 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox36 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTargetMolds = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel89 = new System.Windows.Forms.TableLayoutPanel();
             this.label59 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.comboBoxTargetMolds = new System.Windows.Forms.ComboBox();
+            this.listBoxTargetMolds = new System.Windows.Forms.ListBox();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel90 = new System.Windows.Forms.TableLayoutPanel();
@@ -324,10 +324,10 @@
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.tableLayoutPanel93 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
+            this.dateTargetPickerDetailsDo = new System.Windows.Forms.DateTimePicker();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
-            this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
+            this.dateTargetPickerDetailsOd = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel94 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel95 = new System.Windows.Forms.TableLayoutPanel();
             this.checkBox37 = new System.Windows.Forms.CheckBox();
@@ -335,7 +335,7 @@
             this.checkBox39 = new System.Windows.Forms.CheckBox();
             this.checkBox40 = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel96 = new System.Windows.Forms.TableLayoutPanel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonChartTargetAllDetails = new System.Windows.Forms.Button();
             this.label64 = new System.Windows.Forms.Label();
             this.tableLayoutPanel97 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel98 = new System.Windows.Forms.TableLayoutPanel();
@@ -343,12 +343,12 @@
             this.tableLayoutPanel99 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel100 = new System.Windows.Forms.TableLayoutPanel();
             this.label66 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.checkBox41 = new System.Windows.Forms.CheckBox();
+            this.comboBoxTargetDetails_Molds = new System.Windows.Forms.ComboBox();
+            this.checkBoxTargetDetails = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel101 = new System.Windows.Forms.TableLayoutPanel();
             this.label67 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.comboBoxTargetDetails_Projects = new System.Windows.Forms.ComboBox();
+            this.listBoxTargetDetails = new System.Windows.Forms.ListBox();
             this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Czas.SuspendLayout();
             this.tabTimeProjects.SuspendLayout();
@@ -449,7 +449,7 @@
             this.tableLayoutPanel76.SuspendLayout();
             this.tableLayoutPanel77.SuspendLayout();
             this.tableLayoutPanel78.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTargetAllProjects)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel79.SuspendLayout();
             this.tableLayoutPanel80.SuspendLayout();
@@ -869,36 +869,36 @@
             // 
             // chartTimeAllProjects
             // 
-            chartArea12.AxisX.Title = "Projekt";
-            chartArea12.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea12.AxisX2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea12.AxisY.Interval = 5D;
-            chartArea12.AxisY.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea12.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
-            chartArea12.AxisY.Title = "Czas [h]";
-            chartArea12.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea12.AxisY2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea12.Name = "ChartArea1";
-            this.chartTimeAllProjects.ChartAreas.Add(chartArea12);
+            chartArea56.AxisX.Title = "Projekt";
+            chartArea56.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea56.AxisX2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea56.AxisY.Interval = 5D;
+            chartArea56.AxisY.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea56.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
+            chartArea56.AxisY.Title = "Czas [h]";
+            chartArea56.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea56.AxisY2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea56.Name = "ChartArea1";
+            this.chartTimeAllProjects.ChartAreas.Add(chartArea56);
             this.chartTimeAllProjects.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend12.Enabled = false;
-            legend12.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            legend12.IsTextAutoFit = false;
-            legend12.Name = "Legend1";
-            legend12.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.chartTimeAllProjects.Legends.Add(legend12);
+            legend56.Enabled = false;
+            legend56.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            legend56.IsTextAutoFit = false;
+            legend56.Name = "Legend1";
+            legend56.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.chartTimeAllProjects.Legends.Add(legend56);
             this.chartTimeAllProjects.Location = new System.Drawing.Point(3, 370);
             this.chartTimeAllProjects.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chartTimeAllProjects.Name = "chartTimeAllProjects";
-            series12.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series12.BorderColor = System.Drawing.Color.Black;
-            series12.ChartArea = "ChartArea1";
-            series12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series12.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            series12.IsValueShownAsLabel = true;
-            series12.Legend = "Legend1";
-            series12.Name = "Series1";
-            this.chartTimeAllProjects.Series.Add(series12);
+            series56.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series56.BorderColor = System.Drawing.Color.Black;
+            series56.ChartArea = "ChartArea1";
+            series56.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series56.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            series56.IsValueShownAsLabel = true;
+            series56.Legend = "Legend1";
+            series56.Name = "Series1";
+            this.chartTimeAllProjects.Series.Add(series56);
             this.chartTimeAllProjects.Size = new System.Drawing.Size(1238, 593);
             this.chartTimeAllProjects.TabIndex = 3;
             this.chartTimeAllProjects.Text = "chart1";
@@ -909,7 +909,7 @@
             this.CzasDetale.Location = new System.Drawing.Point(4, 27);
             this.CzasDetale.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.CzasDetale.Name = "CzasDetale";
-            this.CzasDetale.Size = new System.Drawing.Size(1250, 978);
+            this.CzasDetale.Size = new System.Drawing.Size(1250, 975);
             this.CzasDetale.TabIndex = 2;
             this.CzasDetale.Text = "Formy";
             this.CzasDetale.UseVisualStyleBackColor = true;
@@ -927,7 +927,7 @@
             this.tableLayoutPanel49.RowCount = 2;
             this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.91177F));
             this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.08823F));
-            this.tableLayoutPanel49.Size = new System.Drawing.Size(1250, 978);
+            this.tableLayoutPanel49.Size = new System.Drawing.Size(1250, 975);
             this.tableLayoutPanel49.TabIndex = 0;
             // 
             // tableLayoutPanel50
@@ -944,7 +944,7 @@
             this.tableLayoutPanel50.Name = "tableLayoutPanel50";
             this.tableLayoutPanel50.RowCount = 1;
             this.tableLayoutPanel50.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel50.Size = new System.Drawing.Size(1246, 403);
+            this.tableLayoutPanel50.Size = new System.Drawing.Size(1246, 402);
             this.tableLayoutPanel50.TabIndex = 6;
             // 
             // tableLayoutPanel51
@@ -965,7 +965,7 @@
             this.tableLayoutPanel51.RowCount = 2;
             this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.05158F));
             this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.94843F));
-            this.tableLayoutPanel51.Size = new System.Drawing.Size(412, 393);
+            this.tableLayoutPanel51.Size = new System.Drawing.Size(412, 392);
             this.tableLayoutPanel51.TabIndex = 2;
             // 
             // label34
@@ -994,7 +994,7 @@
             // 
             // tableLayoutPanel52
             // 
-            this.tableLayoutPanel52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(90)))), ((int)(((byte)(255)))));
+            this.tableLayoutPanel52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.tableLayoutPanel52.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel52.ColumnCount = 1;
             this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1011,7 +1011,7 @@
             this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel52.Size = new System.Drawing.Size(199, 312);
+            this.tableLayoutPanel52.Size = new System.Drawing.Size(199, 311);
             this.tableLayoutPanel52.TabIndex = 2;
             // 
             // dateTimePickerMoldDo
@@ -1075,7 +1075,7 @@
             this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.65611F));
             this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.34389F));
             this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel53.Size = new System.Drawing.Size(199, 312);
+            this.tableLayoutPanel53.Size = new System.Drawing.Size(199, 311);
             this.tableLayoutPanel53.TabIndex = 4;
             // 
             // tableLayoutPanel54
@@ -1095,14 +1095,14 @@
             this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel54.Size = new System.Drawing.Size(191, 164);
+            this.tableLayoutPanel54.Size = new System.Drawing.Size(191, 163);
             this.tableLayoutPanel54.TabIndex = 4;
             // 
             // checkBox19
             // 
             this.checkBox19.AutoSize = true;
             this.checkBox19.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox19.Location = new System.Drawing.Point(2, 126);
+            this.checkBox19.Location = new System.Drawing.Point(2, 123);
             this.checkBox19.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox19.Name = "checkBox19";
             this.checkBox19.Size = new System.Drawing.Size(119, 24);
@@ -1114,7 +1114,7 @@
             // 
             this.checkBox20.AutoSize = true;
             this.checkBox20.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox20.Location = new System.Drawing.Point(2, 85);
+            this.checkBox20.Location = new System.Drawing.Point(2, 83);
             this.checkBox20.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox20.Name = "checkBox20";
             this.checkBox20.Size = new System.Drawing.Size(121, 24);
@@ -1126,7 +1126,7 @@
             // 
             this.checkBox21.AutoSize = true;
             this.checkBox21.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox21.Location = new System.Drawing.Point(2, 44);
+            this.checkBox21.Location = new System.Drawing.Point(2, 43);
             this.checkBox21.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox21.Name = "checkBox21";
             this.checkBox21.Size = new System.Drawing.Size(118, 24);
@@ -1153,7 +1153,7 @@
             this.tableLayoutPanel55.Controls.Add(this.buttonChartTimeAllMolds, 0, 1);
             this.tableLayoutPanel55.Controls.Add(this.label38, 0, 0);
             this.tableLayoutPanel55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel55.Location = new System.Drawing.Point(4, 177);
+            this.tableLayoutPanel55.Location = new System.Drawing.Point(4, 176);
             this.tableLayoutPanel55.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel55.Name = "tableLayoutPanel55";
             this.tableLayoutPanel55.RowCount = 2;
@@ -1173,6 +1173,7 @@
             this.buttonChartTimeAllMolds.Size = new System.Drawing.Size(187, 79);
             this.buttonChartTimeAllMolds.TabIndex = 0;
             this.buttonChartTimeAllMolds.UseVisualStyleBackColor = true;
+            this.buttonChartTimeAllMolds.Click += new System.EventHandler(this.buttonChartTimeAllMolds_Click);
             // 
             // label38
             // 
@@ -1199,7 +1200,7 @@
             this.tableLayoutPanel56.RowCount = 2;
             this.tableLayoutPanel56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.31132F));
             this.tableLayoutPanel56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67.68868F));
-            this.tableLayoutPanel56.Size = new System.Drawing.Size(818, 391);
+            this.tableLayoutPanel56.Size = new System.Drawing.Size(818, 390);
             this.tableLayoutPanel56.TabIndex = 0;
             // 
             // tableLayoutPanel57
@@ -1313,34 +1314,34 @@
             this.listBoxTimeMolds.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.listBoxTimeMolds.Name = "listBoxTimeMolds";
             this.listBoxTimeMolds.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBoxTimeMolds.Size = new System.Drawing.Size(814, 259);
+            this.listBoxTimeMolds.Size = new System.Drawing.Size(814, 258);
             this.listBoxTimeMolds.TabIndex = 1;
             // 
             // chartTimeMolds
             // 
-            chartArea13.AxisX.Title = "Formy";
-            chartArea13.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea13.AxisY.Title = "Czas [h]";
-            chartArea13.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea13.Name = "ChartArea1";
-            this.chartTimeMolds.ChartAreas.Add(chartArea13);
+            chartArea57.AxisX.Title = "Formy";
+            chartArea57.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea57.AxisY.Title = "Czas [h]";
+            chartArea57.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea57.Name = "ChartArea1";
+            this.chartTimeMolds.ChartAreas.Add(chartArea57);
             this.chartTimeMolds.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend13.Name = "Legend1";
-            this.chartTimeMolds.Legends.Add(legend13);
-            this.chartTimeMolds.Location = new System.Drawing.Point(2, 412);
+            legend57.Name = "Legend1";
+            this.chartTimeMolds.Legends.Add(legend57);
+            this.chartTimeMolds.Location = new System.Drawing.Point(2, 411);
             this.chartTimeMolds.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chartTimeMolds.Name = "chartTimeMolds";
-            series13.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series13.BorderColor = System.Drawing.Color.Black;
-            series13.ChartArea = "ChartArea1";
-            series13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series13.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            series13.IsValueShownAsLabel = true;
-            series13.IsVisibleInLegend = false;
-            series13.Legend = "Legend1";
-            series13.Name = "Series1";
-            this.chartTimeMolds.Series.Add(series13);
-            this.chartTimeMolds.Size = new System.Drawing.Size(1246, 563);
+            series57.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series57.BorderColor = System.Drawing.Color.Black;
+            series57.ChartArea = "ChartArea1";
+            series57.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series57.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            series57.IsValueShownAsLabel = true;
+            series57.IsVisibleInLegend = false;
+            series57.Legend = "Legend1";
+            series57.Name = "Series1";
+            this.chartTimeMolds.Series.Add(series57);
+            this.chartTimeMolds.Size = new System.Drawing.Size(1246, 561);
             this.chartTimeMolds.TabIndex = 7;
             this.chartTimeMolds.Text = "chart1";
             // 
@@ -1351,7 +1352,7 @@
             this.DetaleCzas.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DetaleCzas.Name = "DetaleCzas";
             this.DetaleCzas.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.DetaleCzas.Size = new System.Drawing.Size(1250, 978);
+            this.DetaleCzas.Size = new System.Drawing.Size(1250, 975);
             this.DetaleCzas.TabIndex = 1;
             this.DetaleCzas.Text = "Detale";
             this.DetaleCzas.UseVisualStyleBackColor = true;
@@ -1369,7 +1370,7 @@
             this.tableLayoutPanel37.RowCount = 2;
             this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel37.Size = new System.Drawing.Size(1244, 970);
+            this.tableLayoutPanel37.Size = new System.Drawing.Size(1244, 967);
             this.tableLayoutPanel37.TabIndex = 0;
             // 
             // tableLayoutPanel38
@@ -1386,7 +1387,7 @@
             this.tableLayoutPanel38.Name = "tableLayoutPanel38";
             this.tableLayoutPanel38.RowCount = 1;
             this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel38.Size = new System.Drawing.Size(1240, 479);
+            this.tableLayoutPanel38.Size = new System.Drawing.Size(1240, 477);
             this.tableLayoutPanel38.TabIndex = 5;
             // 
             // tableLayoutPanel44
@@ -1407,7 +1408,7 @@
             this.tableLayoutPanel44.RowCount = 2;
             this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.05158F));
             this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.94843F));
-            this.tableLayoutPanel44.Size = new System.Drawing.Size(410, 469);
+            this.tableLayoutPanel44.Size = new System.Drawing.Size(410, 467);
             this.tableLayoutPanel44.TabIndex = 2;
             // 
             // label29
@@ -1453,7 +1454,7 @@
             this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel45.Size = new System.Drawing.Size(198, 374);
+            this.tableLayoutPanel45.Size = new System.Drawing.Size(198, 372);
             this.tableLayoutPanel45.TabIndex = 2;
             // 
             // detaleCzacDo
@@ -1461,7 +1462,7 @@
             this.detaleCzacDo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.detaleCzacDo.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.detaleCzacDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.detaleCzacDo.Location = new System.Drawing.Point(11, 312);
+            this.detaleCzacDo.Location = new System.Drawing.Point(11, 310);
             this.detaleCzacDo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.detaleCzacDo.Name = "detaleCzacDo";
             this.detaleCzacDo.Size = new System.Drawing.Size(175, 28);
@@ -1472,7 +1473,7 @@
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label31.Location = new System.Drawing.Point(80, 223);
+            this.label31.Location = new System.Drawing.Point(80, 221);
             this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(37, 20);
@@ -1496,7 +1497,7 @@
             this.detaleCzacOd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.detaleCzacOd.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.detaleCzacOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.detaleCzacOd.Location = new System.Drawing.Point(11, 126);
+            this.detaleCzacOd.Location = new System.Drawing.Point(11, 125);
             this.detaleCzacOd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.detaleCzacOd.Name = "detaleCzacOd";
             this.detaleCzacOd.Size = new System.Drawing.Size(175, 28);
@@ -1517,7 +1518,7 @@
             this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.65611F));
             this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.34389F));
             this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel46.Size = new System.Drawing.Size(198, 374);
+            this.tableLayoutPanel46.Size = new System.Drawing.Size(198, 372);
             this.tableLayoutPanel46.TabIndex = 4;
             // 
             // tableLayoutPanel47
@@ -1538,7 +1539,7 @@
             this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel47.Size = new System.Drawing.Size(190, 198);
+            this.tableLayoutPanel47.Size = new System.Drawing.Size(190, 197);
             this.tableLayoutPanel47.TabIndex = 4;
             // 
             // checkBox15
@@ -1596,13 +1597,13 @@
             this.tableLayoutPanel48.Controls.Add(this.detaleTimeChart, 0, 1);
             this.tableLayoutPanel48.Controls.Add(this.label33, 0, 0);
             this.tableLayoutPanel48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel48.Location = new System.Drawing.Point(4, 211);
+            this.tableLayoutPanel48.Location = new System.Drawing.Point(4, 210);
             this.tableLayoutPanel48.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel48.Name = "tableLayoutPanel48";
             this.tableLayoutPanel48.RowCount = 2;
             this.tableLayoutPanel48.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.08772F));
             this.tableLayoutPanel48.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.91228F));
-            this.tableLayoutPanel48.Size = new System.Drawing.Size(190, 158);
+            this.tableLayoutPanel48.Size = new System.Drawing.Size(190, 157);
             this.tableLayoutPanel48.TabIndex = 5;
             // 
             // detaleTimeChart
@@ -1613,7 +1614,7 @@
             this.detaleTimeChart.Location = new System.Drawing.Point(2, 58);
             this.detaleTimeChart.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.detaleTimeChart.Name = "detaleTimeChart";
-            this.detaleTimeChart.Size = new System.Drawing.Size(186, 97);
+            this.detaleTimeChart.Size = new System.Drawing.Size(186, 96);
             this.detaleTimeChart.TabIndex = 0;
             this.detaleTimeChart.UseVisualStyleBackColor = true;
             this.detaleTimeChart.Click += new System.EventHandler(this.detaleTimeChart_Click);
@@ -1643,7 +1644,7 @@
             this.tableLayoutPanel39.RowCount = 2;
             this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.49649F));
             this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.50351F));
-            this.tableLayoutPanel39.Size = new System.Drawing.Size(814, 467);
+            this.tableLayoutPanel39.Size = new System.Drawing.Size(814, 465);
             this.tableLayoutPanel39.TabIndex = 0;
             // 
             // tableLayoutPanel40
@@ -1661,7 +1662,7 @@
             this.tableLayoutPanel40.Name = "tableLayoutPanel40";
             this.tableLayoutPanel40.RowCount = 1;
             this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel40.Size = new System.Drawing.Size(808, 199);
+            this.tableLayoutPanel40.Size = new System.Drawing.Size(808, 198);
             this.tableLayoutPanel40.TabIndex = 0;
             // 
             // label26
@@ -1692,7 +1693,7 @@
             this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.7485F));
             this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.11976F));
             this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel41.Size = new System.Drawing.Size(623, 187);
+            this.tableLayoutPanel41.Size = new System.Drawing.Size(623, 186);
             this.tableLayoutPanel41.TabIndex = 3;
             // 
             // tableLayoutPanel42
@@ -1703,7 +1704,7 @@
             this.tableLayoutPanel42.Controls.Add(this.label27, 0, 0);
             this.tableLayoutPanel42.Controls.Add(this.comboBoxCzasDetaleDlaFormy, 1, 0);
             this.tableLayoutPanel42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel42.Location = new System.Drawing.Point(5, 128);
+            this.tableLayoutPanel42.Location = new System.Drawing.Point(5, 127);
             this.tableLayoutPanel42.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel42.Name = "tableLayoutPanel42";
             this.tableLayoutPanel42.RowCount = 1;
@@ -1761,7 +1762,7 @@
             this.tableLayoutPanel43.Name = "tableLayoutPanel43";
             this.tableLayoutPanel43.RowCount = 1;
             this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel43.Size = new System.Drawing.Size(613, 64);
+            this.tableLayoutPanel43.Size = new System.Drawing.Size(613, 63);
             this.tableLayoutPanel43.TabIndex = 3;
             // 
             // label28
@@ -1769,7 +1770,7 @@
             this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label28.Location = new System.Drawing.Point(7, 23);
+            this.label28.Location = new System.Drawing.Point(7, 22);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(197, 18);
             this.label28.TabIndex = 0;
@@ -1794,38 +1795,38 @@
             this.listBoxDetaleCzas.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBoxDetaleCzas.FormattingEnabled = true;
             this.listBoxDetaleCzas.ItemHeight = 20;
-            this.listBoxDetaleCzas.Location = new System.Drawing.Point(2, 210);
+            this.listBoxDetaleCzas.Location = new System.Drawing.Point(2, 209);
             this.listBoxDetaleCzas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.listBoxDetaleCzas.Name = "listBoxDetaleCzas";
             this.listBoxDetaleCzas.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBoxDetaleCzas.Size = new System.Drawing.Size(810, 254);
+            this.listBoxDetaleCzas.Size = new System.Drawing.Size(810, 253);
             this.listBoxDetaleCzas.TabIndex = 1;
             // 
             // chartCzasDetale
             // 
-            chartArea14.AxisX.Title = "Detale";
-            chartArea14.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea14.AxisY.Title = "Czas [h]";
-            chartArea14.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea14.Name = "ChartArea1";
-            this.chartCzasDetale.ChartAreas.Add(chartArea14);
+            chartArea58.AxisX.Title = "Detale";
+            chartArea58.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea58.AxisY.Title = "Czas [h]";
+            chartArea58.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea58.Name = "ChartArea1";
+            this.chartCzasDetale.ChartAreas.Add(chartArea58);
             this.chartCzasDetale.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend14.Name = "Legend1";
-            this.chartCzasDetale.Legends.Add(legend14);
-            this.chartCzasDetale.Location = new System.Drawing.Point(2, 488);
+            legend58.Name = "Legend1";
+            this.chartCzasDetale.Legends.Add(legend58);
+            this.chartCzasDetale.Location = new System.Drawing.Point(2, 486);
             this.chartCzasDetale.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chartCzasDetale.Name = "chartCzasDetale";
-            series14.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series14.BorderColor = System.Drawing.Color.Black;
-            series14.ChartArea = "ChartArea1";
-            series14.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series14.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series14.IsValueShownAsLabel = true;
-            series14.IsVisibleInLegend = false;
-            series14.Legend = "Legend1";
-            series14.Name = "Series1";
-            this.chartCzasDetale.Series.Add(series14);
-            this.chartCzasDetale.Size = new System.Drawing.Size(1240, 479);
+            series58.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series58.BorderColor = System.Drawing.Color.Black;
+            series58.ChartArea = "ChartArea1";
+            series58.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series58.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series58.IsValueShownAsLabel = true;
+            series58.IsVisibleInLegend = false;
+            series58.Legend = "Legend1";
+            series58.Name = "Series1";
+            this.chartCzasDetale.Series.Add(series58);
+            this.chartCzasDetale.Size = new System.Drawing.Size(1240, 478);
             this.chartCzasDetale.TabIndex = 6;
             this.chartCzasDetale.Text = "chart2";
             // 
@@ -1857,32 +1858,32 @@
             // 
             // chartCzasInzynier
             // 
-            chartArea15.AxisX.Interval = 1D;
-            chartArea15.AxisX.Title = "INŻYNIER";
-            chartArea15.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea15.AxisY.Interval = 20D;
-            chartArea15.AxisY.IsStartedFromZero = false;
-            chartArea15.AxisY.Title = "Czas [h]";
-            chartArea15.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea15.Name = "ChartArea1";
-            this.chartCzasInzynier.ChartAreas.Add(chartArea15);
+            chartArea59.AxisX.Interval = 1D;
+            chartArea59.AxisX.Title = "INŻYNIER";
+            chartArea59.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea59.AxisY.Interval = 20D;
+            chartArea59.AxisY.IsStartedFromZero = false;
+            chartArea59.AxisY.Title = "Czas [h]";
+            chartArea59.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea59.Name = "ChartArea1";
+            this.chartCzasInzynier.ChartAreas.Add(chartArea59);
             this.chartCzasInzynier.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend15.Name = "Legend1";
-            this.chartCzasInzynier.Legends.Add(legend15);
+            legend59.Name = "Legend1";
+            this.chartCzasInzynier.Legends.Add(legend59);
             this.chartCzasInzynier.Location = new System.Drawing.Point(2, 399);
             this.chartCzasInzynier.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chartCzasInzynier.Name = "chartCzasInzynier";
-            series15.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series15.BorderColor = System.Drawing.Color.Black;
-            series15.ChartArea = "ChartArea1";
-            series15.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series15.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series15.IsValueShownAsLabel = true;
-            series15.IsVisibleInLegend = false;
-            series15.IsXValueIndexed = true;
-            series15.Legend = "Legend1";
-            series15.Name = "Series1";
-            this.chartCzasInzynier.Series.Add(series15);
+            series59.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series59.BorderColor = System.Drawing.Color.Black;
+            series59.ChartArea = "ChartArea1";
+            series59.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series59.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series59.IsValueShownAsLabel = true;
+            series59.IsVisibleInLegend = false;
+            series59.IsXValueIndexed = true;
+            series59.Legend = "Legend1";
+            series59.Name = "Series1";
+            this.chartCzasInzynier.Series.Add(series59);
             this.chartCzasInzynier.Size = new System.Drawing.Size(1246, 573);
             this.chartCzasInzynier.TabIndex = 7;
             this.chartCzasInzynier.Text = "chart2";
@@ -2266,36 +2267,36 @@
             // 
             // chartDetaleWszystkie
             // 
-            chartArea16.AxisX.Interval = 1D;
-            chartArea16.AxisX.Title = "Detale";
-            chartArea16.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea16.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
-            chartArea16.AxisY.Title = "Liczba prób";
-            chartArea16.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea16.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            chartArea16.Name = "ChartArea1";
-            this.chartDetaleWszystkie.ChartAreas.Add(chartArea16);
+            chartArea60.AxisX.Interval = 1D;
+            chartArea60.AxisX.Title = "Detale";
+            chartArea60.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea60.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
+            chartArea60.AxisY.Title = "Liczba prób";
+            chartArea60.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea60.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            chartArea60.Name = "ChartArea1";
+            this.chartDetaleWszystkie.ChartAreas.Add(chartArea60);
             this.chartDetaleWszystkie.Cursor = System.Windows.Forms.Cursors.Default;
             this.chartDetaleWszystkie.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend16.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend16.IsTextAutoFit = false;
-            legend16.Name = "Legend1";
-            legend16.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chartDetaleWszystkie.Legends.Add(legend16);
+            legend60.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend60.IsTextAutoFit = false;
+            legend60.Name = "Legend1";
+            legend60.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chartDetaleWszystkie.Legends.Add(legend60);
             this.chartDetaleWszystkie.Location = new System.Drawing.Point(3, 457);
             this.chartDetaleWszystkie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chartDetaleWszystkie.Name = "chartDetaleWszystkie";
-            series16.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series16.BorderColor = System.Drawing.Color.Black;
-            series16.ChartArea = "ChartArea1";
-            series16.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            series16.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series16.IsValueShownAsLabel = true;
-            series16.IsVisibleInLegend = false;
-            series16.LabelBackColor = System.Drawing.Color.White;
-            series16.Legend = "Legend1";
-            series16.Name = "Series1";
-            this.chartDetaleWszystkie.Series.Add(series16);
+            series60.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series60.BorderColor = System.Drawing.Color.Black;
+            series60.ChartArea = "ChartArea1";
+            series60.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            series60.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series60.IsValueShownAsLabel = true;
+            series60.IsVisibleInLegend = false;
+            series60.LabelBackColor = System.Drawing.Color.White;
+            series60.Legend = "Legend1";
+            series60.Name = "Series1";
+            this.chartDetaleWszystkie.Series.Add(series60);
             this.chartDetaleWszystkie.Size = new System.Drawing.Size(1248, 539);
             this.chartDetaleWszystkie.TabIndex = 5;
             this.chartDetaleWszystkie.Text = "chart1";
@@ -2616,18 +2617,18 @@
             // 
             // chart3
             // 
-            chartArea17.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea17);
+            chartArea61.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea61);
             this.chart3.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend17.Name = "Legend1";
-            this.chart3.Legends.Add(legend17);
+            legend61.Name = "Legend1";
+            this.chart3.Legends.Add(legend61);
             this.chart3.Location = new System.Drawing.Point(2, 3);
             this.chart3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chart3.Name = "chart3";
-            series17.ChartArea = "ChartArea1";
-            series17.Legend = "Legend1";
-            series17.Name = "Series1";
-            this.chart3.Series.Add(series17);
+            series61.ChartArea = "ChartArea1";
+            series61.Legend = "Legend1";
+            series61.Name = "Series1";
+            this.chart3.Series.Add(series61);
             this.chart3.Size = new System.Drawing.Size(1254, 1000);
             this.chart3.TabIndex = 3;
             this.chart3.Text = "chart3";
@@ -2666,43 +2667,43 @@
             this.chartMaszyny.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             this.chartMaszyny.BorderlineWidth = 0;
             this.chartMaszyny.BorderSkin.BorderColor = System.Drawing.Color.White;
-            chartArea18.AxisX.Minimum = 1D;
-            chartArea18.AxisX.Title = "Maszyny";
-            chartArea18.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea18.AxisX2.Interval = 1D;
-            chartArea18.AxisX2.IntervalOffset = 1D;
-            chartArea18.AxisX2.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea18.AxisY.Minimum = 0D;
-            chartArea18.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
-            chartArea18.AxisY.Title = "Liczba prób";
-            chartArea18.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea18.BorderWidth = 0;
-            chartArea18.Name = "ChartArea1";
-            this.chartMaszyny.ChartAreas.Add(chartArea18);
+            chartArea62.AxisX.Minimum = 1D;
+            chartArea62.AxisX.Title = "Maszyny";
+            chartArea62.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea62.AxisX2.Interval = 1D;
+            chartArea62.AxisX2.IntervalOffset = 1D;
+            chartArea62.AxisX2.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea62.AxisY.Minimum = 0D;
+            chartArea62.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
+            chartArea62.AxisY.Title = "Liczba prób";
+            chartArea62.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea62.BorderWidth = 0;
+            chartArea62.Name = "ChartArea1";
+            this.chartMaszyny.ChartAreas.Add(chartArea62);
             this.chartMaszyny.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartMaszyny.ImeMode = System.Windows.Forms.ImeMode.Off;
-            legend18.BackColor = System.Drawing.Color.White;
-            legend18.BorderColor = System.Drawing.Color.White;
-            legend18.Enabled = false;
-            legend18.Font = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend18.IsTextAutoFit = false;
-            legend18.Name = "Legend1";
-            legend18.TitleFont = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chartMaszyny.Legends.Add(legend18);
+            legend62.BackColor = System.Drawing.Color.White;
+            legend62.BorderColor = System.Drawing.Color.White;
+            legend62.Enabled = false;
+            legend62.Font = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend62.IsTextAutoFit = false;
+            legend62.Name = "Legend1";
+            legend62.TitleFont = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chartMaszyny.Legends.Add(legend62);
             this.chartMaszyny.Location = new System.Drawing.Point(3, 458);
             this.chartMaszyny.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chartMaszyny.Name = "chartMaszyny";
             this.chartMaszyny.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series18.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series18.BorderColor = System.Drawing.Color.Black;
-            series18.ChartArea = "ChartArea1";
-            series18.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            series18.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series18.IsValueShownAsLabel = true;
-            series18.IsVisibleInLegend = false;
-            series18.Legend = "Legend1";
-            series18.Name = "Series1";
-            this.chartMaszyny.Series.Add(series18);
+            series62.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series62.BorderColor = System.Drawing.Color.Black;
+            series62.ChartArea = "ChartArea1";
+            series62.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            series62.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series62.IsValueShownAsLabel = true;
+            series62.IsVisibleInLegend = false;
+            series62.Legend = "Legend1";
+            series62.Name = "Series1";
+            this.chartMaszyny.Series.Add(series62);
             this.chartMaszyny.Size = new System.Drawing.Size(1248, 538);
             this.chartMaszyny.TabIndex = 3;
             this.chartMaszyny.Text = "chart5";
@@ -3403,37 +3404,37 @@
             this.chart6.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             this.chart6.BorderlineWidth = 0;
             this.chart6.BorderSkin.BorderColor = System.Drawing.Color.White;
-            chartArea19.AxisX.Title = "Projekty";
-            chartArea19.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea19.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
-            chartArea19.AxisY.Title = "Liczba prób";
-            chartArea19.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea19.BorderWidth = 0;
-            chartArea19.Name = "ChartArea1";
-            this.chart6.ChartAreas.Add(chartArea19);
+            chartArea63.AxisX.Title = "Projekty";
+            chartArea63.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea63.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
+            chartArea63.AxisY.Title = "Liczba prób";
+            chartArea63.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea63.BorderWidth = 0;
+            chartArea63.Name = "ChartArea1";
+            this.chart6.ChartAreas.Add(chartArea63);
             this.chart6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chart6.ImeMode = System.Windows.Forms.ImeMode.Off;
-            legend19.BackColor = System.Drawing.Color.White;
-            legend19.BorderColor = System.Drawing.Color.White;
-            legend19.Enabled = false;
-            legend19.Font = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend19.IsTextAutoFit = false;
-            legend19.Name = "Legend1";
-            legend19.TitleFont = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chart6.Legends.Add(legend19);
+            legend63.BackColor = System.Drawing.Color.White;
+            legend63.BorderColor = System.Drawing.Color.White;
+            legend63.Enabled = false;
+            legend63.Font = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend63.IsTextAutoFit = false;
+            legend63.Name = "Legend1";
+            legend63.TitleFont = new System.Drawing.Font("Siemens Sans SC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chart6.Legends.Add(legend63);
             this.chart6.Location = new System.Drawing.Point(3, 459);
             this.chart6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart6.Name = "chart6";
             this.chart6.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series19.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series19.BorderColor = System.Drawing.Color.Black;
-            series19.ChartArea = "ChartArea1";
-            series19.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series19.IsValueShownAsLabel = true;
-            series19.IsVisibleInLegend = false;
-            series19.Legend = "Legend1";
-            series19.Name = "Series1";
-            this.chart6.Series.Add(series19);
+            series63.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series63.BorderColor = System.Drawing.Color.Black;
+            series63.ChartArea = "ChartArea1";
+            series63.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series63.IsValueShownAsLabel = true;
+            series63.IsVisibleInLegend = false;
+            series63.Legend = "Legend1";
+            series63.Name = "Series1";
+            this.chart6.Series.Add(series63);
             this.chart6.Size = new System.Drawing.Size(1248, 537);
             this.chart6.TabIndex = 2;
             this.chart6.Text = "chart6";
@@ -3495,7 +3496,7 @@
             this.tableLayoutPanel70.ColumnCount = 1;
             this.tableLayoutPanel70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel70.Controls.Add(this.tableLayoutPanel71, 0, 0);
-            this.tableLayoutPanel70.Controls.Add(this.chart1, 0, 1);
+            this.tableLayoutPanel70.Controls.Add(this.chartTargetAllProjects, 0, 1);
             this.tableLayoutPanel70.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel70.Location = new System.Drawing.Point(3, 4);
             this.tableLayoutPanel70.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -3528,7 +3529,7 @@
             this.tableLayoutPanel72.ColumnCount = 1;
             this.tableLayoutPanel72.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel72.Controls.Add(this.tableLayoutPanel73, 0, 0);
-            this.tableLayoutPanel72.Controls.Add(this.listBox2, 1, 1);
+            this.tableLayoutPanel72.Controls.Add(this.listBoxTargetProjects, 1, 1);
             this.tableLayoutPanel72.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel72.Location = new System.Drawing.Point(5, 6);
             this.tableLayoutPanel72.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -3547,7 +3548,7 @@
             this.tableLayoutPanel73.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.10084F));
             this.tableLayoutPanel73.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.89916F));
             this.tableLayoutPanel73.Controls.Add(this.label47, 0, 0);
-            this.tableLayoutPanel73.Controls.Add(this.checkBox27, 1, 0);
+            this.tableLayoutPanel73.Controls.Add(this.checkBoxTargetProjects, 1, 0);
             this.tableLayoutPanel73.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel73.Location = new System.Drawing.Point(3, 4);
             this.tableLayoutPanel73.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -3569,33 +3570,34 @@
             this.label47.TabIndex = 2;
             this.label47.Text = "Wybierz projekt:";
             // 
-            // checkBox27
+            // checkBoxTargetProjects
             // 
-            this.checkBox27.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox27.AutoSize = true;
-            this.checkBox27.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox27.Location = new System.Drawing.Point(431, 14);
-            this.checkBox27.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(184, 24);
-            this.checkBox27.TabIndex = 1;
-            this.checkBox27.Text = "Zaznacz wszystkie:";
-            this.checkBox27.UseVisualStyleBackColor = true;
+            this.checkBoxTargetProjects.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBoxTargetProjects.AutoSize = true;
+            this.checkBoxTargetProjects.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBoxTargetProjects.Location = new System.Drawing.Point(431, 14);
+            this.checkBoxTargetProjects.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.checkBoxTargetProjects.Name = "checkBoxTargetProjects";
+            this.checkBoxTargetProjects.Size = new System.Drawing.Size(184, 24);
+            this.checkBoxTargetProjects.TabIndex = 1;
+            this.checkBoxTargetProjects.Text = "Zaznacz wszystkie:";
+            this.checkBoxTargetProjects.UseVisualStyleBackColor = true;
+            this.checkBoxTargetProjects.CheckedChanged += new System.EventHandler(this.checkBoxTargetProjects_CheckedChanged);
             // 
-            // listBox2
+            // listBoxTargetProjects
             // 
-            this.listBox2.ColumnWidth = 100;
-            this.listBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox2.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 20;
-            this.listBox2.Location = new System.Drawing.Point(2, 64);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.listBox2.MultiColumn = true;
-            this.listBox2.Name = "listBox2";
-            this.listBox2.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBox2.Size = new System.Drawing.Size(691, 278);
-            this.listBox2.TabIndex = 1;
+            this.listBoxTargetProjects.ColumnWidth = 100;
+            this.listBoxTargetProjects.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxTargetProjects.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.listBoxTargetProjects.FormattingEnabled = true;
+            this.listBoxTargetProjects.ItemHeight = 20;
+            this.listBoxTargetProjects.Location = new System.Drawing.Point(2, 64);
+            this.listBoxTargetProjects.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.listBoxTargetProjects.MultiColumn = true;
+            this.listBoxTargetProjects.Name = "listBoxTargetProjects";
+            this.listBoxTargetProjects.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.listBoxTargetProjects.Size = new System.Drawing.Size(691, 278);
+            this.listBoxTargetProjects.TabIndex = 1;
             // 
             // tableLayoutPanel74
             // 
@@ -3648,10 +3650,10 @@
             this.tableLayoutPanel75.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel75.ColumnCount = 1;
             this.tableLayoutPanel75.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel75.Controls.Add(this.dateTimePicker3, 0, 3);
+            this.tableLayoutPanel75.Controls.Add(this.dateTimePickerTargetProjectsDo, 0, 3);
             this.tableLayoutPanel75.Controls.Add(this.label50, 0, 2);
             this.tableLayoutPanel75.Controls.Add(this.label51, 0, 0);
-            this.tableLayoutPanel75.Controls.Add(this.dateTimePicker4, 0, 1);
+            this.tableLayoutPanel75.Controls.Add(this.dateTimePickerTargetProjectsOd, 0, 1);
             this.tableLayoutPanel75.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel75.Location = new System.Drawing.Point(4, 55);
             this.tableLayoutPanel75.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -3664,16 +3666,16 @@
             this.tableLayoutPanel75.Size = new System.Drawing.Size(254, 287);
             this.tableLayoutPanel75.TabIndex = 2;
             // 
-            // dateTimePicker3
+            // dateTimePickerTargetProjectsDo
             // 
-            this.dateTimePicker3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker3.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(39, 236);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(175, 28);
-            this.dateTimePicker3.TabIndex = 5;
+            this.dateTimePickerTargetProjectsDo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePickerTargetProjectsDo.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimePickerTargetProjectsDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerTargetProjectsDo.Location = new System.Drawing.Point(20, 236);
+            this.dateTimePickerTargetProjectsDo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dateTimePickerTargetProjectsDo.Name = "dateTimePickerTargetProjectsDo";
+            this.dateTimePickerTargetProjectsDo.Size = new System.Drawing.Size(214, 28);
+            this.dateTimePickerTargetProjectsDo.TabIndex = 5;
             // 
             // label50
             // 
@@ -3699,16 +3701,16 @@
             this.label51.TabIndex = 2;
             this.label51.Text = "Od:";
             // 
-            // dateTimePicker4
+            // dateTimePickerTargetProjectsOd
             // 
-            this.dateTimePicker4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker4.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker4.Location = new System.Drawing.Point(39, 93);
-            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(175, 28);
-            this.dateTimePicker4.TabIndex = 3;
+            this.dateTimePickerTargetProjectsOd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePickerTargetProjectsOd.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimePickerTargetProjectsOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerTargetProjectsOd.Location = new System.Drawing.Point(20, 93);
+            this.dateTimePickerTargetProjectsOd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dateTimePickerTargetProjectsOd.Name = "dateTimePickerTargetProjectsOd";
+            this.dateTimePickerTargetProjectsOd.Size = new System.Drawing.Size(214, 28);
+            this.dateTimePickerTargetProjectsOd.TabIndex = 3;
             // 
             // tableLayoutPanel76
             // 
@@ -3804,7 +3806,7 @@
             // 
             this.tableLayoutPanel78.ColumnCount = 1;
             this.tableLayoutPanel78.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel78.Controls.Add(this.button3, 0, 1);
+            this.tableLayoutPanel78.Controls.Add(this.buttonChartTargetAllProjects, 0, 1);
             this.tableLayoutPanel78.Controls.Add(this.label52, 0, 0);
             this.tableLayoutPanel78.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel78.Location = new System.Drawing.Point(4, 163);
@@ -3816,17 +3818,18 @@
             this.tableLayoutPanel78.Size = new System.Drawing.Size(247, 119);
             this.tableLayoutPanel78.TabIndex = 5;
             // 
-            // button3
+            // buttonChartTargetAllProjects
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(2, 44);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(243, 72);
-            this.button3.TabIndex = 0;
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonChartTargetAllProjects.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonChartTargetAllProjects.BackgroundImage")));
+            this.buttonChartTargetAllProjects.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonChartTargetAllProjects.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonChartTargetAllProjects.Location = new System.Drawing.Point(2, 44);
+            this.buttonChartTargetAllProjects.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonChartTargetAllProjects.Name = "buttonChartTargetAllProjects";
+            this.buttonChartTargetAllProjects.Size = new System.Drawing.Size(243, 72);
+            this.buttonChartTargetAllProjects.TabIndex = 0;
+            this.buttonChartTargetAllProjects.UseVisualStyleBackColor = true;
+            this.buttonChartTargetAllProjects.Click += new System.EventHandler(this.buttonChartTargetAllProjects_Click);
             // 
             // label52
             // 
@@ -3840,41 +3843,41 @@
             this.label52.TabIndex = 1;
             this.label52.Text = "Pokaż liczbę prób:";
             // 
-            // chart1
+            // chartTargetAllProjects
             // 
-            chartArea21.AxisX.Title = "Projekt";
-            chartArea21.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea21.AxisX2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea21.AxisY.Interval = 5D;
-            chartArea21.AxisY.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea21.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
-            chartArea21.AxisY.Title = "Czas [h]";
-            chartArea21.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea21.AxisY2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea21.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea21);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend21.Enabled = false;
-            legend21.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            legend21.IsTextAutoFit = false;
-            legend21.Name = "Legend1";
-            legend21.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.chart1.Legends.Add(legend21);
-            this.chart1.Location = new System.Drawing.Point(3, 367);
-            this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.chart1.Name = "chart1";
-            series21.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series21.BorderColor = System.Drawing.Color.Black;
-            series21.ChartArea = "ChartArea1";
-            series21.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            series21.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            series21.IsValueShownAsLabel = true;
-            series21.Legend = "Legend1";
-            series21.Name = "Series1";
-            this.chart1.Series.Add(series21);
-            this.chart1.Size = new System.Drawing.Size(1232, 588);
-            this.chart1.TabIndex = 3;
-            this.chart1.Text = "chart1";
+            chartArea64.AxisX.Title = "Projekt";
+            chartArea64.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea64.AxisX2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea64.AxisY.Interval = 5D;
+            chartArea64.AxisY.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea64.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270;
+            chartArea64.AxisY.Title = "Czas [h]";
+            chartArea64.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea64.AxisY2.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea64.Name = "ChartArea1";
+            this.chartTargetAllProjects.ChartAreas.Add(chartArea64);
+            this.chartTargetAllProjects.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend64.Enabled = false;
+            legend64.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            legend64.IsTextAutoFit = false;
+            legend64.Name = "Legend1";
+            legend64.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.chartTargetAllProjects.Legends.Add(legend64);
+            this.chartTargetAllProjects.Location = new System.Drawing.Point(3, 367);
+            this.chartTargetAllProjects.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chartTargetAllProjects.Name = "chartTargetAllProjects";
+            series64.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series64.BorderColor = System.Drawing.Color.Black;
+            series64.ChartArea = "ChartArea1";
+            series64.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            series64.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            series64.IsValueShownAsLabel = true;
+            series64.Legend = "Legend1";
+            series64.Name = "Series1";
+            this.chartTargetAllProjects.Series.Add(series64);
+            this.chartTargetAllProjects.Size = new System.Drawing.Size(1232, 588);
+            this.chartTargetAllProjects.TabIndex = 3;
+            this.chartTargetAllProjects.Text = "chart1";
             // 
             // tabPage3
             // 
@@ -3971,10 +3974,10 @@
             this.tableLayoutPanel82.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel82.ColumnCount = 1;
             this.tableLayoutPanel82.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel82.Controls.Add(this.dateTimePicker5, 0, 3);
+            this.tableLayoutPanel82.Controls.Add(this.dateTimePickerMoldsDo, 0, 3);
             this.tableLayoutPanel82.Controls.Add(this.label55, 0, 2);
             this.tableLayoutPanel82.Controls.Add(this.label56, 0, 0);
-            this.tableLayoutPanel82.Controls.Add(this.dateTimePicker6, 0, 1);
+            this.tableLayoutPanel82.Controls.Add(this.dateTimePickerMoldsOd, 0, 1);
             this.tableLayoutPanel82.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel82.Location = new System.Drawing.Point(4, 76);
             this.tableLayoutPanel82.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -3987,16 +3990,16 @@
             this.tableLayoutPanel82.Size = new System.Drawing.Size(198, 308);
             this.tableLayoutPanel82.TabIndex = 2;
             // 
-            // dateTimePicker5
+            // dateTimePickerMoldsDo
             // 
-            this.dateTimePicker5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker5.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker5.Location = new System.Drawing.Point(11, 254);
-            this.dateTimePicker5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(175, 28);
-            this.dateTimePicker5.TabIndex = 5;
+            this.dateTimePickerMoldsDo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePickerMoldsDo.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimePickerMoldsDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerMoldsDo.Location = new System.Drawing.Point(11, 254);
+            this.dateTimePickerMoldsDo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dateTimePickerMoldsDo.Name = "dateTimePickerMoldsDo";
+            this.dateTimePickerMoldsDo.Size = new System.Drawing.Size(175, 28);
+            this.dateTimePickerMoldsDo.TabIndex = 5;
             // 
             // label55
             // 
@@ -4022,16 +4025,16 @@
             this.label56.TabIndex = 2;
             this.label56.Text = "Od:";
             // 
-            // dateTimePicker6
+            // dateTimePickerMoldsOd
             // 
-            this.dateTimePicker6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker6.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker6.Location = new System.Drawing.Point(11, 101);
-            this.dateTimePicker6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(175, 28);
-            this.dateTimePicker6.TabIndex = 3;
+            this.dateTimePickerMoldsOd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePickerMoldsOd.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimePickerMoldsOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerMoldsOd.Location = new System.Drawing.Point(11, 101);
+            this.dateTimePickerMoldsOd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dateTimePickerMoldsOd.Name = "dateTimePickerMoldsOd";
+            this.dateTimePickerMoldsOd.Size = new System.Drawing.Size(175, 28);
+            this.dateTimePickerMoldsOd.TabIndex = 3;
             // 
             // tableLayoutPanel83
             // 
@@ -4123,7 +4126,7 @@
             // 
             this.tableLayoutPanel85.ColumnCount = 1;
             this.tableLayoutPanel85.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel85.Controls.Add(this.button4, 0, 1);
+            this.tableLayoutPanel85.Controls.Add(this.buttonChartTargetAllMolds, 0, 1);
             this.tableLayoutPanel85.Controls.Add(this.label57, 0, 0);
             this.tableLayoutPanel85.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel85.Location = new System.Drawing.Point(4, 175);
@@ -4135,17 +4138,17 @@
             this.tableLayoutPanel85.Size = new System.Drawing.Size(190, 128);
             this.tableLayoutPanel85.TabIndex = 5;
             // 
-            // button4
+            // buttonChartTargetAllMolds
             // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Location = new System.Drawing.Point(2, 47);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(186, 78);
-            this.button4.TabIndex = 0;
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonChartTargetAllMolds.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonChartTargetAllMolds.BackgroundImage")));
+            this.buttonChartTargetAllMolds.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonChartTargetAllMolds.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonChartTargetAllMolds.Location = new System.Drawing.Point(2, 47);
+            this.buttonChartTargetAllMolds.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonChartTargetAllMolds.Name = "buttonChartTargetAllMolds";
+            this.buttonChartTargetAllMolds.Size = new System.Drawing.Size(186, 78);
+            this.buttonChartTargetAllMolds.TabIndex = 0;
+            this.buttonChartTargetAllMolds.UseVisualStyleBackColor = true;
             // 
             // label57
             // 
@@ -4164,7 +4167,7 @@
             this.tableLayoutPanel86.ColumnCount = 1;
             this.tableLayoutPanel86.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel86.Controls.Add(this.tableLayoutPanel87, 0, 0);
-            this.tableLayoutPanel86.Controls.Add(this.listBox3, 1, 1);
+            this.tableLayoutPanel86.Controls.Add(this.listBoxTargetMolds, 1, 1);
             this.tableLayoutPanel86.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel86.Location = new System.Drawing.Point(5, 6);
             this.tableLayoutPanel86.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -4210,7 +4213,7 @@
             this.tableLayoutPanel88.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel88.ColumnCount = 1;
             this.tableLayoutPanel88.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel88.Controls.Add(this.checkBox36, 0, 0);
+            this.tableLayoutPanel88.Controls.Add(this.checkBoxTargetMolds, 0, 0);
             this.tableLayoutPanel88.Controls.Add(this.tableLayoutPanel89, 0, 1);
             this.tableLayoutPanel88.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel88.Location = new System.Drawing.Point(180, 6);
@@ -4222,18 +4225,18 @@
             this.tableLayoutPanel88.Size = new System.Drawing.Size(623, 105);
             this.tableLayoutPanel88.TabIndex = 3;
             // 
-            // checkBox36
+            // checkBoxTargetMolds
             // 
-            this.checkBox36.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox36.AutoSize = true;
-            this.checkBox36.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox36.Location = new System.Drawing.Point(219, 9);
-            this.checkBox36.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.checkBox36.Name = "checkBox36";
-            this.checkBox36.Size = new System.Drawing.Size(184, 24);
-            this.checkBox36.TabIndex = 2;
-            this.checkBox36.Text = "Zaznacz wszystkie:";
-            this.checkBox36.UseVisualStyleBackColor = true;
+            this.checkBoxTargetMolds.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBoxTargetMolds.AutoSize = true;
+            this.checkBoxTargetMolds.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBoxTargetMolds.Location = new System.Drawing.Point(219, 9);
+            this.checkBoxTargetMolds.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.checkBoxTargetMolds.Name = "checkBoxTargetMolds";
+            this.checkBoxTargetMolds.Size = new System.Drawing.Size(184, 24);
+            this.checkBoxTargetMolds.TabIndex = 2;
+            this.checkBoxTargetMolds.Text = "Zaznacz wszystkie:";
+            this.checkBoxTargetMolds.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel89
             // 
@@ -4241,7 +4244,7 @@
             this.tableLayoutPanel89.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.54546F));
             this.tableLayoutPanel89.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.45454F));
             this.tableLayoutPanel89.Controls.Add(this.label59, 0, 0);
-            this.tableLayoutPanel89.Controls.Add(this.comboBox1, 1, 0);
+            this.tableLayoutPanel89.Controls.Add(this.comboBoxTargetMolds, 1, 0);
             this.tableLayoutPanel89.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel89.Location = new System.Drawing.Point(5, 46);
             this.tableLayoutPanel89.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -4262,55 +4265,55 @@
             this.label59.TabIndex = 0;
             this.label59.Text = "Pokaż formy dla projektu:";
             // 
-            // comboBox1
+            // comboBoxTargetMolds
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(216, 12);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(391, 27);
-            this.comboBox1.TabIndex = 1;
+            this.comboBoxTargetMolds.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBoxTargetMolds.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxTargetMolds.FormattingEnabled = true;
+            this.comboBoxTargetMolds.Location = new System.Drawing.Point(216, 12);
+            this.comboBoxTargetMolds.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBoxTargetMolds.Name = "comboBoxTargetMolds";
+            this.comboBoxTargetMolds.Size = new System.Drawing.Size(391, 27);
+            this.comboBoxTargetMolds.TabIndex = 1;
             // 
-            // listBox3
+            // listBoxTargetMolds
             // 
-            this.listBox3.ColumnWidth = 300;
-            this.listBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox3.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 20;
-            this.listBox3.Location = new System.Drawing.Point(2, 128);
-            this.listBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBox3.Size = new System.Drawing.Size(810, 256);
-            this.listBox3.TabIndex = 1;
+            this.listBoxTargetMolds.ColumnWidth = 300;
+            this.listBoxTargetMolds.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxTargetMolds.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.listBoxTargetMolds.FormattingEnabled = true;
+            this.listBoxTargetMolds.ItemHeight = 20;
+            this.listBoxTargetMolds.Location = new System.Drawing.Point(2, 128);
+            this.listBoxTargetMolds.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.listBoxTargetMolds.Name = "listBoxTargetMolds";
+            this.listBoxTargetMolds.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.listBoxTargetMolds.Size = new System.Drawing.Size(810, 256);
+            this.listBoxTargetMolds.TabIndex = 1;
             // 
             // chart2
             // 
-            chartArea20.AxisX.Title = "Formy";
-            chartArea20.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea20.AxisY.Title = "Czas [h]";
-            chartArea20.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            chartArea20.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea20);
+            chartArea65.AxisX.Title = "Formy";
+            chartArea65.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea65.AxisY.Title = "Czas [h]";
+            chartArea65.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            chartArea65.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea65);
             this.chart2.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend20.Name = "Legend1";
-            this.chart2.Legends.Add(legend20);
+            legend65.Name = "Legend1";
+            this.chart2.Legends.Add(legend65);
             this.chart2.Location = new System.Drawing.Point(2, 408);
             this.chart2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chart2.Name = "chart2";
-            series20.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series20.BorderColor = System.Drawing.Color.Black;
-            series20.ChartArea = "ChartArea1";
-            series20.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            series20.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            series20.IsValueShownAsLabel = true;
-            series20.IsVisibleInLegend = false;
-            series20.Legend = "Legend1";
-            series20.Name = "Series1";
-            this.chart2.Series.Add(series20);
+            series65.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series65.BorderColor = System.Drawing.Color.Black;
+            series65.ChartArea = "ChartArea1";
+            series65.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            series65.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            series65.IsValueShownAsLabel = true;
+            series65.IsVisibleInLegend = false;
+            series65.Legend = "Legend1";
+            series65.Name = "Series1";
+            this.chart2.Series.Add(series65);
             this.chart2.Size = new System.Drawing.Size(1240, 556);
             this.chart2.TabIndex = 7;
             this.chart2.Text = "chart1";
@@ -4411,10 +4414,10 @@
             this.tableLayoutPanel93.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel93.ColumnCount = 1;
             this.tableLayoutPanel93.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel93.Controls.Add(this.dateTimePicker7, 0, 3);
+            this.tableLayoutPanel93.Controls.Add(this.dateTargetPickerDetailsDo, 0, 3);
             this.tableLayoutPanel93.Controls.Add(this.label62, 0, 2);
             this.tableLayoutPanel93.Controls.Add(this.label63, 0, 0);
-            this.tableLayoutPanel93.Controls.Add(this.dateTimePicker8, 0, 1);
+            this.tableLayoutPanel93.Controls.Add(this.dateTargetPickerDetailsOd, 0, 1);
             this.tableLayoutPanel93.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel93.Location = new System.Drawing.Point(4, 89);
             this.tableLayoutPanel93.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -4427,16 +4430,16 @@
             this.tableLayoutPanel93.Size = new System.Drawing.Size(197, 369);
             this.tableLayoutPanel93.TabIndex = 2;
             // 
-            // dateTimePicker7
+            // dateTargetPickerDetailsDo
             // 
-            this.dateTimePicker7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker7.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker7.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker7.Location = new System.Drawing.Point(11, 307);
-            this.dateTimePicker7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.dateTimePicker7.Name = "dateTimePicker7";
-            this.dateTimePicker7.Size = new System.Drawing.Size(175, 28);
-            this.dateTimePicker7.TabIndex = 5;
+            this.dateTargetPickerDetailsDo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTargetPickerDetailsDo.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTargetPickerDetailsDo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTargetPickerDetailsDo.Location = new System.Drawing.Point(11, 307);
+            this.dateTargetPickerDetailsDo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dateTargetPickerDetailsDo.Name = "dateTargetPickerDetailsDo";
+            this.dateTargetPickerDetailsDo.Size = new System.Drawing.Size(175, 28);
+            this.dateTargetPickerDetailsDo.TabIndex = 5;
             // 
             // label62
             // 
@@ -4462,16 +4465,16 @@
             this.label63.TabIndex = 2;
             this.label63.Text = "Od:";
             // 
-            // dateTimePicker8
+            // dateTargetPickerDetailsOd
             // 
-            this.dateTimePicker8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker8.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker8.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker8.Location = new System.Drawing.Point(11, 123);
-            this.dateTimePicker8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.dateTimePicker8.Name = "dateTimePicker8";
-            this.dateTimePicker8.Size = new System.Drawing.Size(175, 28);
-            this.dateTimePicker8.TabIndex = 3;
+            this.dateTargetPickerDetailsOd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTargetPickerDetailsOd.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTargetPickerDetailsOd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTargetPickerDetailsOd.Location = new System.Drawing.Point(11, 123);
+            this.dateTargetPickerDetailsOd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dateTargetPickerDetailsOd.Name = "dateTargetPickerDetailsOd";
+            this.dateTargetPickerDetailsOd.Size = new System.Drawing.Size(175, 28);
+            this.dateTargetPickerDetailsOd.TabIndex = 3;
             // 
             // tableLayoutPanel94
             // 
@@ -4564,7 +4567,7 @@
             // 
             this.tableLayoutPanel96.ColumnCount = 1;
             this.tableLayoutPanel96.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel96.Controls.Add(this.button5, 0, 1);
+            this.tableLayoutPanel96.Controls.Add(this.buttonChartTargetAllDetails, 0, 1);
             this.tableLayoutPanel96.Controls.Add(this.label64, 0, 0);
             this.tableLayoutPanel96.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel96.Location = new System.Drawing.Point(4, 209);
@@ -4576,17 +4579,17 @@
             this.tableLayoutPanel96.Size = new System.Drawing.Size(189, 155);
             this.tableLayoutPanel96.TabIndex = 5;
             // 
-            // button5
+            // buttonChartTargetAllDetails
             // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Location = new System.Drawing.Point(2, 57);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(185, 95);
-            this.button5.TabIndex = 0;
-            this.button5.UseVisualStyleBackColor = true;
+            this.buttonChartTargetAllDetails.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonChartTargetAllDetails.BackgroundImage")));
+            this.buttonChartTargetAllDetails.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonChartTargetAllDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonChartTargetAllDetails.Location = new System.Drawing.Point(2, 57);
+            this.buttonChartTargetAllDetails.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonChartTargetAllDetails.Name = "buttonChartTargetAllDetails";
+            this.buttonChartTargetAllDetails.Size = new System.Drawing.Size(185, 95);
+            this.buttonChartTargetAllDetails.TabIndex = 0;
+            this.buttonChartTargetAllDetails.UseVisualStyleBackColor = true;
             // 
             // label64
             // 
@@ -4605,7 +4608,7 @@
             this.tableLayoutPanel97.ColumnCount = 1;
             this.tableLayoutPanel97.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel97.Controls.Add(this.tableLayoutPanel98, 0, 0);
-            this.tableLayoutPanel97.Controls.Add(this.listBox4, 1, 1);
+            this.tableLayoutPanel97.Controls.Add(this.listBoxTargetDetails, 1, 1);
             this.tableLayoutPanel97.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel97.Location = new System.Drawing.Point(5, 6);
             this.tableLayoutPanel97.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -4652,7 +4655,7 @@
             this.tableLayoutPanel99.ColumnCount = 1;
             this.tableLayoutPanel99.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel99.Controls.Add(this.tableLayoutPanel100, 0, 2);
-            this.tableLayoutPanel99.Controls.Add(this.checkBox41, 0, 0);
+            this.tableLayoutPanel99.Controls.Add(this.checkBoxTargetDetails, 0, 0);
             this.tableLayoutPanel99.Controls.Add(this.tableLayoutPanel101, 0, 1);
             this.tableLayoutPanel99.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel99.Location = new System.Drawing.Point(179, 6);
@@ -4671,7 +4674,7 @@
             this.tableLayoutPanel100.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.54546F));
             this.tableLayoutPanel100.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.45454F));
             this.tableLayoutPanel100.Controls.Add(this.label66, 0, 0);
-            this.tableLayoutPanel100.Controls.Add(this.comboBox2, 1, 0);
+            this.tableLayoutPanel100.Controls.Add(this.comboBoxTargetDetails_Molds, 1, 0);
             this.tableLayoutPanel100.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel100.Location = new System.Drawing.Point(5, 126);
             this.tableLayoutPanel100.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -4692,29 +4695,29 @@
             this.label66.TabIndex = 0;
             this.label66.Text = "Pokaż detale  dla formy:";
             // 
-            // comboBox2
+            // comboBoxTargetDetails_Molds
             // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox2.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(215, 12);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(389, 27);
-            this.comboBox2.TabIndex = 1;
+            this.comboBoxTargetDetails_Molds.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBoxTargetDetails_Molds.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxTargetDetails_Molds.FormattingEnabled = true;
+            this.comboBoxTargetDetails_Molds.Location = new System.Drawing.Point(215, 12);
+            this.comboBoxTargetDetails_Molds.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBoxTargetDetails_Molds.Name = "comboBoxTargetDetails_Molds";
+            this.comboBoxTargetDetails_Molds.Size = new System.Drawing.Size(389, 27);
+            this.comboBoxTargetDetails_Molds.TabIndex = 1;
             // 
-            // checkBox41
+            // checkBoxTargetDetails
             // 
-            this.checkBox41.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox41.AutoSize = true;
-            this.checkBox41.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox41.Location = new System.Drawing.Point(218, 12);
-            this.checkBox41.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.checkBox41.Name = "checkBox41";
-            this.checkBox41.Size = new System.Drawing.Size(184, 24);
-            this.checkBox41.TabIndex = 2;
-            this.checkBox41.Text = "Zaznacz wszystkie:";
-            this.checkBox41.UseVisualStyleBackColor = true;
+            this.checkBoxTargetDetails.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBoxTargetDetails.AutoSize = true;
+            this.checkBoxTargetDetails.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBoxTargetDetails.Location = new System.Drawing.Point(218, 12);
+            this.checkBoxTargetDetails.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.checkBoxTargetDetails.Name = "checkBoxTargetDetails";
+            this.checkBoxTargetDetails.Size = new System.Drawing.Size(184, 24);
+            this.checkBoxTargetDetails.TabIndex = 2;
+            this.checkBoxTargetDetails.Text = "Zaznacz wszystkie:";
+            this.checkBoxTargetDetails.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel101
             // 
@@ -4722,7 +4725,7 @@
             this.tableLayoutPanel101.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.54546F));
             this.tableLayoutPanel101.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.45454F));
             this.tableLayoutPanel101.Controls.Add(this.label67, 0, 0);
-            this.tableLayoutPanel101.Controls.Add(this.comboBox3, 1, 0);
+            this.tableLayoutPanel101.Controls.Add(this.comboBoxTargetDetails_Projects, 1, 0);
             this.tableLayoutPanel101.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel101.Location = new System.Drawing.Point(5, 53);
             this.tableLayoutPanel101.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -4743,55 +4746,55 @@
             this.label67.TabIndex = 0;
             this.label67.Text = "Pokaż detale dla projektu:";
             // 
-            // comboBox3
+            // comboBoxTargetDetails_Projects
             // 
-            this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox3.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(215, 17);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(389, 27);
-            this.comboBox3.TabIndex = 1;
+            this.comboBoxTargetDetails_Projects.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBoxTargetDetails_Projects.Font = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxTargetDetails_Projects.FormattingEnabled = true;
+            this.comboBoxTargetDetails_Projects.Location = new System.Drawing.Point(215, 17);
+            this.comboBoxTargetDetails_Projects.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBoxTargetDetails_Projects.Name = "comboBoxTargetDetails_Projects";
+            this.comboBoxTargetDetails_Projects.Size = new System.Drawing.Size(389, 27);
+            this.comboBoxTargetDetails_Projects.TabIndex = 1;
             // 
-            // listBox4
+            // listBoxTargetDetails
             // 
-            this.listBox4.ColumnWidth = 300;
-            this.listBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox4.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 20;
-            this.listBox4.Location = new System.Drawing.Point(2, 208);
-            this.listBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBox4.Size = new System.Drawing.Size(806, 250);
-            this.listBox4.TabIndex = 1;
+            this.listBoxTargetDetails.ColumnWidth = 300;
+            this.listBoxTargetDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxTargetDetails.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.listBoxTargetDetails.FormattingEnabled = true;
+            this.listBoxTargetDetails.ItemHeight = 20;
+            this.listBoxTargetDetails.Location = new System.Drawing.Point(2, 208);
+            this.listBoxTargetDetails.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.listBoxTargetDetails.Name = "listBoxTargetDetails";
+            this.listBoxTargetDetails.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.listBoxTargetDetails.Size = new System.Drawing.Size(806, 250);
+            this.listBoxTargetDetails.TabIndex = 1;
             // 
             // chart4
             // 
-            chartArea22.AxisX.Title = "Detale";
-            chartArea22.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea22.AxisY.Title = "Czas [h]";
-            chartArea22.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea22.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea22);
+            chartArea66.AxisX.Title = "Detale";
+            chartArea66.AxisX.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea66.AxisY.Title = "Czas [h]";
+            chartArea66.AxisY.TitleFont = new System.Drawing.Font("Siemens Sans SC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea66.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea66);
             this.chart4.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend22.Name = "Legend1";
-            this.chart4.Legends.Add(legend22);
+            legend66.Name = "Legend1";
+            this.chart4.Legends.Add(legend66);
             this.chart4.Location = new System.Drawing.Point(2, 482);
             this.chart4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chart4.Name = "chart4";
-            series22.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series22.BorderColor = System.Drawing.Color.Black;
-            series22.ChartArea = "ChartArea1";
-            series22.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            series22.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series22.IsValueShownAsLabel = true;
-            series22.IsVisibleInLegend = false;
-            series22.Legend = "Legend1";
-            series22.Name = "Series1";
-            this.chart4.Series.Add(series22);
+            series66.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series66.BorderColor = System.Drawing.Color.Black;
+            series66.ChartArea = "ChartArea1";
+            series66.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            series66.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series66.IsValueShownAsLabel = true;
+            series66.IsVisibleInLegend = false;
+            series66.Legend = "Legend1";
+            series66.Name = "Series1";
+            this.chart4.Series.Add(series66);
             this.chart4.Size = new System.Drawing.Size(1234, 474);
             this.chart4.TabIndex = 6;
             this.chart4.Text = "chart2";
@@ -4953,7 +4956,7 @@
             this.tableLayoutPanel77.PerformLayout();
             this.tableLayoutPanel78.ResumeLayout(false);
             this.tableLayoutPanel78.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTargetAllProjects)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel79.ResumeLayout(false);
             this.tableLayoutPanel80.ResumeLayout(false);
@@ -5207,16 +5210,16 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel72;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel73;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.CheckBox checkBox27;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.CheckBox checkBoxTargetProjects;
+        private System.Windows.Forms.ListBox listBoxTargetProjects;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel74;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel75;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dateTimePickerTargetProjectsDo;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker dateTimePickerTargetProjectsOd;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel76;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel77;
         private System.Windows.Forms.CheckBox checkBox28;
@@ -5224,9 +5227,9 @@
         private System.Windows.Forms.CheckBox checkBox30;
         private System.Windows.Forms.CheckBox checkBox31;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel78;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonChartTargetAllProjects;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartTargetAllProjects;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel79;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel80;
@@ -5234,10 +5237,10 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel82;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
+        private System.Windows.Forms.DateTimePicker dateTimePickerMoldsDo;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.DateTimePicker dateTimePicker6;
+        private System.Windows.Forms.DateTimePicker dateTimePickerMoldsOd;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel83;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel84;
         private System.Windows.Forms.CheckBox checkBox32;
@@ -5245,17 +5248,17 @@
         private System.Windows.Forms.CheckBox checkBox34;
         private System.Windows.Forms.CheckBox checkBox35;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel85;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonChartTargetAllMolds;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel86;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel87;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel88;
-        private System.Windows.Forms.CheckBox checkBox36;
+        private System.Windows.Forms.CheckBox checkBoxTargetMolds;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel89;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ComboBox comboBoxTargetMolds;
+        private System.Windows.Forms.ListBox listBoxTargetMolds;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel90;
@@ -5264,10 +5267,10 @@
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel93;
-        private System.Windows.Forms.DateTimePicker dateTimePicker7;
+        private System.Windows.Forms.DateTimePicker dateTargetPickerDetailsDo;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.DateTimePicker dateTimePicker8;
+        private System.Windows.Forms.DateTimePicker dateTargetPickerDetailsOd;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel94;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel95;
         private System.Windows.Forms.CheckBox checkBox37;
@@ -5275,7 +5278,7 @@
         private System.Windows.Forms.CheckBox checkBox39;
         private System.Windows.Forms.CheckBox checkBox40;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel96;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonChartTargetAllDetails;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel97;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel98;
@@ -5283,12 +5286,12 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel99;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel100;
         private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.CheckBox checkBox41;
+        private System.Windows.Forms.ComboBox comboBoxTargetDetails_Molds;
+        private System.Windows.Forms.CheckBox checkBoxTargetDetails;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel101;
         private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ComboBox comboBoxTargetDetails_Projects;
+        private System.Windows.Forms.ListBox listBoxTargetDetails;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart4;
     }
 }
