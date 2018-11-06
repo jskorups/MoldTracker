@@ -1,8 +1,7 @@
 ﻿
-1. Inzynier - czas / dodac podpisy do inzynierów
-2. Dodac blokowanie dodawania tej samej daty dla proby , dodawanie proby pomiedzy
-3. Dodac planowanie
-4. Przycisk msg - otwieraj waidomosci
-// 5. Statystki - czas detal
-6. Statystyki - cel (calosc)
-7. Dodawanie detali
+1. Sprawdzic date w maintain czy zgodna z formatem na komputerach
+2. Czy wystepuje sql jumping
+3. Detalizowany menustrip nie dziala jak sie kliknie gdzies z boku
+4. Ustawia zły format slectedId gdy sie klinie na cos innego niz int
+//5. Dorobic ustawienia
+6. Wylogowanie

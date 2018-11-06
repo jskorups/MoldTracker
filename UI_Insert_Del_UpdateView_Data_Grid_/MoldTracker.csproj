@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UI_Insert_Del_UpdateView_Data_Grid_</RootNamespace>
-    <AssemblyName>UI_Insert_Del_UpdateView_Data_Grid_</AssemblyName>
+    <AssemblyName>MoldTracker</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -164,11 +164,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MoldTrackerDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="MoldTrackerDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MoldTrackerDataSet4.xsd</DependentUpon>
     </Compile>
     <Compile Include="monthlyControl.cs">
       <SubType>UserControl</SubType>
@@ -397,17 +392,6 @@
     </None>
     <None Include="MoldTrackerDataSet3.xss">
       <DependentUpon>MoldTrackerDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="MoldTrackerDataSet4.xsc">
-      <DependentUpon>MoldTrackerDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="MoldTrackerDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MoldTrackerDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="MoldTrackerDataSet4.xss">
-      <DependentUpon>MoldTrackerDataSet4.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
