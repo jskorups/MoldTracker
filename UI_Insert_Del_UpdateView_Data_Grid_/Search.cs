@@ -150,9 +150,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         #region Otwieranie Folderu
         private void otwórzFolderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Directory.Exists(@"C:\drivers"))
+            if (Directory.Exists(@"\\slssfil01\Pub-MoldTracker\Raporty"))
             {
-                Process.Start(@"C:\drivers");
+                Process.Start(@"\\slssfil01\Pub-MoldTracker\Raporty");
             }
             else
             {
@@ -174,7 +174,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 foreach (FileInfo foundFile in filesInDir)
                 {
                     string fullName = foundFile.FullName;
-
                     Microsoft.Office.Interop.Excel.Application oXL = new Microsoft.Office.Interop.Excel.Application();
                     oXL.Visible = true;
                     oXL.DisplayAlerts = false;
@@ -187,11 +186,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
             #endregion
         }
-
-        //private void wykonanaCheckBox_CheckedChanged(object sender, EventArgs e)
-        //{
-
-        //}
     }
 }
     

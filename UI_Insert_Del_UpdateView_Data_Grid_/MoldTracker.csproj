@@ -59,6 +59,7 @@
       <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -99,6 +100,7 @@
     <Compile Include="dailyControl.Designer.cs">
       <DependentUpon>dailyControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataClasses.cs" />
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -115,6 +117,18 @@
     </Compile>
     <Compile Include="detailsAdd.Designer.cs">
       <DependentUpon>detailsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GanttChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GanttChart.Designer.cs">
+      <DependentUpon>GanttChart.cs</DependentUpon>
     </Compile>
     <Compile Include="loginClass.cs" />
     <Compile Include="machineAdd.cs">
@@ -263,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="detailsAdd.resx">
       <DependentUpon>detailsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Logowanie.resx">
       <DependentUpon>Logowanie.cs</DependentUpon>

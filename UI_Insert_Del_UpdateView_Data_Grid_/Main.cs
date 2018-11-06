@@ -108,7 +108,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         }
         private void planningBtn_Click(object sender, EventArgs e)
         {
-            var planning = new Planning();
+            var planning = new Form1();
             planning.Show();
         }
         private void button4_Click(object sender, EventArgs e)
@@ -133,8 +133,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         }
         private void statisticsBtn_Click(object sender, EventArgs e)
         {
-            Statistics S = new Statistics();
-            S.instance.Show();
+            var statistic = new Statistics();
+            statistic.Show();
         }
 
         #endregion

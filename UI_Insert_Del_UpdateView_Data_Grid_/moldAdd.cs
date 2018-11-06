@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
@@ -17,10 +18,12 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             InitializeComponent();
             fillMold();
+            walidacjaMoldAdd();
+            blokowaniePolTextowych();
         }
-
         private void BtnMoldAdd_Click(object sender, EventArgs e)
         {
+            //sprawdzenie pustych pól
             if (String.IsNullOrEmpty(moldTextBox1.Text) && String.IsNullOrEmpty(moldTextBox2.Text) && String.IsNullOrEmpty(moldTextBox3.Text) && String.IsNullOrEmpty(moldTextBox4.Text))
             {
                 MessageBox.Show("Nie wpisałeś nic!");
@@ -37,14 +40,12 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 {
                     try
                     {
-                        System.Data.SqlClient.SqlConnection sqlConnection1 =
-                        new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
-                        //new System.Data.SqlClient.SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
-
-                        sqlConnection1.Open();
+                        string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
+                        System.Data.SqlClient.SqlConnection sqlConnection1 = new System.Data.SqlClient.SqlConnection(connectionStrin);
                         System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
                         cmd.CommandType = System.Data.CommandType.Text;
-                        cmd.CommandText = "select formaNazwa from Forma where formaNazwa = @forma1 or formaNazwa = @forma2 and FK_projektId = (select proj.projektId from Projekt proj where proj.projektNazwa = @projekt)";
+                        sqlConnection1.Open();
+                        cmd.CommandText = "select formaNazwa from Forma where formaNazwa = @forma1 or formaNazwa = @forma2 or formaNazwa = @forma3 or formaNazwa = @forma4 and FK_projektId = (select proj.projektId from Projekt proj where proj.projektNazwa = @projekt)";
                         cmd.Parameters.AddWithValue("@forma1", moldTextBox1.Text.ToString());
                         cmd.Parameters.AddWithValue("@forma2", moldTextBox2.Text.ToString());
                         cmd.Parameters.AddWithValue("@forma3", moldTextBox3.Text.ToString());
@@ -57,6 +58,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                         {
                             MessageBox.Show("Już istnieje");
                             ComboProjectForMoldAdd.SelectedIndex = -1;
+                            moldTextBox1.Text = String.Empty;
+                            moldTextBox2.Text = String.Empty;
+                            moldTextBox3.Text = String.Empty;
+                            moldTextBox4.Text = String.Empty;
                             return;
                         }
                         else
@@ -73,10 +78,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                                     cmd1.Parameters.AddWithValue("@forma2", moldTextBox2.Text.ToString());
                                     cmd1.Parameters.AddWithValue("@forma3", moldTextBox3.Text.ToString());
                                     cmd1.Parameters.AddWithValue("@forma4", moldTextBox4.Text.ToString());
-                                    cmd1.Parameters.AddWithValue("@projekt",ComboProjectForMoldAdd.Text.ToString());
+                                    cmd1.Parameters.AddWithValue("@projekt", ComboProjectForMoldAdd.Text.ToString());
                                     cmd1.Connection = sqlConnection1;
                                     cmd1.ExecuteNonQuery();
-                                    MessageBox.Show("Nowy projekt został dodany!");
+                                    MessageBox.Show("Nowa forma została dodana!");
                                     sqlConnection1.Close();
                                     this.Close();
                                 }
@@ -121,6 +126,58 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             var projectAdd = new ProjectAdd();
             projectAdd.Show();
+        }
+        private void walidacjaMoldAdd()
+        {
+            if (String.IsNullOrEmpty(ComboProjectForMoldAdd.Text) && String.IsNullOrEmpty(moldTextBox1.Text) && String.IsNullOrEmpty(moldTextBox2.Text) && String.IsNullOrEmpty(moldTextBox3.Text) && String.IsNullOrEmpty(moldTextBox4.Text))
+            {
+                BtnMoldAdd.Enabled = false;
+                BtnMoldAdd.BackColor = Color.LightGray;
+            }
+            else if (moldTextBox1.Text.Length <= 0 && moldTextBox2.Text.Length <= 0 && moldTextBox3.Text.Length <= 0 && moldTextBox4.Text.Length <= 0)
+            {
+                BtnMoldAdd.Enabled = false;
+                BtnMoldAdd.BackColor = Color.LightGray;
+            }
+            else if ((!String.IsNullOrEmpty(moldTextBox1.Text) || !String.IsNullOrEmpty(moldTextBox2.Text) || !String.IsNullOrEmpty(moldTextBox3.Text) || !String.IsNullOrEmpty(moldTextBox4.Text)))
+            {
+                BtnMoldAdd.Enabled = true;
+                BtnMoldAdd.BackColor = Color.Lime;
+            }
+        }
+        private void ComboProjectForMoldAdd_TextChanged(object sender, EventArgs e)
+        {
+            walidacjaMoldAdd();
+        }
+        private void ComboProjectForMoldAdd_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            blokowaniePolTextowych();
+            moldTextBox1.Text = String.Empty;
+            moldTextBox2.Text = String.Empty;
+            moldTextBox3.Text = String.Empty;
+            moldTextBox4.Text = String.Empty;
+        }
+        private void blokowaniePolTextowych()
+        {
+            if (ComboProjectForMoldAdd.Text.Length <= 0)
+            {
+                moldTextBox1.Enabled = false;
+                moldTextBox2.Enabled = false;
+                moldTextBox3.Enabled = false;
+                moldTextBox4.Enabled = false;
+            }
+            else
+            {
+                moldTextBox1.Enabled = true;
+                moldTextBox2.Enabled = true;
+                moldTextBox3.Enabled = true;
+                moldTextBox4.Enabled = true;
+            }
+        }
+        private void walidacja(object sender, EventArgs e)
+        {
+            walidacjaMoldAdd();
         }
     }
 }
