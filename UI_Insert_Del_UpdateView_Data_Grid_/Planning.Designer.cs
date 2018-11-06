@@ -121,7 +121,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label6.Font = new System.Drawing.Font("Siemens Sans SC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 2);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
@@ -199,7 +199,7 @@
             // monthlyBtn
             // 
             this.monthlyBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.monthlyBtn.Font = new System.Drawing.Font("Siemens Sans SC", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.monthlyBtn.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.monthlyBtn.Location = new System.Drawing.Point(779, 4);
             this.monthlyBtn.Margin = new System.Windows.Forms.Padding(4);
             this.monthlyBtn.Name = "monthlyBtn";
@@ -212,7 +212,7 @@
             // weeklyBtn
             // 
             this.weeklyBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.weeklyBtn.Font = new System.Drawing.Font("Siemens Sans SC", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.weeklyBtn.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.weeklyBtn.Location = new System.Drawing.Point(458, 4);
             this.weeklyBtn.Margin = new System.Windows.Forms.Padding(4);
             this.weeklyBtn.Name = "weeklyBtn";
@@ -237,7 +237,7 @@
             // dailyBtn
             // 
             this.dailyBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dailyBtn.Font = new System.Drawing.Font("Siemens Sans SC", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dailyBtn.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dailyBtn.Location = new System.Drawing.Point(161, 4);
             this.dailyBtn.Margin = new System.Windows.Forms.Padding(4);
             this.dailyBtn.Name = "dailyBtn";

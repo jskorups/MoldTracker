@@ -122,7 +122,7 @@
             // 
             this.Dodaj.AutoSize = true;
             this.Dodaj.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Dodaj.Font = new System.Drawing.Font("Siemens Sans SC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Dodaj.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Dodaj.Location = new System.Drawing.Point(2, 40);
             this.Dodaj.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Dodaj.Name = "Dodaj";
@@ -157,7 +157,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label12.Location = new System.Drawing.Point(24, 16);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
@@ -197,7 +197,7 @@
             // Użytkownik
             // 
             this.Użytkownik.AutoSize = true;
-            this.Użytkownik.Font = new System.Drawing.Font("Siemens Sans SC", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Użytkownik.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Użytkownik.Location = new System.Drawing.Point(2, 0);
             this.Użytkownik.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Użytkownik.Name = "Użytkownik";
@@ -208,7 +208,7 @@
             // labelUprawnienia
             // 
             this.labelUprawnienia.AutoSize = true;
-            this.labelUprawnienia.Font = new System.Drawing.Font("Siemens Sans SC", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelUprawnienia.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelUprawnienia.Location = new System.Drawing.Point(116, 104);
             this.labelUprawnienia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUprawnienia.Name = "labelUprawnienia";
@@ -219,7 +219,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Siemens Sans SC", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label8.Location = new System.Drawing.Point(2, 104);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
@@ -230,7 +230,7 @@
             // labelStanowisko
             // 
             this.labelStanowisko.AutoSize = true;
-            this.labelStanowisko.Font = new System.Drawing.Font("Siemens Sans SC", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelStanowisko.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelStanowisko.Location = new System.Drawing.Point(116, 78);
             this.labelStanowisko.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelStanowisko.Name = "labelStanowisko";
@@ -241,7 +241,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Siemens Sans SC", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.Location = new System.Drawing.Point(2, 78);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
@@ -252,7 +252,7 @@
             // labelNazwisko
             // 
             this.labelNazwisko.AutoSize = true;
-            this.labelNazwisko.Font = new System.Drawing.Font("Siemens Sans SC", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelNazwisko.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelNazwisko.Location = new System.Drawing.Point(116, 52);
             this.labelNazwisko.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNazwisko.Name = "labelNazwisko";
@@ -263,7 +263,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Siemens Sans SC", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(2, 52);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -274,7 +274,7 @@
             // labelImie
             // 
             this.labelImie.AutoSize = true;
-            this.labelImie.Font = new System.Drawing.Font("Siemens Sans SC", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelImie.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelImie.Location = new System.Drawing.Point(116, 26);
             this.labelImie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelImie.Name = "labelImie";
@@ -285,7 +285,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(128, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
@@ -311,7 +311,7 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Siemens Sans SC", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.Location = new System.Drawing.Point(2, 2);
             this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
@@ -342,7 +342,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Siemens Sans SC", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.Location = new System.Drawing.Point(2, 26);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
@@ -353,7 +353,7 @@
             // labelUzytkownik
             // 
             this.labelUzytkownik.AutoSize = true;
-            this.labelUzytkownik.Font = new System.Drawing.Font("Siemens Sans SC", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelUzytkownik.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelUzytkownik.Location = new System.Drawing.Point(116, 0);
             this.labelUzytkownik.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUzytkownik.Name = "labelUzytkownik";

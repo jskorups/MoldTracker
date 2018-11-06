@@ -106,7 +106,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Siemens Sans SC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(66, 33);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -119,7 +119,7 @@
             // 
             this.ComboProjectForMoldAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ComboProjectForMoldAdd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboProjectForMoldAdd.Font = new System.Drawing.Font("Siemens Sans SC", 12F);
+            this.ComboProjectForMoldAdd.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.ComboProjectForMoldAdd.FormattingEnabled = true;
             this.ComboProjectForMoldAdd.Location = new System.Drawing.Point(255, 29);
             this.ComboProjectForMoldAdd.Margin = new System.Windows.Forms.Padding(4);
@@ -131,7 +131,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Siemens Sans SC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(82, 108);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -144,7 +144,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Siemens Sans SC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(82, 177);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -157,7 +157,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Siemens Sans SC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(82, 252);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
@@ -170,7 +170,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Siemens Sans SC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(82, 329);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
@@ -182,7 +182,7 @@
             // moldTextBox1
             // 
             this.moldTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.moldTextBox1.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.moldTextBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.moldTextBox1.Location = new System.Drawing.Point(255, 104);
             this.moldTextBox1.Name = "moldTextBox1";
             this.moldTextBox1.Size = new System.Drawing.Size(350, 30);
@@ -192,7 +192,7 @@
             // moldTextBox3
             // 
             this.moldTextBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.moldTextBox3.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.moldTextBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.moldTextBox3.Location = new System.Drawing.Point(255, 248);
             this.moldTextBox3.Name = "moldTextBox3";
             this.moldTextBox3.Size = new System.Drawing.Size(350, 30);
@@ -202,7 +202,7 @@
             // moldTextBox4
             // 
             this.moldTextBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.moldTextBox4.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.moldTextBox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.moldTextBox4.Location = new System.Drawing.Point(255, 325);
             this.moldTextBox4.Name = "moldTextBox4";
             this.moldTextBox4.Size = new System.Drawing.Size(350, 30);
@@ -212,7 +212,7 @@
             // moldTextBox2
             // 
             this.moldTextBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.moldTextBox2.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.moldTextBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.moldTextBox2.Location = new System.Drawing.Point(255, 173);
             this.moldTextBox2.Name = "moldTextBox2";
             this.moldTextBox2.Size = new System.Drawing.Size(350, 30);
@@ -223,7 +223,7 @@
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.Location = new System.Drawing.Point(13, 109);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(24, 21);
@@ -234,7 +234,7 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label8.Location = new System.Drawing.Point(13, 178);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(24, 21);
@@ -245,7 +245,7 @@
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label9.Location = new System.Drawing.Point(13, 253);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(24, 21);
@@ -256,7 +256,7 @@
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label10.Location = new System.Drawing.Point(13, 329);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(24, 21);
@@ -365,7 +365,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label6.Font = new System.Drawing.Font("Siemens Sans SC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(4, 0);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
@@ -408,7 +408,7 @@
             // BtnMoldAddClose
             // 
             this.BtnMoldAddClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.BtnMoldAddClose.Font = new System.Drawing.Font("Siemens Sans SC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMoldAddClose.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMoldAddClose.Location = new System.Drawing.Point(377, 6);
             this.BtnMoldAddClose.Margin = new System.Windows.Forms.Padding(4);
             this.BtnMoldAddClose.Name = "BtnMoldAddClose";
@@ -421,7 +421,7 @@
             // BtnMoldAdd
             // 
             this.BtnMoldAdd.BackColor = System.Drawing.Color.Lime;
-            this.BtnMoldAdd.Font = new System.Drawing.Font("Siemens Sans SC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMoldAdd.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMoldAdd.Location = new System.Drawing.Point(6, 6);
             this.BtnMoldAdd.Margin = new System.Windows.Forms.Padding(4);
             this.BtnMoldAdd.Name = "BtnMoldAdd";

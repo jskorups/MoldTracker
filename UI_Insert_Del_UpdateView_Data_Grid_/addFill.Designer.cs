@@ -155,7 +155,7 @@
             // 
             this.Dodaj.AutoSize = true;
             this.Dodaj.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Dodaj.Font = new System.Drawing.Font("Siemens Sans SC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Dodaj.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Dodaj.Location = new System.Drawing.Point(2, 8);
             this.Dodaj.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Dodaj.Name = "Dodaj";
@@ -266,7 +266,7 @@
             this.comboProjekt.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.comboProjekt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboProjekt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboProjekt.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.comboProjekt.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.comboProjekt.FormattingEnabled = true;
             this.comboProjekt.Location = new System.Drawing.Point(188, 2);
             this.comboProjekt.Margin = new System.Windows.Forms.Padding(38, 2, 38, 2);
@@ -278,7 +278,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(15, 8);
             this.label2.Margin = new System.Windows.Forms.Padding(15, 8, 8, 0);
             this.label2.Name = "label2";
@@ -307,7 +307,7 @@
             this.comboForma.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.comboForma.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboForma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboForma.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.comboForma.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.comboForma.FormattingEnabled = true;
             this.comboForma.Location = new System.Drawing.Point(188, 2);
             this.comboForma.Margin = new System.Windows.Forms.Padding(38, 2, 38, 2);
@@ -320,7 +320,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.Location = new System.Drawing.Point(15, 8);
             this.label5.Margin = new System.Windows.Forms.Padding(15, 8, 8, 0);
             this.label5.Name = "label5";
@@ -347,7 +347,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.Location = new System.Drawing.Point(15, 8);
             this.label6.Margin = new System.Windows.Forms.Padding(15, 8, 8, 0);
             this.label6.Name = "label6";
@@ -358,7 +358,7 @@
             // comboMaszyna
             // 
             this.comboMaszyna.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboMaszyna.Font = new System.Drawing.Font("Siemens Sans SC", 12F);
+            this.comboMaszyna.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.comboMaszyna.FormattingEnabled = true;
             this.comboMaszyna.Location = new System.Drawing.Point(188, 2);
             this.comboMaszyna.Margin = new System.Windows.Forms.Padding(38, 2, 38, 2);
@@ -389,7 +389,7 @@
             // comboDetal
             // 
             this.comboDetal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboDetal.Font = new System.Drawing.Font("Siemens Sans SC", 12F);
+            this.comboDetal.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.comboDetal.FormattingEnabled = true;
             this.comboDetal.Location = new System.Drawing.Point(188, 2);
             this.comboDetal.Margin = new System.Windows.Forms.Padding(38, 2, 38, 2);
@@ -403,7 +403,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.Location = new System.Drawing.Point(15, 8);
             this.label4.Margin = new System.Windows.Forms.Padding(15, 8, 8, 0);
             this.label4.Name = "label4";
@@ -429,7 +429,7 @@
             // 
             // txtKolor
             // 
-            this.txtKolor.Font = new System.Drawing.Font("Siemens Sans SC", 12F);
+            this.txtKolor.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtKolor.Location = new System.Drawing.Point(188, 2);
             this.txtKolor.Margin = new System.Windows.Forms.Padding(38, 2, 38, 2);
             this.txtKolor.Name = "txtKolor";
@@ -440,7 +440,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.Location = new System.Drawing.Point(15, 8);
             this.label7.Margin = new System.Windows.Forms.Padding(15, 8, 8, 0);
             this.label7.Name = "label7";
@@ -454,7 +454,7 @@
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.54873F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.45127F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 151F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 152F));
             this.tableLayoutPanel12.Controls.Add(this.tableLayoutPanel19, 3, 0);
             this.tableLayoutPanel12.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.tableLayoutPanel15, 2, 0);
@@ -474,17 +474,17 @@
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel19.Controls.Add(this.comboTrwanie, 0, 0);
             this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(429, 2);
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(428, 2);
             this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 1;
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(148, 28);
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(149, 28);
             this.tableLayoutPanel19.TabIndex = 15;
             // 
             // comboTrwanie
             // 
-            this.comboTrwanie.Font = new System.Drawing.Font("Siemens Sans SC", 12F);
+            this.comboTrwanie.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.comboTrwanie.FormattingEnabled = true;
             this.comboTrwanie.Location = new System.Drawing.Point(2, 2);
             this.comboTrwanie.Margin = new System.Windows.Forms.Padding(2);
@@ -495,7 +495,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Siemens Sans SC", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label9.Location = new System.Drawing.Point(15, 8);
             this.label9.Margin = new System.Windows.Forms.Padding(15, 8, 8, 0);
             this.label9.Name = "label9";
@@ -514,21 +514,21 @@
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 1;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(122, 28);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(121, 28);
             this.tableLayoutPanel15.TabIndex = 13;
             // 
             // dateTimeTerminRealizacjiDzien
             // 
-            this.dateTimeTerminRealizacjiDzien.CalendarFont = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimeTerminRealizacjiDzien.CalendarFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimeTerminRealizacjiDzien.Checked = false;
             this.dateTimeTerminRealizacjiDzien.CustomFormat = "dd/MM/yyyy";
             this.dateTimeTerminRealizacjiDzien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimeTerminRealizacjiDzien.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimeTerminRealizacjiDzien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimeTerminRealizacjiDzien.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimeTerminRealizacjiDzien.Location = new System.Drawing.Point(2, 2);
             this.dateTimeTerminRealizacjiDzien.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimeTerminRealizacjiDzien.Name = "dateTimeTerminRealizacjiDzien";
-            this.dateTimeTerminRealizacjiDzien.Size = new System.Drawing.Size(118, 27);
+            this.dateTimeTerminRealizacjiDzien.Size = new System.Drawing.Size(117, 27);
             this.dateTimeTerminRealizacjiDzien.TabIndex = 13;
             // 
             // tableLayoutPanel16
@@ -547,7 +547,7 @@
             // dateTimeTerminRealizacjiGodzina
             // 
             this.dateTimeTerminRealizacjiGodzina.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimeTerminRealizacjiGodzina.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimeTerminRealizacjiGodzina.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimeTerminRealizacjiGodzina.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimeTerminRealizacjiGodzina.Location = new System.Drawing.Point(38, 2);
             this.dateTimeTerminRealizacjiGodzina.Margin = new System.Windows.Forms.Padding(38, 2, 2, 2);
@@ -574,7 +574,7 @@
             // 
             // txtMaterial
             // 
-            this.txtMaterial.Font = new System.Drawing.Font("Siemens Sans SC", 12F);
+            this.txtMaterial.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtMaterial.Location = new System.Drawing.Point(188, 2);
             this.txtMaterial.Margin = new System.Windows.Forms.Padding(38, 2, 38, 2);
             this.txtMaterial.Name = "txtMaterial";
@@ -584,7 +584,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label13.Location = new System.Drawing.Point(15, 8);
             this.label13.Margin = new System.Windows.Forms.Padding(15, 8, 8, 0);
             this.label13.Name = "label13";
@@ -612,7 +612,7 @@
             // 
             this.comboCel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboCel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboCel.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.comboCel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.comboCel.FormattingEnabled = true;
             this.comboCel.Location = new System.Drawing.Point(188, 2);
             this.comboCel.Margin = new System.Windows.Forms.Padding(38, 2, 38, 2);
@@ -624,7 +624,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label10.Location = new System.Drawing.Point(15, 8);
             this.label10.Margin = new System.Windows.Forms.Padding(15, 8, 8, 0);
             this.label10.Name = "label10";
@@ -651,7 +651,7 @@
             // comboSapDetalu
             // 
             this.comboSapDetalu.AutoSize = true;
-            this.comboSapDetalu.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.comboSapDetalu.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.comboSapDetalu.Location = new System.Drawing.Point(15, 8);
             this.comboSapDetalu.Margin = new System.Windows.Forms.Padding(15, 8, 8, 0);
             this.comboSapDetalu.Name = "comboSapDetalu";
@@ -661,7 +661,7 @@
             // 
             // txtSapDetalu
             // 
-            this.txtSapDetalu.Font = new System.Drawing.Font("Siemens Sans SC", 12F);
+            this.txtSapDetalu.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtSapDetalu.Location = new System.Drawing.Point(188, 2);
             this.txtSapDetalu.Margin = new System.Windows.Forms.Padding(38, 2, 38, 2);
             this.txtSapDetalu.Name = "txtSapDetalu";
@@ -685,7 +685,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label12.Location = new System.Drawing.Point(15, 8);
             this.label12.Margin = new System.Windows.Forms.Padding(15, 8, 8, 0);
             this.label12.Name = "label12";
@@ -699,7 +699,7 @@
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.73456F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.26544F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel18.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel18.Controls.Add(this.btnClear, 2, 0);
             this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -714,7 +714,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(2, 8);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 8, 2, 0);
             this.label1.Name = "label1";
@@ -726,8 +726,8 @@
             // 
             this.btnClear.BackColor = System.Drawing.Color.Yellow;
             this.btnClear.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnClear.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnClear.Location = new System.Drawing.Point(454, 2);
+            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnClear.Location = new System.Drawing.Point(453, 2);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(84, 28);
@@ -754,7 +754,7 @@
             // richTexCel
             // 
             this.richTexCel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTexCel.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.richTexCel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.richTexCel.Location = new System.Drawing.Point(188, 2);
             this.richTexCel.Margin = new System.Windows.Forms.Padding(38, 2, 38, 2);
             this.richTexCel.MaxLength = 50;
@@ -797,7 +797,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Siemens Sans SC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(15, 8);
             this.label3.Margin = new System.Windows.Forms.Padding(15, 8, 8, 0);
             this.label3.Name = "label3";
@@ -824,7 +824,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Siemens Sans SC", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label8.Location = new System.Drawing.Point(15, 8);
             this.label8.Margin = new System.Windows.Forms.Padding(15, 8, 8, 0);
             this.label8.Name = "label8";
@@ -834,7 +834,7 @@
             // 
             // comboOdpowiedzialny
             // 
-            this.comboOdpowiedzialny.Font = new System.Drawing.Font("Siemens Sans SC", 12F);
+            this.comboOdpowiedzialny.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.comboOdpowiedzialny.FormattingEnabled = true;
             this.comboOdpowiedzialny.Location = new System.Drawing.Point(187, 2);
             this.comboOdpowiedzialny.Margin = new System.Windows.Forms.Padding(38, 2, 38, 2);

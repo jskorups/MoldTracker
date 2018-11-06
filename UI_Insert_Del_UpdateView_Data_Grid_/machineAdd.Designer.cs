@@ -110,7 +110,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label6.Font = new System.Drawing.Font("Siemens Sans SC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(386, 67);
@@ -152,7 +152,7 @@
             // TextBoxMachineNameAdd
             // 
             this.TextBoxMachineNameAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBoxMachineNameAdd.Font = new System.Drawing.Font("Siemens Sans SC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxMachineNameAdd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxMachineNameAdd.Location = new System.Drawing.Point(228, 10);
             this.TextBoxMachineNameAdd.Name = "TextBoxMachineNameAdd";
             this.TextBoxMachineNameAdd.Size = new System.Drawing.Size(214, 27);
@@ -162,7 +162,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Siemens Sans SC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(74, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 20);
@@ -187,7 +187,7 @@
             // BtnMachineAddClose
             // 
             this.BtnMachineAddClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.BtnMachineAddClose.Font = new System.Drawing.Font("Siemens Sans SC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMachineAddClose.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMachineAddClose.Location = new System.Drawing.Point(282, 3);
             this.BtnMachineAddClose.Name = "BtnMachineAddClose";
             this.BtnMachineAddClose.Size = new System.Drawing.Size(274, 34);
@@ -199,7 +199,7 @@
             // BtnMachineAdd
             // 
             this.BtnMachineAdd.BackColor = System.Drawing.Color.Lime;
-            this.BtnMachineAdd.Font = new System.Drawing.Font("Siemens Sans SC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMachineAdd.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMachineAdd.Location = new System.Drawing.Point(3, 3);
             this.BtnMachineAdd.Name = "BtnMachineAdd";
             this.BtnMachineAdd.Size = new System.Drawing.Size(273, 34);
