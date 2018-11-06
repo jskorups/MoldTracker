@@ -182,7 +182,7 @@
             // moldTextBox1
             // 
             this.moldTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.moldTextBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.moldTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.moldTextBox1.Location = new System.Drawing.Point(255, 104);
             this.moldTextBox1.Name = "moldTextBox1";
             this.moldTextBox1.Size = new System.Drawing.Size(350, 30);
@@ -192,7 +192,7 @@
             // moldTextBox3
             // 
             this.moldTextBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.moldTextBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.moldTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.moldTextBox3.Location = new System.Drawing.Point(255, 248);
             this.moldTextBox3.Name = "moldTextBox3";
             this.moldTextBox3.Size = new System.Drawing.Size(350, 30);
@@ -202,7 +202,7 @@
             // moldTextBox4
             // 
             this.moldTextBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.moldTextBox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.moldTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.moldTextBox4.Location = new System.Drawing.Point(255, 325);
             this.moldTextBox4.Name = "moldTextBox4";
             this.moldTextBox4.Size = new System.Drawing.Size(350, 30);
@@ -212,7 +212,7 @@
             // moldTextBox2
             // 
             this.moldTextBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.moldTextBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.moldTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.moldTextBox2.Location = new System.Drawing.Point(255, 173);
             this.moldTextBox2.Name = "moldTextBox2";
             this.moldTextBox2.Size = new System.Drawing.Size(350, 30);

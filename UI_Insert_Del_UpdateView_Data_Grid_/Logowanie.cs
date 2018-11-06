@@ -14,13 +14,11 @@ using System.Configuration;
 
 namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
-    
     public partial class Logowanie : Form
     {
         public Logowanie()
         {
             InitializeComponent();
-           // this.Font = new Font("Tahoma", 16);
         }
 
         private void loginBtn_Click (object sender, EventArgs e)
