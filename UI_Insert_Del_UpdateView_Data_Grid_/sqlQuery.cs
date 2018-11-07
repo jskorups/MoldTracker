@@ -19,6 +19,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
             SqlConnection con = new SqlConnection(connectionStrin);
 
+
             using (con)
             {
                 con.Open();

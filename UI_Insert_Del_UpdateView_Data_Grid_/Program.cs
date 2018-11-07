@@ -17,21 +17,24 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         [STAThread]
         static void Main()
         {
-            CultureInfo myCI = new CultureInfo(ConfigurationManager.AppSettings["region"].ToString(), false);
 
-            // Clones myCI and modifies the DTFI and NFI instances associated with the clone.
+            //CultureInfo myCI = new CultureInfo(ConfigurationManager.AppSettings["region"].ToString(), false);
+         
+           // Clones myCI and modifies the DTFI and NFI instances associated with the clone.
             //CultureInfo myCIclone = (CultureInfo)myCI.Clone();
             //myCIclone.DateTimeFormat.AMDesignator = "a.m.";
             //myCIclone.DateTimeFormat.DateSeparator = "-";
             //myCIclone.NumberFormat.NumberDecimalSeparator = ".";
             //myCIclone.NumberFormat.CurrencySymbol = "USD";
             //myCIclone.NumberFormat.NumberDecimalDigits = 4;
-            CultureInfo pl = new CultureInfo(ConfigurationManager.AppSettings["region"].ToString());
-            string shortUkDateFormatString = pl.DateTimeFormat.ShortDatePattern;
-            string shortUkTimeFormatString = pl.DateTimeFormat.ShortTimePattern;
-            myCI.DateTimeFormat.ShortDatePattern = shortUkDateFormatString;
-            myCI.DateTimeFormat.ShortTimePattern = shortUkTimeFormatString;
-            System.Threading.Thread.CurrentThread.CurrentCulture = myCI;
+            //CultureInfo pl = new CultureInfo(ConfigurationManager.AppSettings["region"].ToString());
+            //string shortUkDateFormatString = pl.DateTimeFormat.ShortDatePattern;
+            //string shortUkTimeFormatString = pl.DateTimeFormat.ShortTimePattern;
+            //myCI.DateTimeFormat.ShortDatePattern = shortUkDateFormatString;
+            //myCI.DateTimeFormat.ShortTimePattern = shortUkTimeFormatString;
+            //#endregion
+            //System.Threading.Thread.CurrentThread.CurrentCulture = myCI;
+
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

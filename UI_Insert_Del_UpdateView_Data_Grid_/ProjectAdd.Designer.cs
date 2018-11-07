@@ -65,7 +65,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.65957F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(761, 277);
             this.tableLayoutPanel1.TabIndex = 1;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+
             // 
             // tableLayoutPanel2
             // 
@@ -83,7 +83,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(753, 136);
             this.tableLayoutPanel2.TabIndex = 6;
-            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
+     
             // 
             // pictureBox1
             // 
@@ -97,7 +97,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(123, 85);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+      
             // 
             // tableLayoutPanel4
             // 
@@ -112,7 +112,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.88679F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(612, 82);
             this.tableLayoutPanel4.TabIndex = 1;
-            this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
+     
             // 
             // label6
             // 
@@ -125,7 +125,7 @@
             this.label6.Size = new System.Drawing.Size(427, 82);
             this.label6.TabIndex = 0;
             this.label6.Text = "Dodaj projekt";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+       
             // 
             // tableLayoutPanel3
             // 
@@ -142,7 +142,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(753, 125);
             this.tableLayoutPanel3.TabIndex = 7;
-            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
             // tableLayoutPanel5
             // 
@@ -161,7 +160,7 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(745, 57);
             this.tableLayoutPanel5.TabIndex = 0;
-            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
+   
             // 
             // TextBoxProjectNameAdd
             // 
@@ -186,7 +185,7 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Wpisz nazwę:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+      
             // 
             // tableLayoutPanel6
             // 
@@ -202,7 +201,6 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(745, 52);
             this.tableLayoutPanel6.TabIndex = 1;
-            this.tableLayoutPanel6.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel6_Paint);
             // 
             // BtnProjectAddClose
             // 

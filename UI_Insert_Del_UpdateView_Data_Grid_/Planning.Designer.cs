@@ -207,7 +207,7 @@
             this.monthlyBtn.TabIndex = 4;
             this.monthlyBtn.Text = "Plan miesiąca";
             this.monthlyBtn.UseVisualStyleBackColor = true;
-            this.monthlyBtn.Click += new System.EventHandler(this.monthlyBtnClick);
+
             // 
             // weeklyBtn
             // 
@@ -220,7 +220,7 @@
             this.weeklyBtn.TabIndex = 3;
             this.weeklyBtn.Text = "Plan tygodnia";
             this.weeklyBtn.UseVisualStyleBackColor = true;
-            this.weeklyBtn.Click += new System.EventHandler(this.weeklyBtnClick);
+    
             // 
             // button1
             // 
@@ -245,7 +245,7 @@
             this.dailyBtn.TabIndex = 2;
             this.dailyBtn.Text = "Plan dnia";
             this.dailyBtn.UseVisualStyleBackColor = true;
-            this.dailyBtn.Click += new System.EventHandler(this.dailyBtnClick);
+ 
             // 
             // panel
             // 
