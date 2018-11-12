@@ -170,7 +170,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                         cmd.Parameters.AddWithValue("@Forma", comboBoxFormaDetailsADD.ToString());
                         cmd.Connection = sqlConnection1;
                         SqlDataReader reader = cmd.ExecuteReader();
-
+                        //pogusie
                                 if (reader.HasRows)
                                 {
                                     MessageBox.Show("Już istnieje");
