@@ -19,8 +19,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
 
             //CultureInfo myCI = new CultureInfo(ConfigurationManager.AppSettings["region"].ToString(), false);
-         
-           // Clones myCI and modifies the DTFI and NFI instances associated with the clone.
+            #region settings
+            // Clones myCI and modifies the DTFI and NFI instances associated with the clone.
             //CultureInfo myCIclone = (CultureInfo)myCI.Clone();
             //myCIclone.DateTimeFormat.AMDesignator = "a.m.";
             //myCIclone.DateTimeFormat.DateSeparator = "-";
@@ -32,13 +32,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             //string shortUkTimeFormatString = pl.DateTimeFormat.ShortTimePattern;
             //myCI.DateTimeFormat.ShortDatePattern = shortUkDateFormatString;
             //myCI.DateTimeFormat.ShortTimePattern = shortUkTimeFormatString;
-            //#endregion
+            #endregion
             //System.Threading.Thread.CurrentThread.CurrentCulture = myCI;
 
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Logowanie());
+            Application.Run(new detailsAdd());
         }
 
         

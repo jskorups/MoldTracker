@@ -108,8 +108,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         }
         private void planningBtn_Click(object sender, EventArgs e)
         {
-            var planning = new Form1();
-            planning.Show();
+           // var planning = new Form1();
+            //planning.Show();
         }
         private void button4_Click(object sender, EventArgs e)
         {

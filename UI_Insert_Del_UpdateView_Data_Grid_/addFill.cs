@@ -14,7 +14,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
     public partial class addFill : Form
     {
- 
+
 
         public addFill()
         {
@@ -22,10 +22,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             cmboFormaDetalSap();
             sprawdzenieCombosow();
 
-        #region - Format czasu dla DateTimePickera
-            dateTimeTerminRealizacjiGodzina.Format = DateTimePickerFormat.Custom;
-            dateTimeTerminRealizacjiGodzina.CustomFormat = "HH:mm";
-            dateTimeTerminRealizacjiGodzina.ShowUpDown = true;
+            #region - Format czasu dla DateTimePickera
+            dateTimeTerminRealizacjiGodzinaStart.Format = DateTimePickerFormat.Custom;
+            dateTimeTerminRealizacjiGodzinaKoniec.Format = DateTimePickerFormat.Custom;
+            dateTimeTerminRealizacjiGodzinaStart.CustomFormat = "HH:mm";
+            dateTimeTerminRealizacjiGodzinaKoniec.CustomFormat = "HH:mm";
+            dateTimeTerminRealizacjiGodzinaStart.ShowUpDown = true;
+            dateTimeTerminRealizacjiGodzinaKoniec.ShowUpDown = true;
 
             txtKolor.ReadOnly = true;
             txtMaterial.ReadOnly = true;
@@ -75,7 +78,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         public void sprawdzenieCombosow()
         {
-            if (!string.IsNullOrEmpty(comboProjekt.Text) && !string.IsNullOrEmpty(comboTrwanie.Text) && !string.IsNullOrEmpty(comboForma.Text) && !string.IsNullOrEmpty(comboMaszyna.Text) && !string.IsNullOrEmpty(comboDetal.Text) && !string.IsNullOrEmpty(comboCel.Text) && !string.IsNullOrEmpty(comboOdpowiedzialny.Text))
+            if (!string.IsNullOrEmpty(comboProjekt.Text) /*&& !string.IsNullOrEmpty(comboTrwanie.Text)*/ && !string.IsNullOrEmpty(comboForma.Text) && !string.IsNullOrEmpty(comboMaszyna.Text) && !string.IsNullOrEmpty(comboDetal.Text) && !string.IsNullOrEmpty(comboCel.Text) && !string.IsNullOrEmpty(comboOdpowiedzialny.Text))
             {
                 dodajProbeBtn.BackColor = System.Drawing.Color.Lime;
                 dodajProbeBtn.Enabled = true;
@@ -88,42 +91,65 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         }
         private void dodajProbeBtn_Click(object sender, EventArgs e)
         {
+
+            string wybranyDzien = dateTimeTerminRealizacjiDzien.Value.ToString("yyyy-MM-dd");
+            string dzisiajDzien = DateTime.Now.ToString("yyyy-MM-dd");
+
+
             if (MessageBox.Show("Czy chcesz dodać próbę?", "Potwierdź próbęe", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
-                System.Data.SqlClient.SqlConnection sqlConnection1 = new System.Data.SqlClient.SqlConnection(connectionStrin);
-                System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
-                cmd.CommandType = System.Data.CommandType.Text;
 
-                cmd.CommandText = "INSERT into Proby (projektId,formaId,maszynaId,detalId, celId, godzStart, dzienStart, czasStart, celRoz, statusProby, odpowiedzialny) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @godzStart ,convert(date, @dzienStart, 103), @Trwanie, @celRoz, 'Zaplanowana', @odpowiedzialny from Projekt, "
-                    + "Forma,Maszyna,Detal_komplet,Cel where "
-                    + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNumer = @maszynaNumer "
-                    + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa";
+                if (dateTimeTerminRealizacjiGodzinaStart.Value >= dateTimeTerminRealizacjiGodzinaKoniec.Value)
+                {
+                    MessageBox.Show("Godzina startu mniejsza od godziny końca");
+                    return;
+                }
+                else if (DateTime.Parse(wybranyDzien) < DateTime.Parse(dzisiajDzien))
+                {
+                    MessageBox.Show("Dzień mniejszy niż dzisiaj");
+                    return;
+                }
 
-                cmd.Parameters.AddWithValue("@projectNazwa", comboProjekt.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@formaNazwa", comboForma.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@maszynaNumer", comboMaszyna.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@detalNazwa", comboDetal.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@celNazwa", comboCel.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@godzStart", dateTimeTerminRealizacjiGodzina.Value.ToShortTimeString());
-                cmd.Parameters.AddWithValue("@dzienStart", SqlDbType.Date).Value = dateTimeTerminRealizacjiDzien.Value.Date;
-                cmd.Parameters.AddWithValue("@celRoz", richTexCel.Text.ToString());
-                cmd.Parameters.AddWithValue("@Trwanie", comboTrwanie.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@odpowiedzialny", comboOdpowiedzialny.SelectedValue.ToString());
+                else
+                {
+                    string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
+                    System.Data.SqlClient.SqlConnection sqlConnection1 = new System.Data.SqlClient.SqlConnection(connectionStrin);
+                    System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+                    cmd.CommandType = System.Data.CommandType.Text;
 
-                cmd.Connection = sqlConnection1;
-                sqlConnection1.Open();
-                cmd.ExecuteNonQuery();
-                sqlConnection1.Close();
-                this.Close();
+                    cmd.CommandText = "INSERT into Proby (projektId,formaId,maszynaId,detalId, celId, godzStart, godzKoniec, dzienStart, celRoz, statusProby, odpowiedzialny) " +
+                        "select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @godzStart ,@godzKoniec, convert(date, @dzienStart, 103), @celRoz, 'Zaplanowana', @odpowiedzialny from Projekt, "
+                        + "Forma,Maszyna,Detal_komplet,Cel where "
+                        + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNumer = @maszynaNumer "
+                        + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa";
 
+                    //cmd.CommandText = "INSERT into Proby (projektId,formaId,maszynaId,detalId, celId, godzStart, dzienStart, czasStart, celRoz, statusProby, odpowiedzialny) select Projekt.projektId, Forma.formaId, Maszyna.maszynaId, Detal_komplet.detalId, Cel.celId, @godzStart ,convert(date, @dzienStart, 103), @Trwanie, @celRoz, 'Zaplanowana', @odpowiedzialny from Projekt, "
+                    //   + "Forma,Maszyna,Detal_komplet,Cel where "
+                    //   + " projektNazwa = @projectNazwa and formaNazwa = @formaNazwa and maszynaNumer = @maszynaNumer "
+                    //   + " and detalNazwa = @detalNazwa and celNazwa = @celNazwa";
+
+                    cmd.Parameters.AddWithValue("@projectNazwa", comboProjekt.SelectedValue.ToString());
+                    cmd.Parameters.AddWithValue("@formaNazwa", comboForma.SelectedValue.ToString());
+                    cmd.Parameters.AddWithValue("@maszynaNumer", comboMaszyna.SelectedValue.ToString());
+                    cmd.Parameters.AddWithValue("@detalNazwa", comboDetal.SelectedValue.ToString());
+                    cmd.Parameters.AddWithValue("@celNazwa", comboCel.SelectedValue.ToString());
+                    cmd.Parameters.AddWithValue("@godzStart", dateTimeTerminRealizacjiGodzinaStart.Value.ToShortTimeString());
+                    cmd.Parameters.AddWithValue("@godzKoniec", dateTimeTerminRealizacjiGodzinaKoniec.Value.ToShortTimeString());
+                    cmd.Parameters.AddWithValue("@dzienStart", SqlDbType.Date).Value = dateTimeTerminRealizacjiDzien.Value.Date;
+                    cmd.Parameters.AddWithValue("@celRoz", richTexCel.Text.ToString());
+                    //      cmd.Parameters.AddWithValue("@Trwanie", comboTrwanie.SelectedValue.ToString());
+                    cmd.Parameters.AddWithValue("@odpowiedzialny", comboOdpowiedzialny.SelectedValue.ToString());
+
+                    cmd.Connection = sqlConnection1;
+                    sqlConnection1.Open();
+                    cmd.ExecuteNonQuery();
+                    sqlConnection1.Close();
+                    this.Close();
+                }
             }
-            else
-            {
-                MessageBox.Show("Próba nie dodana");
-                return;
-            }
+
         }
+
         #endregion
         #region - Blokowanie i odblokowywanie comboboxów
         public void comboblocking()
@@ -134,7 +160,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             comboCel.Enabled = false;
             comboOdpowiedzialny.Enabled = false;
             dateTimeTerminRealizacjiDzien.Enabled = false;
-            dateTimeTerminRealizacjiGodzina.Enabled = false;
+            dateTimeTerminRealizacjiGodzinaStart.Enabled = false;
+            dateTimeTerminRealizacjiGodzinaKoniec.Enabled = false;
         }
         public void comborealising()
         {
@@ -144,12 +171,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             comboCel.Enabled = true;
             comboOdpowiedzialny.Enabled = true;
             dateTimeTerminRealizacjiDzien.Enabled = true;
-            dateTimeTerminRealizacjiGodzina.Enabled = true;
+            dateTimeTerminRealizacjiGodzinaStart.Enabled = true;
+            dateTimeTerminRealizacjiGodzinaKoniec.Enabled = true;
         }
-        public void comboczyszczenie()
-        {
 
-        }
 
         public void comboLogic()
         {
@@ -199,14 +224,17 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             comboForma.SelectedIndex = -1;
             comboCel.SelectedIndex = -1;
             comboMaszyna.SelectedIndex = -1;
-            comboTrwanie.SelectedIndex = -1;
+            //   comboTrwanie.SelectedIndex = -1;
             comboOdpowiedzialny.SelectedIndex = -1;
             txtKolor.Text = "";
             txtMaterial.Text = "";
             txtSapDetalu.Text = "";
             richTexCel.Text = "";
             dateTimeTerminRealizacjiDzien.Value = new DateTime(2000, 01, 01);
-            dateTimeTerminRealizacjiGodzina.Value = DateTimePicker.MinimumDateTime;
+            dateTimeTerminRealizacjiGodzinaStart.Value = DateTimePicker.MinimumDateTime;
+            dateTimeTerminRealizacjiGodzinaKoniec.Value = DateTimePicker.MinimumDateTime;
+
+            MessageBox.Show(dateTimeTerminRealizacjiDzien.Value.Date.ToString());
         }
         #endregion
         #region - Wczytanie detalu po zmianie Formy
@@ -227,7 +255,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             DataSet dDet2 = sqlQuery.GetDataFromSql("select detalSap, detalMaterial, detalKolor from Detal_komplet where detalNazwa = '" + comboDetal.Text + "'");
 
-            if (dDet2.Tables[0].Rows.Count > 0) {
+            if (dDet2.Tables[0].Rows.Count > 0)
+            {
 
                 txtSapDetalu.Text = dDet2.Tables[0].Rows[0].ItemArray[0].ToString(); //
                 txtMaterial.Text = dDet2.Tables[0].Rows[0].ItemArray[1].ToString();
@@ -292,13 +321,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             sprawdzenieCombosow();
         }
 
-private void txtKolor_TextChanged(object sender, EventArgs e)
-        {
-            List<int> czasTrwanie = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+        //private void txtKolor_TextChanged(object sender, EventArgs e)
+        //        {
+        //            List<int> czasTrwanie = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
 
-            comboTrwanie.DataSource = czasTrwanie;
-            comboTrwanie.SelectedIndex = -1;
-        }
+        //            comboTrwanie.DataSource = czasTrwanie;
+        //            comboTrwanie.SelectedIndex = -1;
+        //        }
 
         private void sprawdzenieCombosow(object sender, EventArgs e)
         {

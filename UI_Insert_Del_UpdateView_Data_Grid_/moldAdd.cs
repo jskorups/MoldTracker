@@ -21,6 +21,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             walidacjaMoldAdd();
             blokowaniePolTextowych();
         }
+        #region Dodanie form do bazy - przycisk dodaj
         private void BtnMoldAdd_Click(object sender, EventArgs e)
         {
             //sprawdzenie pustych pól
@@ -45,6 +46,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                         System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
                         cmd.CommandType = System.Data.CommandType.Text;
                         sqlConnection1.Open();
+
                         cmd.CommandText = "select formaNazwa from Forma where formaNazwa = @forma1 or formaNazwa = @forma2 or formaNazwa = @forma3 or formaNazwa = @forma4 and FK_projektId = (select proj.projektId from Projekt proj where proj.projektNazwa = @projekt)";
                         cmd.Parameters.AddWithValue("@forma1", moldTextBox1.Text.ToString());
                         cmd.Parameters.AddWithValue("@forma2", moldTextBox2.Text.ToString());
@@ -102,7 +104,12 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     MessageBox.Show("Nie wybrałes projektu!");
                 }
             }
+
+           
+
         }
+        #endregion
+        #region Ładowanie projektów do comboboxa
         public void fillMold()
         {
             try
@@ -118,6 +125,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 MessageBox.Show("Nie można załadować listy projektów");
             }
         }
+        #endregion
+        #region Obsługa przycisków
         private void BtnMoldAddClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -127,6 +136,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             var projectAdd = new ProjectAdd();
             projectAdd.Show();
         }
+        #endregion
+        #region Uwalnianie przycisku dodania do bazy danych
         private void walidacjaMoldAdd()
         {
             if (String.IsNullOrEmpty(ComboProjectForMoldAdd.Text) && String.IsNullOrEmpty(moldTextBox1.Text) && String.IsNullOrEmpty(moldTextBox2.Text) && String.IsNullOrEmpty(moldTextBox3.Text) && String.IsNullOrEmpty(moldTextBox4.Text))
@@ -145,19 +156,19 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 BtnMoldAdd.BackColor = Color.Lime;
             }
         }
-        private void ComboProjectForMoldAdd_TextChanged(object sender, EventArgs e)
+        #endregion
+        #region Combobox index change
+        private void ComboProjectForMoldAdd_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             walidacjaMoldAdd();
-        }
-        private void ComboProjectForMoldAdd_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
             blokowaniePolTextowych();
             moldTextBox1.Text = String.Empty;
             moldTextBox2.Text = String.Empty;
             moldTextBox3.Text = String.Empty;
             moldTextBox4.Text = String.Empty;
         }
+        #endregion
+        #region Blokowanie pol tesktowych
         private void blokowaniePolTextowych()
         {
             if (ComboProjectForMoldAdd.Text.Length <= 0)
@@ -175,9 +186,28 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 moldTextBox4.Enabled = true;
             }
         }
-        private void walidacja(object sender, EventArgs e)
+
+        #endregion
+        #region Zmiana tekstu w textboxach
+        private void moldTextBox1_TextChanged(object sender, EventArgs e)
         {
             walidacjaMoldAdd();
         }
+
+        private void moldTextBox2_TextChanged(object sender, EventArgs e)
+        {
+            walidacjaMoldAdd();
+        }
+
+        private void moldTextBox3_TextChanged(object sender, EventArgs e)
+        {
+            walidacjaMoldAdd();
+        }
+
+        private void moldTextBox4_TextChanged(object sender, EventArgs e)
+        {
+            walidacjaMoldAdd();
+        }
+        #endregion
     }
 }

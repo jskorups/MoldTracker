@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,11 +37,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 try
                 {
-                    System.Data.SqlClient.SqlConnection sqlConnection1 =
-                    new System.Data.SqlClient.SqlConnection("Data Source=SLSVMDB01;Initial Catalog=MoldTracker;User Id=MoldTracker;Password=P1r4m1d4");
-                    //new System.Data.SqlClient.SqlConnection("Data Source=DESKTOP-7CV4P8D\\KUBALAP;Initial Catalog=MoldTracker;Integrated Security=True");
-
+                    string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
+                    System.Data.SqlClient.SqlConnection sqlConnection1 = new System.Data.SqlClient.SqlConnection(connectionStrin);
                     System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+                    cmd.CommandType = System.Data.CommandType.Text;
+
+
+
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = "select * from Projekt where projektNazwa = @nowyProjekt";
                     cmd.Parameters.AddWithValue("@nowyProjekt", TextBoxProjectNameAdd.Text.ToString());
@@ -63,7 +66,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                             cmd1.CommandType = System.Data.CommandType.Text;
                             reader.Close();
                             cmd1.CommandText = "insert into Projekt(projektNazwa) values(@nowyProjekt)";
-                            cmd1.Parameters.AddWithValue("@nowyProjekt", TextBoxProjectNameAdd.Text.ToString());
+                            cmd1.Parameters.AddWithValue("@nowyProjekt", TextBoxProjectNameAdd.Text.ToString().ToUpper());
                             cmd1.Connection = sqlConnection1;
                             cmd1.ExecuteNonQuery();
                             MessageBox.Show("Nowy projekt został dodany!");

@@ -45,7 +45,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             moldAdd.Show();
         }
 
-        private void circularButton4_Click(object sender, EventArgs e)
+        private void detailsAddCirc_Click_1(object sender, EventArgs e)
         {
             var detailAdd = new detailsAdd();
             detailAdd.Show();
