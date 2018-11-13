@@ -185,12 +185,12 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                                             reader.Close();
                                             System.Data.SqlClient.SqlCommand cmd1 = new System.Data.SqlClient.SqlCommand();
                                             cmd1.CommandType = System.Data.CommandType.Text;
-                                            cmd1.CommandText = "insert into Detal_komplet(formaNazwa, FK_projektId) values( @forma1,(select projektId from Projekt where projektNazwa = @projekt)),(@forma2,(select projektId from Projekt where projektNazwa = @projekt)),(@forma3,(select projektId from Projekt where projektNazwa = @projekt)),(@forma4,(select projektId from Projekt where projektNazwa = @projekt))";
-                                            cmd1.Parameters.AddWithValue("@forma1", moldTextBox1.Text.ToString());
-                                            cmd1.Parameters.AddWithValue("@forma2", moldTextBox2.Text.ToString());
-                                            cmd1.Parameters.AddWithValue("@forma3", moldTextBox3.Text.ToString());
-                                            cmd1.Parameters.AddWithValue("@forma4", moldTextBox4.Text.ToString());
-                                            cmd1.Parameters.AddWithValue("@projekt", ComboProjectForMoldAdd.Text.ToString());
+                                            cmd1.CommandText = "insert into Detal_komplet(detalNazwa, detalSAP, detalMaterial, detalKolor, FK_formaId, forma) values( @forma1,(select projektId from Projekt where projektNazwa = @projekt)),(@forma2,(select projektId from Projekt where projektNazwa = @projekt)),(@forma3,(select projektId from Projekt where projektNazwa = @projekt)),(@forma4,(select projektId from Projekt where projektNazwa = @projekt))";
+                                            //cmd1.Parameters.AddWithValue("@forma1", moldTextBox1.Text.ToString());
+                                            //cmd1.Parameters.AddWithValue("@forma2", moldTextBox2.Text.ToString());
+                                            //cmd1.Parameters.AddWithValue("@forma3", moldTextBox3.Text.ToString());
+                                            //cmd1.Parameters.AddWithValue("@forma4", moldTextBox4.Text.ToString());
+                                            //cmd1.Parameters.AddWithValue("@projekt", ComboProjectForMoldAdd.Text.ToString());
                                             cmd1.Connection = sqlConnection1;
                                             cmd1.ExecuteNonQuery();
                                             MessageBox.Show("Nowa forma została dodana!");
