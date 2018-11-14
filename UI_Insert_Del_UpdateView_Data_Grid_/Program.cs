@@ -18,7 +18,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         static void Main()
         {
 
-            CultureInfo myCI = new CultureInfo(ConfigurationManager.AppSettings["region"].ToString(), false);
+            //CultureInfo myCI = new CultureInfo(ConfigurationManager.AppSettings["region"].ToString(), false);
             #region settings
             // Clones myCI and modifies the DTFI and NFI instances associated with the clone.
             //CultureInfo myCIclone = (CultureInfo)myCI.Clone();
@@ -50,7 +50,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Planning());
+            Application.Run(new detailsAdd());
         }
 
         

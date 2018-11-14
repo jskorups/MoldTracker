@@ -57,18 +57,29 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         #region Uwalnianie przycisku dodania do bazy
         private void BtnDetailsAdd_validation()
         {
+            bool detal1 = !string.IsNullOrEmpty(detailName1.Text) && !string.IsNullOrEmpty(detailSap1.Text) && !string.IsNullOrEmpty(detailColor1.Text) && !string.IsNullOrEmpty(detailMaterial1.Text);
+            bool detal2 = !string.IsNullOrEmpty(detailName2.Text) && !string.IsNullOrEmpty(detailSap2.Text) && !string.IsNullOrEmpty(detailColor2.Text) && !string.IsNullOrEmpty(detailMaterial2.Text);
+            bool detal3 = !string.IsNullOrEmpty(detailName3.Text) && !string.IsNullOrEmpty(detailSap3.Text) && !string.IsNullOrEmpty(detailColor3.Text) && !string.IsNullOrEmpty(detailMaterial3.Text);
+            bool detal4 = !string.IsNullOrEmpty(detailName4.Text) && !string.IsNullOrEmpty(detailSap4.Text) && !string.IsNullOrEmpty(detailColor4.Text) && !string.IsNullOrEmpty(detailMaterial4.Text);
+
+
             if (string.IsNullOrEmpty(detailName1.Text) && string.IsNullOrEmpty(detailName2.Text) && string.IsNullOrEmpty(detailName3.Text) && string.IsNullOrEmpty(detailName4.Text))
             {
                 BtnDetailsAddd.Enabled = false;
                 BtnDetailsAddd.BackColor = Color.LightGray;
             }
-            else if (!string.IsNullOrEmpty(detailName1.Text) || !string.IsNullOrEmpty(detailName2.Text) || !string.IsNullOrEmpty(detailName3.Text) || !string.IsNullOrEmpty(detailName4.Text))
+            else if (detal1 == true || detal2 == true || detal3 == true || detal4 == true )
             {
                 BtnDetailsAddd.Enabled = true;
                 BtnDetailsAddd.BackColor = Color.Lime;
             }
+            else if (detal1 == false || detal2 == false || detal3 == false || detal4 == false)
+            {
+                BtnDetailsAddd.Enabled = false;
+                BtnDetailsAddd.BackColor = Color.LightGray;
+            }
 
-            // podanie bez name
+            // podanie bez name w texboxaxh dla 1,2,3,4
             else if (string.IsNullOrEmpty(detailName1.Text) && (!string.IsNullOrEmpty(detailSap1.Text) || !string.IsNullOrEmpty(detailColor1.Text) || !string.IsNullOrEmpty(detailColor1.Text) || !string.IsNullOrEmpty(detailColor1.Text)))
             {
                 BtnDetailsAddd.Enabled = false;
@@ -113,23 +124,88 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         }
         #endregion
         #region Zmiana tekstu w textboxach
+        #region detal 1
         private void detailName1_TextChanged(object sender, EventArgs e)
         {
             BtnDetailsAdd_validation();
         }
-        private void detailName2_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-        private void detailName3_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-        private void detailName4_TextChanged(object sender, EventArgs e)
+        private void detailSap1_TextChanged(object sender, EventArgs e)
         {
             BtnDetailsAdd_validation();
         }
 
+        private void detailMaterial1_TextChanged(object sender, EventArgs e)
+        {
+            BtnDetailsAdd_validation();
+        }
+
+        private void detailColor1_TextChanged(object sender, EventArgs e)
+        {
+            BtnDetailsAdd_validation();
+        }
+        #endregion
+        #region detal 2
+        private void detailName2_TextChanged(object sender, EventArgs e)
+        {
+            BtnDetailsAdd_validation();
+        }
+        private void detailSap2_TextChanged(object sender, EventArgs e)
+        {
+            BtnDetailsAdd_validation();
+        }
+
+        private void detailMaterial2_TextChanged(object sender, EventArgs e)
+        {
+            BtnDetailsAdd_validation();
+        }
+
+        private void detailColor2_TextChanged(object sender, EventArgs e)
+        {
+            BtnDetailsAdd_validation();
+        }
+        #endregion
+        #region detal 3
+        private void detailName3_TextChanged(object sender, EventArgs e)
+        {
+            BtnDetailsAdd_validation();
+        }
+        private void detailSap3_TextChanged(object sender, EventArgs e)
+        {
+            BtnDetailsAdd_validation();
+        }
+
+        private void detailMaterial3_TextChanged(object sender, EventArgs e)
+        {
+            BtnDetailsAdd_validation();
+        }
+
+        private void detailColor3_TextChanged(object sender, EventArgs e)
+        {
+            BtnDetailsAdd_validation();
+        }
+        #endregion
+        #region detal 4
+        private void detailName4_TextChanged(object sender, EventArgs e)
+        {
+            BtnDetailsAdd_validation();
+        }
+        private void detailSap4_TextChanged(object sender, EventArgs e)
+        {
+            BtnDetailsAdd_validation();
+        }
+
+        private void detailMaterial4_TextChanged(object sender, EventArgs e)
+        {
+            BtnDetailsAdd_validation();
+        }
+
+        private void detailColor4_TextChanged(object sender, EventArgs e)
+        {
+            BtnDetailsAdd_validation();
+        }
+        #endregion
+
+    
 
         #endregion
         #region Obługa przycisków
@@ -182,16 +258,23 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                                     {
                                         using (sqlConnection1)
                                         {
+
+                                //"values( @forma1,(select projektId from Projekt where projektNazwa = @projekt)),(@forma2,(select projektId from Projekt where projektNazwa = @projekt)),(@forma3,(select projektId from Projekt where projektNazwa = @projekt)),(@forma4,(select projektId from Projekt where projektNazwa = @projekt))";
+
                                             reader.Close();
                                             System.Data.SqlClient.SqlCommand cmd1 = new System.Data.SqlClient.SqlCommand();
                                             cmd1.CommandType = System.Data.CommandType.Text;
-                                            cmd1.CommandText = "insert into Detal_komplet(detalNazwa, detalSAP, detalMaterial, detalKolor, FK_formaId, forma) values( @forma1,(select projektId from Projekt where projektNazwa = @projekt)),(@forma2,(select projektId from Projekt where projektNazwa = @projekt)),(@forma3,(select projektId from Projekt where projektNazwa = @projekt)),(@forma4,(select projektId from Projekt where projektNazwa = @projekt))";
+                                            cmd1.CommandText = "insert into Detal_komplet(detalNazwa, detalSAP, detalMaterial, detalKolor, FK_formaId, Forma) values" +
+                                "( @detalNazwa1, @detalSap1, @detalMaterial1, @detalKolor1, (select formaId from Forma where formaNazwa = @formaNazwa), @forNazwa), " +
+                                "( @detalNazwa2, @detalSap2, @detalMaterial2, @detalKolor2, (select formaId from Forma where formaNazwa = @formaNazwa), @forNazwa), " +
+                                "( @detalNazwa3, @detalSap3, @detalMaterial3, @detalKolor3, (select formaId from Forma where formaNazwa = @formaNazwa), @forNazwa) , " +
+                                "( @detalNazwa4, @detalSap4, @detalMaterial4, @detalKolor4, (select formaId from Forma where formaNazwa = @formaNazwa), @forNazwa))" ;
                                             //cmd1.Parameters.AddWithValue("@forma1", moldTextBox1.Text.ToString());
                                             //cmd1.Parameters.AddWithValue("@forma2", moldTextBox2.Text.ToString());
                                             //cmd1.Parameters.AddWithValue("@forma3", moldTextBox3.Text.ToString());
                                             //cmd1.Parameters.AddWithValue("@forma4", moldTextBox4.Text.ToString());
                                             //cmd1.Parameters.AddWithValue("@projekt", ComboProjectForMoldAdd.Text.ToString());
-                                            cmd1.Connection = sqlConnection1;
+                            cmd1.Connection = sqlConnection1;
                                             cmd1.ExecuteNonQuery();
                                             MessageBox.Show("Nowa forma została dodana!");
                                             sqlConnection1.Close();
@@ -210,11 +293,19 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                         MessageBox.Show("Blad 2001 ");
                     }
                 }
-                //else
-                //{
-                //    MessageBox.Show("Nie wybrałes projektu!");
-                //}
-            }
+
+
+
+
+
+
+
+
+        //else
+        //{
+        //    MessageBox.Show("Nie wybrałes projektu!");
+        //}
+    }
         }
 //    }
 //}
