@@ -246,7 +246,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                         cmd.Parameters.AddWithValue("@Forma", comboBoxFormaDetailsADD.ToString());
                         cmd.Connection = sqlConnection1;
                         SqlDataReader reader = cmd.ExecuteReader();
-                        //pogusie
+                        
                                 if (reader.HasRows)
                                 {
                                     MessageBox.Show("Już istnieje");
@@ -258,25 +258,42 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                                     {
                                         using (sqlConnection1)
                                         {
-
-                                //"values( @forma1,(select projektId from Projekt where projektNazwa = @projekt)),(@forma2,(select projektId from Projekt where projektNazwa = @projekt)),(@forma3,(select projektId from Projekt where projektNazwa = @projekt)),(@forma4,(select projektId from Projekt where projektNazwa = @projekt))";
-
                                             reader.Close();
                                             System.Data.SqlClient.SqlCommand cmd1 = new System.Data.SqlClient.SqlCommand();
                                             cmd1.CommandType = System.Data.CommandType.Text;
                                             cmd1.CommandText = "insert into Detal_komplet(detalNazwa, detalSAP, detalMaterial, detalKolor, FK_formaId, Forma) values" +
-                                "( @detalNazwa1, @detalSap1, @detalMaterial1, @detalKolor1, (select formaId from Forma where formaNazwa = @formaNazwa), @forNazwa), " +
-                                "( @detalNazwa2, @detalSap2, @detalMaterial2, @detalKolor2, (select formaId from Forma where formaNazwa = @formaNazwa), @forNazwa), " +
-                                "( @detalNazwa3, @detalSap3, @detalMaterial3, @detalKolor3, (select formaId from Forma where formaNazwa = @formaNazwa), @forNazwa) , " +
-                                "( @detalNazwa4, @detalSap4, @detalMaterial4, @detalKolor4, (select formaId from Forma where formaNazwa = @formaNazwa), @forNazwa))" ;
-                                            //cmd1.Parameters.AddWithValue("@forma1", moldTextBox1.Text.ToString());
-                                            //cmd1.Parameters.AddWithValue("@forma2", moldTextBox2.Text.ToString());
-                                            //cmd1.Parameters.AddWithValue("@forma3", moldTextBox3.Text.ToString());
-                                            //cmd1.Parameters.AddWithValue("@forma4", moldTextBox4.Text.ToString());
-                                            //cmd1.Parameters.AddWithValue("@projekt", ComboProjectForMoldAdd.Text.ToString());
-                            cmd1.Connection = sqlConnection1;
+                                "( @detalNazwa1, @detalSap1, @detalMaterial1, @detalKolor1, (select formaId from Forma where formaNazwa = @formaNazwa), @formaNazwa), " +
+                                "( @detalNazwa2, @detalSap2, @detalMaterial2, @detalKolor2, (select formaId from Forma where formaNazwa = @formaNazwa), @formaNazwa), " +
+                                "( @detalNazwa3, @detalSap3, @detalMaterial3, @detalKolor3, (select formaId from Forma where formaNazwa = @formaNazwa), @formaNazwa) , " +
+                                "( @detalNazwa4, @detalSap4, @detalMaterial4, @detalKolor4, (select formaId from Forma where formaNazwa = @formaNazwa), @formaNazwa))";
+
+                                            cmd1.Parameters.AddWithValue("@detalNazwa1", detailName1.Text.ToString());
+                                            cmd1.Parameters.AddWithValue("@detalSap1", detailSap1.Text.ToString());
+                                            cmd1.Parameters.AddWithValue("@detalMaterial1", detailMaterial1.Text.ToString());
+                                            cmd1.Parameters.AddWithValue("@detalKolor1", detailColor1.Text.ToString());
+
+                                            cmd1.Parameters.AddWithValue("@detalNazwa2", detailName2.Text.ToString());
+                                            cmd1.Parameters.AddWithValue("@detalSap2", detailSap2.Text.ToString());
+                                            cmd1.Parameters.AddWithValue("@detalMaterial2", detailMaterial2.Text.ToString());
+                                            cmd1.Parameters.AddWithValue("@detalKolor2", detailColor2.Text.ToString());
+
+                                            cmd1.Parameters.AddWithValue("@detalNazwa3", detailName3.Text.ToString());
+                                            cmd1.Parameters.AddWithValue("@detalSap3", detailSap3.Text.ToString());
+                                            cmd1.Parameters.AddWithValue("@detalMaterial3", detailMaterial3.Text.ToString());
+                                            cmd1.Parameters.AddWithValue("@detalKolor3", detailColor3.Text.ToString());
+
+                                            cmd1.Parameters.AddWithValue("@detalNazwa4", detailName4.Text.ToString());
+                                            cmd1.Parameters.AddWithValue("@detalSap4", detailSap4.Text.ToString());
+                                            cmd1.Parameters.AddWithValue("@detalMaterial4", detailMaterial4.Text.ToString());
+                                            cmd1.Parameters.AddWithValue("@detalKolor4", detailColor4.Text.ToString());
+
+
+                                            cmd1.Parameters.AddWithValue("@formaNazwa", comboBoxFormaDetailsADD.Text.ToString());
+
+
+                                            cmd1.Connection = sqlConnection1;
                                             cmd1.ExecuteNonQuery();
-                                            MessageBox.Show("Nowa forma została dodana!");
+                                            MessageBox.Show("Nowy detal został dodany!");
                                             sqlConnection1.Close();
                                             this.Close();
                                         }

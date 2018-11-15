@@ -42,8 +42,10 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.addMoldFromAddDetails = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
             this.label23 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.addProjectFromAddDetails = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
             this.label22 = new System.Windows.Forms.Label();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.detailColor4 = new System.Windows.Forms.TextBox();
@@ -91,8 +93,6 @@
             this.BtnMoldAddClose = new System.Windows.Forms.Button();
             this.BtnDetailsAddd = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.addMoldFromAddDetails = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
-            this.addProjectFromAddDetails = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
@@ -304,6 +304,20 @@
             this.tableLayoutPanel12.Size = new System.Drawing.Size(114, 46);
             this.tableLayoutPanel12.TabIndex = 36;
             // 
+            // addMoldFromAddDetails
+            // 
+            this.addMoldFromAddDetails.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addMoldFromAddDetails.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addMoldFromAddDetails.BackgroundImage")));
+            this.addMoldFromAddDetails.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.addMoldFromAddDetails.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addMoldFromAddDetails.Location = new System.Drawing.Point(33, 20);
+            this.addMoldFromAddDetails.Margin = new System.Windows.Forms.Padding(2);
+            this.addMoldFromAddDetails.Name = "addMoldFromAddDetails";
+            this.addMoldFromAddDetails.Size = new System.Drawing.Size(47, 21);
+            this.addMoldFromAddDetails.TabIndex = 28;
+            this.addMoldFromAddDetails.UseVisualStyleBackColor = false;
+            this.addMoldFromAddDetails.Click += new System.EventHandler(this.addMoldFromAddDetails_Click_1);
+            // 
             // label23
             // 
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -332,6 +346,20 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.82051F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(114, 49);
             this.tableLayoutPanel7.TabIndex = 35;
+            // 
+            // addProjectFromAddDetails
+            // 
+            this.addProjectFromAddDetails.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addProjectFromAddDetails.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addProjectFromAddDetails.BackgroundImage")));
+            this.addProjectFromAddDetails.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.addProjectFromAddDetails.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addProjectFromAddDetails.Location = new System.Drawing.Point(33, 22);
+            this.addProjectFromAddDetails.Margin = new System.Windows.Forms.Padding(2);
+            this.addProjectFromAddDetails.Name = "addProjectFromAddDetails";
+            this.addProjectFromAddDetails.Size = new System.Drawing.Size(47, 22);
+            this.addProjectFromAddDetails.TabIndex = 28;
+            this.addProjectFromAddDetails.UseVisualStyleBackColor = false;
+            this.addProjectFromAddDetails.Click += new System.EventHandler(this.addProjectFromAddDetails_Click_1);
             // 
             // label22
             // 
@@ -937,34 +965,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.94444F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(651, 720);
             this.tableLayoutPanel1.TabIndex = 3;
-            // 
-            // addMoldFromAddDetails
-            // 
-            this.addMoldFromAddDetails.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.addMoldFromAddDetails.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addMoldFromAddDetails.BackgroundImage")));
-            this.addMoldFromAddDetails.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.addMoldFromAddDetails.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.addMoldFromAddDetails.Location = new System.Drawing.Point(33, 20);
-            this.addMoldFromAddDetails.Margin = new System.Windows.Forms.Padding(2);
-            this.addMoldFromAddDetails.Name = "addMoldFromAddDetails";
-            this.addMoldFromAddDetails.Size = new System.Drawing.Size(47, 21);
-            this.addMoldFromAddDetails.TabIndex = 28;
-            this.addMoldFromAddDetails.UseVisualStyleBackColor = false;
-            this.addMoldFromAddDetails.Click += new System.EventHandler(this.addMoldFromAddDetails_Click_1);
-            // 
-            // addProjectFromAddDetails
-            // 
-            this.addProjectFromAddDetails.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.addProjectFromAddDetails.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addProjectFromAddDetails.BackgroundImage")));
-            this.addProjectFromAddDetails.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.addProjectFromAddDetails.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.addProjectFromAddDetails.Location = new System.Drawing.Point(33, 22);
-            this.addProjectFromAddDetails.Margin = new System.Windows.Forms.Padding(2);
-            this.addProjectFromAddDetails.Name = "addProjectFromAddDetails";
-            this.addProjectFromAddDetails.Size = new System.Drawing.Size(47, 22);
-            this.addProjectFromAddDetails.TabIndex = 28;
-            this.addProjectFromAddDetails.UseVisualStyleBackColor = false;
-            this.addProjectFromAddDetails.Click += new System.EventHandler(this.addProjectFromAddDetails_Click_1);
             // 
             // detailsAdd
             // 
