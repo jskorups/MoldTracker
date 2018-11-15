@@ -15,6 +15,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         public Planning()
         {
             InitializeComponent();
+            dataGridPlanning.CurrentCell = null;
         }
 
         private void OdswiezDane()
