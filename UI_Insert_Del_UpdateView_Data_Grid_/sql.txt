@@ -1,7 +1,4 @@
 ﻿
-1. Sprawdzic date w maintain czy zgodna z formatem na komputerach
-2. Czy wystepuje sql jumping
-3. Detalizowany menustrip nie dziala jak sie kliknie gdzies z boku
-4. Ustawia zły format slectedId gdy sie klinie na cos innego niz int
-//5. Dorobic ustawienia
-6. Wylogowanie
+1. Akcje w planningu po nacisnieciu przycisku
+2. Napisac maila ze dorobilem kolumne
+3. Minimum daty dla dodawania próby

@@ -26,7 +26,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             dateTimeTerminRealizacjiGodzinaStart.Format = DateTimePickerFormat.Custom;
             dateTimeTerminRealizacjiGodzinaKoniec.Format = DateTimePickerFormat.Custom;
             dateTimeTerminRealizacjiGodzinaStart.CustomFormat = "HH:mm";
-            dateTimeTerminRealizacjiGodzinaKoniec.CustomFormat = "HH:mm";
+            dateTimeTerminRealizacjiGodzinaStart.
+
+         //   dateTimeTerminRealizacjiGodzinaKoniec.CustomFormat = "HH:mm";
             dateTimeTerminRealizacjiGodzinaStart.ShowUpDown = true;
             dateTimeTerminRealizacjiGodzinaKoniec.ShowUpDown = true;
 
@@ -224,7 +226,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             comboForma.SelectedIndex = -1;
             comboCel.SelectedIndex = -1;
             comboMaszyna.SelectedIndex = -1;
-            //   comboTrwanie.SelectedIndex = -1;
             comboOdpowiedzialny.SelectedIndex = -1;
             txtKolor.Text = "";
             txtMaterial.Text = "";
@@ -234,7 +235,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             dateTimeTerminRealizacjiGodzinaStart.Value = DateTimePicker.MinimumDateTime;
             dateTimeTerminRealizacjiGodzinaKoniec.Value = DateTimePicker.MinimumDateTime;
 
-            MessageBox.Show(dateTimeTerminRealizacjiDzien.Value.Date.ToString());
         }
         #endregion
         #region - Wczytanie detalu po zmianie Formy

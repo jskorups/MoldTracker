@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Planning));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,10 +48,11 @@
             this.dailyBtn = new System.Windows.Forms.Button();
             this.panel = new System.Windows.Forms.Panel();
             this.dataGridPlanning = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.Realizuj = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Inny = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,6 +63,7 @@
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPlanning)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -73,7 +79,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.14354F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.85646F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1274, 849);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1223, 661);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -89,7 +95,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1268, 80);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1217, 61);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
             // pictureBox1
@@ -100,7 +106,7 @@
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(94, 74);
+            this.pictureBox1.Size = new System.Drawing.Size(94, 55);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -110,11 +116,11 @@
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(103, 6);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(103, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.88679F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(909, 67);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(909, 55);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // label6
@@ -124,23 +130,23 @@
             this.label6.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(297, 67);
+            this.label6.Size = new System.Drawing.Size(297, 55);
             this.label6.TabIndex = 0;
             this.label6.Text = "Planowanie";
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.52715F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.47285F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.29111F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.70889F));
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel6, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 89);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 70);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1268, 757);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1217, 588);
             this.tableLayoutPanel3.TabIndex = 6;
             // 
             // tableLayoutPanel5
@@ -151,12 +157,12 @@
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel7, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.panel, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(314, 3);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(298, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.859155F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.14085F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(951, 751);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(916, 582);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel7
@@ -177,16 +183,16 @@
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(941, 67);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(906, 50);
             this.tableLayoutPanel7.TabIndex = 2;
             // 
             // button5
             // 
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Location = new System.Drawing.Point(824, 3);
+            this.button5.Location = new System.Drawing.Point(794, 3);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(114, 61);
+            this.button5.Size = new System.Drawing.Size(109, 44);
             this.button5.TabIndex = 5;
             this.button5.UseVisualStyleBackColor = true;
             // 
@@ -194,9 +200,9 @@
             // 
             this.monthlyBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.monthlyBtn.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.monthlyBtn.Location = new System.Drawing.Point(582, 3);
+            this.monthlyBtn.Location = new System.Drawing.Point(561, 3);
             this.monthlyBtn.Name = "monthlyBtn";
-            this.monthlyBtn.Size = new System.Drawing.Size(236, 61);
+            this.monthlyBtn.Size = new System.Drawing.Size(227, 44);
             this.monthlyBtn.TabIndex = 4;
             this.monthlyBtn.Text = "Plan miesiąca";
             this.monthlyBtn.UseVisualStyleBackColor = true;
@@ -205,9 +211,9 @@
             // 
             this.weeklyBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.weeklyBtn.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.weeklyBtn.Location = new System.Drawing.Point(342, 3);
+            this.weeklyBtn.Location = new System.Drawing.Point(330, 3);
             this.weeklyBtn.Name = "weeklyBtn";
-            this.weeklyBtn.Size = new System.Drawing.Size(234, 61);
+            this.weeklyBtn.Size = new System.Drawing.Size(225, 44);
             this.weeklyBtn.TabIndex = 3;
             this.weeklyBtn.Text = "Plan tygodnia";
             this.weeklyBtn.UseVisualStyleBackColor = true;
@@ -218,7 +224,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 61);
+            this.button1.Size = new System.Drawing.Size(107, 44);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -226,9 +232,9 @@
             // 
             this.dailyBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dailyBtn.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dailyBtn.Location = new System.Drawing.Point(120, 3);
+            this.dailyBtn.Location = new System.Drawing.Point(116, 3);
             this.dailyBtn.Name = "dailyBtn";
-            this.dailyBtn.Size = new System.Drawing.Size(216, 61);
+            this.dailyBtn.Size = new System.Drawing.Size(208, 44);
             this.dailyBtn.TabIndex = 2;
             this.dailyBtn.Text = "Plan dnia";
             this.dailyBtn.UseVisualStyleBackColor = true;
@@ -237,68 +243,117 @@
             // 
             this.panel.Controls.Add(this.dataGridPlanning);
             this.panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel.Location = new System.Drawing.Point(5, 80);
+            this.panel.Location = new System.Drawing.Point(5, 63);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(941, 666);
+            this.panel.Size = new System.Drawing.Size(906, 514);
             this.panel.TabIndex = 3;
             // 
             // dataGridPlanning
             // 
-            this.dataGridPlanning.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridPlanning.AllowUserToAddRows = false;
+            this.dataGridPlanning.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridPlanning.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridPlanning.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridPlanning.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridPlanning.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridPlanning.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Realizuj,
             this.Inny});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridPlanning.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridPlanning.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridPlanning.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridPlanning.Location = new System.Drawing.Point(0, 0);
             this.dataGridPlanning.Name = "dataGridPlanning";
-            this.dataGridPlanning.Size = new System.Drawing.Size(941, 666);
+            this.dataGridPlanning.RowHeadersVisible = false;
+            this.dataGridPlanning.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGridPlanning.Size = new System.Drawing.Size(906, 514);
             this.dataGridPlanning.TabIndex = 0;
             this.dataGridPlanning.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridPlanning_CellContentClick);
-            // 
-            // Realizuj
-            // 
-            this.Realizuj.Frozen = true;
-            this.Realizuj.HeaderText = "Realizuj";
-            this.Realizuj.Name = "Realizuj";
-            this.Realizuj.Text = "Realizuj";
-            this.Realizuj.Width = 50;
-            // 
-            // Inny
-            // 
-            this.Inny.Frozen = true;
-            this.Inny.HeaderText = "Inny termin";
-            this.Inny.Name = "Inny";
-            this.Inny.Width = 64;
             // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.monthCalendar1, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel8, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.07296F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.92704F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(307, 753);
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.78767F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.21233F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(291, 584);
             this.tableLayoutPanel6.TabIndex = 1;
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 1;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.monthCalendar1, 0, 0);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 1;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(285, 202);
+            this.tableLayoutPanel8.TabIndex = 0;
             // 
             // monthCalendar1
             // 
             this.monthCalendar1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.monthCalendar1.Location = new System.Drawing.Point(19, 17);
-            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(7);
+            this.monthCalendar1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monthCalendar1.Location = new System.Drawing.Point(29, 20);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
+            // 
+            // Realizuj
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Realizuj.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Realizuj.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Realizuj.Frozen = true;
+            this.Realizuj.HeaderText = "Potwierdź termin";
+            this.Realizuj.Name = "Realizuj";
+            this.Realizuj.Text = "Realizuj";
+            this.Realizuj.Width = 111;
+            // 
+            // Inny
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Inny.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Inny.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Inny.Frozen = true;
+            this.Inny.HeaderText = "Inny termin";
+            this.Inny.Name = "Inny";
+            this.Inny.Width = 76;
             // 
             // Planning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1274, 849);
+            this.ClientSize = new System.Drawing.Size(1223, 661);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Planning";
@@ -315,6 +370,7 @@
             this.panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPlanning)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -336,8 +392,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.DataGridView dataGridPlanning;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.DataGridViewButtonColumn Realizuj;
         private System.Windows.Forms.DataGridViewButtonColumn Inny;
     }
