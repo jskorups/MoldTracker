@@ -26,10 +26,17 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             dateTimeTerminRealizacjiGodzinaStart.Format = DateTimePickerFormat.Custom;
             dateTimeTerminRealizacjiGodzinaKoniec.Format = DateTimePickerFormat.Custom;
             dateTimeTerminRealizacjiGodzinaStart.CustomFormat = "HH:mm";
-            dateTimeTerminRealizacjiGodzinaStart.
+            dateTimeTerminRealizacjiGodzinaStart.MinDate = DateTime.Parse("6:00:00");
 
-         //   dateTimeTerminRealizacjiGodzinaKoniec.CustomFormat = "HH:mm";
+            dateTimeTerminRealizacjiGodzinaKoniec.CustomFormat = "HH:mm";
+            dateTimeTerminRealizacjiGodzinaKoniec.MinDate = DateTime.Parse("8:00:00");
+
+            dateTimeTerminRealizacjiDzien.Format = DateTimePickerFormat.Custom;
+            dateTimeTerminRealizacjiDzien.CustomFormat = "dd-MM-yyyy";
+
+
             dateTimeTerminRealizacjiGodzinaStart.ShowUpDown = true;
+            dateTimeTerminRealizacjiGodzinaKoniec.ShowUpDown = true;
             dateTimeTerminRealizacjiGodzinaKoniec.ShowUpDown = true;
 
             txtKolor.ReadOnly = true;

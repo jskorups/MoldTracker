@@ -21,10 +21,32 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         
 
         List<string> listaStatusów = new List<string>();
+
         public Maintaining()
         {
+
+            //dateTimePickerMaintainOd.CustomFormat = "ddd dd MMM yyyy";
+
+            //dateTimeTerminRealizacjiGodzinaStart.MinDate = DateTime.Parse("6:00:00");
+
+            //dateTimeTerminRealizacjiGodzinaKoniec.CustomFormat = "HH:mm";
+            //dateTimeTerminRealizacjiGodzinaKoniec.MinDate = DateTime.Parse("8:00:00");
+            //dateTimeTerminRealizacjiGodzinaStart.ShowUpDown = true;
+            //dateTimeTerminRealizacjiGodzinaKoniec.ShowUpDown = true;
+
+
             InitializeComponent();
             WczytajProbyZalogowanego();
+       
+        }
+        private void setdatetime()
+        {
+            //dateTimePickerMaintainOd.
+            dateTimePickerMaintainOd.Format = DateTimePickerFormat.Custom;
+            dateTimePickerMaintainOd.CustomFormat = "yyyy-MM-dd";
+
+            dateTimePickerMaintainDo.Format = DateTimePickerFormat.Custom;
+            dateTimePickerMaintainDo.CustomFormat = "yyyy-MM-dd";
         }
 
         #region Wczytywanie prób zalogowanego
@@ -32,7 +54,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             try
             {
-                DataSet ds = sqlQuery.GetDataFromSql("select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny', czasTrwania as 'Czas' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby = 'Zaplanowana' and odpowiedzialny =(select nazwisko from Uzytkownicy where nazwauzytkownika = 'sgil')");
+                DataSet ds = sqlQuery.GetDataFromSql("select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny', czasTrwania as 'Czas' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby = 'Zaplanowana' and odpowiedzialny =(select nazwisko from Uzytkownicy where nazwauzytkownika = '" + loginClass.loginMain + "')");
                 dataGridViewProbyLogged.DataSource = ds.Tables[0];
                 this.dataGridViewProbyLogged.Columns["Cel"].Visible = false;
                 this.dataGridViewProbyLogged.Columns["Cel2"].Visible = false;
@@ -289,7 +311,11 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 var sqlCommand = new SqlCommand();
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
-                var sql = "select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny', czasTrwania as 'Czas' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby in ({0}) and odpowiedzialny = (select nazwisko from Uzytkownicy where nazwauzytkownika = '" + loginClass.loginMain + "') and dzienStart between '" + dateTimePickerMaintainOd.Value.Date + "' and '" + dateTimePickerMaintainDo.Value.Date + "'";
+
+                string dzienOd = dateTimePickerMaintainDo.Value.Date.ToString();
+                string dzienDo = dateTimePickerMaintainDo.Value.Date.ToString();
+
+                var sql = "select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny', czasTrwania as 'Czas' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby in ({0}) and odpowiedzialny = (select nazwisko from Uzytkownicy where nazwauzytkownika = '" + loginClass.loginMain + "') and dzienStart between '" + DateTime.Parse(dzienOd) + "' and '" + DateTime.Parse(dzienDo) + "'";
 
                 listaStatusów.Add("Zaplanowana");
 
@@ -360,6 +386,14 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
         }
         #endregion
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(dateTimePickerMaintainDo.Value.Date.ToString());
+            MessageBox.Show(dateTimePickerMaintainOd.Value.Date.ToString());
+        }
+
+     
     }
 }
 
