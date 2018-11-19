@@ -33,7 +33,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             //myCI.DateTimeFormat.ShortDatePattern = shortUkDateFormatString;
             //myCI.DateTimeFormat.ShortTimePattern = shortUkTimeFormatString;
             #endregion
-            //System.Threading.Thread.CurrentThread.CurrentCulture = myCI;
+           //System.Threading.Thread.CurrentThread.CurrentCulture = myCI;
 
             try
             {
@@ -50,7 +50,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Logowanie());
+            Application.Run(new Planning());
         }
 
         

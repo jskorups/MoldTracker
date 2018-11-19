@@ -315,13 +315,14 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 string dzienOd = dateTimePickerMaintainDo.Value.Date.ToString();
                 string dzienDo = dateTimePickerMaintainDo.Value.Date.ToString();
 
-                var sql = "select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny', czasTrwania as 'Czas' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby in ({0}) and odpowiedzialny = (select nazwisko from Uzytkownicy where nazwauzytkownika = '" + loginClass.loginMain + "') and dzienStart between '" + DateTime.Parse(dzienOd) + "' and '" + DateTime.Parse(dzienDo) + "'";
+                var sql = "select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny', czasTrwania as 'Czas' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby in ({0}) and odpowiedzialny = (select nazwisko from Uzytkownicy where nazwauzytkownika = '" + loginClass.loginMain + "') and dzienStart between '" + dateTimePickerMaintainOd.Value.ToDateTimeString() + "' and '" + dateTimePickerMaintainDo.Value.ToDateTimeString() + "'";
 
                 listaStatusów.Add("Zaplanowana");
 
                 DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", listaStatusów.Select(x => $"\'{x}\'"))));
                 DataView source = new DataView(dP.Tables[0]);
                 dataGridViewProbyLogged.DataSource = source;
+
             }
         }
         #endregion
@@ -389,8 +390,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(dateTimePickerMaintainDo.Value.Date.ToString());
-            MessageBox.Show(dateTimePickerMaintainOd.Value.Date.ToString());
+            MessageBox.Show(dateTimePickerMaintainDo.Value.ToDateTimeString());
+            MessageBox.Show(dateTimePickerMaintainOd.Value.ToDateTimeString());
         }
 
      
