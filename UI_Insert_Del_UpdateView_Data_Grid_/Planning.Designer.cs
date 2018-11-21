@@ -345,7 +345,7 @@
             // 
             this.monthCalendar1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.monthCalendar1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthCalendar1.Location = new System.Drawing.Point(29, 20);
+            this.monthCalendar1.Location = new System.Drawing.Point(9, 20);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             // 

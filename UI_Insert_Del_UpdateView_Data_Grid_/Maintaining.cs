@@ -123,11 +123,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     // }
                     string templateFilePath = @"\\slssfil01\\Pub-MoldTracker\\Templates\\proba_template.xlsx";
 
-
                     string newFilePath = @"\\slssfil01\\Pub-MoldTracker\\Raporty\\" + idProby + "_" + nazwaProjektu + "_" + nazwaFormy + "_" + dzienStart.Replace(@"/", "_") + ".xlsx";
-
-
-
 
                     File.Copy(@"" + templateFilePath + "", @"" + newFilePath + "");
 
@@ -147,6 +143,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     x.Range["AC2"].Value = System.DateTime.Today;
                     x.Range["AC5"].Value = czasTrw;
 
+                    
                     sheet.Close(true, Type.Missing, Type.Missing);
                     excel.Quit();
                     MessageBox.Show("Pomyślnie stworzono plik");
@@ -198,7 +195,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 {
                     Microsoft.Office.Interop.Excel.Application oXL = new Microsoft.Office.Interop.Excel.Application();
                     oXL.Visible = true;
-                    oXL.DisplayAlerts = false;
+                    oXL.DisplayAlerts = true;
                     oXL.Workbooks.Open(@"\\slssfil01\\Pub-MoldTracker\\Raporty\\" + idProby + "_" + nazwaProjektu + "_" + nazwaFormy + "_" + dzienStart.Replace(@"/", "_") + ".xlsx");
                 }
                 else

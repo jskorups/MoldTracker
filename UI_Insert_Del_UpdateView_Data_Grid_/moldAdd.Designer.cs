@@ -45,8 +45,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.addProjectFromAddMold = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
             this.label11 = new System.Windows.Forms.Label();
+            this.addProjectFromAddMold = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -284,6 +284,18 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(100, 64);
             this.tableLayoutPanel7.TabIndex = 15;
             // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(8, 4);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(83, 16);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Dodaj projekt:";
+            // 
             // addProjectFromAddMold
             // 
             this.addProjectFromAddMold.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -297,18 +309,6 @@
             this.addProjectFromAddMold.TabIndex = 28;
             this.addProjectFromAddMold.UseVisualStyleBackColor = false;
             this.addProjectFromAddMold.Click += new System.EventHandler(this.addProjectFromAddMold_Click);
-            // 
-            // label11
-            // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(8, 4);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(83, 16);
-            this.label11.TabIndex = 29;
-            this.label11.Text = "Dodaj projekt:";
             // 
             // tableLayoutPanel1
             // 
@@ -370,10 +370,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(313, 67);
+            this.label6.Size = new System.Drawing.Size(310, 67);
             this.label6.TabIndex = 0;
             this.label6.Text = "Dodaj formę/formy";
             // 

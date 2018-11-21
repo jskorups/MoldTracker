@@ -113,7 +113,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 var sqlCommand = new SqlCommand();
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
-                var sql = "select proj.projektNazwa as 'Projekt', COUNT(prob.projektId) as 'Liczba prob' from Proby prob LEFT JOIN Projekt proj ON proj.projektId = prob.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerStatisticsOd.Value.Date + "' and '" + dateTimePickerStatisticsDo.Value.Date + "' group by proj.projektNazwa;";
+                var sql = "select proj.projektNazwa as 'Projekt', COUNT(prob.projektId) as 'Liczba prob' from Proby prob LEFT JOIN Projekt proj ON proj.projektId = prob.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerStatisticsOd.Value.ToDateTimeString() + "' and '" + dateTimePickerStatisticsDo.Value.ToDateTimeString() + "' group by proj.projektNazwa;";
 
                 DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneProjekty.Select(x => $"\'{x}\'"))));
                 DataView source = new DataView(dP.Tables[0]);
@@ -172,7 +172,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 var sqlCommand = new SqlCommand();
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
-                var sql = "select masz.maszynaNumer as 'Maszyna', COUNT(prob.maszynaId) as 'Liczba prob' from Proby prob LEFT JOIN Maszyna masz ON masz.maszynaId = prob.maszynaId where masz.maszynaNumer in ({0}) and dzienStart between '" + dateTimePickerMachinesOd.Value.Date + "' and '" + dateTimePickerMachinesDo.Value.Date + "' group by masz.maszynaNumer;";
+                var sql = "select masz.maszynaNumer as 'Maszyna', COUNT(prob.maszynaId) as 'Liczba prob' from Proby prob LEFT JOIN Maszyna masz ON masz.maszynaId = prob.maszynaId where masz.maszynaNumer in ({0}) and dzienStart between '" + dateTimePickerMachinesOd.Value.ToDateTimeString() + "' and '" + dateTimePickerMachinesDo.Value.ToDateTimeString() + "' group by masz.maszynaNumer;";
 
                 DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneMaszyny.Select(x => $"\'{x}\'"))));
                 DataView source = new DataView(dP.Tables[0]);
@@ -341,7 +341,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 var sqlCommand = new SqlCommand();
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
-                var sql = "select proj.projektNazwa as 'Projekt' , sum(((DATEPART(hour, czasTrwania) * 3600) + (DATEPART(minute, czasTrwania) * 60) + DATEPART(second, czasTrwania))/3600) as 'Czas' from Proby prob left join Projekt proj on prob.projektId = proj.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerTimeProjectsOd.Value.Date + "' and '" + dateTimePickerTimeProjectsDo.Value.Date + "' group by proj.projektNazwa;";
+                var sql = "select proj.projektNazwa as 'Projekt' , sum(((DATEPART(hour, czasTrwania) * 3600) + (DATEPART(minute, czasTrwania) * 60) + DATEPART(second, czasTrwania))/3600) as 'Czas' from Proby prob left join Projekt proj on prob.projektId = proj.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerStatisticsOd.Value.ToDateTimeString() + "' and '" + dateTimePickerStatisticsDo.Value.ToDateTimeString() + "' group by proj.projektNazwa;";
 
                 DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetaleDlaProjektówCzas.Select(x => $"\'{x}\'"))));
                 DataView source = new DataView(dP.Tables[0]);

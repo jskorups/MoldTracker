@@ -2,12 +2,5 @@
 1. Akcje w planningu po nacisnieciu przycisku
 2. Napisac maila ze dorobilem kolumne
 3. Minimum daty dla dodawania próby
-
-
-select prob.probaId as 'Id próby', proj.projektNazwa 
-as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa 
-as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny', 
-czasTrwania as 'Czas' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId 
-and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby 
-in ('Zaplanowana') and odpowiedzialny = (select nazwisko from Uzytkownicy where nazwauzytkownika = 'dwlod') 
-and dzienStart between '20-11-2018' and '20-11-2018';
+4. Pytanie o zamkykanie przy otwieraniu excela - zapisywania zmian - OK
+5. Pobieranie danych do statystyk tylko dla prób zakonczonych
