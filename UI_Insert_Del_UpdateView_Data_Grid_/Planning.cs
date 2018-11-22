@@ -67,8 +67,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             else if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 senderGrid.Columns[e.ColumnIndex] == Inny)
             {
-
-               
+                var innyTermin = new innyTermincs();
+                innyTermin.ShowDialog();   
             }
 
 

@@ -28,7 +28,5 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
             return ds;
         }
-
-       
     }
 }

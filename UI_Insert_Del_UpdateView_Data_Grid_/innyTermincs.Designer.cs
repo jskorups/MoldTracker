@@ -35,10 +35,13 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.addProjectFromAddMold = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
             this.label14 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.addProjectFromAddMold = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,9 +59,9 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.66013F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.33987F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(550, 272);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.63277F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.36723F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(618, 177);
             this.tableLayoutPanel1.TabIndex = 29;
             // 
             // tableLayoutPanel2
@@ -74,7 +77,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(544, 85);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(612, 72);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
             // pictureBox1
@@ -83,9 +86,9 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(92, 69);
+            this.pictureBox1.Size = new System.Drawing.Size(92, 66);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -95,11 +98,11 @@
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(103, 9);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(103, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.88679F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(438, 67);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(459, 66);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // label6
@@ -109,47 +112,38 @@
             this.label6.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(282, 67);
+            this.label6.Size = new System.Drawing.Size(282, 66);
             this.label6.TabIndex = 0;
             this.label6.Text = "Inny termin";
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 228F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.Controls.Add(this.label14, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label2, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.dateTimePicker1, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.dateTimePicker2, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.dateTimePicker3, 2, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 94);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 81);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 98F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(544, 175);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(612, 93);
             this.tableLayoutPanel3.TabIndex = 7;
-            // 
-            // addProjectFromAddMold
-            // 
-            this.addProjectFromAddMold.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.addProjectFromAddMold.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addProjectFromAddMold.BackgroundImage")));
-            this.addProjectFromAddMold.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.addProjectFromAddMold.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.addProjectFromAddMold.Location = new System.Drawing.Point(79, 56);
-            this.addProjectFromAddMold.Margin = new System.Windows.Forms.Padding(2);
-            this.addProjectFromAddMold.Name = "addProjectFromAddMold";
-            this.addProjectFromAddMold.Size = new System.Drawing.Size(47, 32);
-            this.addProjectFromAddMold.TabIndex = 30;
-            this.addProjectFromAddMold.UseVisualStyleBackColor = false;
             // 
             // label14
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(51, 30);
+            this.label14.Location = new System.Drawing.Point(68, 13);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(68, 17);
             this.label14.TabIndex = 1;
@@ -160,28 +154,64 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(251, 30);
+            this.label1.Location = new System.Drawing.Point(279, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
+            this.label1.Size = new System.Drawing.Size(52, 17);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Początek";
+            this.label1.Text = "Koniec";
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(437, 30);
+            this.label2.Location = new System.Drawing.Point(487, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 17);
+            this.label2.Size = new System.Drawing.Size(43, 17);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Początek";
+            this.label2.Text = "Dzień";
+            // 
+            // addProjectFromAddMold
+            // 
+            this.addProjectFromAddMold.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addProjectFromAddMold.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addProjectFromAddMold.BackgroundImage")));
+            this.addProjectFromAddMold.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.addProjectFromAddMold.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addProjectFromAddMold.Location = new System.Drawing.Point(113, 8);
+            this.addProjectFromAddMold.Margin = new System.Windows.Forms.Padding(2);
+            this.addProjectFromAddMold.Name = "addProjectFromAddMold";
+            this.addProjectFromAddMold.Size = new System.Drawing.Size(47, 32);
+            this.addProjectFromAddMold.TabIndex = 30;
+            this.addProjectFromAddMold.UseVisualStyleBackColor = false;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePicker1.Location = new System.Drawing.Point(5, 57);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(195, 20);
+            this.dateTimePicker1.TabIndex = 4;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePicker2.Location = new System.Drawing.Point(208, 57);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(195, 20);
+            this.dateTimePicker2.TabIndex = 5;
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Location = new System.Drawing.Point(411, 47);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(196, 20);
+            this.dateTimePicker3.TabIndex = 6;
             // 
             // innyTermincs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 272);
+            this.ClientSize = new System.Drawing.Size(618, 177);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.addProjectFromAddMold);
             this.Name = "innyTermincs";
@@ -209,5 +239,8 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
     }
 }
