@@ -18,7 +18,24 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             InitializeComponent();
             fillProjects();
-            BtnDetailsAdd_validation();
+            //BtnDetailsAdd_validation();
+            BtnDetailsAddd.Enabled = false;
+
+
+            foreach (Control ctr in tableLayoutPanel5.Controls)
+            {
+                if (ctr.Tag != null && ctr.Tag.ToString() == "detal")
+                {
+                  
+                    foreach (Control ctrInPanel in ((TableLayoutPanel)ctr).Controls)
+                    {
+                        if (ctrInPanel is TextBox)
+                        {
+                            ((TextBox)ctrInPanel).TextChanged += detailNameTextChanged;
+                        }
+                    }
+                }
+            }
         }
 
         #region Ładowanie listy projektów
@@ -54,54 +71,55 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             blokowaniePolTextowych();
         }
+
         #region Uwalnianie przycisku dodania do bazy
-        private void BtnDetailsAdd_validation()
-        {
-            bool detal1 = !string.IsNullOrEmpty(detailName1.Text) && !string.IsNullOrEmpty(detailSap1.Text) && !string.IsNullOrEmpty(detailColor1.Text) && !string.IsNullOrEmpty(detailMaterial1.Text);
-            bool detal2 = !string.IsNullOrEmpty(detailName2.Text) && !string.IsNullOrEmpty(detailSap2.Text) && !string.IsNullOrEmpty(detailColor2.Text) && !string.IsNullOrEmpty(detailMaterial2.Text);
-            bool detal3 = !string.IsNullOrEmpty(detailName3.Text) && !string.IsNullOrEmpty(detailSap3.Text) && !string.IsNullOrEmpty(detailColor3.Text) && !string.IsNullOrEmpty(detailMaterial3.Text);
-            bool detal4 = !string.IsNullOrEmpty(detailName4.Text) && !string.IsNullOrEmpty(detailSap4.Text) && !string.IsNullOrEmpty(detailColor4.Text) && !string.IsNullOrEmpty(detailMaterial4.Text);
+        //private void BtnDetailsAdd_validation()
+        //{
+        //    bool detal1 = !string.IsNullOrEmpty(detailName1.Text) && !string.IsNullOrEmpty(detailSap1.Text) && !string.IsNullOrEmpty(detailColor1.Text) && !string.IsNullOrEmpty(detailMaterial1.Text);
+        //    bool detal2 = !string.IsNullOrEmpty(detailName2.Text) && !string.IsNullOrEmpty(detailSap2.Text) && !string.IsNullOrEmpty(detailColor2.Text) && !string.IsNullOrEmpty(detailMaterial2.Text);
+        //    bool detal3 = !string.IsNullOrEmpty(detailName3.Text) && !string.IsNullOrEmpty(detailSap3.Text) && !string.IsNullOrEmpty(detailColor3.Text) && !string.IsNullOrEmpty(detailMaterial3.Text);
+        //    bool detal4 = !string.IsNullOrEmpty(detailName4.Text) && !string.IsNullOrEmpty(detailSap4.Text) && !string.IsNullOrEmpty(detailColor4.Text) && !string.IsNullOrEmpty(detailMaterial4.Text);
 
 
-            if (string.IsNullOrEmpty(detailName1.Text) && string.IsNullOrEmpty(detailName2.Text) && string.IsNullOrEmpty(detailName3.Text) && string.IsNullOrEmpty(detailName4.Text))
-            {
-                BtnDetailsAddd.Enabled = false;
-                BtnDetailsAddd.BackColor = Color.LightGray;
-            }
-            else if (detal1 == true || detal2 == true || detal3 == true || detal4 == true)
-            {
-                BtnDetailsAddd.Enabled = true;
-                BtnDetailsAddd.BackColor = Color.Lime;
-            }
-            else if (detal1 == false || detal2 == false || detal3 == false || detal4 == false)
-            {
-                BtnDetailsAddd.Enabled = false;
-                BtnDetailsAddd.BackColor = Color.LightGray;
-            }
+        //    if (string.IsNullOrEmpty(detailName1.Text) && string.IsNullOrEmpty(detailName2.Text) && string.IsNullOrEmpty(detailName3.Text) && string.IsNullOrEmpty(detailName4.Text))
+        //    {
+        //        BtnDetailsAddd.Enabled = false;
+        //        BtnDetailsAddd.BackColor = Color.LightGray;
+        //    }
+        //    else if (detal1 == true || detal2 == true || detal3 == true || detal4 == true)
+        //    {
+        //        BtnDetailsAddd.Enabled = true;
+        //        BtnDetailsAddd.BackColor = Color.Lime;
+        //    }
+        //    else if (detal1 == false || detal2 == false || detal3 == false || detal4 == false)
+        //    {
+        //        BtnDetailsAddd.Enabled = false;
+        //        BtnDetailsAddd.BackColor = Color.LightGray;
+        //    }
 
-            // podanie bez name w texboxaxh dla 1,2,3,4
-            else if (string.IsNullOrEmpty(detailName1.Text) && (!string.IsNullOrEmpty(detailSap1.Text) || !string.IsNullOrEmpty(detailColor1.Text) || !string.IsNullOrEmpty(detailColor1.Text) || !string.IsNullOrEmpty(detailColor1.Text)))
-            {
-                BtnDetailsAddd.Enabled = false;
-                BtnDetailsAddd.BackColor = Color.LightGray;
-            }
-            else if (string.IsNullOrEmpty(detailName2.Text) && (!string.IsNullOrEmpty(detailSap2.Text) || !string.IsNullOrEmpty(detailColor2.Text) || !string.IsNullOrEmpty(detailColor2.Text) || !string.IsNullOrEmpty(detailColor2.Text)))
-            {
-                BtnDetailsAddd.Enabled = false;
-                BtnDetailsAddd.BackColor = Color.LightGray;
-            }
-            else if (string.IsNullOrEmpty(detailName3.Text) && (!string.IsNullOrEmpty(detailSap3.Text) || !string.IsNullOrEmpty(detailColor3.Text) || !string.IsNullOrEmpty(detailColor3.Text) || !string.IsNullOrEmpty(detailColor3.Text)))
-            {
-                BtnDetailsAddd.Enabled = false;
-                BtnDetailsAddd.BackColor = Color.LightGray;
-            }
-            else if (string.IsNullOrEmpty(detailName4.Text) && (!string.IsNullOrEmpty(detailSap4.Text) || !string.IsNullOrEmpty(detailColor4.Text) || !string.IsNullOrEmpty(detailColor4.Text) || !string.IsNullOrEmpty(detailColor4.Text)))
-            {
-                BtnDetailsAddd.Enabled = false;
-                BtnDetailsAddd.BackColor = Color.LightGray;
-            }
+        //    // podanie bez name w texboxaxh dla 1,2,3,4
+        //    else if (string.IsNullOrEmpty(detailName1.Text) && (!string.IsNullOrEmpty(detailSap1.Text) || !string.IsNullOrEmpty(detailColor1.Text) || !string.IsNullOrEmpty(detailColor1.Text) || !string.IsNullOrEmpty(detailColor1.Text)))
+        //    {
+        //        BtnDetailsAddd.Enabled = false;
+        //        BtnDetailsAddd.BackColor = Color.LightGray;
+        //    }
+        //    else if (string.IsNullOrEmpty(detailName2.Text) && (!string.IsNullOrEmpty(detailSap2.Text) || !string.IsNullOrEmpty(detailColor2.Text) || !string.IsNullOrEmpty(detailColor2.Text) || !string.IsNullOrEmpty(detailColor2.Text)))
+        //    {
+        //        BtnDetailsAddd.Enabled = false;
+        //        BtnDetailsAddd.BackColor = Color.LightGray;
+        //    }
+        //    else if (string.IsNullOrEmpty(detailName3.Text) && (!string.IsNullOrEmpty(detailSap3.Text) || !string.IsNullOrEmpty(detailColor3.Text) || !string.IsNullOrEmpty(detailColor3.Text) || !string.IsNullOrEmpty(detailColor3.Text)))
+        //    {
+        //        BtnDetailsAddd.Enabled = false;
+        //        BtnDetailsAddd.BackColor = Color.LightGray;
+        //    }
+        //    else if (string.IsNullOrEmpty(detailName4.Text) && (!string.IsNullOrEmpty(detailSap4.Text) || !string.IsNullOrEmpty(detailColor4.Text) || !string.IsNullOrEmpty(detailColor4.Text) || !string.IsNullOrEmpty(detailColor4.Text)))
+        //    {
+        //        BtnDetailsAddd.Enabled = false;
+        //        BtnDetailsAddd.BackColor = Color.LightGray;
+        //    }
 
-        }
+        //}
         #endregion
         #region Blokowanie pol tekstowych
 
@@ -124,86 +142,32 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         }
         #endregion
         #region Zmiana tekstu w textboxach
-        #region detal 1
-        private void detailName1_TextChanged(object sender, EventArgs e)
+   
+        private void detailNameTextChanged(object sender, EventArgs e)
         {
-            BtnDetailsAdd_validation();
-        }
-        private void detailSap1_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
+            BtnDetailsAddd.Enabled =  BtnDetailsAdd_validation();
         }
 
-        private void detailMaterial1_TextChanged(object sender, EventArgs e)
+        private bool BtnDetailsAdd_validation()
         {
-            BtnDetailsAdd_validation();
+            foreach(Control ctr in tableLayoutPanel5.Controls)
+            {
+                if(ctr.Tag!=null && ctr.Tag.ToString() == "detal")
+                {
+                    int wypelnione = 0;
+                    foreach(Control ctrInPanel in ((TableLayoutPanel)ctr).Controls)
+                    {
+                        if(ctrInPanel is TextBox)
+                        {
+                            if (ctrInPanel.Text.Length > 0) wypelnione++;
+                        }
+                    }
+                    if (wypelnione != 0 && wypelnione != 4) return false;
+                }
+            }
+            return true;
         }
 
-        private void detailColor1_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-        #endregion
-        #region detal 2
-        private void detailName2_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-        private void detailSap2_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-
-        private void detailMaterial2_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-
-        private void detailColor2_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-        #endregion
-        #region detal 3
-        private void detailName3_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-        private void detailSap3_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-
-        private void detailMaterial3_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-
-        private void detailColor3_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-        #endregion
-        #region detal 4
-        private void detailName4_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-        private void detailSap4_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-
-        private void detailMaterial4_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-
-        private void detailColor4_TextChanged(object sender, EventArgs e)
-        {
-            BtnDetailsAdd_validation();
-        }
-        #endregion
 
 
 
@@ -304,6 +268,11 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     MessageBox.Show("Nie można załadowac do bazy danych");
                 }
             }
+        }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 

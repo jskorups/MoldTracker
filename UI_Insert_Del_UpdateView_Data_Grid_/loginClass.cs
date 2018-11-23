@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
-    class loginClass
+    public static class loginClass
     {
         private static string v_loginMain = "";
 
@@ -16,5 +16,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             get { return v_loginMain; }
             set { v_loginMain = value; }
         }
+
+
+        public static string PoziomUprawnien { get { return sqlQuery.GetTop1Sql("").ToString(); } }
+
+  
     }
 }

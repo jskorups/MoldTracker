@@ -286,6 +286,7 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(639, 565);
             this.tableLayoutPanel5.TabIndex = 0;
+            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
             // 
             // tableLayoutPanel12
             // 
@@ -396,6 +397,7 @@
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel11.Size = new System.Drawing.Size(307, 109);
             this.tableLayoutPanel11.TabIndex = 28;
+            this.tableLayoutPanel11.Tag = "detal";
             // 
             // detailColor4
             // 
@@ -407,7 +409,6 @@
             this.detailColor4.Name = "detailColor4";
             this.detailColor4.Size = new System.Drawing.Size(224, 22);
             this.detailColor4.TabIndex = 7;
-            this.detailColor4.TextChanged += new System.EventHandler(this.detailColor4_TextChanged);
             // 
             // label32
             // 
@@ -452,7 +453,6 @@
             this.detailName4.Name = "detailName4";
             this.detailName4.Size = new System.Drawing.Size(224, 22);
             this.detailName4.TabIndex = 3;
-            this.detailName4.TextChanged += new System.EventHandler(this.detailName4_TextChanged);
             // 
             // detailSap4
             // 
@@ -464,7 +464,6 @@
             this.detailSap4.Name = "detailSap4";
             this.detailSap4.Size = new System.Drawing.Size(224, 22);
             this.detailSap4.TabIndex = 4;
-            this.detailSap4.TextChanged += new System.EventHandler(this.detailSap4_TextChanged);
             // 
             // detailMaterial4
             // 
@@ -476,7 +475,6 @@
             this.detailMaterial4.Name = "detailMaterial4";
             this.detailMaterial4.Size = new System.Drawing.Size(224, 22);
             this.detailMaterial4.TabIndex = 5;
-            this.detailMaterial4.TextChanged += new System.EventHandler(this.detailMaterial4_TextChanged);
             // 
             // label35
             // 
@@ -512,6 +510,7 @@
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel10.Size = new System.Drawing.Size(307, 105);
             this.tableLayoutPanel10.TabIndex = 27;
+            this.tableLayoutPanel10.Tag = "detal";
             // 
             // detailColor3
             // 
@@ -523,7 +522,6 @@
             this.detailColor3.Name = "detailColor3";
             this.detailColor3.Size = new System.Drawing.Size(224, 22);
             this.detailColor3.TabIndex = 7;
-            this.detailColor3.TextChanged += new System.EventHandler(this.detailColor3_TextChanged);
             // 
             // label28
             // 
@@ -568,7 +566,6 @@
             this.detailName3.Name = "detailName3";
             this.detailName3.Size = new System.Drawing.Size(224, 22);
             this.detailName3.TabIndex = 3;
-            this.detailName3.TextChanged += new System.EventHandler(this.detailName3_TextChanged);
             // 
             // detailSap3
             // 
@@ -580,7 +577,6 @@
             this.detailSap3.Name = "detailSap3";
             this.detailSap3.Size = new System.Drawing.Size(224, 22);
             this.detailSap3.TabIndex = 4;
-            this.detailSap3.TextChanged += new System.EventHandler(this.detailSap3_TextChanged);
             // 
             // detailMaterial3
             // 
@@ -592,7 +588,6 @@
             this.detailMaterial3.Name = "detailMaterial3";
             this.detailMaterial3.Size = new System.Drawing.Size(224, 22);
             this.detailMaterial3.TabIndex = 5;
-            this.detailMaterial3.TextChanged += new System.EventHandler(this.detailMaterial3_TextChanged);
             // 
             // label31
             // 
@@ -628,6 +623,7 @@
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.Size = new System.Drawing.Size(307, 105);
             this.tableLayoutPanel9.TabIndex = 26;
+            this.tableLayoutPanel9.Tag = "detal";
             // 
             // detailColor2
             // 
@@ -639,7 +635,6 @@
             this.detailColor2.Name = "detailColor2";
             this.detailColor2.Size = new System.Drawing.Size(224, 22);
             this.detailColor2.TabIndex = 7;
-            this.detailColor2.TextChanged += new System.EventHandler(this.detailColor2_TextChanged);
             // 
             // label24
             // 
@@ -684,7 +679,6 @@
             this.detailName2.Name = "detailName2";
             this.detailName2.Size = new System.Drawing.Size(224, 22);
             this.detailName2.TabIndex = 3;
-            this.detailName2.TextChanged += new System.EventHandler(this.detailName2_TextChanged);
             // 
             // detailSap2
             // 
@@ -696,7 +690,6 @@
             this.detailSap2.Name = "detailSap2";
             this.detailSap2.Size = new System.Drawing.Size(224, 22);
             this.detailSap2.TabIndex = 4;
-            this.detailSap2.TextChanged += new System.EventHandler(this.detailSap2_TextChanged);
             // 
             // detailMaterial2
             // 
@@ -708,7 +701,6 @@
             this.detailMaterial2.Name = "detailMaterial2";
             this.detailMaterial2.Size = new System.Drawing.Size(224, 22);
             this.detailMaterial2.TabIndex = 5;
-            this.detailMaterial2.TextChanged += new System.EventHandler(this.detailMaterial2_TextChanged);
             // 
             // label27
             // 
@@ -816,6 +808,7 @@
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(307, 105);
             this.tableLayoutPanel8.TabIndex = 18;
+            this.tableLayoutPanel8.Tag = "detal";
             // 
             // detailColor1
             // 
@@ -827,7 +820,6 @@
             this.detailColor1.Name = "detailColor1";
             this.detailColor1.Size = new System.Drawing.Size(224, 22);
             this.detailColor1.TabIndex = 7;
-            this.detailColor1.TextChanged += new System.EventHandler(this.detailColor1_TextChanged);
             // 
             // label13
             // 
@@ -872,7 +864,6 @@
             this.detailName1.Name = "detailName1";
             this.detailName1.Size = new System.Drawing.Size(224, 22);
             this.detailName1.TabIndex = 3;
-            this.detailName1.TextChanged += new System.EventHandler(this.detailName1_TextChanged);
             // 
             // detailSap1
             // 
@@ -884,7 +875,6 @@
             this.detailSap1.Name = "detailSap1";
             this.detailSap1.Size = new System.Drawing.Size(224, 22);
             this.detailSap1.TabIndex = 4;
-            this.detailSap1.TextChanged += new System.EventHandler(this.detailSap1_TextChanged);
             // 
             // detailMaterial1
             // 
@@ -896,7 +886,6 @@
             this.detailMaterial1.Name = "detailMaterial1";
             this.detailMaterial1.Size = new System.Drawing.Size(224, 22);
             this.detailMaterial1.TabIndex = 5;
-            this.detailMaterial1.TextChanged += new System.EventHandler(this.detailMaterial1_TextChanged);
             // 
             // label16
             // 
@@ -1025,15 +1014,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox comboBoxFormaDetailsADD;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.TextBox detailColor1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox detailName1;
-        private System.Windows.Forms.TextBox detailSap1;
-        private System.Windows.Forms.TextBox detailMaterial1;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
         private System.Windows.Forms.TextBox detailColor4;
         private System.Windows.Forms.Label label32;
@@ -1067,5 +1047,14 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private CircularButton addProjectFromAddDetails;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.TextBox detailColor1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox detailName1;
+        private System.Windows.Forms.TextBox detailSap1;
+        private System.Windows.Forms.TextBox detailMaterial1;
+        private System.Windows.Forms.Label label16;
     }
 }

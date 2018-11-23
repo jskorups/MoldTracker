@@ -28,5 +28,20 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
             return ds;
         }
+
+        public static object GetTop1Sql(string query)
+        {
+            object result = null;
+            string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(connectionStrin);
+
+
+            using (con)
+            {
+                con.Open();
+                result = new SqlCommand(query, con).ExecuteScalar();
+            }
+            return result;
+        }
     }
 }

@@ -16,17 +16,15 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         public Planning()
         {
             InitializeComponent();
-            dataGridPlanning.Columns["Realizuj"].Width = 90;
-            dataGridPlanning.Columns["Inny"].Width = 90;
-
-
+            
         }
-
-
 
         private void OdswiezDane()
         {
-            DataSet ds = sqlQuery.GetDataFromSql("  select prob.probaId as 'Id', proj.projektNazwa as 'Projekt', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', godzStart as 'Start', godzKoniec as 'Koniec', dzienStart as 'Dzień', odpowiedzialny as 'Odpowiedzialny', statusProby as 'Status' from Projekt proj, Forma form, Maszyna  masz, Detal_komplet det,proby prob where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId ;");
+            DataSet ds = sqlQuery.GetDataFromSql("  select prob.probaId as 'Id', proj.projektNazwa as 'Projekt', form.formaNazwa as 'Forma', " +
+                "masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', godzStart as 'Start', godzKoniec as 'Koniec', dzienStart as 'Dzień', " +
+                "odpowiedzialny as 'Odpowiedzialny', statusProby as 'Status' from Projekt proj, Forma form, Maszyna  masz, Detal_komplet det,proby " +
+                "prob where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId ;");
             dataGridPlanning.DataSource = ds.Tables[0];
 
         }
@@ -61,14 +59,14 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 {
                     MessageBox.Show("Nie można dodać potwierdzenia. Skontaktuj się z administratorem.");
                 }
-
-
             }
             else if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 senderGrid.Columns[e.ColumnIndex] == Inny)
             {
                 var innyTermin = new innyTermincs();
-                innyTermin.ShowDialog();   
+                innyTermin.ShowDialog();
+
+               
             }
 
 
