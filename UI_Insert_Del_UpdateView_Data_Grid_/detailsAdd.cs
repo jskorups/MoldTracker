@@ -20,6 +20,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             fillProjects();
             //BtnDetailsAdd_validation();
             BtnDetailsAddd.Enabled = false;
+          
 
 
             foreach (Control ctr in tableLayoutPanel5.Controls)
@@ -146,6 +147,14 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         private void detailNameTextChanged(object sender, EventArgs e)
         {
             BtnDetailsAddd.Enabled =  BtnDetailsAdd_validation();
+            if (BtnDetailsAdd_validation() == false)
+            {
+                BtnDetailsAddd.BackColor = Color.Red;
+            }
+            else if (BtnDetailsAdd_validation() == true)
+            {
+                BtnDetailsAddd.BackColor = Color.Green;
+            }
         }
 
         private bool BtnDetailsAdd_validation()
@@ -162,10 +171,11 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                             if (ctrInPanel.Text.Length > 0) wypelnione++;
                         }
                     }
-                    if (wypelnione != 0 && wypelnione != 4) return false;
+                    if (wypelnione != 0 && wypelnione != 4)  
+                        return false;
                 }
             }
-            return true;
+            return true;       
         }
 
 

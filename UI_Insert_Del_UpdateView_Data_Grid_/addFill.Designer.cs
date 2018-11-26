@@ -54,12 +54,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimeTerminRealizacjiDzien = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimeTerminRealizacjiGodzinaKoniec = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimeTerminRealizacjiGodzinaStart = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.txtMaterial = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -87,6 +84,9 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.dateTimeTerminRealizacjiDzien = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeTerminRealizacjiGodzinaKoniec = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeTerminRealizacjiGodzinaStart = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel14.SuspendLayout();
@@ -460,7 +460,7 @@
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.35971F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.64029F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
             this.tableLayoutPanel12.Controls.Add(this.tableLayoutPanel19, 3, 0);
             this.tableLayoutPanel12.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.tableLayoutPanel15, 2, 0);
@@ -478,29 +478,15 @@
             // 
             this.tableLayoutPanel19.ColumnCount = 1;
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel19.Controls.Add(this.dateTimeTerminRealizacjiDzien, 0, 0);
+            this.tableLayoutPanel19.Controls.Add(this.dateTimeTerminRealizacjiGodzinaKoniec, 0, 0);
             this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(415, 2);
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(414, 2);
             this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 1;
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(162, 36);
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(163, 36);
             this.tableLayoutPanel19.TabIndex = 15;
-            // 
-            // dateTimeTerminRealizacjiDzien
-            // 
-            this.dateTimeTerminRealizacjiDzien.CalendarFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimeTerminRealizacjiDzien.Checked = false;
-            this.dateTimeTerminRealizacjiDzien.CustomFormat = "dd/MM/yyyy";
-            this.dateTimeTerminRealizacjiDzien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimeTerminRealizacjiDzien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimeTerminRealizacjiDzien.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimeTerminRealizacjiDzien.Location = new System.Drawing.Point(2, 2);
-            this.dateTimeTerminRealizacjiDzien.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimeTerminRealizacjiDzien.Name = "dateTimeTerminRealizacjiDzien";
-            this.dateTimeTerminRealizacjiDzien.Size = new System.Drawing.Size(158, 27);
-            this.dateTimeTerminRealizacjiDzien.TabIndex = 14;
             // 
             // label9
             // 
@@ -517,33 +503,21 @@
             // 
             this.tableLayoutPanel15.ColumnCount = 1;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel15.Controls.Add(this.dateTimeTerminRealizacjiGodzinaKoniec, 0, 0);
+            this.tableLayoutPanel15.Controls.Add(this.dateTimeTerminRealizacjiGodzinaStart, 0, 0);
             this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel15.Location = new System.Drawing.Point(284, 2);
             this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 1;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(127, 36);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(126, 36);
             this.tableLayoutPanel15.TabIndex = 13;
-            // 
-            // dateTimeTerminRealizacjiGodzinaKoniec
-            // 
-            this.dateTimeTerminRealizacjiGodzinaKoniec.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimeTerminRealizacjiGodzinaKoniec.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimeTerminRealizacjiGodzinaKoniec.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimeTerminRealizacjiGodzinaKoniec.Location = new System.Drawing.Point(2, 2);
-            this.dateTimeTerminRealizacjiGodzinaKoniec.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimeTerminRealizacjiGodzinaKoniec.Name = "dateTimeTerminRealizacjiGodzinaKoniec";
-            this.dateTimeTerminRealizacjiGodzinaKoniec.Size = new System.Drawing.Size(123, 27);
-            this.dateTimeTerminRealizacjiGodzinaKoniec.TabIndex = 1;
-            this.dateTimeTerminRealizacjiGodzinaKoniec.Value = new System.DateTime(2018, 3, 8, 0, 0, 0, 0);
             // 
             // tableLayoutPanel16
             // 
             this.tableLayoutPanel16.ColumnCount = 1;
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel16.Controls.Add(this.dateTimeTerminRealizacjiGodzinaStart, 0, 0);
+            this.tableLayoutPanel16.Controls.Add(this.dateTimeTerminRealizacjiDzien, 0, 0);
             this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel16.Location = new System.Drawing.Point(152, 2);
             this.tableLayoutPanel16.Margin = new System.Windows.Forms.Padding(2);
@@ -552,18 +526,6 @@
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel16.Size = new System.Drawing.Size(128, 36);
             this.tableLayoutPanel16.TabIndex = 14;
-            // 
-            // dateTimeTerminRealizacjiGodzinaStart
-            // 
-            this.dateTimeTerminRealizacjiGodzinaStart.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimeTerminRealizacjiGodzinaStart.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimeTerminRealizacjiGodzinaStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimeTerminRealizacjiGodzinaStart.Location = new System.Drawing.Point(2, 2);
-            this.dateTimeTerminRealizacjiGodzinaStart.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimeTerminRealizacjiGodzinaStart.Name = "dateTimeTerminRealizacjiGodzinaStart";
-            this.dateTimeTerminRealizacjiGodzinaStart.Size = new System.Drawing.Size(124, 27);
-            this.dateTimeTerminRealizacjiGodzinaStart.TabIndex = 1;
-            this.dateTimeTerminRealizacjiGodzinaStart.Value = new System.DateTime(2018, 3, 8, 0, 0, 0, 0);
             // 
             // tableLayoutPanel10
             // 
@@ -708,7 +670,7 @@
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.73456F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.26544F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
             this.tableLayoutPanel18.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel18.Controls.Add(this.btnClear, 2, 0);
             this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -736,7 +698,7 @@
             this.btnClear.BackColor = System.Drawing.Color.Yellow;
             this.btnClear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnClear.Location = new System.Drawing.Point(374, 2);
+            this.btnClear.Location = new System.Drawing.Point(373, 2);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(80, 28);
@@ -875,33 +837,71 @@
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(480, 1);
+            this.label17.Location = new System.Drawing.Point(475, 1);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(43, 17);
+            this.label17.Size = new System.Drawing.Size(52, 17);
             this.label17.TabIndex = 3;
-            this.label17.Text = "Dzień";
+            this.label17.Text = "Koniec";
             // 
             // label16
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(330, 1);
+            this.label16.Location = new System.Drawing.Point(322, 1);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(52, 17);
+            this.label16.Size = new System.Drawing.Size(68, 17);
             this.label16.TabIndex = 2;
-            this.label16.Text = "Koniec";
+            this.label16.Text = "Początek";
             // 
             // label14
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(184, 1);
+            this.label14.Location = new System.Drawing.Point(196, 1);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(68, 17);
+            this.label14.Size = new System.Drawing.Size(43, 17);
             this.label14.TabIndex = 0;
-            this.label14.Text = "Początek";
+            this.label14.Text = "Dzień";
+            // 
+            // dateTimeTerminRealizacjiDzien
+            // 
+            this.dateTimeTerminRealizacjiDzien.CalendarFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimeTerminRealizacjiDzien.Checked = false;
+            this.dateTimeTerminRealizacjiDzien.CustomFormat = "dd/MM/yyyy";
+            this.dateTimeTerminRealizacjiDzien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimeTerminRealizacjiDzien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimeTerminRealizacjiDzien.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimeTerminRealizacjiDzien.Location = new System.Drawing.Point(2, 2);
+            this.dateTimeTerminRealizacjiDzien.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimeTerminRealizacjiDzien.Name = "dateTimeTerminRealizacjiDzien";
+            this.dateTimeTerminRealizacjiDzien.Size = new System.Drawing.Size(124, 27);
+            this.dateTimeTerminRealizacjiDzien.TabIndex = 15;
+            // 
+            // dateTimeTerminRealizacjiGodzinaKoniec
+            // 
+            this.dateTimeTerminRealizacjiGodzinaKoniec.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimeTerminRealizacjiGodzinaKoniec.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimeTerminRealizacjiGodzinaKoniec.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimeTerminRealizacjiGodzinaKoniec.Location = new System.Drawing.Point(2, 2);
+            this.dateTimeTerminRealizacjiGodzinaKoniec.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimeTerminRealizacjiGodzinaKoniec.Name = "dateTimeTerminRealizacjiGodzinaKoniec";
+            this.dateTimeTerminRealizacjiGodzinaKoniec.Size = new System.Drawing.Size(159, 27);
+            this.dateTimeTerminRealizacjiGodzinaKoniec.TabIndex = 2;
+            this.dateTimeTerminRealizacjiGodzinaKoniec.Value = new System.DateTime(2018, 3, 8, 0, 0, 0, 0);
+            // 
+            // dateTimeTerminRealizacjiGodzinaStart
+            // 
+            this.dateTimeTerminRealizacjiGodzinaStart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimeTerminRealizacjiGodzinaStart.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimeTerminRealizacjiGodzinaStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimeTerminRealizacjiGodzinaStart.Location = new System.Drawing.Point(2, 2);
+            this.dateTimeTerminRealizacjiGodzinaStart.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimeTerminRealizacjiGodzinaStart.Name = "dateTimeTerminRealizacjiGodzinaStart";
+            this.dateTimeTerminRealizacjiGodzinaStart.Size = new System.Drawing.Size(122, 27);
+            this.dateTimeTerminRealizacjiGodzinaStart.TabIndex = 4;
+            this.dateTimeTerminRealizacjiGodzinaStart.Value = new System.DateTime(2018, 3, 8, 0, 0, 0, 0);
             // 
             // addFill
             // 
@@ -1006,13 +1006,13 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboOdpowiedzialny;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
-        private System.Windows.Forms.DateTimePicker dateTimeTerminRealizacjiDzien;
-        private System.Windows.Forms.DateTimePicker dateTimeTerminRealizacjiGodzinaKoniec;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
-        private System.Windows.Forms.DateTimePicker dateTimeTerminRealizacjiGodzinaStart;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel23;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DateTimePicker dateTimeTerminRealizacjiGodzinaKoniec;
+        private System.Windows.Forms.DateTimePicker dateTimeTerminRealizacjiGodzinaStart;
+        private System.Windows.Forms.DateTimePicker dateTimeTerminRealizacjiDzien;
     }
 }

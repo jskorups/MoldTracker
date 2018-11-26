@@ -15,6 +15,33 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         public innyTermincs()
         {
             InitializeComponent();
+
+            #region - Format czasu dla DateTimePickera
+
+
+
+            dateTimeInnyStart.Format = DateTimePickerFormat.Custom;
+            dateTimeInnyStart.CustomFormat = "HH:mm";
+            dateTimeInnyStart.MinDate = DateTime.Parse("6:00:00");
+
+            dateTimeInnyKoniec.Format = DateTimePickerFormat.Custom;
+            dateTimeInnyKoniec.CustomFormat = "HH:mm";
+            dateTimeInnyKoniec.MinDate = DateTime.Parse("8:00:00");
+
+            dateTimeInnyDzien.Format = DateTimePickerFormat.Custom;
+            dateTimeInnyDzien.CustomFormat = "dd-MM-yyyy";
+
+            dateTimeInnyStart.ShowUpDown = true;
+            dateTimeInnyKoniec.ShowUpDown = true;
+            dateTimeInnyDzien.ShowUpDown = true;
+
+            #endregion
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
