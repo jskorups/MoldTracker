@@ -50,7 +50,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new detailsAdd());
+            Application.Run(new moldAdd());
         }
 
         

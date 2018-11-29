@@ -209,5 +209,11 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             walidacjaMoldAdd();
         }
         #endregion
+
+        private void addProjectFromMoldAdd_Click(object sender, EventArgs e)
+        {
+            var newProj = new ProjectAdd();
+            newProj.ShowDialog();
+        }
     }
 }

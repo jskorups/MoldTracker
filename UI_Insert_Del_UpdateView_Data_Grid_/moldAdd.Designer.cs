@@ -56,6 +56,7 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnMoldAddClose = new System.Windows.Forms.Button();
             this.BtnMoldAdd = new System.Windows.Forms.Button();
+            this.addProjectFromMoldAdd = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -274,6 +275,7 @@
             this.tableLayoutPanel7.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Controls.Add(this.addProjectFromMoldAdd, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.label11, 0, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(455, 4);
             this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2);
@@ -431,6 +433,20 @@
             this.BtnMoldAdd.UseVisualStyleBackColor = false;
             this.BtnMoldAdd.Click += new System.EventHandler(this.BtnMoldAdd_Click);
             // 
+            // addProjectFromMoldAdd
+            // 
+            this.addProjectFromMoldAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addProjectFromMoldAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addProjectFromMoldAdd.BackgroundImage")));
+            this.addProjectFromMoldAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.addProjectFromMoldAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addProjectFromMoldAdd.Location = new System.Drawing.Point(26, 32);
+            this.addProjectFromMoldAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.addProjectFromMoldAdd.Name = "addProjectFromMoldAdd";
+            this.addProjectFromMoldAdd.Size = new System.Drawing.Size(47, 22);
+            this.addProjectFromMoldAdd.TabIndex = 30;
+            this.addProjectFromMoldAdd.UseVisualStyleBackColor = false;
+            this.addProjectFromMoldAdd.Click += new System.EventHandler(this.addProjectFromMoldAdd_Click);
+            // 
             // moldAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -485,5 +501,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private CircularButton addProjectFromAddMold;
         private System.Windows.Forms.Label label11;
+        private CircularButton addProjectFromMoldAdd;
     }
 }
