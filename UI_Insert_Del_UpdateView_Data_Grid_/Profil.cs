@@ -20,7 +20,31 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         public Profil()
         {
             InitializeComponent();
+            imageLoading();
+              
         }
+
+        private void imageLoading()
+        {
+            string partialName = loginClass.loginMain;
+            DirectoryInfo hdDirectoryInWhichToSearch = new DirectoryInfo(@"C:\test\");
+            FileInfo[] filesInDir = hdDirectoryInWhichToSearch.GetFiles(partialName + "*.*");
+
+            if (filesInDir.Length > 0)
+            {
+                foreach (FileInfo foundFile in filesInDir)
+                {
+                    string fullName = foundFile.FullName;
+                    pictureBox2.Image = Image.FromFile(fullName);
+
+                }
+            }
+            else if (filesInDir.Length < 0)
+            {
+                return;
+            }
+        }
+
 
         private void Profil_Load(object sender, EventArgs e)
         {
