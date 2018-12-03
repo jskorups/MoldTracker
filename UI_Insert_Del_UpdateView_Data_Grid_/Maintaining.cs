@@ -25,16 +25,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         public Maintaining()
         {
 
-            //dateTimePickerMaintainOd.CustomFormat = "ddd dd MMM yyyy";
-
-            //dateTimeTerminRealizacjiGodzinaStart.MinDate = DateTime.Parse("6:00:00");
-
-            //dateTimeTerminRealizacjiGodzinaKoniec.CustomFormat = "HH:mm";
-            //dateTimeTerminRealizacjiGodzinaKoniec.MinDate = DateTime.Parse("8:00:00");
-            //dateTimeTerminRealizacjiGodzinaStart.ShowUpDown = true;
-            //dateTimeTerminRealizacjiGodzinaKoniec.ShowUpDown = true;
-
-
             InitializeComponent();
             WczytajProbyZalogowanego();
        
@@ -54,7 +44,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             try
             {
-                DataSet ds = sqlQuery.GetDataFromSql("select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny', czasTrwania as 'Czas' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby = 'Zaplanowana' and odpowiedzialny =(select nazwisko from Uzytkownicy where nazwauzytkownika = '" + loginClass.loginMain + "')");
+                DataSet ds = sqlQuery.GetDataFromSql("select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny', czasTrwania as 'Czas' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby = 'Potwierdzona'");
+                //DataSet ds = sqlQuery.GetDataFromSql("select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny', czasTrwania as 'Czas' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby = 'Potwierdzona' and odpowiedzialny =(select nazwisko from Uzytkownicy where nazwauzytkownika = '" + loginClass.loginMain + "')");
+
                 dataGridViewProbyLogged.DataSource = ds.Tables[0];
                 this.dataGridViewProbyLogged.Columns["Cel"].Visible = false;
                 this.dataGridViewProbyLogged.Columns["Cel2"].Visible = false;
@@ -79,7 +71,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             string nazwaCel = dataGridViewProbyLogged.SelectedCells[5].Value.ToString();
             string dzienStart = dataGridViewProbyLogged.SelectedCells[7].Value.ToString();
             string nazwaCel2 = dataGridViewProbyLogged.SelectedCells[9].Value.ToString();
-            string odpowiedzialny = dataGridViewProbyLogged.SelectedCells[10].Value.ToString();
+
+            
+
+            string odpowiedzialny = (sqlQuery.GetTop1Sql("select imie + ' ' + nazwisko from uzytkownicy where nazwauzytkownika = '"+loginClass.loginMain +"'")).ToString();
             string czasTrw = dataGridViewProbyLogged.SelectedCells[11].Value.ToString();
 
             if (dzienStart.Length <= 0)
@@ -121,9 +116,12 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                    // // {
                    // //     MessageBox.Show("Nie ma takiego pliku - Stwórz plik");
                     // }
+
+
                     string templateFilePath = @"\\slssfil01\\Pub-MoldTracker\\Templates\\proba_template.xlsx";
 
                     string newFilePath = @"\\slssfil01\\Pub-MoldTracker\\Raporty\\" + idProby + "_" + nazwaProjektu + "_" + nazwaFormy + "_" + dzienStart.Replace(@"/", "_") + ".xlsx";
+
 
                     File.Copy(@"" + templateFilePath + "", @"" + newFilePath + "");
 
@@ -385,13 +383,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         }
         #endregion
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(dateTimePickerMaintainDo.Value.ToDateTimeString());
-            MessageBox.Show(dateTimePickerMaintainOd.Value.ToDateTimeString());
-        }
-
-     
     }
 }
 

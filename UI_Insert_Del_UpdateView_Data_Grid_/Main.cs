@@ -23,10 +23,29 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {  
             InitializeComponent();
             wczytajDoGridView_Click(null, null);
+            MessageBox.Show(loginClass.loginMain.ToString());
+            areaRestriction();
+
         }
         private void wczytajDoGridView_Click(object sender, EventArgs e)
         {
            WczytajOstatnieProby();
+        }
+
+        private void areaRestriction()
+        {
+
+            if (loginClass.PoziomUprawnien == "planista")
+            {
+                addBtn.Enabled = false;
+                addBtn.BackColor = Color.Gray;
+                tableLayoutPanel16.BackColor = Color.Gray;
+            }
+            else if (sqlQuery.GetTop1Sql("select poziomUprawnien from Uzytkownicy where nazwauzytkownika = '" + loginClass.loginMain + "'").ToString() == "uzytkownik")
+            {
+                addBtn.Enabled = true;
+            }
+
         }
 
         #region - Wczytanie danych o ostanich dziesieciu probach  z bazy danych
@@ -146,6 +165,11 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         private void zamkniecieMain(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(loginClass.loginMain);
         }
 
         //private void buttonMsg_Click(object sender, EventArgs e)

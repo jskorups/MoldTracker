@@ -33,7 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.mainPanel = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
@@ -75,7 +75,7 @@
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.ostatnioDodaneGrid = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
+            this.mainPanel.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
@@ -103,7 +103,7 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.mainPanel, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel12, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel13, 0, 3);
@@ -118,33 +118,33 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(925, 849);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // tableLayoutPanel4
+            // mainPanel
             // 
-            this.tableLayoutPanel4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.tableLayoutPanel4.ColumnCount = 5;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.4996F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.305555F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.5F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.22222F));
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel7, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel10, 1, 4);
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel6, 3, 0);
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel9, 3, 2);
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel19, 3, 4);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 120);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 5;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.11696F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.555555F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.11696F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263158F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.42105F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(919, 259);
-            this.tableLayoutPanel4.TabIndex = 2;
+            this.mainPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.mainPanel.ColumnCount = 5;
+            this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.4996F));
+            this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.305555F));
+            this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.5F));
+            this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.22222F));
+            this.mainPanel.Controls.Add(this.tableLayoutPanel7, 1, 2);
+            this.mainPanel.Controls.Add(this.tableLayoutPanel10, 1, 4);
+            this.mainPanel.Controls.Add(this.tableLayoutPanel5, 1, 0);
+            this.mainPanel.Controls.Add(this.tableLayoutPanel6, 3, 0);
+            this.mainPanel.Controls.Add(this.tableLayoutPanel9, 3, 2);
+            this.mainPanel.Controls.Add(this.tableLayoutPanel19, 3, 4);
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(3, 120);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.RowCount = 5;
+            this.mainPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.11696F));
+            this.mainPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.555555F));
+            this.mainPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.11696F));
+            this.mainPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.263158F));
+            this.mainPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.42105F));
+            this.mainPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.mainPanel.Size = new System.Drawing.Size(919, 259);
+            this.mainPanel.TabIndex = 2;
             // 
             // tableLayoutPanel7
             // 
@@ -489,7 +489,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel15, 2, 0);
@@ -562,12 +562,12 @@
             this.tableLayoutPanel15.Controls.Add(this.button7, 1, 0);
             this.tableLayoutPanel15.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(805, 5);
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(803, 5);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 2;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(109, 101);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(111, 101);
             this.tableLayoutPanel15.TabIndex = 2;
             // 
             // buttonMsg
@@ -576,10 +576,10 @@
             this.buttonMsg.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonMsg.BackgroundImage")));
             this.buttonMsg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonMsg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonMsg.Location = new System.Drawing.Point(54, 50);
+            this.buttonMsg.Location = new System.Drawing.Point(55, 50);
             this.buttonMsg.Margin = new System.Windows.Forms.Padding(0);
             this.buttonMsg.Name = "buttonMsg";
-            this.buttonMsg.Size = new System.Drawing.Size(55, 51);
+            this.buttonMsg.Size = new System.Drawing.Size(56, 51);
             this.buttonMsg.TabIndex = 3;
             this.buttonMsg.UseVisualStyleBackColor = false;
             // 
@@ -592,7 +592,7 @@
             this.logoutBtn.Location = new System.Drawing.Point(0, 50);
             this.logoutBtn.Margin = new System.Windows.Forms.Padding(0);
             this.logoutBtn.Name = "logoutBtn";
-            this.logoutBtn.Size = new System.Drawing.Size(54, 51);
+            this.logoutBtn.Size = new System.Drawing.Size(55, 51);
             this.logoutBtn.TabIndex = 2;
             this.logoutBtn.UseVisualStyleBackColor = false;
             this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
@@ -603,10 +603,10 @@
             this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.Location = new System.Drawing.Point(54, 0);
+            this.button7.Location = new System.Drawing.Point(55, 0);
             this.button7.Margin = new System.Windows.Forms.Padding(0);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(55, 50);
+            this.button7.Size = new System.Drawing.Size(56, 50);
             this.button7.TabIndex = 1;
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
@@ -620,7 +620,7 @@
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(54, 50);
+            this.button1.Size = new System.Drawing.Size(55, 50);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -749,7 +749,7 @@
             this.Text = "MoldTracker";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.zamkniecieMain);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
+            this.mainPanel.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
@@ -784,7 +784,7 @@
 
         #endregion
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TableLayoutPanel mainPanel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;

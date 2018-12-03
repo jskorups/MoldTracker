@@ -77,7 +77,6 @@
             this.dateTimePickerMaintainOd = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerMaintainDo = new System.Windows.Forms.DateTimePicker();
             this.maintainPokazButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProbyLogged)).BeginInit();
             this.maintainStripZaplanowana.SuspendLayout();
@@ -131,7 +130,7 @@
             this.dataGridViewProbyLogged.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewProbyLogged.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewProbyLogged.Location = new System.Drawing.Point(2, 230);
-            this.dataGridViewProbyLogged.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewProbyLogged.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewProbyLogged.Name = "dataGridViewProbyLogged";
             this.dataGridViewProbyLogged.ReadOnly = true;
             this.dataGridViewProbyLogged.RowTemplate.Height = 24;
@@ -320,7 +319,7 @@
             this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel3, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -388,7 +387,7 @@
             this.tableLayoutPanel3.Controls.Add(this.maintainPokazButton, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(535, 4);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.64312F));
@@ -405,7 +404,7 @@
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel8, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.99083F));
@@ -423,7 +422,7 @@
             this.tableLayoutPanel6.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 4;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -492,10 +491,9 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.tableLayoutPanel9, 0, 1);
-            this.tableLayoutPanel8.Controls.Add(this.button1, 0, 2);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(136, 2);
-            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 3;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.81132F));
@@ -528,7 +526,7 @@
             this.tableLayoutPanel9.Controls.Add(this.dateTimePickerMaintainDo, 1, 1);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(4, 34);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 2;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -569,7 +567,7 @@
             this.dateTimePickerMaintainOd.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerMaintainOd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerMaintainOd.Location = new System.Drawing.Point(65, 16);
-            this.dateTimePickerMaintainOd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePickerMaintainOd.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePickerMaintainOd.Name = "dateTimePickerMaintainOd";
             this.dateTimePickerMaintainOd.Size = new System.Drawing.Size(151, 24);
             this.dateTimePickerMaintainOd.TabIndex = 2;
@@ -580,7 +578,7 @@
             this.dateTimePickerMaintainDo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerMaintainDo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerMaintainDo.Location = new System.Drawing.Point(65, 70);
-            this.dateTimePickerMaintainDo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePickerMaintainDo.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePickerMaintainDo.Name = "dateTimePickerMaintainDo";
             this.dateTimePickerMaintainDo.Size = new System.Drawing.Size(151, 24);
             this.dateTimePickerMaintainDo.TabIndex = 3;
@@ -591,23 +589,13 @@
             this.maintainPokazButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.maintainPokazButton.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.maintainPokazButton.Location = new System.Drawing.Point(2, 182);
-            this.maintainPokazButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.maintainPokazButton.Margin = new System.Windows.Forms.Padding(2);
             this.maintainPokazButton.Name = "maintainPokazButton";
             this.maintainPokazButton.Size = new System.Drawing.Size(373, 32);
             this.maintainPokazButton.TabIndex = 1;
             this.maintainPokazButton.Text = "Pokaż";
             this.maintainPokazButton.UseVisualStyleBackColor = false;
             this.maintainPokazButton.Click += new System.EventHandler(this.maintainPokazButton_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(5, 152);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 15);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Maintaining
             // 
@@ -686,6 +674,5 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerMaintainDo;
         private System.Windows.Forms.Button maintainPokazButton;
         private System.Windows.Forms.DateTimePicker dateTimePickerMaintainOd;
-        private System.Windows.Forms.Button button1;
     }
 }

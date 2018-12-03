@@ -32,9 +32,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             if(dt.Rows[0][0].ToString() == "1")
             {
                 this.Hide();
+                loginClass.loginMain = loginTxt.Text;
                 var MainShow = new Main();
                 MainShow.Show();
-                loginClass.loginMain = loginTxt.Text;
+                
             }
             else
             {

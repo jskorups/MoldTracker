@@ -18,8 +18,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         }
 
 
-        public static string PoziomUprawnien { get { return sqlQuery.GetTop1Sql("").ToString(); } }
+        public static string PoziomUprawnien { get { return sqlQuery.GetTop1Sql("select poziomUprawnien from Uzytkownicy where nazwauzytkownika='" + loginClass.loginMain + "'").ToString(); } }
 
-  
+            
     }
 }
