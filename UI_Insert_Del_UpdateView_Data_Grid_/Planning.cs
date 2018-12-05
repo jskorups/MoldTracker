@@ -73,6 +73,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             //OdswiezDane();
         }
 
-
+        private void Planning_FormClosing(object sender, FormClosingEventArgs e)
+        {
+        }
     }
 }

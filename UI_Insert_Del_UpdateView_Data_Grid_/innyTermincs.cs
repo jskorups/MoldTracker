@@ -41,7 +41,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.Cancel;
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
         }
     }
 }

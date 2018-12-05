@@ -20,65 +20,46 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         public Profil()
         {
             InitializeComponent();
-            imageLoading();
-              
-        }
 
-        private void imageLoading()
-        {
-            string partialName = loginClass.loginMain;
-            DirectoryInfo hdDirectoryInWhichToSearch = new DirectoryInfo(@"C:\test\");
-            FileInfo[] filesInDir = hdDirectoryInWhichToSearch.GetFiles(partialName + "*.*");
+            Image image1 = null;
 
-            if (filesInDir.Length > 0)
+            using (FileStream stream = new FileStream(@"C:\test\" + loginClass.loginMain + ".jpg", FileMode.Open))
             {
-                foreach (FileInfo foundFile in filesInDir)
-                {
-                    string fullName = foundFile.FullName;
-                    pictureBox2.Image = Image.FromFile(fullName);
-
-                }
+                image1 = Image.FromStream(stream);
             }
-            else if (filesInDir.Length < 0)
-            {
-                return;
-            }
+            pictureBox2.Image = image1;
         }
 
 
         private void Profil_Load(object sender, EventArgs e)
+{
+
+    string sql = "select imie, nazwisko, stanowisko, poziomUprawnien, nazwauzytkownika from Uzytkownicy where nazwauzytkownika = '" + loginClass.loginMain + "'";
+
+
+    string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
+    using (SqlConnection conn = new SqlConnection(connectionStrin))
+    {
+        conn.Open();
+        using (SqlCommand command = new SqlCommand(sql, conn))
         {
-
-            string sql = "select imie, nazwisko, stanowisko, poziomUprawnien, nazwauzytkownika from Uzytkownicy where nazwauzytkownika = '"+loginClass.loginMain+"'";
-
-
-            string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
-            using (SqlConnection conn = new SqlConnection(connectionStrin))
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
             {
-                conn.Open();
-                using (SqlCommand command = new SqlCommand(sql, conn))
-                {
-                    SqlDataReader reader = command.ExecuteReader();
-                    while (reader.Read())
-                    {
-                        labelUzytkownik.Text = reader[4] as string;
-                        labelImie.Text = reader[0] as string;
-                        labelNazwisko.Text = reader[1] as string;
-                        labelStanowisko.Text = reader[2] as string;
-                        labelUprawnienia.Text = reader[3] as string;
+                labelUzytkownik.Text = reader[4] as string;
+                labelImie.Text = reader[0] as string;
+                labelNazwisko.Text = reader[1] as string;
+                labelStanowisko.Text = reader[2] as string;
+                labelUprawnienia.Text = reader[3] as string;
 
-                        //break for single row or you can continue if you have multiple rows...
-                        break;
-                    }
-                }
-                conn.Close();
+                //break for single row or you can continue if you have multiple rows...
+                break;
             }
-
         }
+        conn.Close();
+    }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (wgrajZdjecieDialog.ShowDialog() == DialogResult.OK);
-        }
+}
+
     }
 }

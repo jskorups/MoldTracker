@@ -38,7 +38,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.addProjectFromAddMold = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.dateTimeInnyStart = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
@@ -48,6 +47,7 @@
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.addProjectFromAddMold = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -183,19 +183,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Koniec";
             // 
-            // addProjectFromAddMold
-            // 
-            this.addProjectFromAddMold.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.addProjectFromAddMold.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addProjectFromAddMold.BackgroundImage")));
-            this.addProjectFromAddMold.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.addProjectFromAddMold.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.addProjectFromAddMold.Location = new System.Drawing.Point(109, 53);
-            this.addProjectFromAddMold.Margin = new System.Windows.Forms.Padding(2);
-            this.addProjectFromAddMold.Name = "addProjectFromAddMold";
-            this.addProjectFromAddMold.Size = new System.Drawing.Size(47, 32);
-            this.addProjectFromAddMold.TabIndex = 30;
-            this.addProjectFromAddMold.UseVisualStyleBackColor = false;
-            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
@@ -309,6 +296,20 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Zapisz inny termin";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // addProjectFromAddMold
+            // 
+            this.addProjectFromAddMold.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addProjectFromAddMold.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addProjectFromAddMold.BackgroundImage")));
+            this.addProjectFromAddMold.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.addProjectFromAddMold.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addProjectFromAddMold.Location = new System.Drawing.Point(109, 53);
+            this.addProjectFromAddMold.Margin = new System.Windows.Forms.Padding(2);
+            this.addProjectFromAddMold.Name = "addProjectFromAddMold";
+            this.addProjectFromAddMold.Size = new System.Drawing.Size(47, 32);
+            this.addProjectFromAddMold.TabIndex = 30;
+            this.addProjectFromAddMold.UseVisualStyleBackColor = false;
             // 
             // innyTermincs
             // 
