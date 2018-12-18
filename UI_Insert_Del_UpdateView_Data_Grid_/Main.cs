@@ -16,14 +16,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
     public partial class Main : Form
     {
-
-
-
         public Main()
         {  
             InitializeComponent();
             wczytajDoGridView_Click(null, null);
-            MessageBox.Show(loginClass.loginMain.ToString());
             areaRestriction();
 
         }
@@ -77,7 +73,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     }
                     else if (cell.Value.ToString() == "Potwierdzona")
                     {
-                        cell.Style.BackColor = Color.Yellow;
+                        cell.Style.BackColor = Color.Yellow;   
                     }
                     else if (cell.Value.ToString() == "Anulowana")
                     {

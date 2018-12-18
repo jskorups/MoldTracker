@@ -16,24 +16,21 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         public Planning()
         {
             InitializeComponent();
-            
+            OdswiezDane();
         }
 
         private void OdswiezDane()
         {
-            DataSet ds = sqlQuery.GetDataFromSql("  select prob.probaId as 'Id', proj.projektNazwa as 'Projekt', form.formaNazwa as 'Forma', " +
+                DataSet ds = sqlQuery.GetDataFromSql("  select prob.probaId as 'Id', proj.projektNazwa as 'Projekt', form.formaNazwa as 'Forma', " +
                 "masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', godzStart as 'Start', godzKoniec as 'Koniec', dzienStart as 'Dzień', " +
                 "odpowiedzialny as 'Odpowiedzialny', statusProby as 'Status' from Projekt proj, Forma form, Maszyna  masz, Detal_komplet det,proby " +
                 "prob where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId ;");
-            dataGridPlanning.DataSource = ds.Tables[0];
-
+                dataGridPlanning.DataSource = ds.Tables[0];
         }
         private void Planning_Load(object sender, EventArgs e)
         {
-            OdswiezDane();
             dataGridPlanning.CurrentCell.Selected = false;
         }
-
         private void dataGridPlanning_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var senderGrid = (DataGridView)sender;
@@ -60,21 +57,58 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     MessageBox.Show("Nie można dodać potwierdzenia. Skontaktuj się z administratorem.");
                 }
             }
+
             else if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 senderGrid.Columns[e.ColumnIndex] == Inny)
             {
+
                 var innyTermin = new innyTermincs();
+                innyTermincs.
                 innyTermin.ShowDialog();
-
-               
             }
-
-
-            //OdswiezDane();
         }
 
-        private void Planning_FormClosing(object sender, FormClosingEventArgs e)
+        private void PassData(object sender)
         {
+            // Set de text of the textbox to the value of the textbox of form 2
+            txtForm1.Text = ((TextBox)sender).Text;
         }
+
+        #region Cell colors
+
+
+        private void coloringCells(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridPlanning.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value.ToString() == "Zaplanowana")
+                    {
+                        cell.Style.BackColor = Color.Gray;
+                    }
+                    else if (cell.Value.ToString() == "Potwierdzona")
+                    {
+                        cell.Style.BackColor = Color.Yellow;
+                    }
+                    else if (cell.Value.ToString() == "Anulowana")
+                    {
+                        cell.Style.BackColor = Color.Red;
+                    }
+                    else if (cell.Value.ToString() == "Zakonczona")
+                    {
+                        cell.Style.BackColor = Color.LimeGreen;
+                    }
+                    else if (cell.Value.ToString() == "Usunieta")
+                    {
+                        cell.Style.BackColor = Color.Violet;
+                    }
+                }
+            }
+        }
+
+
+        #endregion
     }
 }
+    

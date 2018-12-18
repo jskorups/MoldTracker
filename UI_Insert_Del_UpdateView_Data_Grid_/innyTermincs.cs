@@ -12,10 +12,14 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
     public partial class innyTermincs : Form
     {
+        public delegate void PassControl(object sender);
+
+        public PassControl passControl;
+
+
         public innyTermincs()
         {
             InitializeComponent();
-
             #region - Format czasu dla DateTimePickera
 
 
@@ -36,7 +40,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             dateTimeInnyDzien.ShowUpDown = true;
 
             #endregion
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -47,7 +50,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.OK;
+            //this.DialogResult = DialogResult.OK;
+
+
         }
     }
 }
