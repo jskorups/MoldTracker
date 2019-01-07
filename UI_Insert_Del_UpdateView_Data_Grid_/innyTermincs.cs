@@ -12,7 +12,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
     public partial class innyTermincs : Form
     {
-        public string GetValueInForm2
+        public string innyTerminDzien
         {
 
             get

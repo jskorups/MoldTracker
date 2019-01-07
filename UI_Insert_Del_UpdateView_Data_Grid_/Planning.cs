@@ -19,15 +19,15 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             InitializeComponent();
             OdswiezDane();
-    }
+        }
 
         private void OdswiezDane()
         {
-                DataSet ds = sqlQuery.GetDataFromSql("  select prob.probaId as 'Id', proj.projektNazwa as 'Projekt', form.formaNazwa as 'Forma', " +
-                "masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', godzStart as 'Start', godzKoniec as 'Koniec', dzienStart as 'Dzień', " +
-                "odpowiedzialny as 'Odpowiedzialny', statusProby as 'Status' from Projekt proj, Forma form, Maszyna  masz, Detal_komplet det,proby " +
-                "prob where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId ;");
-                dataGridPlanning.DataSource = ds.Tables[0];
+            DataSet ds = sqlQuery.GetDataFromSql("  select prob.probaId as 'Id', proj.projektNazwa as 'Projekt', form.formaNazwa as 'Forma', " +
+            "masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', godzStart as 'Start', godzKoniec as 'Koniec', dzienStart as 'Dzień', " +
+            "odpowiedzialny as 'Odpowiedzialny', statusProby as 'Status' from Projekt proj, Forma form, Maszyna  masz, Detal_komplet det,proby " +
+            "prob where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and statusProby = 'Zaplanowana' ;");
+            dataGridPlanning.DataSource = ds.Tables[0];
         }
         private void Planning_Load(object sender, EventArgs e)
         {
@@ -67,7 +67,12 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 using (innyTermincs frm = new innyTermincs())
                 {
                     if (frm.ShowDialog() == DialogResult.OK)
-                        label1.Text = frm.GetValueInForm2;
+                    {
+                        int idProby = int.Parse(senderGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString());
+                        sqlNonQuery.PutDataToSql("update Proby set dzienStart = '"+frm.innyTerminDzien.ToDateTimeString()+"', statusProby = 'Potwierdzona' where probaId = '" + idProby + "' ");
+                        MessageBox.Show("Termin potwierdzony");
+                        OdswiezDane();
+                    }
                 }
             }
 
@@ -116,4 +121,4 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         #endregion
     }
 }
-    
+
