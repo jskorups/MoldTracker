@@ -13,11 +13,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
     public partial class Planning : Form
     {
+        public delegate void delPassData(TextBox text);
+
         public Planning()
         {
             InitializeComponent();
             OdswiezDane();
-        }
+    }
 
         private void OdswiezDane()
         {
@@ -31,6 +33,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             dataGridPlanning.CurrentCell.Selected = false;
         }
+
+
         private void dataGridPlanning_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var senderGrid = (DataGridView)sender;
@@ -57,22 +61,23 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     MessageBox.Show("Nie można dodać potwierdzenia. Skontaktuj się z administratorem.");
                 }
             }
-
             else if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 senderGrid.Columns[e.ColumnIndex] == Inny)
             {
-
-                var innyTermin = new innyTermincs();
-                innyTermincs.
-                innyTermin.ShowDialog();
+                using (innyTermincs frm = new innyTermincs())
+                {
+                    if (frm.ShowDialog() == DialogResult.OK)
+                        label1.Text = frm.GetValueInForm2;
+                }
             }
+
         }
 
-        private void PassData(object sender)
-        {
-            // Set de text of the textbox to the value of the textbox of form 2
-            txtForm1.Text = ((TextBox)sender).Text;
-        }
+        //public void funData(DateTimePicker dateTime)
+        //{
+        //    label1.Text = dateTime.Value.ToString();
+
+        //}
 
         #region Cell colors
 

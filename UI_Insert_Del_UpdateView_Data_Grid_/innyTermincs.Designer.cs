@@ -45,8 +45,8 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.dateTimeInnyKoniec = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cancelBtn = new System.Windows.Forms.Button();
+            this.saveBtn = new System.Windows.Forms.Button();
             this.addProjectFromAddMold = new UI_Insert_Del_UpdateView_Data_Grid_.CircularButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -262,8 +262,8 @@
             this.tableLayoutPanel8.ColumnCount = 2;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button2, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.cancelBtn, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.saveBtn, 1, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 213);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
@@ -272,31 +272,31 @@
             this.tableLayoutPanel8.Size = new System.Drawing.Size(604, 51);
             this.tableLayoutPanel8.TabIndex = 8;
             // 
-            // button1
+            // cancelBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(296, 45);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Anuluj";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cancelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cancelBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cancelBtn.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cancelBtn.Location = new System.Drawing.Point(3, 3);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(296, 45);
+            this.cancelBtn.TabIndex = 0;
+            this.cancelBtn.Text = "Anuluj";
+            this.cancelBtn.UseVisualStyleBackColor = false;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
-            // button2
+            // saveBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(305, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(296, 45);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Zapisz inny termin";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.saveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.saveBtn.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.saveBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.saveBtn.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.saveBtn.Location = new System.Drawing.Point(305, 3);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(296, 45);
+            this.saveBtn.TabIndex = 1;
+            this.saveBtn.Text = "Zapisz inny termin";
+            this.saveBtn.UseVisualStyleBackColor = false;
             // 
             // addProjectFromAddMold
             // 
@@ -355,7 +355,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.DateTimePicker dateTimeInnyKoniec;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button cancelBtn;
+        private System.Windows.Forms.Button saveBtn;
     }
 }

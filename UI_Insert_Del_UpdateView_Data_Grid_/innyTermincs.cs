@@ -12,10 +12,15 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 {
     public partial class innyTermincs : Form
     {
-        public delegate void PassControl(object sender);
+        public string GetValueInForm2
+        {
 
-        public PassControl passControl;
+            get
+            {
+                return dateTimeInnyDzien.Value.ToString();
+            }
 
+        }
 
         public innyTermincs()
         {
@@ -42,17 +47,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             #endregion
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cancelBtn_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            //this.DialogResult = DialogResult.OK;
 
-
-        }
+     
     }
 }
