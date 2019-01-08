@@ -14,12 +14,25 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
     {
         public string innyTerminDzien
         {
-
             get
             {
                 return dateTimeInnyDzien.Value.ToString();
             }
+        }
+        public DateTime innyTerminStart
+        {
+            get
+            {
+                return dateTimeInnyStart.Value;
+            }
 
+        }
+        public DateTime innyTerminKoniec
+        {
+            get
+            {
+                return dateTimeInnyKoniec.Value;
+            }
         }
 
         public innyTermincs()

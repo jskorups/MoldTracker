@@ -23,9 +23,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         private void OdswiezDane()
         {
-            DataSet ds = sqlQuery.GetDataFromSql("  select prob.probaId as 'Id', proj.projektNazwa as 'Projekt', form.formaNazwa as 'Forma', " +
-            "masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', godzStart as 'Start', godzKoniec as 'Koniec', dzienStart as 'Dzień', " +
-            "odpowiedzialny as 'Odpowiedzialny', statusProby as 'Status' from Projekt proj, Forma form, Maszyna  masz, Detal_komplet det,proby " +
+            DataSet ds = sqlQuery.GetDataFromSql("  select prob.probaId as 'Id', proj.projektNazwa as 'Projekt', form.formaNazwa as 'F', " +
+            "masz.maszynaNumer as 'M', det.detalNazwa as 'Detal', godzStart as 'Start', godzKoniec as 'Koniec', dzienStart as 'Dzień', " +
+            "odpowiedzialny as 'Inżynier', statusProby as 'Status' from Projekt proj, Forma form, Maszyna  masz, Detal_komplet det,proby " +
             "prob where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and statusProby in ('Zaplanowana','Potwierdzona');");
             dataGridPlanning.DataSource = ds.Tables[0];
         }
@@ -69,7 +69,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     if (frm.ShowDialog() == DialogResult.OK)
                     {
                         int idProby = int.Parse(senderGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString());
-                        sqlNonQuery.PutDataToSql("update Proby set dzienStart = '"+frm.innyTerminDzien.ToDateTimeString()+"', statusProby = 'Potwierdzona' where probaId = '" + idProby + "' ");
+                        sqlNonQuery.PutDataToSql("update Proby set dzienStart = '"+frm.innyTerminDzien.ToDateTimeString()+"', godzStart = '" + frm.innyTerminStart + "', godzKoniec = '" + frm.innyTerminKoniec+ "', statusProby = 'Potwierdzona' where probaId = '" + idProby + "' ");
                         MessageBox.Show("Termin potwierdzony");
                         OdswiezDane();
                     }
@@ -87,40 +87,29 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         #region Cell colors
 
 
-        private void coloringCells(object sender, DataGridViewCellFormattingEventArgs e)
-        {
-            foreach (DataGridViewRow row in dataGridPlanning.Rows)
-            {
-                foreach (DataGridViewCell cell in row.Cells)
-                {
-                    if (cell.Value.ToString() == "Zaplanowana")
-                    {
-                        cell.Style.BackColor = Color.Gray;
-                    }
-                    else if (cell.Value.ToString() == "Potwierdzona")
-                    {
-                        cell.Style.BackColor = Color.Yellow;
-                    }
-                    else if (cell.Value.ToString() == "Anulowana")
-                    {
-                        cell.Style.BackColor = Color.Red;
-                    }
-                    else if (cell.Value.ToString() == "Zakonczona")
-                    {
-                        cell.Style.BackColor = Color.LimeGreen;
-                    }
-                    else if (cell.Value.ToString() == "Usunieta")
-                    {
-                        cell.Style.BackColor = Color.Violet;
-                    }
-                }
-            }
-        }
+
 
 
         #endregion
 
-     
+  
+
+
+        private void dataGridPlanning_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (dataGridPlanning.Columns[e.ColumnIndex].HeaderText == "Status" && dataGridPlanning.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            // if the column is bool_badge and check null value for the extra row at dgv
+            {
+                if (dataGridPlanning.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString() == "Zaplanowana")
+                {
+                    dataGridPlanning.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Empty;
+                }
+                if (dataGridPlanning.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString() == "Potwierdzona")
+                {
+                    dataGridPlanning.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.ForestGreen;
+                }
+            }
+        }
     }
 }
 
