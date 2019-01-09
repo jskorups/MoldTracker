@@ -85,16 +85,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         //}
 
         #region Cell colors
-
-
-
-
-
-        #endregion
-
-  
-
-
         private void dataGridPlanning_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             if (dataGridPlanning.Columns[e.ColumnIndex].HeaderText == "Status" && dataGridPlanning.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
@@ -109,6 +99,14 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     dataGridPlanning.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.ForestGreen;
                 }
             }
+        }
+        #endregion
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var add = new addFill();
+            add.ShowDialog();
+            OdswiezDane();
         }
     }
 }
