@@ -23,6 +23,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         private void OdswiezDane()
         {
+            dailyBtn.BackColor = Color.Lime;
+
             DataSet ds = sqlQuery.GetDataFromSql("  select prob.probaId as 'Id', proj.projektNazwa as 'Projekt', form.formaNazwa as 'F', " +
             "masz.maszynaNumer as 'M', det.detalNazwa as 'Detal', godzStart as 'Start', godzKoniec as 'Koniec', dzienStart as 'Dzień', " +
             "odpowiedzialny as 'Inżynier', statusProby as 'Status' from Projekt proj, Forma form, Maszyna  masz, Detal_komplet det,proby " +
@@ -107,6 +109,22 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             var add = new addFill();
             add.ShowDialog();
             OdswiezDane();
+        }
+
+        private void dailyBtn_Click(object sender, EventArgs e)
+        {
+            OdswiezDane();
+        }
+
+        private void weeklyBtn_Click(object sender, EventArgs e)
+        {
+            weeklyBtn.BackColor = Color.Lime;
+
+            DataSet ds = sqlQuery.GetDataFromSql("  select prob.probaId as 'Id', proj.projektNazwa as 'Projekt', form.formaNazwa as 'F', " +
+           "masz.maszynaNumer as 'M', det.detalNazwa as 'Detal', godzStart as 'Start', godzKoniec as 'Koniec', dzienStart as 'Dzień', " +
+           "odpowiedzialny as 'Inżynier', statusProby as 'Status' from Projekt proj, Forma form, Maszyna  masz, Detal_komplet det,proby " +
+           "prob where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and statusProby in ('Zaplanowana','Potwierdzona') and dzienStart between DateAdd(DD,7,GETDATE()) and GETDATE();");
+            dataGridPlanning.DataSource = ds.Tables[0];
         }
     }
 }
