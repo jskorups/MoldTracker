@@ -222,7 +222,18 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 maintainStripZaplanowana.Enabled = true;
                 dataGridViewProbyLogged.Focus();
 
-                if(dataGridViewProbyLogged.SelectedCells[6].Value.ToString() == "Zakonczona" && dataGridViewProbyLogged.SelectedRows.Count > 0)
+
+                if (dataGridViewProbyLogged.SelectedCells[6].Value.ToString() == "Potwierdzona" && dataGridViewProbyLogged.SelectedRows.Count > 0)
+                {
+
+                    zakończPróbęToolStripMenuItem.Enabled = true;
+                    stwórzToolStripMenuItem.Enabled = false;
+                    Raporty.Enabled = false;
+                    otwórzToolStripMenuItem.Enabled = false;
+                    stwórzToolStripMenuItem.Enabled = false;
+                    kontynuujPróbęToolStripMenuItem.Enabled = false;
+                }
+                if (dataGridViewProbyLogged.SelectedCells[6].Value.ToString() == "Zakonczona" && dataGridViewProbyLogged.SelectedRows.Count > 0)
                 {
 
                     zakończPróbęToolStripMenuItem.Enabled = false;
@@ -234,7 +245,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 }
                 else if (dataGridViewProbyLogged.SelectedCells[6].Value.ToString() == "Zaplanowana" && dataGridViewProbyLogged.SelectedRows.Count > 0)
                 {
-                    zakończPróbęToolStripMenuItem.Enabled = true;
+                    zakończPróbęToolStripMenuItem.Enabled = false;
                     kontynuujPróbęToolStripMenuItem.Enabled = false;
                     usuńPróbęToolStripMenuItem.Enabled = false;
                     otwórzToolStripMenuItem.Enabled = false;
@@ -259,6 +270,18 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         }
         #endregion
         #region Dodawanie elementów do listy - Checkboxy
+
+        private void maintainPotwierdzona1Checkbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (maintainPotwierdzona1Checkbox.Checked == true)
+            {
+                listaStatusów.Add("Potwierdzona");
+            }
+            else
+            {
+                listaStatusów.Remove("Potwierdzona");
+            }
+        }
         private void maintainZakonczonaCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             if (maintainZakonczonaCheckbox.Checked == true)
@@ -268,17 +291,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             else
             {
                 listaStatusów.Remove("Zakonczona");
-            }
-        }
-        private void maintainAnulowanaCheckbox_CheckedChanged(object sender, EventArgs e)
-        {
-            if (maintainAnulowanaCheckbox.Checked == true)
-            {
-                listaStatusów.Add("Anulowana");
-            }
-            else
-            {
-                listaStatusów.Remove("Anulowana");
             }
         }
         private void maintainUsunietaCheckbox_CheckedChanged(object sender, EventArgs e)
@@ -310,13 +322,27 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 string dzienOd = dateTimePickerMaintainDo.Value.Date.ToString();
                 string dzienDo = dateTimePickerMaintainDo.Value.Date.ToString();
 
-                var sql = "select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny', czasTrwania as 'Czas' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby in ({0}) and odpowiedzialny = (select nazwisko from Uzytkownicy where nazwauzytkownika = '" + loginClass.loginMain + "') and dzienStart between '" + dateTimePickerMaintainOd.Value.ToDateTimeString() + "' and '" + dateTimePickerMaintainDo.Value.ToDateTimeString() + "'";
+                int elementyNaLiscie = listaStatusów.Count;
 
-                listaStatusów.Add("Zaplanowana");
+                if (elementyNaLiscie > 0) {
 
-                DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", listaStatusów.Select(x => $"\'{x}\'"))));
-                DataView source = new DataView(dP.Tables[0]);
-                dataGridViewProbyLogged.DataSource = source;
+
+                    // listaStatusów.Add("Zaplanowana");
+                    var sql = "select prob.probaId as 'Id próby', proj.projektNazwa as 'Nazwa projektu', form.formaNazwa as 'Forma', masz.maszynaNumer as 'Maszyna', det.detalNazwa as 'Detal', celT.celNazwa as 'Cel',  statusProby as 'Status', dzienStart as 'Dzień', godzStart as 'Start', celRoz as  'Cel2', odpowiedzialny as 'Odpowiedzialny', czasTrwania as 'Czas' from Projekt proj, Forma form, proby prob, Maszyna masz, Detal_komplet det, Cel celT where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and prob.celId = celT.celId  and statusProby in ({0}) and dzienStart between '" + dateTimePickerMaintainOd.Value.ToDateTimeString() + "' and '" + dateTimePickerMaintainDo.Value.ToDateTimeString() + "'";
+
+                    DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", listaStatusów.Select(x => $"\'{x}\'"))));
+                    DataView source = new DataView(dP.Tables[0]);
+                    dataGridViewProbyLogged.DataSource = source;
+
+
+                }
+
+                else if (elementyNaLiscie <= 0)
+                {
+                    MessageBox.Show("Wybierz status próby");
+                }
+
+
 
             }
         }
@@ -345,7 +371,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
             else
             {
-                MessageBox.Show("Próba nie dodana");
+                MessageBox.Show("Próba nie została usunięta");
                 return;
             }
         }

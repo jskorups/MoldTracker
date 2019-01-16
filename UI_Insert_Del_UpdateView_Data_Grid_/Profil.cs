@@ -23,13 +23,20 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
             Image image1 = null;
 
-            using (FileStream stream = new FileStream(@"C:\test\" + loginClass.loginMain + ".jpg", FileMode.Open))
+            
+            if (File.Exists(@"\\slssfil01\Pub-MoldTracker\Aplikacja\1.0.0.1\files\" + loginClass.loginMain + ".jpg"))
             {
-                image1 = Image.FromStream(stream);
+                using (FileStream stream = new FileStream(@"\\slssfil01\Pub-MoldTracker\Aplikacja\1.0.0.1\files\" + loginClass.loginMain + ".jpg", FileMode.Open))
+                {
+                    image1 = Image.FromStream(stream);
+                }
+                pictureBox2.Image = image1;
             }
-            pictureBox2.Image = image1;
+            else
+            {
+                return;
+            }         
         }
-
 
         private void Profil_Load(object sender, EventArgs e)
 {

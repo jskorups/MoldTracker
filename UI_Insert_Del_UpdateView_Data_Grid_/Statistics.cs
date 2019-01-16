@@ -25,7 +25,9 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         List<string> wybraneProjekty = new List<string>();
         List<string> wybraneMaszyny = new List<string>();
         List<string> wybraneDetale = new List<string>();
+
         List<string> wybraneDetaleDlaProjektów = new List<string>();
+
         List<string> wybraneDetaleDlaProjektówCzas = new List<string>();
         List<string> wybraneFormyDlaProjektówCzas = new List<string>();
         List<string> wybraneDetaleDleFormCzas = new List<string>();
@@ -106,28 +108,39 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
 
             string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
-
             using (var connection = new SqlConnection(connectionStrin))
             {
-                connection.Open();
-                var sqlCommand = new SqlCommand();
-                sqlCommand.Connection = connection;
-                sqlCommand.CommandType = CommandType.Text;
-                var sql = "select proj.projektNazwa as 'Projekt', COUNT(prob.projektId) as 'Liczba prob' from Proby prob LEFT JOIN Projekt proj ON proj.projektId = prob.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerStatisticsOd.Value.ToDateTimeString() + "' and '" + dateTimePickerStatisticsDo.Value.ToDateTimeString() + "' group by proj.projektNazwa;";
+              
 
-                DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneProjekty.Select(x => $"\'{x}\'"))));
-                DataView source = new DataView(dP.Tables[0]);
-                chart6.DataSource = source;
-                chart6.Series[0].XValueMember = "Projekt";
-                chart6.Series[0].YValueMembers = "Liczba prob";
-                chart6.ChartAreas[0].AxisX.Interval = 1;
-                chart6.ChartAreas[0].AxisY.Interval = 1;
-                chart6.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
-                chart6.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
-                chart6.DataBind();
-                chart6.Update();
-                wybraneProjekty.Clear();
-                connection.Close();
+                if (wybraneProjekty.Count > 0)
+                {
+
+                    connection.Open();
+                    var sqlCommand = new SqlCommand();
+                    sqlCommand.Connection = connection;
+                    sqlCommand.CommandType = CommandType.Text;
+                    var sql = "select proj.projektNazwa as 'Projekt', COUNT(prob.projektId) as 'Liczba prob' from Proby prob LEFT JOIN Projekt proj ON proj.projektId = prob.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerStatisticsOd.Value.ToDateTimeString() + "' and '" + dateTimePickerStatisticsDo.Value.ToDateTimeString() + "' and statusProby = 'Zakonczona'  group by proj.projektNazwa;";
+
+                    DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneProjekty.Select(x => $"\'{x}\'"))));
+                    DataView source = new DataView(dP.Tables[0]);
+                    chart6.DataSource = source;
+
+                    chart6.Series[0].XValueMember = "Projekt";
+                    chart6.Series[0].YValueMembers = "Liczba prob";
+                    chart6.ChartAreas[0].AxisX.Interval = 1;
+                    chart6.ChartAreas[0].AxisY.Interval = 1;
+                    chart6.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
+                    chart6.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+                    chart6.DataBind();
+                    chart6.Update();
+                    wybraneProjekty.Clear();
+                    connection.Close();
+                }
+                else if (wybraneProjekty.Count <= 0)
+                {
+                    MessageBox.Show("Nie wybrałeś żadnego projektu!");
+                }
+                
             }
         }
         #endregion
@@ -164,29 +177,39 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 wybraneMaszyny.Add(listBoxMaszynyAll.GetItemText(listBoxMaszynyAll.SelectedItems[i]));
             }
+
             string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
-
             using (var connection = new SqlConnection(connectionStrin))
-            {
-                connection.Open();
-                var sqlCommand = new SqlCommand();
-                sqlCommand.Connection = connection;
-                sqlCommand.CommandType = CommandType.Text;
-                var sql = "select masz.maszynaNumer as 'Maszyna', COUNT(prob.maszynaId) as 'Liczba prob' from Proby prob LEFT JOIN Maszyna masz ON masz.maszynaId = prob.maszynaId where masz.maszynaNumer in ({0}) and dzienStart between '" + dateTimePickerMachinesOd.Value.ToDateTimeString() + "' and '" + dateTimePickerMachinesDo.Value.ToDateTimeString() + "' group by masz.maszynaNumer;";
 
-                DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneMaszyny.Select(x => $"\'{x}\'"))));
-                DataView source = new DataView(dP.Tables[0]);
-                chartMaszyny.DataSource = source;
-                chartMaszyny.Series[0].XValueMember = "Maszyna";
-                chartMaszyny.Series[0].YValueMembers = "Liczba prob";
-                chartMaszyny.ChartAreas[0].AxisX.Interval = 1;
-                chartMaszyny.ChartAreas[0].AxisY.Interval = 1;
-                chartMaszyny.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
-                chartMaszyny.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
-                chartMaszyny.DataBind();
-                chartMaszyny.Update();
-                wybraneMaszyny.Clear();
-                connection.Close();
+                if (wybraneMaszyny.Count  > 0)
+                {
+                    connection.Open();
+                    var sqlCommand = new SqlCommand();
+                    sqlCommand.Connection = connection;
+                    sqlCommand.CommandType = CommandType.Text;
+                    var sql = "select masz.maszynaNumer as 'Maszyna', COUNT(prob.maszynaId) as 'Liczba prob' from Proby prob LEFT JOIN Maszyna masz ON masz.maszynaId = prob.maszynaId where masz.maszynaNumer in ({0}) and dzienStart between '" + dateTimePickerMachinesOd.Value.ToDateTimeString() + "' and '" + dateTimePickerMachinesDo.Value.ToDateTimeString() + "' and statusProby = 'Zakonczona' group by masz.maszynaNumer;";
+
+                    DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneMaszyny.Select(x => $"\'{x}\'"))));
+                    DataView source = new DataView(dP.Tables[0]);
+                    chartMaszyny.DataSource = source;
+                    chartMaszyny.Series[0].XValueMember = "Maszyna";
+                    chartMaszyny.Series[0].YValueMembers = "Liczba prob";
+                    chartMaszyny.ChartAreas[0].AxisX.Interval = 1;
+                    chartMaszyny.ChartAreas[0].AxisY.Interval = 1;
+                    chartMaszyny.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
+                    chartMaszyny.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+                    chartMaszyny.DataBind();
+                    chartMaszyny.Update();
+                    wybraneMaszyny.Clear();
+                    connection.Close();
+
+                }
+            else if (wybraneMaszyny.Count <= 0)
+                {
+                    MessageBox.Show("Nie wybrałeś żadnej maszyny!");
+                }
+
+            {
             }
         }
         #endregion
@@ -273,29 +296,37 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             {
                 wybraneDetale.Add(listBoxDetaleWszystkie.GetItemText(listBoxDetaleWszystkie.SelectedItems[i]));
             }
+
             string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
-
             using (var connection = new SqlConnection(connectionStrin))
-            {
-                connection.Open();
-                var sqlCommand = new SqlCommand();
-                sqlCommand.Connection = connection;
-                sqlCommand.CommandType = CommandType.Text;
-                var sql = "select det.detalnazwa as 'Detal', COUNT(prob.detalId) as 'Liczba prob' from Proby prob LEFT JOIN Detal_komplet det ON det.detalId = prob.detalId where det.detalNazwa in ({0}) and dzienStart between '" + dateTimePickerDetailAllOd.Value.Date + "' and '" + dateTimePickerDetailAllDo.Value.Date + "' group by det.detalNazwa;";
+                if (wybraneDetale.Count > 0)
+                {
+                    connection.Open();
+                    var sqlCommand = new SqlCommand();
+                    sqlCommand.Connection = connection;
+                    sqlCommand.CommandType = CommandType.Text;
+                    var sql = "select det.detalnazwa as 'Detal', COUNT(prob.detalId) as 'Liczba prob' from Proby prob LEFT JOIN Detal_komplet det ON det.detalId = prob.detalId where det.detalNazwa in ({0}) and dzienStart between '" + dateTimePickerDetailAllOd.Value.ToDateTimeString() + "' and '" + dateTimePickerDetailAllDo.Value.ToDateTimeString() + "' and statusProby = 'Zakonczona' group by det.detalNazwa;";
 
-                DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetale.Select(x => $"\'{x}\'"))));
-                DataView source = new DataView(dP.Tables[0]);
-                chartDetaleWszystkie.DataSource = source;
-                chartDetaleWszystkie.Series[0].XValueMember = "Detal";
-                chartDetaleWszystkie.Series[0].YValueMembers = "Liczba prob";
-                chartDetaleWszystkie.ChartAreas[0].AxisX.Interval = 1;
-                chartDetaleWszystkie.ChartAreas[0].AxisY.Interval = 1;
-                chartDetaleWszystkie.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
-                chartDetaleWszystkie.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
-                chartDetaleWszystkie.DataBind();
-                chartDetaleWszystkie.Update();
-                wybraneDetale.Clear();
-                connection.Close();
+                    DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetale.Select(x => $"\'{x}\'"))));
+                    DataView source = new DataView(dP.Tables[0]);
+                    chartDetaleWszystkie.DataSource = source;
+                    chartDetaleWszystkie.Series[0].XValueMember = "Detal";
+                    chartDetaleWszystkie.Series[0].YValueMembers = "Liczba prob";
+                    chartDetaleWszystkie.ChartAreas[0].AxisX.Interval = 1;
+                    chartDetaleWszystkie.ChartAreas[0].AxisY.Interval = 1;
+                    chartDetaleWszystkie.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
+                    chartDetaleWszystkie.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+                    chartDetaleWszystkie.DataBind();
+                    chartDetaleWszystkie.Update();
+                    wybraneDetale.Clear();
+                    connection.Close();
+                }
+                else if (wybraneDetale.Count <= 0)
+                {
+                    MessageBox.Show("Nie wybrałeś detali");
+                }
+            {
+               
             }
         }
         #endregion
@@ -337,31 +368,37 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
             using (var connection = new SqlConnection(connectionStrin))
             {
-                connection.Open();
-                var sqlCommand = new SqlCommand();
-                sqlCommand.Connection = connection;
-                sqlCommand.CommandType = CommandType.Text;
-                var sql = "select proj.projektNazwa as 'Projekt' , sum(((DATEPART(hour, czasTrwania) * 3600) + (DATEPART(minute, czasTrwania) * 60) + DATEPART(second, czasTrwania))/3600) as 'Czas' from Proby prob left join Projekt proj on prob.projektId = proj.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerStatisticsOd.Value.ToDateTimeString() + "' and '" + dateTimePickerStatisticsDo.Value.ToDateTimeString() + "' group by proj.projektNazwa;";
+                if (wybraneDetaleDlaProjektówCzas.Count > 0)
+                {
+                    connection.Open();
+                    var sqlCommand = new SqlCommand();
+                    sqlCommand.Connection = connection;
+                    sqlCommand.CommandType = CommandType.Text;
+                    var sql = "select proj.projektNazwa as 'Projekt' , sum(((DATEPART(hour, czasTrwania) * 3600) + (DATEPART(minute, czasTrwania) * 60) + DATEPART(second, czasTrwania))/3600) as 'Czas' from Proby prob left join Projekt proj on prob.projektId = proj.projektId where proj.projektNazwa in ({0}) and dzienStart between '" + dateTimePickerTimeProjectsOd.Value.ToDateTimeString()+ "' and '" + dateTimePickerTimeProjectsDo.Value.ToDateTimeString() + "' and statusProby = 'Zakonczona' group by proj.projektNazwa;";
 
-                DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetaleDlaProjektówCzas.Select(x => $"\'{x}\'"))));
-                DataView source = new DataView(dP.Tables[0]);
-                chartTimeAllProjects.DataSource = source;
-                chartTimeAllProjects.Series[0].XValueMember = "Projekt";
-                chartTimeAllProjects.Series[0].YValueMembers = "Czas";
-                chartTimeAllProjects.ChartAreas[0].AxisX.Interval = 1;
-                chartTimeAllProjects.ChartAreas[0].AxisY.Interval = 5;
-                chartTimeAllProjects.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
-                chartTimeAllProjects.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
-                chartTimeAllProjects.DataBind();
-                chartTimeAllProjects.Update();
-                wybraneDetaleDlaProjektówCzas.Clear();
-                connection.Close();
+                    DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetaleDlaProjektówCzas.Select(x => $"\'{x}\'"))));
+                    DataView source = new DataView(dP.Tables[0]);
+                    chartTimeAllProjects.DataSource = source;
+                    chartTimeAllProjects.Series[0].XValueMember = "Projekt";
+                    chartTimeAllProjects.Series[0].YValueMembers = "Czas";
+                    chartTimeAllProjects.ChartAreas[0].AxisX.Interval = 1;
+                    chartTimeAllProjects.ChartAreas[0].AxisY.Interval = 5;
+                    chartTimeAllProjects.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
+                    chartTimeAllProjects.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+                    chartTimeAllProjects.DataBind();
+                    chartTimeAllProjects.Update();
+                    wybraneDetaleDlaProjektówCzas.Clear();
+                    connection.Close();
+                }
+                else if (wybraneDetaleDlaProjektówCzas.Count <= 0)
+                {
+                    MessageBox.Show(dateTimePickerStatisticsDo.Value.ToDateTimeString());
+                }
+                
             }
         }
-
         #endregion
         #region Czas dla form
-
         public void wczytajFormyCzas()
         {
             try
@@ -380,9 +417,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 MessageBox.Show(ex.Message);
             }
         }
-
-
-
         private void timeMoldsCheckAllProjects(object sender, EventArgs e)
         {
             if (checkBoxAllMoldsTime.Checked == true)
@@ -420,39 +454,48 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
             using (var connection = new SqlConnection(connectionStrin))
             {
-                connection.Open();
-                var sqlCommand = new SqlCommand();
-                sqlCommand.Connection = connection;
-                sqlCommand.CommandType = CommandType.Text;
-                var sql = "select form.formaNazwa as 'Forma' , sum(((DATEPART(hour, czasTrwania) * 3600) + (DATEPART(minute, czasTrwania) * 60) + DATEPART(second, czasTrwania))/3600) as 'Czas' from Proby prob left join Forma form on prob.formaId = form.formaId where form.formaNazwa in ({0}) and dzienStart between '" + dateTimePickerMoldOd.Value.Date + "' and '" + dateTimePickerMoldDo.Value.Date + "' group by form.formaNazwa;";
+                if (wybraneFormyDlaProjektówCzas.Count > 0)
+                {
+                    connection.Open();
+                    var sqlCommand = new SqlCommand();
+                    sqlCommand.Connection = connection;
+                    sqlCommand.CommandType = CommandType.Text;
+                    var sql = "select form.formaNazwa as 'Forma' , sum(((DATEPART(hour, czasTrwania) * 3600) + (DATEPART(minute, czasTrwania) * 60) + DATEPART(second, czasTrwania))/3600) as 'Czas' from Proby prob left join Forma form on prob.formaId = form.formaId where form.formaNazwa in ({0}) and dzienStart between '" + dateTimePickerMoldOd.Value.ToDateTimeString() + "' and '" + dateTimePickerMoldDo.Value.ToDateTimeString() + "' and prob.statusProby = 'Zakonczona' group by form.formaNazwa;";
 
-                DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneFormyDlaProjektówCzas.Select(x => $"\'{x}\'"))));
-                DataView source = new DataView(dP.Tables[0]);
-                chartTimeMolds.DataSource = source;
-                chartTimeMolds.Series[0].XValueMember = "Forma";
-                chartTimeMolds.Series[0].YValueMembers = "Czas";
-                chartTimeMolds.ChartAreas[0].AxisX.Interval = 1;
-                if (string.IsNullOrEmpty(comboBoxTimeMolds.Text))
-                {
-                    chartTimeMolds.ChartAreas[0].AxisX.Title = "Formy";
+                    DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneFormyDlaProjektówCzas.Select(x => $"\'{x}\'"))));
+                    DataView source = new DataView(dP.Tables[0]);
+                    chartTimeMolds.DataSource = source;
+                    chartTimeMolds.Series[0].XValueMember = "Forma";
+                    chartTimeMolds.Series[0].YValueMembers = "Czas";
+                    chartTimeMolds.ChartAreas[0].AxisX.Interval = 1;
+
+                    if (string.IsNullOrEmpty(comboBoxTimeMolds.Text))
+                    {
+                        chartTimeMolds.ChartAreas[0].AxisX.Title = "Formy";
+                    }
+                    else
+                    {
+                        chartTimeMolds.ChartAreas[0].AxisX.Title = "Formy dla projektu " + comboBoxTimeMolds.Text + "";
+                    }
+                    chartTimeMolds.ChartAreas[0].AxisY.Interval = 5;
+                    chartTimeMolds.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
+                    chartTimeMolds.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+                    chartTimeMolds.DataBind();
+                    chartTimeMolds.Update();
+                    wybraneFormyDlaProjektówCzas.Clear();
+                    connection.Close();
                 }
-                else
+                else if (wybraneFormyDlaProjektówCzas.Count <= 0)
                 {
-                    chartTimeMolds.ChartAreas[0].AxisX.Title = "Formy dla projektu " + comboBoxTimeMolds.Text + "";
+                    MessageBox.Show("Nie wybrałes żadnej formy!");
                 }
-                chartTimeMolds.ChartAreas[0].AxisY.Interval = 5;
-                chartTimeMolds.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
-                chartTimeMolds.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
-                chartTimeMolds.DataBind();
-                chartTimeMolds.Update();
-                wybraneFormyDlaProjektówCzas.Clear();
-                connection.Close();
+                
+
+                
             }
         }
         #endregion
         #region Czas dla detali
-
-
         public void wczytajDetaleCzas()
         {
             try
@@ -536,31 +579,35 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 wybraneDetaleDleFormCzas.Add(listBoxDetaleCzas.GetItemText(listBoxDetaleCzas.SelectedItems[i]));
             }
 
-
-
             string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
             using (var connection = new SqlConnection(connectionStrin))
             {
-                connection.Open();
-                var sqlCommand = new SqlCommand();
-                sqlCommand.Connection = connection;
-                sqlCommand.CommandType = CommandType.Text;
-                var sql = "select det.detalNazwa as 'Detal' , sum(((DATEPART(hour, czasTrwania) * 3600) + (DATEPART(minute, czasTrwania) * 60) + DATEPART(second, czasTrwania))/3600) as 'Czas' from Proby prob left join Detal_komplet det on prob.detalId = det.detalId where det.detalNazwa in ({0}) and dzienStart between '" + detaleCzacOd.Value.Date + "' and '" + detaleCzacDo.Value.Date + "' group by det.detalNazwa;";
-
-
-                DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetaleDleFormCzas.Select(x => $"\'{x}\'"))));
-                DataView source = new DataView(dP.Tables[0]);
-                chartCzasDetale.DataSource = source;
-                chartCzasDetale.Series[0].XValueMember = "Detal";
-                chartCzasDetale.Series[0].YValueMembers = "Czas";
-                chartCzasDetale.ChartAreas[0].AxisX.Interval = 1;
-                chartCzasDetale.ChartAreas[0].AxisY.Interval = 5;
-                chartCzasDetale.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
-                chartCzasDetale.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
-                chartCzasDetale.DataBind();
-                chartCzasDetale.Update();
-                wybraneDetaleDleFormCzas.Clear();
-                connection.Close();
+                if (wybraneDetaleDleFormCzas.Count > 0)
+                {
+                    connection.Open();
+                    var sqlCommand = new SqlCommand();
+                    sqlCommand.Connection = connection;
+                    sqlCommand.CommandType = CommandType.Text;
+                    var sql = "select det.detalNazwa as 'Detal' , sum(((DATEPART(hour, czasTrwania) * 3600) + (DATEPART(minute, czasTrwania) * 60) + DATEPART(second, czasTrwania))/3600) as 'Czas' from Proby prob left join Detal_komplet det on prob.detalId = det.detalId where det.detalNazwa in ({0}) and dzienStart between '" + detaleCzacOd.Value.ToDateTimeString() + "' and '" + detaleCzacDo.Value.ToDateTimeString() + "' and prob.statusProby = 'Zakonczona' group by det.detalNazwa;";
+                    DataSet dP = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneDetaleDleFormCzas.Select(x => $"\'{x}\'"))));
+                    DataView source = new DataView(dP.Tables[0]);
+                    chartCzasDetale.DataSource = source;
+                    chartCzasDetale.Series[0].XValueMember = "Detal";
+                    chartCzasDetale.Series[0].YValueMembers = "Czas";
+                    chartCzasDetale.ChartAreas[0].AxisX.Interval = 1;
+                    chartCzasDetale.ChartAreas[0].AxisY.Interval = 5;
+                    chartCzasDetale.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
+                    chartCzasDetale.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+                    chartCzasDetale.DataBind();
+                    chartCzasDetale.Update();
+                    wybraneDetaleDleFormCzas.Clear();
+                    connection.Close();
+                }
+                else if (wybraneDetaleDleFormCzas.Count <= 0)
+                {
+                    MessageBox.Show("Nie wybrałes detali!");
+                }
+               
             }
         }
         #endregion
@@ -610,7 +657,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 sqlCommand.Connection = connection;
                 sqlCommand.CommandType = CommandType.Text;
 
-                var sql = "SELECT odpowiedzialny, sum(((DATEPART(hour, czasTrwania) * 3600) + (DATEPART(minute, czasTrwania) * 60) + DATEPART(second, czasTrwania))/3600) as Czas FROM Proby where odpowiedzialny in ({0}) group by odpowiedzialny;";
+                var sql = "SELECT odpowiedzialny, sum(((DATEPART(hour, czasTrwania) * 3600) + (DATEPART(minute, czasTrwania) * 60) + DATEPART(second, czasTrwania))/3600) as Czas FROM Proby where odpowiedzialny in ({0}) and dzienStart between '" + detaleCzasInzynierOd.Value.ToDateTimeString() + "' and '" + detaleCzasInzynierDo.Value.ToDateTimeString() + "' and statusProby='Zakonczona' group by odpowiedzialny;";
 
                 DataSet dI2 = sqlQuery.GetDataFromSql(String.Format(sql, String.Join(",", wybraneInzynierCzas.Select(x => $"\'{x}\'"))));
                 DataView source = new DataView(dI2.Tables[0]);
@@ -626,9 +673,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 connection.Close();
             }
         }
-
-
-
         #endregion
 
         #region Cel dla projektów
@@ -697,7 +741,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
 
         #endregion
-
         #region Cel dla form
 
 
@@ -708,7 +751,6 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
 
         #endregion
-
         #region Cel dla detali
         #endregion
 

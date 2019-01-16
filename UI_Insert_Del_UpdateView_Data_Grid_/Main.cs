@@ -27,7 +27,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
            WczytajOstatnieProby();
         }
-
+        #region Wyłaczanie opcji - uprawienia
         private void areaRestriction()
         {
 
@@ -39,10 +39,19 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
             else if (sqlQuery.GetTop1Sql("select poziomUprawnien from Uzytkownicy where nazwauzytkownika = '" + loginClass.loginMain + "'").ToString() == "uzytkownik")
             {
-                addBtn.Enabled = true;
+                addBtn.Enabled = false;
+                tableLayoutPanel16.BackColor = Color.DarkGray;
+
+
+                planningBtn.Enabled = false;
+                tableLayoutPanel17.BackColor = Color.DarkGray;
+
+                button4.Enabled = false;
+                tableLayoutPanel18.BackColor = Color.DarkGray;
             }
 
         }
+        #endregion
 
         #region - Wczytanie danych o ostanich dziesieciu probach  z bazy danych
         private void WczytajOstatnieProby()

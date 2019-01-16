@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Maintaining));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridViewProbyLogged = new System.Windows.Forms.DataGridView();
@@ -66,9 +66,9 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.maintainUsunietaCheckbox = new System.Windows.Forms.CheckBox();
-            this.maintainAnulowanaCheckbox = new System.Windows.Forms.CheckBox();
-            this.maintainZakonczonaCheckbox = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.maintainZakonczonaCheckbox = new System.Windows.Forms.CheckBox();
+            this.maintainPotwierdzona1Checkbox = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
@@ -110,24 +110,24 @@
             // 
             this.dataGridViewProbyLogged.AllowUserToAddRows = false;
             this.dataGridViewProbyLogged.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewProbyLogged.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewProbyLogged.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewProbyLogged.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewProbyLogged.ContextMenuStrip = this.maintainStripZaplanowana;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewProbyLogged.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewProbyLogged.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewProbyLogged.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewProbyLogged.Location = new System.Drawing.Point(2, 230);
             this.dataGridViewProbyLogged.Margin = new System.Windows.Forms.Padding(2);
@@ -314,7 +314,7 @@
             this.tableLayoutPanel7.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel7.ColumnCount = 2;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 381F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 394F));
             this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel3, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -340,7 +340,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(523, 214);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(510, 214);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
             // pictureBox1
@@ -365,7 +365,7 @@
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.88679F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(411, 117);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(398, 117);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // label6
@@ -386,20 +386,20 @@
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.maintainPokazButton, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(535, 4);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(522, 4);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.64312F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.35688F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(377, 216);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(390, 216);
             this.tableLayoutPanel3.TabIndex = 9;
             // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.09342F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.90658F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.8601F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.1399F));
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel8, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -408,7 +408,7 @@
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.99083F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(373, 176);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(386, 176);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -417,9 +417,9 @@
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.Controls.Add(this.maintainUsunietaCheckbox, 0, 3);
-            this.tableLayoutPanel6.Controls.Add(this.maintainAnulowanaCheckbox, 0, 2);
-            this.tableLayoutPanel6.Controls.Add(this.maintainZakonczonaCheckbox, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.maintainZakonczonaCheckbox, 0, 2);
+            this.tableLayoutPanel6.Controls.Add(this.maintainPotwierdzona1Checkbox, 0, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(2, 2);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
@@ -430,7 +430,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(130, 172);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(145, 172);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // maintainUsunietaCheckbox
@@ -446,24 +446,23 @@
             this.maintainUsunietaCheckbox.UseVisualStyleBackColor = true;
             this.maintainUsunietaCheckbox.CheckedChanged += new System.EventHandler(this.maintainUsunietaCheckbox_CheckedChanged);
             // 
-            // maintainAnulowanaCheckbox
+            // label1
             // 
-            this.maintainAnulowanaCheckbox.AutoSize = true;
-            this.maintainAnulowanaCheckbox.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.maintainAnulowanaCheckbox.Location = new System.Drawing.Point(10, 88);
-            this.maintainAnulowanaCheckbox.Margin = new System.Windows.Forms.Padding(8, 2, 2, 2);
-            this.maintainAnulowanaCheckbox.Name = "maintainAnulowanaCheckbox";
-            this.maintainAnulowanaCheckbox.Size = new System.Drawing.Size(108, 23);
-            this.maintainAnulowanaCheckbox.TabIndex = 3;
-            this.maintainAnulowanaCheckbox.Text = "Anulowana";
-            this.maintainAnulowanaCheckbox.UseVisualStyleBackColor = true;
-            this.maintainAnulowanaCheckbox.CheckedChanged += new System.EventHandler(this.maintainAnulowanaCheckbox_CheckedChanged);
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(47, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Status:";
             // 
             // maintainZakonczonaCheckbox
             // 
             this.maintainZakonczonaCheckbox.AutoSize = true;
             this.maintainZakonczonaCheckbox.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.maintainZakonczonaCheckbox.Location = new System.Drawing.Point(10, 46);
+            this.maintainZakonczonaCheckbox.Location = new System.Drawing.Point(10, 88);
             this.maintainZakonczonaCheckbox.Margin = new System.Windows.Forms.Padding(8, 2, 2, 2);
             this.maintainZakonczonaCheckbox.Name = "maintainZakonczonaCheckbox";
             this.maintainZakonczonaCheckbox.Size = new System.Drawing.Size(113, 23);
@@ -472,17 +471,18 @@
             this.maintainZakonczonaCheckbox.UseVisualStyleBackColor = true;
             this.maintainZakonczonaCheckbox.CheckedChanged += new System.EventHandler(this.maintainZakonczonaCheckbox_CheckedChanged);
             // 
-            // label1
+            // maintainPotwierdzona1Checkbox
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(40, 13);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Status:";
+            this.maintainPotwierdzona1Checkbox.AutoSize = true;
+            this.maintainPotwierdzona1Checkbox.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            this.maintainPotwierdzona1Checkbox.Location = new System.Drawing.Point(10, 46);
+            this.maintainPotwierdzona1Checkbox.Margin = new System.Windows.Forms.Padding(8, 2, 2, 2);
+            this.maintainPotwierdzona1Checkbox.Name = "maintainPotwierdzona1Checkbox";
+            this.maintainPotwierdzona1Checkbox.Size = new System.Drawing.Size(122, 23);
+            this.maintainPotwierdzona1Checkbox.TabIndex = 5;
+            this.maintainPotwierdzona1Checkbox.Text = "Potwierdzona";
+            this.maintainPotwierdzona1Checkbox.UseVisualStyleBackColor = true;
+            this.maintainPotwierdzona1Checkbox.CheckedChanged += new System.EventHandler(this.maintainPotwierdzona1Checkbox_CheckedChanged);
             // 
             // tableLayoutPanel8
             // 
@@ -492,14 +492,14 @@
             this.tableLayoutPanel8.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.tableLayoutPanel9, 0, 1);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(136, 2);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(151, 2);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 3;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.81132F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.18868F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(235, 172);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(233, 172);
             this.tableLayoutPanel8.TabIndex = 1;
             // 
             // label2
@@ -507,7 +507,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(95, 7);
+            this.label2.Location = new System.Drawing.Point(94, 7);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 17);
@@ -534,7 +534,7 @@
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(227, 111);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(225, 111);
             this.tableLayoutPanel9.TabIndex = 1;
             // 
             // label3
@@ -566,7 +566,7 @@
             this.dateTimePickerMaintainOd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerMaintainOd.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerMaintainOd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerMaintainOd.Location = new System.Drawing.Point(65, 16);
+            this.dateTimePickerMaintainOd.Location = new System.Drawing.Point(64, 16);
             this.dateTimePickerMaintainOd.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePickerMaintainOd.Name = "dateTimePickerMaintainOd";
             this.dateTimePickerMaintainOd.Size = new System.Drawing.Size(151, 24);
@@ -577,7 +577,7 @@
             this.dateTimePickerMaintainDo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePickerMaintainDo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePickerMaintainDo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerMaintainDo.Location = new System.Drawing.Point(65, 70);
+            this.dateTimePickerMaintainDo.Location = new System.Drawing.Point(64, 70);
             this.dateTimePickerMaintainDo.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePickerMaintainDo.Name = "dateTimePickerMaintainDo";
             this.dateTimePickerMaintainDo.Size = new System.Drawing.Size(151, 24);
@@ -591,7 +591,7 @@
             this.maintainPokazButton.Location = new System.Drawing.Point(2, 182);
             this.maintainPokazButton.Margin = new System.Windows.Forms.Padding(2);
             this.maintainPokazButton.Name = "maintainPokazButton";
-            this.maintainPokazButton.Size = new System.Drawing.Size(373, 32);
+            this.maintainPokazButton.Size = new System.Drawing.Size(386, 32);
             this.maintainPokazButton.TabIndex = 1;
             this.maintainPokazButton.Text = "Pokaż";
             this.maintainPokazButton.UseVisualStyleBackColor = false;
@@ -663,7 +663,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.CheckBox maintainUsunietaCheckbox;
-        private System.Windows.Forms.CheckBox maintainAnulowanaCheckbox;
         private System.Windows.Forms.CheckBox maintainZakonczonaCheckbox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
@@ -674,5 +673,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerMaintainDo;
         private System.Windows.Forms.Button maintainPokazButton;
         private System.Windows.Forms.DateTimePicker dateTimePickerMaintainOd;
+        private System.Windows.Forms.CheckBox maintainPotwierdzona1Checkbox;
     }
 }
