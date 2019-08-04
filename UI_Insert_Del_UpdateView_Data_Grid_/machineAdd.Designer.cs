@@ -138,7 +138,7 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.55556F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.44444F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 295F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
             this.tableLayoutPanel5.Controls.Add(this.TextBoxMachineNameAdd, 2, 0);
             this.tableLayoutPanel5.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -153,17 +153,18 @@
             // 
             this.TextBoxMachineNameAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TextBoxMachineNameAdd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxMachineNameAdd.Location = new System.Drawing.Point(228, 10);
+            this.TextBoxMachineNameAdd.Location = new System.Drawing.Point(227, 10);
             this.TextBoxMachineNameAdd.Name = "TextBoxMachineNameAdd";
             this.TextBoxMachineNameAdd.Size = new System.Drawing.Size(214, 27);
             this.TextBoxMachineNameAdd.TabIndex = 0;
+            this.TextBoxMachineNameAdd.TextChanged += new System.EventHandler(this.TextBoxMachineNameAdd_TextChanged);
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(74, 13);
+            this.label1.Location = new System.Drawing.Point(73, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 20);
             this.label1.TabIndex = 1;

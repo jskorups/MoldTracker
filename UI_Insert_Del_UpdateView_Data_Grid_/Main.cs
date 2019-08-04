@@ -36,6 +36,16 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 addBtn.Enabled = false;
                 addBtn.BackColor = Color.Gray;
                 tableLayoutPanel16.BackColor = Color.Gray;
+
+                button2.Enabled = false;
+                button2.BackColor = Color.Gray;
+                tableLayoutPanel8.BackColor = Color.Gray;
+
+
+                statisticsBtn.Enabled = false;
+                statisticsBtn.BackColor = Color.Gray;
+                tableLayoutPanel11.BackColor = Color.Gray;
+
             }
             else if (sqlQuery.GetTop1Sql("select poziomUprawnien from Uzytkownicy where nazwauzytkownika = '" + loginClass.loginMain + "'").ToString() == "uzytkownik")
             {
@@ -95,6 +105,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     else if (cell.Value.ToString() == "Usunieta")
                     {
                         cell.Style.BackColor = Color.Violet;
+                    }
+                    else if (cell.Value.ToString() == "Potwierdz. (zmiana. term.)")
+                    {
+                        cell.Style.BackColor = Color.LightYellow;
                     }
                 }
             }

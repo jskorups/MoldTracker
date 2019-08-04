@@ -105,7 +105,12 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             string dzisiajDzien = DateTime.Now.ToString("yyyy-MM-dd");
 
 
-            if (MessageBox.Show("Czy chcesz dodać próbę?", "Potwierdź próbęe", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show(
+                
+                
+                "Projekt:'"+comboProjekt.Text+"'" + "\n" + "Forma:'"+comboForma.Text+ "'" + "\n" + "Maszyna: '"+comboMaszyna.Text+"'" + "\n" + "Detal: '" + comboDetal.Text + "'" + "\n" + "Dzien: '" + dateTimeTerminRealizacjiDzien.Text + "'"
+                 + "\n" + "Start: '" + dateTimeTerminRealizacjiGodzinaStart.Text + "'" + "\n" + "Koniec: '" + dateTimeTerminRealizacjiGodzinaKoniec.Text + "'" +"\n" + "Odpowiedzialny: '" + comboOdpowiedzialny.Text + "'" +   "\n" + "\n" + "Potwierdzasz?"
+                , "Potwierdź próbę", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
 
                 if (dateTimeTerminRealizacjiGodzinaStart.Value >= dateTimeTerminRealizacjiGodzinaKoniec.Value)
@@ -239,8 +244,8 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             txtSapDetalu.Text = "";
             richTexCel.Text = "";
             dateTimeTerminRealizacjiDzien.Value = new DateTime(2000, 01, 01);
-            dateTimeTerminRealizacjiGodzinaStart.Value = DateTimePicker.MinimumDateTime;
-            dateTimeTerminRealizacjiGodzinaKoniec.Value = DateTimePicker.MinimumDateTime;
+            //dateTimeTerminRealizacjiGodzinaStart.Value = DateTimePicker.MinimumDateTime;
+            //dateTimeTerminRealizacjiGodzinaKoniec.Value = DateTimePicker.MinimumDateTime;
 
         }
         #endregion

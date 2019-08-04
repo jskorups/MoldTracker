@@ -144,7 +144,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     
                     sheet.Close(true, Type.Missing, Type.Missing);
                     excel.Quit();
-                    MessageBox.Show("Pomyślnie stworzono plik");
+                    MessageBox.Show("Plik nie został stworzony");
                 }
                 catch (Exception ex)
                 {
@@ -158,7 +158,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             }
 
 
-            WczytajProbyZalogowanego();
+            //WczytajProbyZalogowanego();
 
         }
         #endregion

@@ -18,8 +18,32 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         {
             InitializeComponent();
             dailyPlan();
-            
+            wylaczaniePrzycisków();
+            comboData();
+
+
+
         }
+
+        #region wylaczanie przyciskówm - uprawienia
+
+        public void wylaczaniePrzycisków()
+        {
+
+            if (loginClass.PoziomUprawnien == "planista")
+            {
+                dataGridPlanning.Columns["Realizuj"].Visible = true;
+                dataGridPlanning.Columns["Inny"].Visible = true;
+
+            }
+            else
+            {
+                dataGridPlanning.Columns["Realizuj"].Visible = false;
+                dataGridPlanning.Columns["Inny"].Visible = false;
+            }
+        }
+
+        #endregion
         #region planDzienny - głowna metoda
 
         private void dailyPlan()
@@ -28,13 +52,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             DataSet ds = sqlQuery.GetDataFromSql("  select prob.probaId as 'Id', proj.projektNazwa as 'Projekt', form.formaNazwa as 'F', " +
             "masz.maszynaNumer as 'M', det.detalNazwa as 'Detal', godzStart as 'Start', godzKoniec as 'Koniec', dzienStart as 'Dzień', " +
             "odpowiedzialny as 'Inżynier', statusProby as 'Status' from Projekt proj, Forma form, Maszyna  masz, Detal_komplet det,proby " +
-            "prob where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and statusProby in ('Zaplanowana','Potwierdzona') and dzienStart = CONVERT(varchar,GETDATE(),112) ;");
+            "prob where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and statusProby in ('Zaplanowana','Potwierdzona', 'Potwierdz. (zmiana. term.)' ) and dzienStart = CONVERT(varchar,GETDATE(),112) ;");
             dataGridPlanning.DataSource = ds.Tables[0];
         }
 
         private void weeklyPlan()
         {
-            
+
             DataSet ds = sqlQuery.GetDataFromSql("  select prob.probaId as 'Id', proj.projektNazwa as 'Projekt', form.formaNazwa as 'F', " +
           "masz.maszynaNumer as 'M', det.detalNazwa as 'Detal', godzStart as 'Start', godzKoniec as 'Koniec', dzienStart as 'Dzień', " +
           "odpowiedzialny as 'Inżynier', statusProby as 'Status' from Projekt proj, Forma form, Maszyna  masz, Detal_komplet det,proby " +
@@ -59,7 +83,7 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
         #region Kasowanie wybrania komórki
         private void Planning_Load(object sender, EventArgs e)
         {
-     //       dataGridPlanning.CurrentCell.Selected = false;
+            //       dataGridPlanning.CurrentCell.Selected = false;
         }
         #endregion
         #region Przyciski na datagridzie
@@ -70,36 +94,36 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 senderGrid.Columns[e.ColumnIndex] == Realizuj)
             {
-                
-                    if (MessageBox.Show("Czy chcesz potwierdzic termin?", "Potwierdź próbę", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes && dailyBtn.BackColor == Color.Lime)
-                    {
-                        int idProby = int.Parse(senderGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString());
-                        sqlNonQuery.PutDataToSql("update Proby set statusProby = 'Potwierdzona' where probaId = '" + idProby + "' ");
-                        MessageBox.Show("Termin potwierdzony");
-                        dailyPlan();
-                    }
-                    else if (MessageBox.Show("Czy chcesz potwierdzic termin?", "Potwierdź próbę", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes && weeklyBtn.BackColor == Color.Lime)
-                    {
-                        int idProby = int.Parse(senderGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString());
-                        sqlNonQuery.PutDataToSql("update Proby set statusProby = 'Potwierdzona' where probaId = '" + idProby + "' ");
-                        MessageBox.Show("Termin potwierdzony");
-                        weeklyPlan();
 
-                    }
-                    else if (MessageBox.Show("Czy chcesz potwierdzic termin?", "Potwierdź próbę", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes && monthlyBtn.BackColor == Color.Lime)
-                    {
-                        int idProby = int.Parse(senderGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString());
-                        sqlNonQuery.PutDataToSql("update Proby set statusProby = 'Potwierdzona' where probaId = '" + idProby + "' ");
-                        MessageBox.Show("Termin potwierdzony");
-                       monthlyPlan();
+                if (MessageBox.Show("Czy chcesz potwierdzic termin?", "Potwierdź próbę", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes /*&& dailyBtn.BackColor == Color.Lime*/)
+                {
+                    int idProby = int.Parse(senderGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString());
+                    sqlNonQuery.PutDataToSql("update Proby set statusProby = 'Potwierdzona' where probaId = '" + idProby + "' ");
+                    MessageBox.Show("Termin potwierdzony");
+                    dailyPlan();
+                }
+                //else if (MessageBox.Show("Czy chcesz potwierdzic termin?", "Potwierdź próbę", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes && weeklyBtn.BackColor == Color.Lime)
+                //{
+                //    int idProby = int.Parse(senderGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString());
+                //    sqlNonQuery.PutDataToSql("update Proby set statusProby = 'Potwierdzona' where probaId = '" + idProby + "' ");
+                //    MessageBox.Show("Termin potwierdzony");
+                //    weeklyPlan();
 
-                    }
-                    else
-                    {
-                        MessageBox.Show("Termin niepotwierdzony");
-                    }
-                
-               
+                //}
+                //else if (MessageBox.Show("Czy chcesz potwierdzic termin?", "Potwierdź próbę", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes && monthlyBtn.BackColor == Color.Lime)
+                //{
+                //    int idProby = int.Parse(senderGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString());
+                //    sqlNonQuery.PutDataToSql("update Proby set statusProby = 'Potwierdzona' where probaId = '" + idProby + "' ");
+                //    MessageBox.Show("Termin potwierdzony");
+                //   monthlyPlan();
+
+                //}
+                else
+                {
+                    MessageBox.Show("Termin niepotwierdzony");
+                }
+
+
             }
 
             else if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
@@ -110,9 +134,10 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                     if (frm.ShowDialog() == DialogResult.OK)
                     {
                         int idProby = int.Parse(senderGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString());
-                        sqlNonQuery.PutDataToSql("update Proby set dzienStart = '"+frm.innyTerminDzien.ToDateTimeString()+"', godzStart = '" + frm.innyTerminStart + "', godzKoniec = '" + frm.innyTerminKoniec+ "', statusProby = 'Potwierdzona' where probaId = '" + idProby + "' ");
+                        sqlNonQuery.PutDataToSql("update Proby set dzienStart = '" + frm.innyTerminDzien.ToDateTimeString() + "', godzStart = '" + frm.innyTerminStart + "', godzKoniec = '" + frm.innyTerminKoniec + "', statusProby = 'Potwierdz. (zmiana. term.)' where probaId = '" + idProby + "' ");
                         MessageBox.Show("Termin potwierdzony");
-                        dataGridPlanning.Refresh();
+                        //dataGridPlanning.Refresh();
+                        dailyPlan();
                     }
                 }
             }
@@ -129,9 +154,13 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
                 {
                     dataGridPlanning.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Empty;
                 }
-                if (dataGridPlanning.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString() == "Potwierdzona")
+                else if (dataGridPlanning.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString() == "Potwierdzona")
                 {
                     dataGridPlanning.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.ForestGreen;
+                }
+                else if (dataGridPlanning.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString() == "Potwierdz. (zmiana. term.)")
+                {
+                    dataGridPlanning.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGreen;
                 }
             }
         }
@@ -182,13 +211,31 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
             "masz.maszynaNumer as 'M', det.detalNazwa as 'Detal', godzStart as 'Start', godzKoniec as 'Koniec', dzienStart as 'Dzień', " +
             "odpowiedzialny as 'Inżynier', statusProby as 'Status' from Projekt proj, Forma form, Maszyna  masz, Detal_komplet det,proby " +
             "prob where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and statusProby in ('Zaplanowana','Potwierdzona') and dzienStart between GETDATE() and DATEADD(MONTH,1, GETDATE());");
-             dataGridPlanning.DataSource = ds.Tables[0];
+            dataGridPlanning.DataSource = ds.Tables[0];
 
 
         }
         #endregion
 
+        #region Dane  - combobox projekt
+        public void comboData()
+        {
+            DataSet dP = sqlQuery.GetDataFromSql("select * from Projekt");
+            planningProjectChoice.DataSource = dP.Tables[0];
+            planningProjectChoice.DisplayMember = "projektNazwa";
+            planningProjectChoice.ValueMember = "projektId";
+            planningProjectChoice.SelectedIndex = -1;
+        }
+        #endregion
 
+        private void planningShowVsProjectBtn_Click(object sender, EventArgs e)
+        {
+            DataSet ds = sqlQuery.GetDataFromSql("  select prob.probaId as 'Id', proj.projektNazwa as 'Projekt', form.formaNazwa as 'F', " +
+          "masz.maszynaNumer as 'M', det.detalNazwa as 'Detal', godzStart as 'Start', godzKoniec as 'Koniec', dzienStart as 'Dzień', " +
+          "odpowiedzialny as 'Inżynier', statusProby as 'Status' from Projekt proj, Forma form, Maszyna  masz, Detal_komplet det,proby " +
+          "prob where proj.projektId = prob.projektId and form.formaId = prob.formaId and masz.maszynaId = prob.maszynaId and prob.detalId = det.detalId and statusProby in ('Zaplanowana','Potwierdzona') and dzienStart = CONVERT(varchar,GETDATE(),112) and proj.projektId = '"+planningProjectChoice.SelectedValue+"';");
+            dataGridPlanning.DataSource = ds.Tables[0];
+        }
     }
 }
 

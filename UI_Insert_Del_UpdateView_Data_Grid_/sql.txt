@@ -1,4 +1,8 @@
-﻿
+﻿1. Poprawic planning - weekly plan, monthly plan zeby sie wyswietlał?
+2. Poprawic maintianing  -zobaczyc ocb
+3. Sprawdzenie czy potwierdzenie juz sie odbylo gdy ma otwarte kilka osob maintianing
+
+
 1. Akcje w planningu po nacisnieciu 
 3. Minimum daty dla dodawania próby
 4. Pytanie o zamkykanie przy otwieraniu excela - zapisywania zmian - OK

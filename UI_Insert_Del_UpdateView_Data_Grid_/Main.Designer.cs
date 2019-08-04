@@ -489,7 +489,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119F));
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel15, 2, 0);
@@ -562,12 +562,12 @@
             this.tableLayoutPanel15.Controls.Add(this.button7, 1, 0);
             this.tableLayoutPanel15.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(803, 5);
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(801, 5);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 2;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(111, 101);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(113, 101);
             this.tableLayoutPanel15.TabIndex = 2;
             // 
             // buttonMsg
@@ -576,10 +576,10 @@
             this.buttonMsg.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonMsg.BackgroundImage")));
             this.buttonMsg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonMsg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonMsg.Location = new System.Drawing.Point(55, 50);
+            this.buttonMsg.Location = new System.Drawing.Point(56, 50);
             this.buttonMsg.Margin = new System.Windows.Forms.Padding(0);
             this.buttonMsg.Name = "buttonMsg";
-            this.buttonMsg.Size = new System.Drawing.Size(56, 51);
+            this.buttonMsg.Size = new System.Drawing.Size(57, 51);
             this.buttonMsg.TabIndex = 3;
             this.buttonMsg.UseVisualStyleBackColor = false;
             // 
@@ -592,7 +592,7 @@
             this.logoutBtn.Location = new System.Drawing.Point(0, 50);
             this.logoutBtn.Margin = new System.Windows.Forms.Padding(0);
             this.logoutBtn.Name = "logoutBtn";
-            this.logoutBtn.Size = new System.Drawing.Size(55, 51);
+            this.logoutBtn.Size = new System.Drawing.Size(56, 51);
             this.logoutBtn.TabIndex = 2;
             this.logoutBtn.UseVisualStyleBackColor = false;
             this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
@@ -603,10 +603,10 @@
             this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.Location = new System.Drawing.Point(55, 0);
+            this.button7.Location = new System.Drawing.Point(56, 0);
             this.button7.Margin = new System.Windows.Forms.Padding(0);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(56, 50);
+            this.button7.Size = new System.Drawing.Size(57, 50);
             this.button7.TabIndex = 1;
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
@@ -620,7 +620,7 @@
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 50);
+            this.button1.Size = new System.Drawing.Size(56, 50);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);

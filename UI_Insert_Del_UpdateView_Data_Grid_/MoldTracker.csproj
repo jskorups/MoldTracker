@@ -422,6 +422,8 @@
   <ItemGroup>
     <Content Include="icons\delete.png" />
     <Content Include="icons\save.png" />
+    <Content Include="icons\search-icon-png-0.png" />
+    <None Include="icons\search.png" />
     <Content Include="icons\update.png" />
     <Content Include="icons\update_2.png" />
     <Content Include="images_sGH_icon.ico" />

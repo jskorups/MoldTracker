@@ -23,26 +23,37 @@ namespace UI_Insert_Del_UpdateView_Data_Grid_
 
         private void loginBtn_Click (object sender, EventArgs e)
         {
-            string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
-            SqlConnection con = new SqlConnection(connectionStrin);
 
-            SqlDataAdapter sda = new SqlDataAdapter("select count(*) from Uzytkownicy where nazwauzytkownika ='" + loginTxt.Text + "' and haslo = '" + passwordTxt.Text + "'",con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            if(dt.Rows[0][0].ToString() == "1")
+            try
             {
-                this.Hide();
-                loginClass.loginMain = loginTxt.Text;
-                var MainShow = new Main();
-                MainShow.Show();
-                
+                string connectionStrin = ConfigurationManager.ConnectionStrings["MoldTracker.Properties.Settings.ConnectionString"].ConnectionString;
+                SqlConnection con = new SqlConnection(connectionStrin);
+
+                SqlDataAdapter sda = new SqlDataAdapter("select count(*) from Uzytkownicy where nazwauzytkownika ='" + loginTxt.Text + "' and haslo = '" + passwordTxt.Text + "'", con);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                if (dt.Rows[0][0].ToString() == "1")
+                {
+                    this.Hide();
+                    loginClass.loginMain = loginTxt.Text;
+                    var MainShow = new Main();
+                    MainShow.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("Niepoprawna nazwa użytkownika lub hasło");
+                    loginTxt.Text = String.Empty;
+                    passwordTxt.Text = String.Empty;
+                }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Niepoprawna nazwa użytkownika lub hasło");
-                loginTxt.Text = String.Empty;
-                passwordTxt.Text = String.Empty;
+
+                MessageBox.Show("Brak połączenia z bazą danych");
             }
+
+          
         }
         private void logowanieExitBtn_Click(object sender, EventArgs e)
         {
